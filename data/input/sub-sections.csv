@@ -1,0 +1,337 @@
+Number,Title,Description,
+3.1.1,Commitments,"What commitments has the implementing organization agreed to either explicitly through
+a contractual arrangement or implicitly through national policy agreements, regional and
+international agreements, WMO membership or other means?",
+3.1.2,Sustainability,,
+3.1.3,Intellectual property,,
+3.1.4,Data delivery,,
+3.1.5,Third-party data,,
+3.1.6,Climatology policy,,
+3.2.1,Data governance,,
+3.2.2,IT governance,"This collection of components refers to the overall governance of information technology to
+ensure that effective CDMSs are developed, enhanced and maintained.
+While these components are specifically aimed at larger organizations with a substantial
+investment in information and communication technology, smaller organizations can also
+benefit from investment in the types of issues discussed.
+These components are also relevant to broader initiatives, such as when an aid or development
+agency sponsors CDMS development and implementation.
+These issues will only be discussed very briefly, as each component refers to a substantial
+body of knowledge that will require ongoing investment from specialists to ensure effective
+management of resources and funds for information and communication technology.",
+4.1.1,Climate observations,"This subsection refers to the system’s capacity to handle climate observation variables. The list
+below is not comprehensive and additional variables may be required or recommended.
+The list is currently based on the ECVs published in 2010 by GCOS. However, it is worth noting
+that there are other types of variables that are very relevant to climate observation, such as
+visibility, evaporation and meteorological phenomena.
+Observations include measurements made by observers, traditional sensors and remote
+sensors.
+For more information, see:
+• GCOS website
+• GCOS web page on ECVS",
+4.2.1,Climate database,"This subsection refers to the database(s) used to store and manage a range of time-series data,
+including: climate observations, climate metadata (observations, discovery and data provenance),
+spatial information, derived data and related data required for effective data management.
+More advanced CDMSs may manage the data in a series of related databases rather than in a
+single database.
+It is recommended that the climate database provide support for the following functionalities,
+classified by priority:
+Required
+• Managing core observations described in the Guide to Climatological Practices (WMO-No. 100).
+• Managing observation metadata (such as station metadata) and integrating them with
+observations data.
+• Handling observations from multiple sensors per station, per phenomenon, and recording
+the source of each observation.
+• Managing multiple tiers of data quality, from raw records to homogenized data.
+• Managing spatial and time-series data.
+Recommended
+• Covering at least the GCOS ECVs.
+• Using a robust data model that takes into account the requirements of open spatial
+standards, particularly the ISO 19156:2011 Geographic information – Observations and
+measurements standard, METCE and the WMO climate observations application schema (see
+component 4.2.3.2).
+• Managing metadata related to data provenance. This entails ensuring that each change to
+an observation is recorded for future recovery, and recording the details of why a particular
+change was made, which includes:
+– Tracing the product lineage to the data source. For example, what observations and
+gridded data were used to underpin the analysis released in peer-reviewed paper X?
+– Ensuring that the reason for each observation change is recorded.
+• Managing third-party and crowdsourced data.
+• Managing intellectual property rights related to data.
+• Enabling point-in-time recovery. For example, what data were present in the database for
+station X at time T?
+• Storing a range of document formats, such as:
+– Photographs of observation stations and instruments, meteorological phenomena, etc.
+– Scanned paper observation forms
+– Scanned microfiche/microfilm
+– Relevant observations metadata documents, such as instrument calibration reports
+– Technical manuals
+– Site location plans and sections
+– Videos and other multimedia formats
+Optional
+• Handling data uncertainty (for more information, see Wikipedia articles on uncertain data
+and uncertainty).
+• Managing multidimensional time-series gridded data and possibly numerical models.
+• Providing support for the information management concepts of semantics and linked data.",
+4.2.2,Foundation standards,,
+4.2.3,WMO logical data models,,
+4.3.1,Observations metadata,"This subsection covers access to and management of station metadata and platform metadata.
+Station and platform metadata are time-series data that describe how, when and where
+meteorological observations were made and the conditions they were made under. They are
+used to support a range of activities that allow climate professionals to understand the fitness
+for purpose of specific data and, in many cases, improve the quality of climate observations
+data. This type of metadata is referred to as observations metadata in this publication.
+It is anticipated that application schemas (also known as logical data models) will be developed
+to formally define the structure and content of the information required to describe climate
+observing stations, sensors and platforms (see the Climate observations application schema
+component (4.2.3.2))
+Note: As a general rule, it will be necessary to record and maintain the details of any change to
+observations metadata in order to understand the context surrounding specific climate data and
+to support future data homogenization activities. In addition to details of the change, specific
+reference must be made to:
+• The date/time of the change.
+Note: It may not always be possible to define the exact date of the change, for example when
+a change happens between two site visits. Therefore, it may be more appropriate to include a
+period of time during which the change occurred.
+• The reason the change was made.
+• The beginning and end dates of the prior value.
+• Any date/time reference will need to be constrained by the appropriate temporal datum to
+ensure that date handling is consistently applied.
+For more information, see:
+• Guide to Climatological Practices (WMO-No. 100)
+• Guide to Meteorological Instruments and Methods of Observation (WMO-No. 8)
+• Guide to the Global Observing System (WMO-No. 488), Appendix III.3 Automatic weather
+station metadata
+• Manual on the Global Observing System (WMO-No. 544), Volume I, Attachment III.1 Standard
+set of metadata elements for automatic weather station installations
+• Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)
+• Draft paper on the climatological needs for minimum stations metadata in the frame of WMO
+publication No. 9, Volume A (Stuber, 2012)
+• Guidelines on Climate Metadata and Homogenization (WMO-No. 1186), WCDMP-53",
+4.3.2,Dataset discovery metadata,"This subsection refers to the processes, software and governance arrangements that ensure
+that discovery metadata are captured, managed and maintained.
+Discovery metadata are intended to facilitate the discovery and assessment of a spatial dataset
+to determine if it is fit for reuse for a purpose that may be at odds with the reason for which it
+was originally created.
+Discovery metadata may also be known as WIS metadata. They are not the same as the
+observations metadata described above.
+Note that some of the components below may be in addition to the WMO Core Profile of the ISO
+19115 Geographic information – Metadata standard. This is not expected to be an issue as the
+WMO Core Profile does not restrict the use of additional ISO 19115 records.
+For more information, see:
+• Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)
+• WMO Core Metadata Profile version 1.3, Part 1 Conformance requirements
+• WMO Core Metadata Profile version 1.3, Part 2 Abstract test suite, data dictionary and code lists
+• Tandy (2010) also provides a useful introduction to discovery metadata. However, note that
+the specifications part of this text has been superseded.
+• ISO 19115 Geographic information – Metadata",
+4.3.3,Data provenance,"This subsection refers to the processes, data and governance arrangements that record and
+manage information relevant to climate data and enable end-users, including data managers,
+scientists and the general public, to develop trust in the integrity of the climate data.
+Data provenance allows an end-user to understand the history of each piece of data, and thus
+helps the user to identify what version of the data was available at any given time.
+The need for this new type of climate metadata has become more evident following a number
+of attacks on the credibility of climate data. One notable example is the so-called Climategate
+incident and subsequent inquiries.
+Therefore, it is important for NMHSs to establish the reliability of their climate data and
+processes and to ensure that these data are subsequently seen as the authoritative source that
+can be used for global climate studies.
+While the concept of data provenance has been relatively nebulous within the information
+management domain for many years, there has been a significant amount of work on the
+concept within the World Wide Web Consortium (W3C) for over more than a decade, particularly
+with regard to the development of the PROV standard.
+The W3C defines provenance as:
+[A] record that describes the people, institutions, entities, and activities involved in producing,
+influencing, or delivering a piece of data or a thing. In particular, the provenance of information
+is crucial in deciding whether information is to be trusted, how it should be integrated with
+other diverse information sources, and how to give credit to its originators when reusing it. In
+an open and inclusive environment such as the Web, where users find information that is often
+contradictory or questionable, provenance can help those users to make trust judgements.
+(W3C, 2013a)
+While this work is still relatively new, it is showing significant potential for use within the climate
+domain.
+The concepts presented here for climate data provenance are quite embryonic and need further
+work to ensure that they can be implemented effectively. See the related recommendation in
+Chapter 11.
+Maintaining a dataset with high levels of data provenance metadata is expected to be quite
+expensive and, as a result, will be limited to data of high importance such as high-quality
+climate monitoring datasets. It is anticipated that guidance will be required to suggest what
+data should be maintained with what level of data provenance metadata. This guidance could
+perhaps be included as a policy within a future climate data framework.
+For more information, see:
+• Overview of the PROV family of documents (W3C, 2013b)
+• PROV data model specification (W3C, 2013a)",
+4.4.1,Observation data products,"This subsection outlines the types of data products that NMHSs have committed to generate and
+provide to WMO.",
+4.4.2,Climate change indices,"This subsection represents the recommendations of the Commission for Climatology in the
+elaboration of climate change indices. The Commission for Climatology/Climate Variability and
+Predictability (CCl/CLIVAR) Working Group on Climate Change Detection has been coordinating
+an international effort to develop, calculate and analyse a suite of indices so that individuals,
+countries and regions can calculate the indices in exactly the same way such that their analyses
+will fit seamlessly into the global picture.
+Those indices have been split in two categories: core indices and approved indices.
+For more information, see the website of the Joint CCl/CLIVAR/JCOMM Expert Team on Climate
+Change Detection and Indices (ETCCDI).",
+4.5.1,Derived observation data,"This subsection describes a range of derived observational data products generated from
+climate observation variables.",
+4.5.2,Gridded spatial distribution of observations,"This subsection concerns the capacity to generate or manipulate gridded data according to
+different techniques such as interpolation and extrapolation.
+Some of these techniques are described in the Guide to Climatological Practices (WMO-No. 100),
+section 5.9 Estimating data.
+These gridded data are spatial data. They are included in this section to show their lineage as a
+type of derived climate data.",
+4.5.3,Numerical models,"Note: The infrastructure, software and skills required to operate numerical models are
+undoubtedly beyond the reach of many NMHSs.
+As the output from numerical models is of interest to most NMHSs, it is expected that such
+output will be available via a number of sources, including Regional Climate Centres.
+Therefore, the CDMS should ideally have the ability to work with such data.",
+4.6.1,Spatial,"This subsection represents a wide range of spatial information typically used to provide context
+to climate data or as an input for spatial analysis processes. These data may be presented in
+vector, image, gridded or multidimensional array data formats.
+Typically, spatial representations of data contain aspatial attributes that describe various
+properties of spatial features. The spatial and aspatial attributes of the data can be used to
+support a variety of spatial analysis processes.
+The components listed below are indicative of the types of spatial data that could be relevant to
+climate. This list is not exhaustive.
+See also:
+• Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,
+2012b)",
+4.6.2,Climate documentation,,
+4.6.3,Climate software,"As discussed in the article by the UK Parliament Science and Technology Committee (2011), one
+of the recommendations of the UK parliamentary review of the Climategate issue was to ensure
+that climate scientists make available the full methodological workings (including computer
+codes) used to support their work. An extract is reproduced below.
+It is not standard practice in climate science to publish the raw data and the computer code
+in academic papers. However, climate science is a matter of great importance and the quality
+of the science should be irreproachable. We therefore consider that climate scientists should
+take steps to make available all the data that support their work (including raw data) and full
+methodological workings (including the computer codes).
+This has implications for the effective management of climate data and software in that software
+source code will also require careful management.
+In addition, it will be necessary to keep track of the time period during which each software
+version is in operation, as this may also have implications for climate data and climate analysis.
+On a conceptual level, this is similar in a way to the need to have effective observations metadata
+that describe the maintenance of sensors and stations.",
+5.1.1,Data ingest,,
+5.1.2,Data extraction,,
+5.2.1,Imaging,,
+5.2.2,Monitoring,,
+5.2.3,Data entry,"This subsection covers the functionality required to enable an appropriately trained and
+authorized person to manually enter data into the climate database.
+Typically, this functionality is tightly controlled according to NMHS data governance processes.
+Some issues to consider are:
+• Data entry staff should only be able to add data to or edit data in the climate database under
+programme control, with appropriate safeguards in place to protect the integrity of the
+climate database.
+• Any functionality that provides write access to the database should also include an audit
+function to allow an independent review of database changes.
+– One example could be the use of database triggers that write the details of a transaction,
+including the previous values, into a separate set of audit tables.
+• Another approach could be to ensure that the data entry process creates an interim data
+file that is then entered into the database via data ingest processes, bypassing the need for
+direct access to the database.
+• NMHS data policy may enforce the need for double entry practices, where two or more
+operators key in data for the same form, independent of each other, to detect and minimize
+key-in errors.
+• Careful consideration should be made to ensure that an organization has very effective
+IT security and monitoring in place prior to allowing key-in access via the Internet. Most
+organizations will not have suitable controls in place. Therefore, key-in via the Internet should
+be avoided as a general rule.
+• NMHS data policy should provide guidelines as to appropriate data quality considerations
+applied to data that are manually entered.",
+5.3.1,Quality management,"For more information, see:
+• Guide to Climatological Practices (WMO-No. 100)
+• Guide to the Global Observing System (WMO-No. 488), Appendix VI.1 Data quality control,
+and Appendix VI.2 Guidelines for quality control procedures applying to data from automatic
+weather stations
+• Guidelines on the Quality Control of Surface Climatological Data (WMO/TD-No. 111), WCP-85
+• Guidelines on Climate Data Management (WMO/TD-No. 1376), WCDMP-60
+• Guide on the Global Data-processing System (WMO-No. 305), Chapter 6 Quality control
+procedures",
+5.4.1,Observations quality assessment,"This subsection refers to the processes implemented to help NMHSs assess the quality of
+observations used by their organization. It covers all stages, from the observation site and
+expertise level of personnel to the final product distributed to users.
+The aim of this subsection is to move towards a more objective way of defining the quality of
+observations data.",
+5.4.2,Derived-data quality assessment,,
+5.4.3,Quality assurance metrics,,
+5.4.4,Uncertainty,"This subsection refers to the processes, software, governance processes and data analysis used
+to understand and record the uncertainty inherent in the data.
+As noted in the OGC Abstract Specification: Geographic Information – Observations and
+measurements (p. 13), all observations have an element of uncertainty:
+The observation error typically has a systematic component, which is similar for all estimates
+made using the same procedure, and a random component, associated with the particular
+application instance of the observation procedure. If potential errors in a property value are
+important in the context of a data analysis or processing application, then the details of the act
+of observation which provided the estimate of the value are required.
+This functionality will support:
+• Future statistical analysis that takes into account the uncertainty inherent in data.
+• Communication of data uncertainty.
+For more information, see Wikipedia articles on:
+• Uncertain data
+• Uncertainty",
+5.5.1,Manage climate metadata,"This subsection refers to the processes, software, governance mechanisms and data analysis
+required to effectively manage climate metadata, which include metadata on observations,
+discovery and data provenance.
+Note: This subsection is deliberately kept generic in this version of the CDMS Specifications,
+with all types of climate metadata bundled together. While the Create and Maintain components
+(5.5.1.1 and 5.5.1.2, respectively) are classified as recommended, in reality data provenance
+metadata has not yet been adequately defined. Therefore, a pragmatic approach would rightly
+not address the creation and maintenance of data provenance metadata until this has been
+rectified. The creation and maintenance of discovery and observations metadata, however, is
+required.
+For more information on climate metadata, see section 4.3 of this publication.",
+6.1.1,Climate modelling,,
+6.1.2,Generate derived data from climate observations,,
+7.1.1,Tables and charts,"This subsection represents the technology, software, processes and governance mechanisms
+suitable for generating a broad array of tabular and graphical reports to effectively
+communicate issues relating to climate data.",
+7.1.2,Manage content,,
+7.1.3,Visualization,,
+7.1.4,Integrated search of climate data,,
+7.1.5,Data download,,
+8.1.1,Open Geospatial Consortium services,,
+8.1.2,Geography Markup Language application schema,"Application schemas (as defined in ISO 19109:2005 Geographic information – Rules for
+application schema) provide an abstract representation of the content and structure of
+information resources. The Climate observations application schema component (4.2.3.2)
+outlines the use of application schemas specifically developed for the climate domain.
+These abstract representations of information provide the basis for deriving concrete encodings
+or data formats that allow the information to be serialized for exchange between systems and
+organizations.
+Work is proceeding within WMO to harmonize existing TDCFs (FM 92 GRIB Edition 2 and FM
+94 BUFR Edition 4) with WMO METCE (described in the METCE component (4.2.3.1)), with the
+intent to bind those existing data formats to explicit, well-understood semantics.
+In addition, the application schema can be used to develop XML-based data encodings using
+widely supported open standards for geographic information. The ISO 19136:2007 Geographic
+information – Geography Markup Language (GML) standard provides rules for serializing the
+abstract data model expressed as an application schema via XML encoding to create a GML
+application schema.
+In summary:
+• An application schema can be thought of as a logical data model. For more information, see
+the subsection on WMO logical data models (4.2.3).
+• A GML application schema is a physical model that is derived from a logical data model
+published using a particular technology – which in this case is GML. For an example, see the
+Combined climate observations and metadata component (8.1.2.1) below.
+Deriving a GML application schema from an application schema developed specifically for
+the climate domain (see Climate observations application schema component (4.2.3.2)) is
+anticipated to make climate data far more readily consumable for a broader community of users
+such as those interested in determining the impacts of climate change.
+While work has been conducted for several years, this task is still in its early stages as at
+December 2013. It is expected to take a number of years to complete.
+For an overview of how a logical data model (and associated application schema) could be used
+with climate data, see Bannerman (2012), pp. 20–26.
+For a more detailed description of what has been done to date, see Tandy (2013a), which provides
+an overview of the direction that WMO logical data model work is taking with regard to METCE.",
+8.2.1,Climate metadata catalogues,,
+8.2.2,Linked data,,
+8.3.1,Open-source Project for a Network Data Access Protocol,,
+8.3.2,WMO formats,,
+9.1.1,Identity management,,
+9.1.2,Collaboration,,
+9.1.3,Web platform,,
+9.1.4,Database,,
+9.2.1,Service operations management,,
+9.3.1,Networks,,
+9.3.2,Computing platform,,
+9.3.3,Security,,
+9.3.4,Data storage,,
+9.3.5,Disaster recovery,,

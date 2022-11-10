@@ -1,0 +1,13 @@
+{
+  "title": "Climate metadata",
+  "subsections": [
+    4.3
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.3": {
+    "title": "Climate metadata",
+    "text": "The term climate metadata is defined in this publication as the suite of supporting data required\nto effectively manage climate data and assess the data\u0092s fitness for purpose.\nClimate metadata are made up of the following components:\nObservations metadata Time-series data that describe how, when and where\nmeteorological observations were made and the conditions they\nwere made under.\nDiscovery metadata Information intended to facilitate the discovery and assessment\nof a dataset to determine if it is fit for reuse for a purpose that\nmay be at odds with the reason for which it was originally\ncreated.\nData provenance metadata Information relevant to climate data that allows end-users,\nincluding data managers, scientists and the general public, to\ndevelop trust in the integrity of the climate data.\nThe following section expands on each component of climate metadata."
+  }
+}

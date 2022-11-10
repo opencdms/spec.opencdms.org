@@ -1,0 +1,13 @@
+{
+  "title": "Ingest and extract",
+  "subsections": [
+    5.1
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.1": {
+    "title": "Ingest and extract",
+    "text": "This section covers a very broad set of functionalities relating to the capture and initial\nprocessing of observation and related data.\nIn essence, this section involves:\n\u0095 Loading data into or extracting data from the climate database.\n\u0095 Transforming data as required from one format into another more suitable for data\nmanagement, analysis and storage."
+  }
+}
