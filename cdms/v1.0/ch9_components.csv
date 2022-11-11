@@ -1,0 +1,133 @@
+Number,Title,Description,Classification
+9.1.1.1,Directory,"This component provides directory services such
+as the Lightweight Directory Access Protocol or
+Active Directory to manage user credentials and
+details.",Recommended
+9.1.1.2,Identity and access management,"This component supports policies and
+functionalities that enable granular user access to
+the organization’s IT resources and data.",Required
+9.1.2.1,E-mail,"This component provides secure e-mail access
+and includes functionalities such as filtering for
+malware and spam.",Required
+9.1.2.2,FTP,"This component provides secure services to allow
+exchange of climate data via the use of the File
+Transfer Protocol (FTP).",Required
+9.1.2.3,Wiki,"This component supports a collaborative web
+environment allowing any member of a team to
+easily edit content.",Recommended
+9.1.3.1,Web server,"This component provides functionalities that
+deliver web content to web browsers. In addition
+to the web server platform, it also refers to
+services required to support web applications.",Recommended
+9.1.3.2,Proxy server,"This component routes web traffic and acts as
+a load balancer and a reverse proxy server to
+contribute to secure connections to the web
+server.",Recommended
+9.1.4.1,Tabular,"This component represents database technology
+suitable for the storage of a wide range of timeseries
+climate data in tabular format, typically
+within a relational database.",Required
+9.1.4.2,Spatial,"This component deals with technology used to
+spatially enable time-series climate data, typically
+within a relational database. The component may
+consist of a functionality that spatially enables
+the tabular database component, or it could be a
+dedicated spatial database that is closely aligned
+to the climate data stored within the tabular
+database.",Recommended
+9.2.1.1,Scheduling,"This component represents technology and
+processes used to ensure that software processes
+can be scheduled to run at specific times over a
+24-hour basis.
+This functionality supports activities such as
+regular data ingest, quality assurance operations,
+data analysis, derivation and backups.
+There is also a requirement in more advanced
+environments to ensure that the dependencies
+between scheduled jobs are managed.",Required
+9.2.1.2,Service desk,"This component represents the functionalities,
+processes and software required to provide
+support for service operations4, including:
+• Incident and event management to ensure that
+if an unplanned interruption to an IT service
+occurs, normal service operation is returned as
+soon as possible.
+• Problem management to ensure that the root
+causes of problems are found and where
+possible, rectified.",Recommended
+9.2.1.3,Applications management,"This component covers the functionalities,
+processes and software required to provide
+application administration tasks and second- and
+third-level support for CDMS services.
+Any new IT system implementation and any
+change to existing IT systems must be undertaken
+in accordance with the section on governance
+(3.2).",Required
+9.2.1.4,Systems management,"This component refers to the functionalities,
+processes and software required to provide
+systems administration tasks and second- and
+third-level support for CDMS services.
+Any new IT system implementation and any
+change to existing IT systems must be undertaken
+in accordance with the section on governance
+(3.2).",Required
+9.3.1.1,Internet,"This component covers the infrastructure required
+to support access to the Internet. This includes
+routers, switches, firewalls, internet service
+providers, etc.",Required
+9.3.1.2,WMO WIS/GTS,"This component concerns the infrastructure
+required to access the WMO Global
+Telecommunication System. This is essentially a
+private wide-area network.",Required
+9.3.1.3,Internal networks,"This component refers to the infrastructure
+required to support local area networks. This
+includes switches, firewall(s), services such
+as domain name servers or the Dynamic Host
+Configuration Protocol.",Recommended
+9.3.1.4,VPN,"This component concerns a virtual private network
+(VPN), which allows a private network to be set up
+across the publicly available Internet making use
+of tunnelling and security features. This can result
+in relatively secure communications.",Recommended
+9.3.2.1,Hardware,"This component covers all computing hardware,
+including servers and desktop computers.
+Organizations are increasingly using virtualization
+to allow several virtual servers to be deployed on
+a single physical server, as a way of minimizing
+hardware and operational costs while increasing
+operational efficiency.",Required
+9.3.2.2,Operating system,"This component concerns the operating system
+required to support computing operations.",Required
+9.3.2.3,High-performance computing,"This component covers the advanced computing
+functionalities needed to support highperformance
+computing, including clusters and
+grids.",Optional
+9.3.3.1,Security,"Security is actually an aspect of all components,
+but is included here for clarity. All software and
+systems should be implemented with security in
+mind in order to protect the integrity of climaterelated
+systems and data.
+This component does not just refer to IT security
+but also to physical security, such as preventing
+the theft of a server and the resulting loss of the
+climate database.",Required
+9.3.4.1,Storage media,"This component involves the provision of
+sufficient storage media to cover operational
+activities, including the storage of climate data,
+systems, archives, backups and disaster recovery
+materials.",Required
+9.3.4.2,Data archival,"This component handles the secure archival of
+historical data to ensure that it is available for
+future generations.",Required
+9.3.4.3,Backups,"This component covers the regular operational
+backup and restoration of data and systems.",Required
+9.3.5.1,Disaster recovery,"This component refers to the disaster recovery
+and business continuance policies, processes,
+plans and systems required to ensure that CDMS
+systems and climate data can be recovered in the
+event of an unforeseen incident. This could be
+as simple as a server malfunction or as complex
+as an organization’s city being destroyed due to
+some unexpected event such as an earthquake,
+tsunami or military action.
+This is why off-site storage of backups is required.",Required
