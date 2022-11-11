@@ -1,0 +1,577 @@
+Number,Title,Description,Classification
+5.1.1.1,Business rules,"This component supports a wide range of user
+defined business rules that govern how data
+are ingested into the climate database. Some
+examples (for observations data) are:
+• Action required when new phenomena are to
+be ingested but a record already exists in the
+database for that time period.
+– Should the new record replace the current
+record in the database or should the new
+record be rejected?
+There is potential for data that have not
+been quality controlled to overwrite
+perfectly good quality-controlled data. An
+example is a message that is reingested
+and the ingest process does not take into
+account the possibility that the data already
+exist in the database and that they have
+been modified.
+• Action required when a message arrives for
+ingest but the message type is not appropriate
+according to the observations metadata on
+record for that station.
+• Action required should a message arrive
+containing an observed value that is outside the
+accepted bounds for a given phenomenon. For
+example, a message contains a value of 90°C
+for temperature, where the maximum accepted
+temperature is 60°C.
+• Action required should a message arrive that is
+of a lower order of precedence to one that has
+already been ingested for the same time period
+and station. For example:
+– The priority level given to records being
+ingested may relate to the method of data
+acquisition. A record that has been keyed in
+via a quality assurance process may be given
+a higher priority than a record acquired via a
+real-time message ingest.",Required
+5.1.1.2,WMO messages,"This component allows for the import of data from
+a range of WMO message formats, including TAC
+and TDCF.
+As both historical and current data will need to be
+imported, this component should be able to work
+with data in a wide variety of past, present (and
+future) data formats.
+Some examples are:
+• Binary:
+– BUFR
+– GRIB
+• Alphanumeric:
+– CREX
+– SYNOP
+– TEMP
+– SHIP
+– METAR
+– World Weather Records
+Note: While TAC formats are being phased out,
+support for them will still be required by this
+component to support the ingest of historical data.
+For more information, see:
+• WMO international codes",Required
+5.1.1.3,Vector,"This component supports the import of a series of
+vector spatial formats.
+For example:
+• Shapefile
+• Geography Markup Language (GML) (see OGC
+GML web page)",Recommended
+5.1.1.4,Raster array,"This component supports the import of a series of
+raster array spatial formats.
+For example:
+• CF-netCDF
+• Hierarchical data format
+• ArcInfo ASCII
+• GeoTIFF",Recommended
+5.1.1.5,Other formats,"This component covers the import of a range of
+other formats.
+For example:
+• Photographs (PNG, JPEG, TIFF, etc.)
+• Scanned documents
+• PDF files
+• ASCII generic formats such as CSV
+• Data managed in spreadsheets
+• Tabular formats, such as the import of data
+from a relational database management system",Recommended
+5.1.1.6,Status log,"This component concerns the recording of each
+ingest activity status in order to:
+• Monitor the ingest job status.
+• Automatically recover failed ingests.
+• Record warning and other error messages to
+enable manual intervention if required, for
+example if expected data are not received.",Required
+5.1.1.7,Automated with self-recovery,"This component supports the automated ingest of a
+range of ingest types (particularly WMO messages
+and data from automatic weather stations).
+The component also allows for the automatic
+recovery of ingest tasks in the event that a task fails
+either entirely or part way through an ingest. This
+could be due to a number of reasons, including:
+• Corrupted messages
+• Network failures
+• Hard disk failures
+• Database failures
+• Upstream data flow disruptions",Recommended
+5.1.1.8,Transformation,"This component supports the transformation of an
+ingest record. This may include:
+• Transforming data from one format to another.
+• Transforming codes into formats more suitable
+for the destination climate database.
+• Correcting records that have been abbreviated
+in accordance with accepted local observation
+practice.",Required
+5.1.2.1,Data extraction,"This component allows data to be extracted from
+the climate database in accordance with NMHS
+data policy and governance processes.
+Data may be transformed into a wide range of
+formats as described in the subsection on data
+ingest (5.1.1).
+Note: This component is only intended for
+advanced users who have an intimate knowledge
+of the climate database, its data structures, the
+relevant data policies and the appropriate use of
+quality flags and other aspects in order to perform
+one-off data extraction activities.
+End-user data extraction is intended to be
+constrained to defined data types via the climate
+data delivery services components (Chapter 8),
+using components under Chapter 7, such as:
+Tables and charts, Integrated search of climate
+data and Data download.",Recommended
+5.2.1.1,Document imaging,"This component supports the functionality
+required to digitally capture a physical document
+and store the resultant file and associated
+discovery metadata, perhaps within the climate
+database.
+Some examples of the types of documents to be
+digitally captured are:
+• Scanned paper observation forms
+• Scanned microfiche/microfilm
+• Relevant observations metadata documents
+such as instrument calibration reports
+• Technical manuals
+• Site location plans and sections
+For more information, see:
+• Guidelines on Climate Data Rescue (WMO/TDNo.
+1210), WCDMP-55",Recommended
+5.2.1.2,Optical character recognition,"This component provides the functionality
+required to digitally capture data stored in
+scanned documents such as hand written and/or
+typed meteorological observation forms.",Optional
+5.2.1.3,Chart digitization,"This component refers to the capacity to digitize
+data from recording cards such as those used
+with a Campbell-Stokes sunshine recorder,
+thermograph, barograph or other meteorological
+instrument.
+The typical functionality required for this
+component would be to:
+• Scan a physical recording chart (or card) using
+the Document imaging component (5.2.1.1).
+• Analyse the image of the chart.
+• Extract numeric points from the chart.
+• Calculate a value for those points.
+• Store the resultant data in the climate database.",Optional
+5.2.2.1,Data rescue metrics,"This component maintains metrics relating to the
+capture of historical observations data. These may
+contain:
+• Name and brief description of data rescue
+project
+• Countries where activity is taking place
+• Contact person for project
+• Types of data rescued
+• Summary and per cent digitized
+• Summary and per cent scanned
+• Summary and per cent scanned but not
+digitized
+• Summary and per cent undigitized",Recommended
+5.2.3.1,Forms,"This component covers:
+• The visual design of a form.
+• The software logic that controls the data key-in
+process.
+• The mapping of fields in the form with
+appropriate records and tables within the
+climate database.
+• Ensuring that the integrity of the climate
+database is protected by validating data before
+they are added to the database.
+The component should also support:
+• A custom definition of user input forms
+that mimic traditional meteorological forms
+(including the language where appropriate).
+• Efficient and effective data entry that minimizes
+operator fatigue and automatically calculates
+appropriate values.
+The component should provide adequate support
+for monitoring the validity of data that are entered.
+Some examples are:
+• Performing data quality consistency checks
+of the data to be entered. These checks and
+the appropriate values are to be customizable
+according to NMHS data policy and governance
+processes.
+• Ensuring that appropriate data types and
+context are entered for each field.
+• The component should alert the operator
+to any doubtful entries detected, providing
+appropriate advice as per NMHS data policy
+guidelines.",Required
+5.2.3.2,Key entry,"This component provides the functionality to
+support manual key-in of meteorological data.",Required
+5.2.3.3,Computation,"This component allows for the automatic
+derivation of parameters at key-in.
+Such computation should be customizable
+according to NMHS data policy and governance
+processes.
+Some possible scenarios where this functionality
+may be used are:
+• The computation of a value for relative
+humidity after the values for dry-bulb
+temperature and dewpoint have been entered.
+• Decoding shorthand codes and replacing them
+with appropriate values.",Recommended
+5.3.1.1,Consistency checks,"This component covers a range of tests to ensure
+that inconsistent, unlikely or impossible records
+are either rejected or flagged as suspect. A manual
+investigation may then assess the validity of the
+suspect values.
+This component includes the concepts of internal,
+temporal and summarization consistency checks
+as discussed in the Guide to Climatological
+Practices (WMO-No. 100), section 3.4.6
+Consistency tests.
+Some examples are:
+• Is the minimum temperature lower than the
+maximum temperature?
+• Is the maximum temperature within the
+historical range for maximum temperatures for
+a given station?",Required
+5.3.1.2,Data comparison,"This component covers a series of tests that
+use and cross-reference data from a number of
+sources to validate suspect observations.
+Some examples of datasets that may be crossreferenced
+are:
+• Observations data showing daily precipitation
+at a station
+• Radar data covering the station
+• Synoptic forecast charts
+• Satellite imagery",Recommended
+5.3.1.3,Heuristic checks,"This component refers to a set of tests that rely
+on experience and knowledge of observation
+processes, techniques and instrumentation to
+detect inconsistent, unlikely or impossible records
+and flag them as suspect. A manual investigation
+may then assess the validity of the suspect values.
+Some examples are problems typically caused by:
+• Inexperienced operators.
+• Instruments that are not or are incorrectly
+calibrated.
+• Operator behaviour or organizational policy,
+for example not recording rainfall data over a
+weekend period and aggregating the results on
+the following Monday.
+• Known deficiencies in observers handling data
+such as evaporation-related observations.
+• Changes over time caused by changes at an
+observation site. For example, a shift in the
+magnitude of wind recorded from a specific
+direction may be an indicator of a problem
+at the site location, such as a new building
+structure or trees obstructing the flow of the
+wind in that direction.",Required
+5.3.1.4,Statistical checks,"This component covers a number of tests that
+statistically analyse historical data to detect
+inconsistent, unlikely or impossible records and
+flag them as suspect. A manual investigation may
+then assess the validity of the suspect values.
+Some examples are:
+• Climate tests that highlight extreme climatic
+values, such as a record maximum air
+temperature.
+• Flatline tests where a constant value exceeds
+the specified limit in a time series, for example
+when the station air temperature remains
+constant for 12 hours.
+• Spike tests conducted in a time series to
+identify data spikes exceeding a specified
+limit, for example when a three-hourly air
+temperature observation is at least 50 degrees
+colder than all others during the day.
+• Rapid change tests conducted in a time
+series to identify rapid changes exceeding a
+specified limit, for example when a 100 cm soil
+temperature suddenly changes in consecutive
+3-hourly observations from a relatively stable
+22°C to 38°C for all following observations.",Required
+5.3.1.5,Spatial checks,"This component covers a range of spatial tests to
+detect inconsistent, unlikely or impossible records
+and flag them as suspect. A manual investigation
+may then assess the validity of the suspect values.
+Some examples are:
+• Comparing the results of a time series of
+observations at a given station with those at
+nearby stations.
+• Using a Barnes or similar analysis to derive
+spatial patterns against which anomalous and
+possibly erroneous station values stand out.",Recommended
+5.3.1.6,Data recovery,"This component refers to the processes, policies,
+governance arrangements, audit processes, etc.,
+that enable the recovery and insertion of data in
+the climate database, possibly overwriting existing
+data.
+This component involves a number of manual
+processes undertaken by experienced and
+well-trained personnel, supported by effective
+technology, governance and data management
+processes, to investigate anomalous observations
+and either accept or reject suspect records.
+Personnel will typically review and consider a
+wide range of data in their investigations, such
+as raw records, synoptic charts, satellite imagery,
+radar and other types.",Required
+5.3.2.1,Network monitoring,"This component keeps track of data received from
+an observational network in order to monitor
+network performance and potentially detect and
+alert data managers of possible problems.
+Some examples are:
+• Statistics showing the current state of data
+ingests compared with historical averages.
+• Records not received for a station or sensor
+could indicate a potential issue with the
+instrumentation, IT equipment, software or IT
+network.
+• Specific fields or records not loaded into the
+database could be an indication of a systematic
+error such as an undetected software error.
+• Records received in advance of the observation
+time may highlight training issues.
+• Loss of data due to corrupted synoptic
+message types.
+For more information, see:
+• Guide to the Global Observing System (WMONo.
+488), section 3.1.3.14 Network performance
+monitoring",Recommended
+5.3.3.1,Data monitoring,"This component monitors ingested and derived
+observation data to detect and resolve potential
+systemic issues.
+For example, NMHSs typically have quite long
+data quality control processes, where data may
+be modified over a period lasting several months.
+In the intervening period, normal business
+processes create considerable amounts of
+derived data, such as:
+• Daily, weekly, monthly, seasonal and annual
+summaries for a range of observation variables.
+• Statistical gridded datasets that represent the
+distribution of observation variables over large
+areas for similar time periods.
+As soon as observation data are modified through
+normal quality control processes, derived data
+may become invalid. This is why data monitoring
+processes are required to monitor data changes
+and, where necessary, reconstruct affected
+derived datasets.
+Another example is the generation of a number of
+metrics to assist with climate data management
+activities.
+This component maintains metrics relating to
+the capture of historical observations data, for
+example:
+• Summary and per cent of data that have
+undergone quality control.
+• Percentage of data at each level of quality
+control.",Recommended
+5.4.1.1,Siting classification,"This component refers to the processes, software,
+governance mechanisms and analysis that classify
+sensors according to the rating scale described
+in the Guide to Meteorological Instruments and
+Methods of Observation (WMO-No. 8), Annex
+1.B Siting classifications for surface observing
+stations on land.",Required
+5.4.1.2,Sustained performance classification,"This component refers to the processes, software,
+governance mechanisms and analysis that classify
+sensors according to their sustained performance
+over time.
+The best description found to date on how to
+determine this classification may be found in
+Annex III of the final report of the first session of
+the Commission for Instruments and Methods of
+Observation Expert Team on Standardization.
+Note: A more objective approach to developing
+this classification for the global WMO community
+is required.",Recommended
+5.4.1.3,Multilayer quality flags,"This component refers to the processes, software,
+governance mechanisms and data analysis used
+to understand and enumerate the quality flags of a
+specific record of data.
+This will facilitate:
+• Future analysis that requires data of a specific
+quality flag value.
+• Communication on the assessed quality of
+records.
+The best description to date on how to define
+this classification may be found in the Guide to
+Climatological Practices (WMO-No. 100), pp. 3–8
+to 3–9. This reference describes a way of flagging
+quality based on a combination of:
+• Data type (original, corrected, reconstructed or
+calculated)
+• Validation stage
+• Acquisition method
+This approach is still quite limited. It does not
+provide a clear way of determining just what level
+of quality control a record has been subjected to.
+While the classifications are relevant and relate
+to the perceived quality of a record, they do not
+allow for an explicit comparison of data of similar
+perceived quality.
+For example, the subsection on quality
+management (5.3.1) describes a series of
+classifications of tests (without providing actual
+details). If a record has passed all such tests, can
+it be considered to be better quality than one that
+has not passed any test?
+Objective quality classifications are required to
+support a consistent approach within the global
+WMO community so that data can be:
+• Objectively compared to ensure that data of
+similar quality can be compared and analysed
+as required.
+• Stored and easily retrieved from a climate
+database. It is becoming increasingly
+apparent that organizations will need to retain
+observations at multiple levels of quality from
+the raw observation through various edit and
+analysis processes in order to demonstrate the
+true lineage of a record and explain and justify
+the changes made to the raw observations.
+Note: A more objective approach to determining
+this classification for the global WMO community
+is required.",Required
+5.4.1.4,Climate observation quality classification,"This component refers to the processes, software,
+governance mechanisms and data analysis used to
+understand and enumerate the quality of a specific
+record of data relative to an objective index. This
+index will need to combine a number of criteria
+relevant to data reliability and quality.
+Note: This index has yet to be created. For the
+purposes of this publication, it is called the climate
+observation quality classification. However, this
+name may change.
+It is envisioned that this index will need to take
+into account a number of factors, including:
+• Siting classification
+• Sustained performance classification
+• Regular maintenance and calibration of sensor
+• Sensor reliability
+• Uncertainty inherent in observations
+• Observation quality control processes
+• Multilayer quality flags
+• Lineage
+• Homogeneity
+• Other appropriate factors
+See also the summary of findings of the seventh
+Data Management Workshop of the European
+Climate Support Network (ECSN) held at the
+Danish Meteorological Institute, in particular:
+> Noting that “everybody” talks about
+> different levels of Quality Control [QC] and
+> (almost) nobody uses the same wording
+> or nomenclature – it is recommended that
+> an overview of QC nomenclature in ECSN
+> is worked out. It might be considered if
+> such an overview could form the basis for
+> a recommended set of QC wordings. (Kern-
+> Hansen, 2009)",Optional
+5.4.2.1,Derived-data quality assessment,"This component refers to the processes, software,
+governance and data analysis processes used to
+understand and enumerate the quality of derived
+data relative to an objective index.
+There are many factors that can influence the
+quality of derived data. Some issues to consider
+are:
+• What is the quality of the source data?
+• What algorithms have been applied to the
+source data to arrive at the derived data?
+• What is the impact of these algorithms on the
+quality of the derived data?
+• If the derived dataset is spatial, how has the
+positional location of the data been derived?
+– What is the quality of the source spatial data?
+– What is the impact of the algorithms used to
+spatially distribute the data on the positional
+accuracy of the derived data?
+For more information, see also the Derived data
+component (5.4.4.2).
+Note: This index has yet to be created. For the
+purposes of this publication, it is called the
+derived-data quality assessment. However, this
+name may change.",Optional
+5.4.3.1,Quality assurance metrics,"This component refers to the processes, software,
+governance mechanisms and analysis used to
+monitor the performance of quality assurance
+processes.
+Such monitoring will allow network managers
+and climate data specialists to validate the
+performance of quality assurance software and
+processes.
+This can be done, for example, by reviewing
+automatically generated reports that:
+• Summarize observational errors detected by
+each quality assurance test.
+• Summarize false positives and valid errors
+detected.
+• Compare the performance of current quality
+assurance metrics with historical averages.
+These types of metrics can also help data and
+network managers improve quality assurance
+processes and software.",Recommended
+5.4.4.1,Measurements,"This component refers to the processes,
+software, governance mechanisms and data
+analysis used to understand and record
+the uncertainty inherent in observation
+measurements and processes.
+The Guide to Meteorological Instruments and
+Methods of Observation (WMO-No. 8) provides a
+number of examples per meteorological variable.
+For more information, see:
+• Guide to Meteorological Instruments and
+Methods of Observation (WMO-No. 8), Annex
+1.D Operational measurement uncertainty
+requirements and instrument performance
+• Annex III of the final report of the first session
+of the Commission for Instruments and
+Methods of Observation Expert Team on
+Standardization",Required
+5.4.4.2,Derived data,"This component refers to the processes,
+software, governance mechanisms and data
+analysis used to understand and record the
+uncertainty inherent in gridded data that have
+been derived from observation data.
+Many factors can contribute to the uncertainty
+inherent in gridded derived data. Some examples
+are:
+• Uncertainty inherent in the source
+observations data.
+• Uncertainty inherent in the location of
+sensors/stations used to generate the grids.
+• The relative accuracy of the algorithms used to
+generate the derived data.
+• The precision of variable data types used in
+the software that generates derived data.
+It is also worth noting that a number of these
+factors may propagate through the data
+derivation process.",Optional
+5.5.1.1,Create,"This component refers to the processes, software
+and governance processes needed to effectively
+and efficiently create climate metadata.",Recommended
+5.5.1.2,Maintain,"This component covers the processes, software
+and governance mechanisms required to
+effectively and efficiently maintain climate
+metadata.",Recommended
+5.5.1.3,Quality control,"This component deals with the processes,
+software and governance processes needed to
+effectively and efficiently assess and control the
+quality of climate metadata.
+More work is required to provide effective
+guidance on this component.",Recommended
+5.5.1.4,Metrics,"This component refers to the processes, software
+and governance processes required to effectively
+and efficiently maintain metrics relevant to climate
+metadata.
+Some examples are:
+• Which stations or sensors do not have
+observations metadata records?
+• Which datasets do not have discovery
+metadata records?
+More work is required to provide effective
+guidance on this component.",Recommended

@@ -1,0 +1,281 @@
+Number,Title,Description,Classification
+8.1.1.1,Web Map Services,"This component represents technology suitable
+for the distribution of a wide range of climate data
+via a Web Map Service (WMS).
+In essence, a WMS provides a map view of data
+distributed via a georeferenced image.
+For more information, see:
+• OGC WMS documentation
+• The OGC Meteorology and Oceanography
+Domain Working Group paper on the use of
+WMS with time-dependent and elevationdependent
+data",Recommended
+8.1.1.2,Web Feature Services,"This component represents technology suitable
+for the distribution of a broad range of vector
+climate data via a Web Feature Service (WFS).
+In essence, a WFS could provide vector and
+tabular climate data, which could be presented in
+a number of formats such as GML (see OGC GML
+web page) or Environmental Systems Research
+Institute (ESRI) shapefile.
+Some WFS implementations can serve data
+constrained by a logical data model (also known
+as an application schema). It may also be possible
+to enable WFS server software to provide
+meteorological observation data via WMO formats
+such as BUFR.
+There may be issues with serving time series
+via WFS. There is discussion that a Sensor
+Web Service may be better for time-series
+observations.
+For more information, see:
+• OGC WFS documentation",Recommended
+8.1.1.3,Web Coverage Services,"This component represents technology suitable
+for the distribution of a wide range of gridded and
+array climate data via a Web Coverage Service
+(WCS).
+In essence, a WCS provides the actual gridded or
+array data.
+Future versions of WCSs are intended to support
+logical data models defined as application
+schemas.
+For more information, see:
+• OGC WCS documentation",Recommended
+8.1.1.4,Sensor Web Enablement Services,"This component represents a range of
+technological tools suitable for the distribution of
+a wide variety of observational data and related
+metadata.
+There are a number of services that will become
+available when work stabilizes on these standards.
+Sensor Web Services are typically used with
+data that conform to the observations and
+measurements data model. This model is well
+suited to time-series data. Therefore, Sensor Web
+Services may be an appropriate mechanism for
+serving time-series climate data in the future.
+For more information, see the OGC documentation
+for:
+• Observations and measurements
+• Sensor Observation Services",Optional
+8.1.1.5,CF-netCDF,"This component involves technology suitable
+for the provision of a wide variety of gridded or
+array scientific data written as netCDF files that
+support the conventions for climate and forecast
+metadata3.
+For more information, see:
+• Wikipedia article on netCDF
+• OGC netCDF standards suite
+• The OGC CF-netCDF core and extensions
+primer
+
+3 In this context, the term metadata refers to a set of fields in the header of a netCDF file that describe the context and
+format of the array data contained in the CF-netCDF file.",Recommended
+8.1.1.6,Geosynchronization,"This component concerns a series of technological
+tools that enable a data publisher to distribute
+a data product in an environment that supports
+managed change to the source data.
+In theory, end-users could subscribe to a data
+source and have changes to the data replicated in
+their copy of the data.
+In summary, geosynchronization services are
+expected to support several processes, including:
+• Allowing interested parties to subscribe to an
+authoritative data source.
+• Data entry with validation.
+• Notifying interested parties of changes.
+• Allowing replication of the data provider’s
+features.
+It is anticipated that geosynchronization services
+will support crowdsourced data and processes in
+addition to authoritative data sources.
+At present, geosynchronization services are being
+developed with the current version of a standard
+that only serves data via a WFS. It is expected
+that geosynchronization will support additional
+services in the future, including WCS and WMS.
+For more information, see:
+• OGC overview of geosynchronization services
+• The OWS 7 engineering report on the test of
+geosynchronization services",Optional
+8.1.1.7,Web Processing Services,"This component covers a range of technological
+instruments that provide a standards-based
+framework for developing spatial processing
+services that operate via an internal network or the
+Internet.
+This standard is being used by a number of
+open-source projects and vendors to develop the
+building blocks that will support a wide range of
+spatial analytic processes.
+The latest version of the standard is being
+developed to support both synchronous and
+asynchronous Web Processing Services (WPS).
+This standard has considerable potential for future
+CDMS use, for example:
+• To enable an NMHS to establish a suite of
+services to process and analyse climate data
+within a services-oriented architecture.
+• To enable a future service-provider to offer
+CDMS-related services via “the cloud”.
+For more information, see:
+• WPS Wikipedia entry
+• OGC WPS documentation",Optional
+8.1.1.8,Symbology Encoding,"This component represents a range of
+technological tools that provide rules and a
+standardized approach for defining alternative
+visual portrayals of spatial data via an internal
+network or the Internet.
+Symbology Encoding, together with Styled
+Layer Descriptors (SLDs), can be used with
+WMSs, WFSs and WCSs to enable user-defined
+symbolization of spatial data from within a
+collection of published styles.
+As an example, it is possible to publish several
+colour classification schemes for a gridded
+dataset, allowing end-users to select one that is
+appropriate for their use.
+For more information, see:
+• OGC Symbology Encoding documentation",Optional
+8.1.1.9,Styled Layer Descriptors,"This component represents a range of
+technological tools that provide rules and a
+standardized approach for defining alternative
+visual portrayals of the spatial data via an internal
+network or the Internet.
+Styled Layer Descriptors, together with
+Symbology Encoding, can be used with WMSs,
+WFSs and WCSs to enable user-defined
+symbolization of spatial data from within a
+collection of published styles.
+For more information, see:
+• OGC SLD documentation",Optional
+8.1.2.1,Combined climate observations and metadata,"This component represents the technology,
+software, processes and governance needed
+to support the transmission, consumption and
+processing of combined climate observations
+and associated metadata via a future climate
+observations application schema (or similar name)
+derived from:
+• The schema outlined in the Climate
+observations application schema component
+(4.2.3.2)
+• The schema outlined in the METCE component
+(4.2.3.1)
+As discussed in the section above (8.1.2), this work
+is currently embryonic. However, it is anticipated
+that it will become a key technological mechanism
+for exchanging climate observations and metadata
+in future years in support of data interoperability
+and platform independence.
+For more information, see:
+• Above section (8.1.2)
+• METCE component (4.2.3.1)
+• Climate observations application schema
+component (4.2.3.2)",Optional
+8.1.2.2,Taxonomies and registers of authoritative terms,"This component is related to the previous
+component. It represents the technology,
+software, processes and governance needed to
+develop an authoritative definition of the concepts
+and terms referenced in a logical data model
+such as a future climate observations application
+schema (or similar name), and to enable the
+publication of such terms.
+Following the work of the Task Team on Aviation
+XML, WMO has established the WMO Codes
+Registry, which provides a web-based publication
+of terms from the Manual on Codes (WMO-No.
+306).
+The current coverage of terms is sparse – only
+covering the aviation-related terms required by
+the sponsoring activity – but there is commitment
+from WMO to populate the remaining code tables.
+The WMO Codes Registry provides a well-defined
+programmatic application programming interface
+(API) alongside the web application. Where the
+need arises for publication of locally managed
+terms, it is recommended that the registry API be
+supported.
+An open-source reference implementation of the
+registry software is available.
+For more information, see:
+• Above section entitled GML application schema
+(8.1.2)
+• METCE component (4.2.3.1)
+• Climate observations application schema
+component (4.2.3.2)
+• Overviews of the WMO Codes Registry (Tandy,
+2013b, 2013c)",Optional
+8.2.1.1,Discovery metadata catalogue,"This component refers to the technology and
+processes that create a discovery metadata
+catalogue. This catalogue is used to publish
+an organization’s data holdings as discovery
+metadata records, with corresponding records
+describing which online services may be used to
+access each dataset.
+A discovery metadata catalogue allows an
+organization to participate within the WIS
+environment.",Required
+8.2.1.2,Observations metadata catalogue,"This component refers to the technology and
+processes that create the observations metadata
+catalogue used to publish an organization’s
+observations metadata records.
+It is anticipated that the climate database will be
+used to store and manage observations metadata.
+This component will serve as an IT catalogue
+service for observations metadata.
+More work is required to define this component.",Optional
+8.2.1.3,Data provenance metadata catalogue,"This component refers to the technology and
+processes that create the data provenance
+metadata catalogue used to publish an
+organization’s data provenance metadata records.
+It is anticipated that the climate database will
+be used to store and manage data provenance
+metadata. This component will serve as an IT
+catalogue service for data provenance metadata.
+More work is required to define this component.",Optional
+8.2.2.1,Linked data,"This component supports semantic search
+requests such as those used with linked data.
+This is an emerging requirement that is building
+considerable momentum within information
+management communities.
+The Australian Climate Observations Reference
+Network – Surface Air Temperature (ACORN-SAT)
+dataset, published by the Australian government
+at http://lab.environment.data.gov.au/ provides
+an example of how linked data may be used for
+publishing climate data.
+More work is required to define this component,
+including its relationship to the approaches
+adopted by WIS.
+For more information, see:
+• A presentation on linked data (Berners-Lee,
+2009)
+• Article on the ACORN-SAT linked climate
+dataset (Lefort et al., 2013)",Optional
+8.3.1.1,OPeNDAP,"This component represents technology suitable
+for the distribution of a wide range of scientific
+data via the Data Access Protocol (DAP).
+DAP is used in the world’s scientific community to
+allow Internet access to a range of scientific data.
+The protocol does not support the concept of
+spatial reference systems as defined in the OGC
+Abstract Specification on spatial referencing by
+coordinates. This makes it very difficult to reliably
+integrate data hosted via DAP with other spatial
+datasets, including those hosted via open spatial
+services.
+Therefore, it is considered more appropriate for
+cases in which researchers and scientists only
+want the data for numerical analysis.
+For more information, see:
+• OPeNDAP Wikipedia page
+• DAP 2.0 Specification",Optional
+8.3.2.1,WMO formats,"This component represents technology suitable
+for the distribution of a wide range of climate data
+via traditional WMO formats.
+For more information, see:
+• FM 94 BUFR Edition 4
+• FM 92 GRIB Edition 2
+Other formats also exist, but it is anticipated that
+they will be phased out in time.
+For more information, see:
+• Manual on Codes (WMO-No. 306), Volume I.2
+• Wikipedia articles on BUFR and GRIB",Required
