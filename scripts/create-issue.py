@@ -103,7 +103,7 @@ if __name__ == "__main__":
         if component.title not in existing_issues_set
     ]
 
-    for issue in issues_to_create[:1]:
+    for issue in issues_to_create:
         repo.create_issue(
             title=issue.title,
             body=issue.description,
