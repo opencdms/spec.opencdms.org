@@ -36,7 +36,7 @@ LABEL_COLOR_MAP = {
     "Recommended": "297373",
     "Optional": "e6e6e6",
     "CDMS v1.0": "275dad",
-    "Epic": "2c666e"
+    "Epic": "2c666e",
 }
 
 ALL_LABELS = [Label(name=k, color=v) for k, v in LABEL_COLOR_MAP.items()]
@@ -63,9 +63,7 @@ def get_components() -> List[IssueData]:
 def get_chapters() -> List[IssueData]:
     chapter_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters").fillna("")
     return [
-        IssueData(
-            title=f"{row['Number']} {row['Title']}"
-        )
+        IssueData(title=f"{row['Number']} {row['Title']}")
         for idx, row in chapter_df.iterrows()
     ]
 
@@ -74,8 +72,7 @@ def get_sections() -> List[IssueData]:
     section_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections").fillna("")
     return [
         IssueData(
-            title=f"{row['Number']} {row['Title']}",
-            description=row["Description"]
+            title=f"{row['Number']} {row['Title']}", description=row["Description"]
         )
         for idx, row in section_df.iterrows()
     ]
@@ -85,8 +82,7 @@ def get_sub_sections() -> List[IssueData]:
     sub_section_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections").fillna("")
     return [
         IssueData(
-            title=f"{row['Number']} {row['Title']}",
-            description=row["Description"]
+            title=f"{row['Number']} {row['Title']}", description=row["Description"]
         )
         for idx, row in sub_section_df.iterrows()
     ]
@@ -117,15 +113,20 @@ if __name__ == "__main__":
     parser.add_argument("--username", default="opencdms", required=False)
     parser.add_argument("--repo", default="temp-repo", required=False)
     parser.add_argument("--issue-limit", default=1, required=False)
-    parser.add_argument("--common-labels", default=["Epic", "CDMS v1.0"], required=False)
+    parser.add_argument(
+        "--common-labels", default=["Epic", "CDMS v1.0"], required=False
+    )
+    parser.add_argument("--required-title-prefix", default=None, required=False)
     args = parser.parse_args()
 
-    logger.info(f"""
+    logger.info(
+        f"""
     =====================================================================
     Creating issues for : https://github.com/{args.username}/{args.repo}
     INPUT FILE          : {INPUT_FILEPATH}
     =====================================================================
-    """)
+    """
+    )
 
     repo = get_repo(args.username, args.repo)
 
@@ -139,7 +140,9 @@ if __name__ == "__main__":
     ]
 
     if labels_to_create:
-        logger.info(f"""Labels to create: {', '.join([l.name for l in labels_to_create])}""")
+        logger.info(
+            f"""Labels to create: {', '.join([l.name for l in labels_to_create])}"""
+        )
     else:
         logger.info("No label to create...")
 
@@ -155,17 +158,23 @@ if __name__ == "__main__":
         component
         for component in get_components()
         if component.title not in existing_issues_set
+        and (
+            args.required_title_prefix is None
+            or component.title.startswith(args.required_title_prefix)
+        )
     ]
 
     logger.info(f"""Creating {args.issue_limit} issue(s)...""")
-    for issue in issues_to_create[:args.issue_limit]:
+    for issue in issues_to_create[: args.issue_limit]:
         common_labels = [label_map[label] for label in args.common_labels]
-        issue_labels = common_labels+[label_map[issue.classification.value]]
-        logger.info(f"""
+        issue_labels = common_labels + [label_map[issue.classification.value]]
+        logger.info(
+            f"""
         Creating issue with
         Title: {issue.title}
         Labels: {', '.join([label.name for label in issue_labels])}
-        """)
+        """
+        )
         try:
             repo.create_issue(
                 title=issue.title,
