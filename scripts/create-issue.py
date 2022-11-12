@@ -9,7 +9,7 @@ from pydantic import BaseModel
 
 
 USERNAME = "opencdms"
-REPO_NAME = "spec.opencdms.org"
+REPO_NAME = "temp-repo"
 URL = f"https://api.github.com/repos/{USERNAME}/{REPO_NAME}/issues"
 
 INPUT_FILEPATH = Path("../cdms/v1.0/cdms_specfications.xlsx").resolve()
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         if component.title not in existing_issues_set
     ]
 
-    for issue in issues_to_create:
+    for issue in issues_to_create[:1]:
         repo.create_issue(
             title=issue.title,
             body=issue.description,
