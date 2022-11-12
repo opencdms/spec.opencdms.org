@@ -1,0 +1,48 @@
+{
+  "title": "Data discovery",
+  "subsections": [
+    "8.2.1",
+    "8.2.2"
+  ],
+  "components": {
+    "8.2.1": [
+      "8.2.1.1",
+      "8.2.1.2",
+      "8.2.1.3"
+    ],
+    "8.2.2": [
+      "8.2.2.1"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "8.2.1": {
+    "title": "Climate metadata catalogues",
+    "text": "",
+    "8.2.1.1": {
+      "title": "Discovery metadata catalogue",
+      "text": "This component refers to the technology and\nprocesses that create a discovery metadata\ncatalogue. This catalogue is used to publish\nan organization\u2019s data holdings as discovery\nmetadata records, with corresponding records\ndescribing which online services may be used to\naccess each dataset.\nA discovery metadata catalogue allows an\norganization to participate within the WIS\nenvironment.",
+      "classification": "Required"
+    },
+    "8.2.1.2": {
+      "title": "Observations metadata catalogue",
+      "text": "This component refers to the technology and\nprocesses that create the observations metadata\ncatalogue used to publish an organization\u2019s\nobservations metadata records.\nIt is anticipated that the climate database will be\nused to store and manage observations metadata.\nThis component will serve as an IT catalogue\nservice for observations metadata.\nMore work is required to define this component.",
+      "classification": "Optional"
+    },
+    "8.2.1.3": {
+      "title": "Data provenance metadata catalogue",
+      "text": "This component refers to the technology and\nprocesses that create the data provenance\nmetadata catalogue used to publish an\norganization\u2019s data provenance metadata records.\nIt is anticipated that the climate database will\nbe used to store and manage data provenance\nmetadata. This component will serve as an IT\ncatalogue service for data provenance metadata.\nMore work is required to define this component.",
+      "classification": "Optional"
+    }
+  },
+  "8.2.2": {
+    "title": "Linked data",
+    "text": "",
+    "8.2.2.1": {
+      "title": "Linked data",
+      "text": "This component supports semantic search\nrequests such as those used with linked data.\nThis is an emerging requirement that is building\nconsiderable momentum within information\nmanagement communities.\nThe Australian Climate Observations Reference\nNetwork \u2013 Surface Air Temperature (ACORN-SAT)\ndataset, published by the Australian government\nat http://lab.environment.data.gov.au/ provides\nan example of how linked data may be used for\npublishing climate data.\nMore work is required to define this component,\nincluding its relationship to the approaches\nadopted by WIS.\nFor more information, see:\n\u2022 A presentation on linked data (Berners-Lee,\n2009)\n\u2022 Article on the ACORN-SAT linked climate\ndataset (Lefort et al., 2013)",
+      "classification": "Optional"
+    }
+  }
+}

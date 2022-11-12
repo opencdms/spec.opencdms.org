@@ -1,0 +1,121 @@
+{
+  "title": "Ancillary data",
+  "subsections": [
+    "4.6.1",
+    "4.6.2",
+    "4.6.3"
+  ],
+  "components": {
+    "4.6.1": [
+      "4.6.1.1",
+      "4.6.1.2",
+      "4.6.1.3",
+      "4.6.1.4",
+      "4.6.1.5",
+      "4.6.1.6",
+      "4.6.1.7",
+      "4.6.1.8"
+    ],
+    "4.6.2": [
+      "4.6.2.1",
+      "4.6.2.2",
+      "4.6.2.3"
+    ],
+    "4.6.3": [
+      "4.6.3.1",
+      "4.6.3.2",
+      "4.6.3.3",
+      "4.6.3.4"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.6.1": {
+    "title": "Spatial",
+    "text": "This subsection represents a wide range of spatial information typically used to provide context\nto climate data or as an input for spatial analysis processes. These data may be presented in\nvector, image, gridded or multidimensional array data formats.\nTypically, spatial representations of data contain aspatial attributes that describe various\nproperties of spatial features. The spatial and aspatial attributes of the data can be used to\nsupport a variety of spatial analysis processes.\nThe components listed below are indicative of the types of spatial data that could be relevant to\nclimate. This list is not exhaustive.\nSee also:\n\u2022 Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,\n2012b)",
+    "4.6.1.1": {
+      "title": "Topography",
+      "text": "Although this component is labelled topography, it\nactually refers to a wider set of data.\nSome examples are:\n\u2022 Typical topographic data such as drainage,\nrelief, cultural and nomenclatural features\n\u2022 Digital elevation models",
+      "classification": "Recommended"
+    },
+    "4.6.1.2": {
+      "title": "Emergency management",
+      "text": "This component concerns datasets that are useful\nfor supporting emergency management and\nrelated warning systems.",
+      "classification": "Optional"
+    },
+    "4.6.1.3": {
+      "title": "Agricultural",
+      "text": "This component refers to agricultural information\ndatasets.\nSome examples are:\n\u2022 Data from the Food and Agriculture Organization\nof the United Nations that could relate to\nagriculture, animal production and health,\nfisheries, forestry, land and water or plant\nproduction and protection.\n\u2022 Regional, national or international data from\ndifferent organizations such as primary industry\ndepartments or research centres on agriculture.",
+      "classification": "Optional"
+    },
+    "4.6.1.4": {
+      "title": "Health",
+      "text": "The component refers to a wide variety of health\ndatasets.\nSome examples are:\n\u2022 Data from the World Health Organization\ncovering datasets on a very large spectrum.\n\u2022 National or international data from different\norganizations such as health departments or\nhealth research centres.\n\u2022 Epidemiological studies (see Wikipedia article)\nand so forth.",
+      "classification": "Optional"
+    },
+    "4.6.1.5": {
+      "title": "Environmental",
+      "text": "This component refers to environmental datasets.\nSome examples are:\n\u2022 Data from the United Nations Environment\nProgramme or the United Nations Educational,\nScientific and Cultural Organization.\n\u2022 National or international data from different\norganizations such as environment departments\nor research centres.\n\u2022 Data relating to the distribution of particular\nflora and fauna, etc.",
+      "classification": "Optional"
+    },
+    "4.6.1.6": {
+      "title": "Administrative",
+      "text": "This component covers administrative data.\nSome examples are:\n\u2022 Localities and gazetteers\n\u2022 Administrative boundaries\n\u2022 Transportation networks\n\u2022 Cadastres",
+      "classification": "Recommended"
+    },
+    "4.6.1.7": {
+      "title": "Impacts data",
+      "text": "This component concerns a range of spatial data\nthat relate to things impacted by climate. This could\ninclude:\n\u2022 Deaths caused by heatwaves, prolonged\ndroughts, floods, cyclones, etc.\n\u2022 Infrastructure damage caused by a range of\nevents such as floods, bush fires or cyclones.\n\u2022 Changing land use, such as agricultural\nadaptations due to a changing climate.",
+      "classification": "Recommended"
+    },
+    "4.6.1.8": {
+      "title": "Other",
+      "text": "This component refers to a range of other spatial\ndata that may be relevant to climate.",
+      "classification": "Optional"
+    }
+  },
+  "4.6.2": {
+    "title": "Climate documentation",
+    "text": "",
+    "4.6.2.1": {
+      "title": "Published reports",
+      "text": "This component represents the processes and\ngovernance arrangements that result in the\npreparation and release of a wide variety of written\nreports.\nSome examples are:\n\u2022 Peer-reviewed papers\n\u2022 Climate change impact studies\n\u2022 Climate statements and studies\n\u2022 Assessments from the Intergovernmental Panel\non Climate Change\n\u2022 Monthly and annual summaries\nAs this is essentially a scientific and intellectual\nprocess, this component will not be expanded upon\nin this publication.",
+      "classification": "Optional"
+    },
+    "4.6.2.2": {
+      "title": "Documentation",
+      "text": "This component refers to a range of textual data\nthat describe various climate-related phenomena or\nserve as documentation for CDMSs.\nSome examples may be:\n\u2022 CDMS technical and user documentation\n\u2022 Text on a web page\n\u2022 Diagrams representing climate processes, such\nas the Community Earth System Model from\nthe National Center for Atmospheric Research,\nUnited States, shown in section 2.1 of this\npublication\n\u2022 Various climate forecasts and events\n\u2022 Climate processes such as El Ni\u00f1o-Southern\nOscillation\n\u2022 NMHS policies and practices\n\u2022 Various documents and reports\n\u2022 Training documentation\n\u2022 Presentations",
+      "classification": "Recommended"
+    },
+    "4.6.2.3": {
+      "title": "Various media",
+      "text": "This component covers a range of media used to\nsupport various climate-related services on an\nNMHS website.\nSome examples may be:\n\u2022 Scanned hard copy climate records\n\u2022 Image portrayal of various climate data, such as\nan extract from a radar image stored in portable\nnetwork graphics (PNG) format\n\u2022 Podcasts and video clips used to communicate\nvarious climate-related messages\n\u2022 Photographs of various climate-related\nphenomena",
+      "classification": "Recommended"
+    }
+  },
+  "4.6.3": {
+    "title": "Climate software",
+    "text": "As discussed in the article by the UK Parliament Science and Technology Committee (2011), one\nof the recommendations of the UK parliamentary review of the Climategate issue was to ensure\nthat climate scientists make available the full methodological workings (including computer\ncodes) used to support their work. An extract is reproduced below.\nIt is not standard practice in climate science to publish the raw data and the computer code\nin academic papers. However, climate science is a matter of great importance and the quality\nof the science should be irreproachable. We therefore consider that climate scientists should\ntake steps to make available all the data that support their work (including raw data) and full\nmethodological workings (including the computer codes).\nThis has implications for the effective management of climate data and software in that software\nsource code will also require careful management.\nIn addition, it will be necessary to keep track of the time period during which each software\nversion is in operation, as this may also have implications for climate data and climate analysis.\nOn a conceptual level, this is similar in a way to the need to have effective observations metadata\nthat describe the maintenance of sensors and stations.",
+    "4.6.3.1": {
+      "title": "Source code management",
+      "text": "This component deals with managing the source\ncode of the software used to process climate data.\nThis component should have the following\ncapabilities at a minimum:\n\u2022 Maintain a library of a variety of software source\ncode.\n\u2022 Manage different versions (or branches) of\nthe software concurrently, with the ability to\nmaintain each version independently and to\neasily backport newer functionalities to an older\nversion.\n\u2022 Easily detect the differences between software\nversions.",
+      "classification": "Recommended"
+    },
+    "4.6.3.2": {
+      "title": "Package management",
+      "text": "This component refers to the functionality that\nfacilitates the packaging of software and its\nconfiguration for installation on a computer.\nIn addition, the component should facilitate\ndependency management to ensure that all\nrequired supporting software is also installed and\nconfigured appropriately at installation time.",
+      "classification": "Recommended"
+    },
+    "4.6.3.3": {
+      "title": "Environment configuration",
+      "text": "This component concerns the functionality that\nfacilitates the recording and management of\ninformation relating to any changes to operational\nsoftware.\nThis includes:\n\u2022 What software was deployed on what server?\n\u2022 What version of the software was deployed?\n\u2022 Details of any configuration changes.\n\u2022 Details of any change made to the operational\nsoftware.\n\u2022 Details of the decommission of the software\nat the end of its period of operation, including\ndecommission date.",
+      "classification": "Recommended"
+    },
+    "4.6.3.4": {
+      "title": "Software testing",
+      "text": "This component covers the testing of software that\nis to be deployed to manipulate climate data.\nThis includes:\n\u2022 Details of test plans and individual test cases,\nincluding user-acceptance testing.\n\u2022 Details of the test data, database, etc.\n\u2022 Details of test systems and environment.\n\u2022 Details of test results and artefacts, particularly\nproof that the test data were not affected by the\nsoftware or a change to the software.",
+      "classification": "Recommended"
+    }
+  }
+}

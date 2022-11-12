@@ -1,0 +1,220 @@
+{
+  "title": "Data policy",
+  "subsections": [
+    "3.1.1",
+    "3.1.2",
+    "3.1.3",
+    "3.1.4",
+    "3.1.5",
+    "3.1.6"
+  ],
+  "components": {
+    "3.1.1": [
+      "3.1.1.1",
+      "3.1.1.2",
+      "3.1.1.3",
+      "3.1.1.4",
+      "3.1.1.5"
+    ],
+    "3.1.2": [
+      "3.1.2.1",
+      "3.1.2.2",
+      "3.1.2.3",
+      "3.1.2.4",
+      "3.1.2.5"
+    ],
+    "3.1.3": [
+      "3.1.3.1",
+      "3.1.3.2",
+      "3.1.3.3",
+      "3.1.3.4",
+      "3.1.3.5"
+    ],
+    "3.1.4": [
+      "3.1.4.1",
+      "3.1.4.2",
+      "3.1.4.3"
+    ],
+    "3.1.5": [
+      "3.1.5.1",
+      "3.1.5.2",
+      "3.1.5.3"
+    ],
+    "3.1.6": [
+      "3.1.6.1",
+      "3.1.6.2",
+      "3.1.6.3",
+      "3.1.6.4",
+      "3.1.6.5",
+      "3.1.6.6",
+      "3.1.6.7"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "3.1.1": {
+    "title": "Commitments",
+    "text": "What commitments has the implementing organization agreed to either explicitly through\na contractual arrangement or implicitly through national policy agreements, regional and\ninternational agreements, WMO membership or other means?",
+    "3.1.1.1": {
+      "title": "WMO resolutions",
+      "text": "This component refers to the policy framework\nwithin WMO, governed at the highest level\nthrough Congress and the Executive Council.\nThe list of current resolutions can be found in\nResolutions of Congress and the Executive Council\n(WMO-No. 508).\nSome resolutions have major implications for\ndata policy, such as Resolution 40 (Cg-XII), which\nprovides guidelines for the policy and practice of\nexchanging meteorological data, and Resolution\n25 (Cg-XIII), which provides guidelines on the\nexchange of hydrological data.\nThe major innovation in these resolutions is\nthe definition of essential data. Through these\nresolutions, WMO Members commit to making\nessential data available on a free and unrestricted\nbasis at no more than the reasonable cost of\nextraction and formatting for delivery to the user.\nMembers may not impose additional charges for\nessential data.",
+      "classification": "Required"
+    },
+    "3.1.1.2": {
+      "title": "WMO Technical Regulations",
+      "text": "This component covers standard practices and\nprocedures, as well as recommended practices\nand procedures, for WMO Members to follow and\nimplement.\nThe main references are the four volumes of the\nWMO Technical Regulations (WMO-No. 49):\n\u2022 Volume I \u2013 General Meteorological Standards\nand Recommended Practices\n\u2022 Volume II \u2013 Meteorological Service for\nInternational Air Navigation\n\u2022 Volume III \u2013 Hydrology\n\u2022 Volume IV \u2013 Quality Management\nAlso see the publications of the annexes that are\npart of the Technical Regulations:\n\u2022 Annex I \u2013 International Cloud Atlas (WMO-No.\n407), Volume I\n\u2022 Annex II \u2013 Manual on Codes (WMO-No. 306),\nVolumes I.1 and I.2\n\u2022 Annex III \u2013 Manual on the Global Telecommunication\nSystem (WMO-No. 386), Volume I\n\u2022 Annex IV \u2013 Manual on the Global Dataprocessing\nand Forecasting System (WMO-No.\n485), Volume I\n\u2022 Annex V \u2013 Manual on the Global Observing\nSystem (WMO-No. 544), Volume I\n\u2022 Annex VI \u2013 Manual on Marine Meteorological\nServices (WMO-No. 558), Volume I\n\u2022 Annex VII \u2013 Manual on the WMO Information\nSystem (WMO-No. 1060)\n\u2022 Annex VIII \u2013 Manual on the Implementation\nof Education and Training Standards in\nMeteorology and Hydrology (WMO-No. 1083),\nVolume I",
+      "classification": "Required"
+    },
+    "3.1.1.3": {
+      "title": "WMO technical commission guides",
+      "text": "This component includes the recommendations\nor best practices that are generally drawn up\nas guides published by the different technical\ncommissions:\n\u2022 Commission for Basic Systems\n\u2022 Commission for Instruments and Methods of\nObservation\n\u2022 Commission for Hydrology\n\u2022 Commission for Atmospheric Sciences\n\u2022 Commission for Aeronautical Meteorology\n\u2022 Commission for Agricultural Meteorology\n\u2022 Commission for Climatology\n\u2022 Joint WMO/IOC Technical Commission for\nOceanography and Marine Meteorology\n(JCOMM)\nWhile most of the guides are relevant to CDMSs, it\nis recommended that particular attention be paid\nto:\n\u2022 Guide to Meteorological Instruments and\nMethods of Observation (WMO-No. 8), from the\nCommission for Instruments and Methods of\nObservation\n\u2022 Guide to Climatological Practices (WMO-No.\n100), from the Commission for Climatology",
+      "classification": "Required"
+    },
+    "3.1.1.4": {
+      "title": "International",
+      "text": "This component concerns commitments that\norganizations are required to adhere to because\nthey qualify as international agreements.\nSome examples are:\n\u2022 The Global Framework for Climate Services,\nwhich has an important role in climate\ndata management, climate monitoring and\nassessment, climate products and services,\nand climate information for adaptation and risk\nmanagement.\n\u2022 International data policy agreements, such\nas the Infrastructure for Spatial Information\nin Europe, which has defined and legislated\ncommon principles for European Union\ncountries that enable the sharing of\nenvironmental spatial information among\npublic-sector organizations. This generally\nincludes climatological data.\n\u2022 The Group on Earth Observations (GEO), which\nconcerns the exchange of observations data.\n\u2022 The OGC and ISO, which focus on the exchange\nof data via open spatial standards. Note that\nnot all standards are relevant.",
+      "classification": "Required"
+    },
+    "3.1.1.5": {
+      "title": "National",
+      "text": "This component represents national policies that\norganizations are required to comply with. Some\nexamples are:\n\u2022 National government policies on open data and\nopen-source software.\n\u2022 National spatial data infrastructure frameworks\nthat govern the exchange of national spatial\ndata.",
+      "classification": "Required"
+    }
+  },
+  "3.1.2": {
+    "title": "Sustainability",
+    "text": "",
+    "3.1.2.1": {
+      "title": "Disaster recovery",
+      "text": "This component refers to a policy that governs\nhow an organization implements disaster recovery\nand business continuity solutions and covers\nissues such as how to handle data backups. Some\ninitial issues to consider are:\n\u2022 How important is the climate record?\n\u2022 How often should climate data be backed up?\nWhile the Wikipedia article on backups can provide\nsome background information, this question must\nbe answered by each NMHS. Their answer will\nneed to take the following into account:\n\u2013 How important are their data?\n\u2013 How much data can they afford to lose?\n\u2013 How much work can they afford to redo?\n\u2013 In the interim, while NMHSs are assessing\ntheir requirements, it is suggested that daily\nbackups be made with weekly off-site storage.\n\u2022 How many redundant copies of the data should\nbe kept?\n\u2022 What secure off-site facility should be used to\nstore disaster recovery versions of the data?\n\u2022 What is the acceptable downtime for each of\nthe key CDMS applications?\n\u2022 How high is the risk of catastrophic damage to\nthe organization\u2019s infrastructure due to a range\nof factors, including:\n\u2013 Natural disasters, such as flooding, bush\nfires, tidal waves, cyclones or earthquakes?\n\u2013 Man-made disturbances, such as military\nconflict, terrorism and fires?\nWhere should the secure off-site storage be\nlocated? For NMHSs situated in areas where their\ninfrastructure is likely to be damaged, it may be\nappropriate to place the secure off-site storage in\nanother city or country.\nIs it appropriate to use cloud-based services to\nstore and manage climate data and offer CDMS\nservices to end-users?",
+      "classification": "Required"
+    },
+    "3.1.2.2": {
+      "title": "Funding",
+      "text": "This component concerns a policy that regulates\nhow an organization funds its CDMS to ensure that\nit is sustainable. This includes sufficient funding\nfor:\n\u2022 Climate data management specialists, including\nstaff with knowledge of observations data, data\nrescue, quality assurance, etc.\n\u2022 IT specialists who support the everyday\nmaintenance of CDMS applications and related\ndatabases and IT equipment.\n\u2022 IT specialists who conduct enhancements to\nthe CDMS and related IT environments.\n\u2022 The provision and scheduled upgrade of IT\nsystems to ensure that the appropriate IT\nenvironment has been implemented to support\nthe CDMS.",
+      "classification": "Required"
+    },
+    "3.1.2.3": {
+      "title": "Data custodian",
+      "text": "This component represents a policy that governs\nhow an organization manages and maintains its\nclimate data.\nA data custodian is typically a senior-level\nmanager who is accountable for the integrity of\nthe climate record of the NMHS.\nSome examples of a data custodian\u2019s duties are:\n\u2022 Preserving the integrity of the climate record,\nincluding quality control and ensuring that\nobservational networks provide data that are\nsuitable for climate purposes.\n\u2022 Championing the cause of data management to\nensure that sufficient funding is allocated and\nmanaged effectively so that the climate record\nremains viable.\n\u2022 Facilitating the development and maintenance\nof suitable policies governing climate data.\n\u2022 Ensuring that climate data are effectively\nmanaged and maintained.\n\u2022 Ensuring that observations metadata, discovery\nmetadata and data provenance are effectively\nmaintained.\n\u2022 Formally delegating authority to appropriate\nstaff members, together with related\nperformance accountabilities.\n\u2022 Taking primary responsibility for CDMS\napplications, CDMS enhancement and IT\nmaintenance projects.\n\u2022 Ensuring that IT changes do not corrupt the\nclimate record.\n\u2022 Implementing and monitoring relevant key\nperformance indicators to help monitor\nongoing performance of the CDMS and related\nprocesses.",
+      "classification": "Required"
+    },
+    "3.1.2.4": {
+      "title": "Access to data",
+      "text": "This component involves a policy that governs\nhow an organization allows access to data.\nSome issues to consider are:\n- How is read-and-write access to climate data\ncontrolled?\n- What training is needed before staff are\ngranted write access?\n- What types of controls are needed to monitor\nand approve changes to the climate record\nto facilitate data maintenance and error\nrectification?\n- How are any specific access constraints,\nsuch as security, contractual or commercial\nconstraints, to be managed?\nNote: The issue of open data is increasing in\nrelevance for many national governments that\nhave made open-data commitments. Therefore,\norganizations should have a clear understanding\nof, and a clear policy for, the provision of NMHS\nclimate data in accordance with open data\nprinciples (see Wikipedia article on open data).\nIn summary, open data is about ensuring that\ndata are freely available for reuse with no\nconstraints apart from perhaps the requirement\nto acknowledge the data source and ensure that\nthe data are made available under a share-alike\nagreement.",
+      "classification": "Required"
+    },
+    "3.1.2.5": {
+      "title": "Archival policy",
+      "text": "This component represents a policy that dictates\nhow organizations archive their climate data,\nincluding both digital and hard-copy historical\nrecords.\nThis archive should be considered as permanent\nto ensure that the climate record is available for\nuse by future generations.\nTherefore, care should be taken to ensure that the\ndata are preserved in a format that users will be\nable to access and use in years to come.",
+      "classification": "Required"
+    }
+  },
+  "3.1.3": {
+    "title": "Intellectual property",
+    "text": "",
+    "3.1.3.1": {
+      "title": "Data licensing",
+      "text": "This component refers to policies that ensure that\nany data licensing agreements that relate to the\nuse of a dataset are clearly understood.\nFor example:\n\u2022 What data licences apply to NMHS data?\n\u2022 What data licences will the NMHS release its\ndata under? For example:\n\u2013 Is a Creative Commons licence appropriate?\n(See Creative Commons website)\n\u2022 What data licences used by external dataproviders\nare permitted for use within the\nNMHS?\n\u2022 Can the data be distributed to third parties?\n\u2022 Will the NMHS use and/or archive data that are\nnot covered by an appropriate data licence?\n\u2022 Will the NMHS comply with the licensing of\ndata passed to it, or will it choose not to use or\narchive the data?",
+      "classification": "Required"
+    },
+    "3.1.3.2": {
+      "title": "Access constraints",
+      "text": "This component concerns policies that clearly\ndefine any access constraints relating to the use of\nclimate data.\nFor example:\n\u2022 What may the NMHS do with the data?\n\u2022 Can the data be used for the organization\u2019s\nwebsite, web services, publications and so\nforth?\n\u2022 Do any commercial or contractual constraints\napply to the use of the data?\n\u2022 Are the data subject to any national security\nconstraints?",
+      "classification": "Recommended"
+    },
+    "3.1.3.3": {
+      "title": "Usage constraints",
+      "text": "This component covers policies that ensure\nthat any constraints imposed on the enduser\nregarding the use of a dataset are clearly\nunderstood. These constraints may apply to the\nNMHS or to third parties.\nFor example:\n\u2022 Can the data be freely reused?\n\u2022 Is there a cost that applies to the use of the\ndata? See the Commercial component (3.1.5.3)\nfor a number of related considerations.\n\u2022 Can derived products be made using the data?\n\u2022 Can the data be used for commercial purposes?\n\u2022 Can the data be used for private, study or\nresearch purposes?\n\u2022 Can the data be shared with others?\nThe Creative Commons website provides\nexamples of data usage constraints and related\nlicences.",
+      "classification": "Recommended"
+    },
+    "3.1.3.4": {
+      "title": "Copyright",
+      "text": "This component refers to policies that clearly\nexplain any copyright issues relating to the use of\nclimate data.",
+      "classification": "Recommended"
+    },
+    "3.1.3.5": {
+      "title": "Attribution",
+      "text": "This component deals with policies that ensure\nthat any data attribution issues relating to the use\nof climate data are clearly understood.\nFor example:\n\u2022 Should the source of the data be\nacknowledged?\n\u2022 How does the NMHS ensure that any attribution\ntext required by the data provider is applied\nwhen the data are used?",
+      "classification": "Recommended"
+    }
+  },
+  "3.1.4": {
+    "title": "Data delivery",
+    "text": "",
+    "3.1.4.1": {
+      "title": "Interoperability standards",
+      "text": "This component involves policies that ensure that\nclimate data are delivered using appropriate open\ninteroperability standards, such as open spatial\nstandards.\nThis will ensure that data are available in a\nform that facilitates data interoperability and\nare accessible to a wide range of end-users\nfrom disparate industries using a wide variety\nof proprietary and open-source software\napplications.\nNote: It is possible to enforce the use of data\nformats such as BUFR or GRIB within an NMHS\nin an attempt to facilitate interoperability. In\nreality though, only NMHSs and closely related\norganizations will be able to understand the\nformats and have the software to use the data.\nFor more information, see section 8.1 of this\npublication.",
+      "classification": "Recommended"
+    },
+    "3.1.4.2": {
+      "title": "Quality of delivered data",
+      "text": "This component refers to policies that clearly\ndefine the issues relating to the quality of the\nclimate data delivered by NMHSs.\nFor example:\n\u2022 What quality of climate data does the\norganization undertake to deliver and in what\ncircumstances?\n\u2022 Will the organization only provide high-quality\nhomogenized data?\n\u2022 Will the organization provide raw observations?\n\u2022 When is it appropriate to deliver data at each\nquality level?",
+      "classification": "Required"
+    },
+    "3.1.4.3": {
+      "title": "Cost recovery",
+      "text": "This component refers to policies that ensure\nthat issues relating to the recovery of costs for\nthe provision of NMHS climate data services are\nclearly understood and communicated.\nThese policies should also take into account:\n\u2022 NMHS commitments to WMO relating to\nResolutions 25 (Cg-XIII) and 40 (Cg-XII), as\ndiscussed above.\n\u2022 National commitments to open data policies.",
+      "classification": "Recommended"
+    }
+  },
+  "3.1.5": {
+    "title": "Third-party data",
+    "text": "",
+    "3.1.5.1": {
+      "title": "Crowdsourced",
+      "text": "This component refers to policies that address and\nexplain issues relating to the use of crowdsourced\nclimate data by the NMHS (see Wikipedia article\non crowdsourcing).\nIn summary, crowdsourcing is about obtaining\ndata from a large pool of volunteers who would\nlike to collaborate with the organization.\nCrowdsourcing has considerable potential for\nenhancing data generated by NMHSs, provided that\nthe data are used appropriately. There are many\nexamples of crowdsourcing initiatives that have\ngenerated very useful data. Some examples are:\n\u2022 OpenStreetMap\n\u2022 Old Weather \u2013 a data rescue project to digitize\nmeteorological observations from old ship logs\n\u2022 Weather Observations Website (WOW), Met\nOffice (United Kingdom)\n\u2022 Veilleurs du temps, Meteo-France\nSome issues that crowdsourcing policies should\nconsider are:\n\u2022 Only accepting crowdsourced data when the\nsupplier has agreed to either provide the data\nunder a Creative Commons ShareAlike licence (see\nCreative Commons ShareAlike page) or to have its\nintellectual property rights assigned to the NMHS.\n\u2022 Having intellectual property rights to the data\nrecorded for future use.\n\u2022 When the data contributed are observations data:\n\u2013 Having the contributor commit to providing\nand maintaining suitable observations\nmetadata for their station(s) and sensor(s).\n\u2013 Having the contributor agree to appropriate\nsite visits by NMHS staff to assist with quality\nassurance processes.\n\u2022 Deciding when it is appropriate to use\ncrowdsourced data and under what conditions.\n\u2022 Deciding how the crowdsourced data will be\nmanaged.",
+      "classification": "Recommended"
+    },
+    "3.1.5.2": {
+      "title": "Other agency",
+      "text": "This component refers to policies that provide\nclear explanations of issues regarding the use of\nclimate-related data captured and maintained by\ngovernment agencies external to the NMHS.\nExamples of issues to consider include:\n\u2022 Is there a clear data licence allowing the NMHS\nto use the data for any relevant purpose,\nincluding for internal use, to create derived\nproducts, to publish the data on the NMHS\nwebsite or for data redistribution, if required?\n\u2022 Are there any costs associated with the use of\nthe data?\n\u2022 Is it a high-quality dataset? Do the discovery\nmetadata clearly describe the intended use,\nlineage and quality assessment of the data?\n\u2022 What constraints apply to the use of the data?\n\u2022 If the data are observations data, are there\nhigh-quality metadata available to support\nCDMS activities?\n\u2022 If the data are of similar quality to NMHS data,\nshare similar functions and help enhance the\nNMHS data, is the provider willing to consider\njoint ownership and maintenance of the data?",
+      "classification": "Recommended"
+    },
+    "3.1.5.3": {
+      "title": "Commercial",
+      "text": "This component refers to policies that address and\nclarify issues on the use of climate-related data captured\nand maintained by commercial organizations.\nIn addition to the considerations discussed under\nthe Other agency component (3.1.5.2), other issues\nthat commercial policies should consider include:\n\u2022 What contractual arrangements apply to the\nuse of the data?\n\u2022 What costs apply explicitly to the use of the data?\n\u2022 Are there constraints on the number of users\nwho can access the data at the same time?\n\u2022 Are there pricing qualifications based on the\nspecific server environment that hosts the data,\nor more specifically on:\n\u2013 The number of central processing units,\nprocessor cores, threads and so forth?\n\u2013 Whether there are any restrictions based on\nthe virtualization of the server?\n\u2022 Is there a time limit for the use of the data? If\nso, what must be done with the data at the end\nof this period?\n\u2022 Are the data only available via a subscription\nservice or web service? If so, what impact will\nthis have on NMHS operations in the event of a\ndisruption of the service or when an invoice is\nnot paid on time?\n\u2022 Are there any explicit commercial constraints\non the use of the data?\n\u2022 Are the data actively maintained?\n\u2022 Do the costs, constraints and associated risks\ncall for an arrangement to be made between\nthe NMHS and the data provider?\n\u2022 Are there alternative datasets of similar\nfunctionality and quality that could be obtained\nelsewhere, such as a community-maintained\ndataset like OpenStreetMap?",
+      "classification": "Recommended"
+    }
+  },
+  "3.1.6": {
+    "title": "Climatology policy",
+    "text": "",
+    "3.1.6.1": {
+      "title": "Climate metadata",
+      "text": "This component refers to polices that ensure that\nappropriate climate metadata are maintained to\nfacilitate a better understanding of climate data.\nAs defined in section 4.3, climate metadata include\nmetadata on observations, discovery and data\nprovenance.",
+      "classification": "Required"
+    },
+    "3.1.6.2": {
+      "title": "Data lineage traceability",
+      "text": "This component concerns policies that ensure that\nthe CDMS is able to trace the lineage of climate\ndata from published scientific texts and other\npapers back to raw observations.\nThis will include the ability to reproduce specific\ndata that were held in the climate database at a\nparticular point in time. Note that it may not be\npractical to implement this policy retrospectively,\ni.e. for papers published in the past.\nThis specific policy requirement has become\nincreasingly relevant following the so-called\nClimategate issue. One of the conclusions of the\nUK parliamentary enquiry that investigated this\nissue was that:\n> It is not standard practice in climate science\n> to publish the raw data and the computer\n> code in academic papers. However, climate\n> science is a matter of great importance\n> and the quality of the science should be\n> irreproachable. We therefore consider that\n> climate scientists should take steps to make\n> available all the data that support their work\n> (including raw data) and full methodological\n> workings (including the computer codes).\n> Had both been available, many of the\n> problems at UEA [University of East Anglia]\n> could have been avoided. (UK Parliament\n> Science and Technology Committee, 2011)",
+      "classification": "Required"
+    },
+    "3.1.6.3": {
+      "title": "Data generation",
+      "text": "This component covers a range of policies that\ngovern the generation and interpretation of\nobservation variables.\nAs these rules have changed and may change\nagain in the future, the policies will need to cover\npast, current and future data generation policies.\nSome considerations are:\n- These policies will need to cover the methods,\nalgorithms, models and software source code\nused to generate data.\n- They should include a definition of a\nclimatological day.\n- They should also cover the rules relating to the\nmanagement of missing observations.\nSome inconsistencies have been found in a number of\nWMO guidelines. For example, conflicting approaches\nregarding the handling of missing observations when\ncomputing a daily or monthly average, and especially\nregarding the handling of a number of consecutive\nmissing data, are presented in:\n- Guide to Climatological Practices\n(WMO-No. 100)\n- Calculation of Monthly and Annual 30-Year\nStandard Normals (WMO/TD-No. 341), WCDP-10\n- Handbook on CLIMAT and CLIMAT TEMP\nReporting (WMO/TD-No. 1188)\nInconsistencies in WMO guides have also been noticed\nregarding the generation and storage of observations\ndata recorded at minute frequency and the generation\nof hourly observation data. For example, the definition\nof climatological days may differ:\n- Between NMHSs\n- Between different stations within a single\nNMHS\n- Over time within the same NMHS\n- Between a given NMHS policy and the method\napplied by the software used in automatic\nweather stations (which often appear as a black\nbox to NMHSs). For example, a climatological\nday could represent the following time periods:\n    - From 0000 LST to 2300 LST\n    - From 0100 LST to 0000 LST the next day\n    - From 2346 LST the previous day to 2345 LST the current day\n    - From 0900 LST the previous day to 0900 LST the current day\nThere are also inconsistencies due to the use of\neither local standard time or daylight saving time.\nThe same issues apply to the definition of a\nclimatological hour.",
+      "classification": "Required"
+    },
+    "3.1.6.4": {
+      "title": "Climate networks",
+      "text": "This component concerns a range of policies that\ndetermine the design of climatological networks\nand establish the station and network operations,\nincluding observation times, on-site quality\ncontrol, observer training, station inspections, etc.\nFor more information, see:\n\u2022 Guide to Climatological Practices (WMO-No.\n100), section 2.5 The design of climatological\nnetworks, and section 2.6 Station and network\noperations\n\u2022 Technical Regulations (WMO-No. 49), Volume I,\nPart II, 1.3.1.1.2:\n> The distribution of stations from which\n> monthly surface climatological data are\n> transmitted should be such that every\n> 250 000 km2 is represented by at least\n> one station and up to 10 stations where\n> the density of the regional basic synoptic\n> network permits; the distribution of stations\n> from which monthly upper-air climatological\n> data are transmitted should be such that\n> every 1 000 000 km2 is represented by at least\n> one station.",
+      "classification": "Required"
+    },
+    "3.1.6.5": {
+      "title": "Sensor or station change",
+      "text": "This component covers a range of policies that\napply to changes affecting a station or sensor\n(such as a replacement or relocation). These\npolicies are of great importance for time-series\nanalysis. They have implications for climate\nmetadata and for the possible implementation of\nparallel observations for certain time periods.\nFor more information, see:\n\u2022 Manual on the Global Observing System\n(WMO-No. 544), Volume I, Part III, 3.2.4:\n> At reference climatological stations, any\n> change in instrumentation should be such as\n> not to decrease the degree of accuracy of any\n> observations as compared with the earlier\n> observations, and any such change should\n> be preceded by an adequate overlap (at least\n> two years) with the earlier instrumentation.\n\u2022 Guide to Meteorological Instruments and\nMethods of Observation (WMO-No. 8), Part II,\n1.1.4 Climatological requirements:\n> The following general guidelines are\n> suggested for a sufficient operational overlap\n> between existing and new automated\n> systems: (i) Wind speed and direction:\n> 12 months (ii) Temperature, humidity,\n> sunshine, evaporation: 24 months (iii)\n> Precipitation: 60 months. (It will often be\n> advantageous to have an ombrometer\n> operated in parallel with the automatic\n> raingauge.) A useful compromise would\n> be an overlap period of 24 months (i.e. two\n> seasonal cycles).\n\u2022 Guidelines on Climate Metadata and\nHomogenization (WMO/TD-No. 1186),\nWCDMP-53",
+      "classification": "Required"
+    },
+    "3.1.6.6": {
+      "title": "Quality assurance",
+      "text": "This component refers to policies that ensure that\nquality assurance issues within an organization\nare clearly understood.\nSome issues to consider are:\n\u2022 What level of quality assurance can the\norganization afford to maintain over the long\nterm?\n\u2022 Will the organization conduct quality assurance\nchecks on all observation phenomena or only\non a subset?\n\u2022 What quality assurance levels (or tiers) are\nused by the organization for the long term?\n\u2022 How is each quality assurance tier defined?\n\u2022 What quality assurance tests must data\nsuccessfully pass before they are promoted to\nthe next tier?\n\u2022 How could the ISO 9000 series of quality\nmanagement standards help improve data\nmanagement processes?\nSee:\n\u2022 Technical Regulations (WMO-No. 49), Volume IV",
+      "classification": "Recommended"
+    },
+    "3.1.6.7": {
+      "title": "Future Climate Data Framework",
+      "text": "This component refers to policies that may be\nestablished by the future Climate Data Framework,\nas discussed in section 11.1.\nThis may include, for example:\n\u2022 Common and consistent definitions of key\ndatasets to be maintained by the NMHS,\nincluding common dataset names and service\nnames.\n\u2022 A common definition of a climatological day,\nhour and so forth.\n\u2022 A consistent way of determining data\nuncertainty.\n\u2022 Common definitions of data quality.\n\u2022 The establishment of a quality assessment\nclassification for derived data.\n\u2022 Authoritative taxonomies and code lists.\n\u2022 Common policies for handling missing data\nwhen creating derived data.\n\u2022 Common policies for deriving data when\ninput data have differing levels of quality. For\nexample, policies covering:\n    - The calculation of monthly averages when daily data are at different levels of quality.\n    - The generation of derived gridded datasets for a region where data for relevant stations are at different levels of quality.\n\u2022 Common policies for all components discussed\nwithin this data policy section (3.1).\n\u2022 The application of best practices for data\nhomogenization techniques.",
+      "classification": "Recommended"
+    }
+  }
+}

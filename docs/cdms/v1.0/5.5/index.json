@@ -1,0 +1,41 @@
+{
+  "title": "Climate metadata",
+  "subsections": [
+    "5.5.1"
+  ],
+  "components": {
+    "5.5.1": [
+      "5.5.1.1",
+      "5.5.1.2",
+      "5.5.1.3",
+      "5.5.1.4"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.5.1": {
+    "title": "Manage climate metadata",
+    "text": "This subsection refers to the processes, software, governance mechanisms and data analysis\nrequired to effectively manage climate metadata, which include metadata on observations,\ndiscovery and data provenance.\nNote: This subsection is deliberately kept generic in this version of the CDMS Specifications,\nwith all types of climate metadata bundled together. While the Create and Maintain components\n(5.5.1.1 and 5.5.1.2, respectively) are classified as recommended, in reality data provenance\nmetadata has not yet been adequately defined. Therefore, a pragmatic approach would rightly\nnot address the creation and maintenance of data provenance metadata until this has been\nrectified. The creation and maintenance of discovery and observations metadata, however, is\nrequired.\nFor more information on climate metadata, see section 4.3 of this publication.",
+    "5.5.1.1": {
+      "title": "Create",
+      "text": "This component refers to the processes, software\nand governance processes needed to effectively\nand efficiently create climate metadata.",
+      "classification": "Recommended"
+    },
+    "5.5.1.2": {
+      "title": "Maintain",
+      "text": "This component covers the processes, software\nand governance mechanisms required to\neffectively and efficiently maintain climate\nmetadata.",
+      "classification": "Recommended"
+    },
+    "5.5.1.3": {
+      "title": "Quality control",
+      "text": "This component deals with the processes,\nsoftware and governance processes needed to\neffectively and efficiently assess and control the\nquality of climate metadata.\nMore work is required to provide effective\nguidance on this component.",
+      "classification": "Recommended"
+    },
+    "5.5.1.4": {
+      "title": "Metrics",
+      "text": "This component refers to the processes, software\nand governance processes required to effectively\nand efficiently maintain metrics relevant to climate\nmetadata.\nSome examples are:\n\u2022 Which stations or sensors do not have\nobservations metadata records?\n\u2022 Which datasets do not have discovery\nmetadata records?\nMore work is required to provide effective\nguidance on this component.",
+      "classification": "Recommended"
+    }
+  }
+}

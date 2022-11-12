@@ -1,0 +1,72 @@
+{
+  "title": "WMO standard products",
+  "subsections": [
+    "4.4.1",
+    "4.4.2"
+  ],
+  "components": {
+    "4.4.1": [
+      "4.4.1.1",
+      "4.4.1.2",
+      "4.4.1.3",
+      "4.4.1.4",
+      "4.4.1.5",
+      "4.4.1.6"
+    ],
+    "4.4.2": [
+      "4.4.2.1",
+      "4.4.2.2"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.4.1": {
+    "title": "Observation data products",
+    "text": "This subsection outlines the types of data products that NMHSs have committed to generate and\nprovide to WMO.",
+    "4.4.1.1": {
+      "title": "Routine messages",
+      "text": "This component represents data computed from\nobservation data for use in WMO products.\nAn example is the daily minimum and maximum\ntemperature, evaporation and evapotranspiration\nthat are typically transmitted via the Global\nTelecommunication System (GTS) as a SYNOP\nmessage or in the corresponding table-driven code\nform (TDCF) for SYNOP.\nFor more information, see:\n\u2022 Manual on Codes (WMO-No. 306)",
+      "classification": "Required"
+    },
+    "4.4.1.2": {
+      "title": "Climatological standard normals",
+      "text": "This component covers monthly and annual\nstandard normals.\nSee Wright (2012a) for a description of a\nrecommended change in the method of calculating\nclimatological standard normals.\nThe approach is understood to comprise the\nfollowing. (However, as at December 2013 this has\nyet to be officially endorsed.)\n\u2022 A fixed reference period (1961\u20131990) for longterm\nclimate variability and change assessment.\nThis is to be adopted as a stable WMO\nreference period, until such time as there is a\ncompelling scientific case for changing it.\n\u2022 A varying 30-year period updated every 10\nyears (suitable for most climate services). The\ncurrent period is 1981\u20132010.\nFor more information, see:\n\u2022 Calculation of Monthly and Annual 30-Year\nStandard Normals (WMO/TD-No. 341), WCDP-10\n\u2022 Technical Regulations (WMO-No. 49), Volume II\n\u2022 Guide to Climatological Practices (WMO-No.\n100), section 4.8 Normals\n\u2022 Manual on Codes (WMO-No. 306)\n\u2022 1961\u20131990 Global Climate Normals (CLINO)\n(WMO-No. 847)\n\u2022 A Note on Climatological Normals: Report\nof a Working Group of the Commission for\nClimatology, Technical Note No. 84\n\u2022 The Role of Climatological Normals in a\nChanging Climate (WMO/TD-No. 1377),\nWCDMP-61\n\u2022 Discussion paper on the calculation of the\nstandard climate normals (Wright, 2012a)",
+      "classification": "Required"
+    },
+    "4.4.1.3": {
+      "title": "CLIMAT",
+      "text": "This component concerns CLIMAT messages in\neither traditional alphanumeric codes (TAC) or\nTDCF formats. These messages are transmitted to\nWMO via the GTS.\nNote: The use of TAC is being phased out.\nFor more explanation, see:\n\u2022 Handbook on CLIMAT and CLIMAT TEMP\nReporting (WMO/TD-No. 1188)\n\u2022 Practical Help for Compiling CLIMAT Reports\n(WMO/TD-No. 1477), GCOS-127\n\u2022 Manual on Codes (WMO-No. 306), Volume I.2,\nPart C, section d. Regulations for reporting\ntraditional observation data in table-driven\ncode forms (TDCF): BUFR or CREX",
+      "classification": "Required"
+    },
+    "4.4.1.4": {
+      "title": "World Weather Records",
+      "text": "This component covers the annual World Weather\nRecords.\nFor more details, see:\n\u2022 Guidelines on Submission of the World Weather\nRecords Tenth Series (2001\u20132010), WCDMP-77\n\u2022 World Weather Records website",
+      "classification": "Required"
+    },
+    "4.4.1.5": {
+      "title": "Aeronautical climatology",
+      "text": "This component refers to the monthly aerodrome\nclimatology summary \u2013 tabular forms (models A\nto E).\nFor more explanation, see:\n\u2022 Technical Regulations (WMO-No. 49), Volume II,\nC.3.2 Aeronautical climatology",
+      "classification": "Required"
+    },
+    "4.4.1.6": {
+      "title": "Other",
+      "text": "This component covers other WMO standard\nproducts, as may be required.\nOther standard products are to be confirmed,\nparticularly for the hydrological, agricultural and\nmarine domains.",
+      "classification": "Optional"
+    }
+  },
+  "4.4.2": {
+    "title": "Climate change indices",
+    "text": "This subsection represents the recommendations of the Commission for Climatology in the\nelaboration of climate change indices. The Commission for Climatology/Climate Variability and\nPredictability (CCl/CLIVAR) Working Group on Climate Change Detection has been coordinating\nan international effort to develop, calculate and analyse a suite of indices so that individuals,\ncountries and regions can calculate the indices in exactly the same way such that their analyses\nwill fit seamlessly into the global picture.\nThose indices have been split in two categories: core indices and approved indices.\nFor more information, see the website of the Joint CCl/CLIVAR/JCOMM Expert Team on Climate\nChange Detection and Indices (ETCCDI).",
+    "4.4.2.1": {
+      "title": "Core indices",
+      "text": "This component represents the ETCCDI core\nclimate change indices.\nAs at June 2013, 27 core indices have been\ndefined, see:\n\u2022 ETCCDI website",
+      "classification": "Required"
+    },
+    "4.4.2.2": {
+      "title": "Other indices",
+      "text": "This component covers other climate change\nindices.\nAs at June 2013, different research groups have\ndefined different indices for their particular\npurposes. One example is the Statistical and\nRegional dynamical Downscaling of Extremes for\nEuropean regions (STARDEX) project, mentioned\nin the ETCCDI website referred to above.",
+      "classification": "Optional"
+    }
+  }
+}
