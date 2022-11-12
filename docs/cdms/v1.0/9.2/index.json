@@ -1,0 +1,41 @@
+{
+  "title": "Service operations",
+  "subsections": [
+    "9.2.1"
+  ],
+  "components": {
+    "9.2.1": [
+      "9.2.1.1",
+      "9.2.1.2",
+      "9.2.1.3",
+      "9.2.1.4"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.2.1": {
+    "title": "Service operations management",
+    "text": "",
+    "9.2.1.1": {
+      "title": "Scheduling",
+      "text": "This component represents technology and\nprocesses used to ensure that software processes\ncan be scheduled to run at specific times over a\n24-hour basis.\nThis functionality supports activities such as\nregular data ingest, quality assurance operations,\ndata analysis, derivation and backups.\nThere is also a requirement in more advanced\nenvironments to ensure that the dependencies\nbetween scheduled jobs are managed.",
+      "classification": "Required"
+    },
+    "9.2.1.2": {
+      "title": "Service desk",
+      "text": "This component represents the functionalities,\nprocesses and software required to provide\nsupport for service operations4, including:\n\u2022 Incident and event management to ensure that\nif an unplanned interruption to an IT service\noccurs, normal service operation is returned as\nsoon as possible.\n\u2022 Problem management to ensure that the root\ncauses of problems are found and where\npossible, rectified.",
+      "classification": "Recommended"
+    },
+    "9.2.1.3": {
+      "title": "Applications management",
+      "text": "This component covers the functionalities,\nprocesses and software required to provide\napplication administration tasks and second- and\nthird-level support for CDMS services.\nAny new IT system implementation and any\nchange to existing IT systems must be undertaken\nin accordance with the section on governance\n(3.2).",
+      "classification": "Required"
+    },
+    "9.2.1.4": {
+      "title": "Systems management",
+      "text": "This component refers to the functionalities,\nprocesses and software required to provide\nsystems administration tasks and second- and\nthird-level support for CDMS services.\nAny new IT system implementation and any\nchange to existing IT systems must be undertaken\nin accordance with the section on governance\n(3.2).",
+      "classification": "Required"
+    }
+  }
+}

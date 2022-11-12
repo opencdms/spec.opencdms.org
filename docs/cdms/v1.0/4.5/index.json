@@ -1,0 +1,73 @@
+{
+  "title": "Derived climate data",
+  "subsections": [
+    "4.5.1",
+    "4.5.2",
+    "4.5.3"
+  ],
+  "components": {
+    "4.5.1": [
+      "4.5.1.1",
+      "4.5.1.2",
+      "4.5.1.3",
+      "4.5.1.4"
+    ],
+    "4.5.2": [
+      "4.5.2.1",
+      "4.5.2.2"
+    ],
+    "4.5.3": [
+      "4.5.3.1"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.5.1": {
+    "title": "Derived observation data",
+    "text": "This subsection describes a range of derived observational data products generated from\nclimate observation variables.",
+    "4.5.1.1": {
+      "title": "Homogenized data",
+      "text": "This component represents high-quality\nhomogenized time-series datasets. Such datasets\naim to ensure that the only variability remaining in\nthe time series is that resulting from actual climate\nvariability.\nSee also the subsection on data homogenization\n(6.1.3).",
+      "classification": "Recommended"
+    },
+    "4.5.1.2": {
+      "title": "Computed",
+      "text": "This component deals with derived data computed\nfrom observations for NMHS products. The\ncomputation shall be in accordance with the\nclimatology policies in place.\nSome examples are:\n\u2022 Data generation of accumulation, averages or\nextremes, such as generating ten-day data from\ndaily data or daily data from hourly data.\n\u2022 The generation of particular data derived from\nraw data, such as computing the potential\nevapotranspiration output for agricultural\npurposes.\n\u2022 The generation of any statistical parameter\nrequired for products, such as extreme value\nanalysis, homogenized data and others.\n\u2022 Climate indices such as computed\nteleconnection indices.",
+      "classification": "Recommended"
+    },
+    "4.5.1.3": {
+      "title": "Normals and averages",
+      "text": "This component represents any normals and\naverages used by NMHSs that are in addition to\nclimatological standard normals.\nFor example, the component should be able to\ncompute:\n\u2022 Averages over specified time periods (daily,\nhourly, 5 days, 10 days, monthly and so forth)\n\u2022 Period averages for any period (for example 5,\n10, 30 or 100 years)\nFor more information, see:\n\u2022 The Role of Climatological Normals in a\nChanging Climate (WMO/TD-No. 1377),\nWCDMP-61",
+      "classification": "Recommended"
+    },
+    "4.5.1.4": {
+      "title": "Other",
+      "text": "This component concerns any other derived\nobservation data product not mentioned above\nthat is required for NMHS purposes.",
+      "classification": "Optional"
+    }
+  },
+  "4.5.2": {
+    "title": "Gridded spatial distribution of observations",
+    "text": "This subsection concerns the capacity to generate or manipulate gridded data according to\ndifferent techniques such as interpolation and extrapolation.\nSome of these techniques are described in the Guide to Climatological Practices (WMO-No. 100),\nsection 5.9 Estimating data.\nThese gridded data are spatial data. They are included in this section to show their lineage as a\ntype of derived climate data.",
+    "4.5.2.1": {
+      "title": "Analysed data",
+      "text": "This component refers to spatially distributed\ngridded data that have been derived from\nobservational data as the result of an analytical\nprocess.\nSome examples are:\n\u2022 Singular variables such as:\n\u2013 Normals\n\u2013 Observations for a given day or time\n\u2013 Averages\n\u2013 Percentiles\n\u2013 Cumulative data\n\u2013 Extremes\n\u2013 Homogenized data\n\u2022 Multivariables such as:\n\u2013 The generation of anomalies (difference\nbetween the normals data and a specific\nmonthly variable)\n\u2013 More complex data such as potential\nevapotranspiration",
+      "classification": "Recommended"
+    },
+    "4.5.2.2": {
+      "title": "Other",
+      "text": "This component covers any spatially distributed\ngridded data product not mentioned above that\nare required for NMHS purposes.",
+      "classification": "Optional"
+    }
+  },
+  "4.5.3": {
+    "title": "Numerical models",
+    "text": "Note: The infrastructure, software and skills required to operate numerical models are\nundoubtedly beyond the reach of many NMHSs.\nAs the output from numerical models is of interest to most NMHSs, it is expected that such\noutput will be available via a number of sources, including Regional Climate Centres.\nTherefore, the CDMS should ideally have the ability to work with such data.",
+    "4.5.3.1": {
+      "title": "Numerical models",
+      "text": "This component refers to the data output from a\nvariety of climate modelling processes. Such data\nare generally represented by multidimensional\narray grids.\nSome examples are:\n\u2022 Climate models (such as global climate models)\n\u2013 numerical representations of the climate\nsystem based on physical, biological and\nchemical rules. They vary on timescales ranging\nfrom seasonal to centennial. Climate models\nare often used to produce climate change\nprojections.\n\u2022 Downscaled models \u2013 derived from climate\nmodels but at a much higher resolution to\nsupport regional and local analysis.\n\u2022 Reanalysis \u2013 designed for climate studies,\nreanalyses provide gridded data over a long\ntime period. Reanalyses are created via an\nunchanging (frozen) data assimilation scheme\nand model(s) which ingest all available\nobservations. This unchanging framework\nprovides a dynamically consistent estimate\nof the climate state at each time step. Some\navailable reanalysis products include ERA-40\n(40 years) and ERA-Interim (1979 to the present)\nfrom the European Centre for Medium-Range\nWeather Forecasts, and the Twentieth Century\nReanalysis project (1871\u20132011) from the National\nOceanic and Atmospheric Administration,\nUnited States.\n\u2022 Numerical weather prediction\nSee also:\n\u2022 Guide to Climatological Practices (WMO-No.\n100), section 6.7 Climate models and climate\noutlooks",
+      "classification": "Optional"
+    }
+  }
+}
