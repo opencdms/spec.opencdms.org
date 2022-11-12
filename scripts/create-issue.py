@@ -1,5 +1,8 @@
 import enum
+import logging
 import os
+import argparse
+import time
 
 from github import Github, Repository
 from pathlib import Path
@@ -7,10 +10,6 @@ import pandas as pd
 from typing import List
 from pydantic import BaseModel
 
-
-USERNAME = "opencdms"
-REPO_NAME = "temp-repo"
-URL = f"https://api.github.com/repos/{USERNAME}/{REPO_NAME}/issues"
 
 INPUT_FILEPATH = Path("../cdms/v1.0/cdms_specfications.xlsx").resolve()
 
@@ -21,12 +20,9 @@ class Classifications(enum.Enum):
     REQUIRED = "Required"
 
 
-class Labels(enum.Enum):
-    OPTIONAL = "Optional"
-    RECOMMENDED = "Recommended"
-    REQUIRED = "Required"
-    CDMS_V1 = "CDMS v1.0"
-    EPIC = "Epic"
+class Label(BaseModel):
+    name: str
+    color: str
 
 
 class Component(BaseModel):
@@ -42,6 +38,8 @@ LABEL_COLOR_MAP = {
     "CDMS v1.0": "275dad",
     "Epic": "2c666e"
 }
+
+ALL_LABELS = [Label(name=k, color=v) for k, v in LABEL_COLOR_MAP.items()]
 
 
 def get_components() -> List[Component]:
@@ -66,51 +64,79 @@ def get_client() -> Github:
     return Github(os.getenv("GITHUB_TOKEN"))
 
 
-def get_repo() -> Repository.Repository:
+def get_repo(username: str, repo: str) -> Repository.Repository:
     client = get_client()
-    return client.get_repo(f"{USERNAME}/{REPO_NAME}")
+    return client.get_repo(f"{username}/{repo}")
 
 
-def get_existing_labels():
-    repo = get_repo()
+def get_existing_labels(repo: Repository.Repository):
     return repo.get_labels()
 
 
-def get_existing_issues():
-    repo = get_repo()
+def get_existing_issues(repo: Repository.Repository):
     return repo.get_issues(state="all")
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger("OpenCDMS")
 
-    repo = get_repo()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--username", default="opencdms", required=False)
+    parser.add_argument("--repo", default="temp-repo", required=False)
+    parser.add_argument("--issue-limit", default=1, required=False)
+    parser.add_argument("--common-labels", default=["Epic", "CDMS v1.0"], required=False)
+    args = parser.parse_args()
 
-    existing_labels = get_existing_labels()
+    logger.info(f"""
+    =====================================================================
+    Creating issues for : https://github.com/{args.username}/{args.repo}
+    INPUT FILE          : {INPUT_FILEPATH}
+    =====================================================================
+    """)
+
+    repo = get_repo(args.username, args.repo)
+
+    existing_labels = get_existing_labels(repo)
     existing_labels_set = {label.name for label in existing_labels}
+
+    logger.info(f"""Existing labels in the repo: {', '.join(existing_labels_set)}""")
+
     labels_to_create = [
-        label.value for label in Labels if label.value not in existing_labels_set
+        label for label in ALL_LABELS if label.name not in existing_labels_set
     ]
 
+    if labels_to_create:
+        logger.info(f"""Labels to create: {', '.join([l.name for l in labels_to_create])}""")
+    else:
+        logger.info("No label to create...")
+
     for label in labels_to_create:
-        repo.create_label(name=label, color=LABEL_COLOR_MAP[label])
+        logger.info(f"""Creating label: {label.name} with color: {label.color}""")
+        repo.create_label(name=label.name, color=label.color)
 
-    all_labels = get_existing_labels()
+    repo_labels = get_existing_labels(repo)
+    label_map = {label.name: label for label in repo_labels}
 
-    label_map = {label.name: label for label in all_labels}
-
-    existing_issues_set = {issue.title for issue in get_existing_issues()}
+    existing_issues_set = {issue.title for issue in get_existing_issues(repo)}
     issues_to_create = [
         component
         for component in get_components()
         if component.title not in existing_issues_set
     ]
 
-    for issue in issues_to_create[:1]:
+    logger.info(f"""Creating {args.issue_limit} issue(s)...""")
+    for issue in issues_to_create[:args.issue_limit]:
+        common_labels = [label_map[label] for label in args.common_labels]
+        issue_labels = common_labels+[label_map[issue.classification.value]]
+        logger.info(f"""
+        Creating issue with
+        Title: {issue.title}
+        Labels: {', '.join([label.name for label in issue_labels])}
+        """)
         repo.create_issue(
             title=issue.title,
             body=issue.description,
-            labels=[
-                label_map[Labels.CDMS_V1.value],
-                label_map[issue.classification.value],
-            ],
+            labels=issue_labels,
         )
+        time.sleep(0.1)
