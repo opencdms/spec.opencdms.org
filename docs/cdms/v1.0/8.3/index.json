@@ -1,0 +1,36 @@
+{
+  "title": "Other formats",
+  "subsections": [
+    "8.3.1",
+    "8.3.2"
+  ],
+  "components": {
+    "8.3.1": [
+      "8.3.1.1"
+    ],
+    "8.3.2": [
+      "8.3.2.1"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "8.3.1": {
+    "title": "Open-source Project for a Network Data Access Protocol",
+    "text": "",
+    "8.3.1.1": {
+      "title": "OPeNDAP",
+      "text": "This component represents technology suitable\nfor the distribution of a wide range of scientific\ndata via the Data Access Protocol (DAP).\nDAP is used in the world\u2019s scientific community to\nallow Internet access to a range of scientific data.\nThe protocol does not support the concept of\nspatial reference systems as defined in the OGC\nAbstract Specification on spatial referencing by\ncoordinates. This makes it very difficult to reliably\nintegrate data hosted via DAP with other spatial\ndatasets, including those hosted via open spatial\nservices.\nTherefore, it is considered more appropriate for\ncases in which researchers and scientists only\nwant the data for numerical analysis.\nFor more information, see:\n\u2022 OPeNDAP Wikipedia page\n\u2022 DAP 2.0 Specification",
+      "classification": "Optional"
+    }
+  },
+  "8.3.2": {
+    "title": "WMO formats",
+    "text": "",
+    "8.3.2.1": {
+      "title": "WMO formats",
+      "text": "This component represents technology suitable\nfor the distribution of a wide range of climate data\nvia traditional WMO formats.\nFor more information, see:\n\u2022 FM 94 BUFR Edition 4\n\u2022 FM 92 GRIB Edition 2\nOther formats also exist, but it is anticipated that\nthey will be phased out in time.\nFor more information, see:\n\u2022 Manual on Codes (WMO-No. 306), Volume I.2\n\u2022 Wikipedia articles on BUFR and GRIB",
+      "classification": "Required"
+    }
+  }
+}

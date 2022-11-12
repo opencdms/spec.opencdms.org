@@ -1,0 +1,117 @@
+{
+  "title": "Computing infrastructure",
+  "subsections": [
+    "9.3.1",
+    "9.3.2",
+    "9.3.3",
+    "9.3.4",
+    "9.3.5"
+  ],
+  "components": {
+    "9.3.1": [
+      "9.3.1.1",
+      "9.3.1.2",
+      "9.3.1.3",
+      "9.3.1.4"
+    ],
+    "9.3.2": [
+      "9.3.2.1",
+      "9.3.2.2",
+      "9.3.2.3"
+    ],
+    "9.3.3": [
+      "9.3.3.1"
+    ],
+    "9.3.4": [
+      "9.3.4.1",
+      "9.3.4.2",
+      "9.3.4.3"
+    ],
+    "9.3.5": [
+      "9.3.5.1"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.3.1": {
+    "title": "Networks",
+    "text": "",
+    "9.3.1.1": {
+      "title": "Internet",
+      "text": "This component covers the infrastructure required\nto support access to the Internet. This includes\nrouters, switches, firewalls, internet service\nproviders, etc.",
+      "classification": "Required"
+    },
+    "9.3.1.2": {
+      "title": "WMO WIS/GTS",
+      "text": "This component concerns the infrastructure\nrequired to access the WMO Global\nTelecommunication System. This is essentially a\nprivate wide-area network.",
+      "classification": "Required"
+    },
+    "9.3.1.3": {
+      "title": "Internal networks",
+      "text": "This component refers to the infrastructure\nrequired to support local area networks. This\nincludes switches, firewall(s), services such\nas domain name servers or the Dynamic Host\nConfiguration Protocol.",
+      "classification": "Recommended"
+    },
+    "9.3.1.4": {
+      "title": "VPN",
+      "text": "This component concerns a virtual private network\n(VPN), which allows a private network to be set up\nacross the publicly available Internet making use\nof tunnelling and security features. This can result\nin relatively secure communications.",
+      "classification": "Recommended"
+    }
+  },
+  "9.3.2": {
+    "title": "Computing platform",
+    "text": "",
+    "9.3.2.1": {
+      "title": "Hardware",
+      "text": "This component covers all computing hardware,\nincluding servers and desktop computers.\nOrganizations are increasingly using virtualization\nto allow several virtual servers to be deployed on\na single physical server, as a way of minimizing\nhardware and operational costs while increasing\noperational efficiency.",
+      "classification": "Required"
+    },
+    "9.3.2.2": {
+      "title": "Operating system",
+      "text": "This component concerns the operating system\nrequired to support computing operations.",
+      "classification": "Required"
+    },
+    "9.3.2.3": {
+      "title": "High-performance computing",
+      "text": "This component covers the advanced computing\nfunctionalities needed to support highperformance\ncomputing, including clusters and\ngrids.",
+      "classification": "Optional"
+    }
+  },
+  "9.3.3": {
+    "title": "Security",
+    "text": "",
+    "9.3.3.1": {
+      "title": "Security",
+      "text": "Security is actually an aspect of all components,\nbut is included here for clarity. All software and\nsystems should be implemented with security in\nmind in order to protect the integrity of climaterelated\nsystems and data.\nThis component does not just refer to IT security\nbut also to physical security, such as preventing\nthe theft of a server and the resulting loss of the\nclimate database.",
+      "classification": "Required"
+    }
+  },
+  "9.3.4": {
+    "title": "Data storage",
+    "text": "",
+    "9.3.4.1": {
+      "title": "Storage media",
+      "text": "This component involves the provision of\nsufficient storage media to cover operational\nactivities, including the storage of climate data,\nsystems, archives, backups and disaster recovery\nmaterials.",
+      "classification": "Required"
+    },
+    "9.3.4.2": {
+      "title": "Data archival",
+      "text": "This component handles the secure archival of\nhistorical data to ensure that it is available for\nfuture generations.",
+      "classification": "Required"
+    },
+    "9.3.4.3": {
+      "title": "Backups",
+      "text": "This component covers the regular operational\nbackup and restoration of data and systems.",
+      "classification": "Required"
+    }
+  },
+  "9.3.5": {
+    "title": "Disaster recovery",
+    "text": "",
+    "9.3.5.1": {
+      "title": "Disaster recovery",
+      "text": "This component refers to the disaster recovery\nand business continuance policies, processes,\nplans and systems required to ensure that CDMS\nsystems and climate data can be recovered in the\nevent of an unforeseen incident. This could be\nas simple as a server malfunction or as complex\nas an organization\u2019s city being destroyed due to\nsome unexpected event such as an earthquake,\ntsunami or military action.\nThis is why off-site storage of backups is required.",
+      "classification": "Required"
+    }
+  }
+}
