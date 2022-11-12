@@ -1,0 +1,78 @@
+{
+  "title": "Ingest and extract",
+  "subsections": [
+    "5.1.1",
+    "5.1.2"
+  ],
+  "components": {
+    "5.1.1": [
+      "5.1.1.1",
+      "5.1.1.2",
+      "5.1.1.3",
+      "5.1.1.4",
+      "5.1.1.5",
+      "5.1.1.6",
+      "5.1.1.7",
+      "5.1.1.8"
+    ],
+    "5.1.2": [
+      "5.1.2.1"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.1.1": {
+    "title": "Data ingest",
+    "text": "",
+    "5.1.1.1": {
+      "title": "Business rules",
+      "text": "This component supports a wide range of user\ndefined business rules that govern how data\nare ingested into the climate database. Some\nexamples (for observations data) are:\n\u2022 Action required when new phenomena are to\nbe ingested but a record already exists in the\ndatabase for that time period.\n\u2013 Should the new record replace the current\nrecord in the database or should the new\nrecord be rejected?\nThere is potential for data that have not\nbeen quality controlled to overwrite\nperfectly good quality-controlled data. An\nexample is a message that is reingested\nand the ingest process does not take into\naccount the possibility that the data already\nexist in the database and that they have\nbeen modified.\n\u2022 Action required when a message arrives for\ningest but the message type is not appropriate\naccording to the observations metadata on\nrecord for that station.\n\u2022 Action required should a message arrive\ncontaining an observed value that is outside the\naccepted bounds for a given phenomenon. For\nexample, a message contains a value of 90\u00b0C\nfor temperature, where the maximum accepted\ntemperature is 60\u00b0C.\n\u2022 Action required should a message arrive that is\nof a lower order of precedence to one that has\nalready been ingested for the same time period\nand station. For example:\n\u2013 The priority level given to records being\ningested may relate to the method of data\nacquisition. A record that has been keyed in\nvia a quality assurance process may be given\na higher priority than a record acquired via a\nreal-time message ingest.",
+      "classification": "Required"
+    },
+    "5.1.1.2": {
+      "title": "WMO messages",
+      "text": "This component allows for the import of data from\na range of WMO message formats, including TAC\nand TDCF.\nAs both historical and current data will need to be\nimported, this component should be able to work\nwith data in a wide variety of past, present (and\nfuture) data formats.\nSome examples are:\n\u2022 Binary:\n\u2013 BUFR\n\u2013 GRIB\n\u2022 Alphanumeric:\n\u2013 CREX\n\u2013 SYNOP\n\u2013 TEMP\n\u2013 SHIP\n\u2013 METAR\n\u2013 World Weather Records\nNote: While TAC formats are being phased out,\nsupport for them will still be required by this\ncomponent to support the ingest of historical data.\nFor more information, see:\n\u2022 WMO international codes",
+      "classification": "Required"
+    },
+    "5.1.1.3": {
+      "title": "Vector",
+      "text": "This component supports the import of a series of\nvector spatial formats.\nFor example:\n\u2022 Shapefile\n\u2022 Geography Markup Language (GML) (see OGC\nGML web page)",
+      "classification": "Recommended"
+    },
+    "5.1.1.4": {
+      "title": "Raster array",
+      "text": "This component supports the import of a series of\nraster array spatial formats.\nFor example:\n\u2022 CF-netCDF\n\u2022 Hierarchical data format\n\u2022 ArcInfo ASCII\n\u2022 GeoTIFF",
+      "classification": "Recommended"
+    },
+    "5.1.1.5": {
+      "title": "Other formats",
+      "text": "This component covers the import of a range of\nother formats.\nFor example:\n\u2022 Photographs (PNG, JPEG, TIFF, etc.)\n\u2022 Scanned documents\n\u2022 PDF files\n\u2022 ASCII generic formats such as CSV\n\u2022 Data managed in spreadsheets\n\u2022 Tabular formats, such as the import of data\nfrom a relational database management system",
+      "classification": "Recommended"
+    },
+    "5.1.1.6": {
+      "title": "Status log",
+      "text": "This component concerns the recording of each\ningest activity status in order to:\n\u2022 Monitor the ingest job status.\n\u2022 Automatically recover failed ingests.\n\u2022 Record warning and other error messages to\nenable manual intervention if required, for\nexample if expected data are not received.",
+      "classification": "Required"
+    },
+    "5.1.1.7": {
+      "title": "Automated with self-recovery",
+      "text": "This component supports the automated ingest of a\nrange of ingest types (particularly WMO messages\nand data from automatic weather stations).\nThe component also allows for the automatic\nrecovery of ingest tasks in the event that a task fails\neither entirely or part way through an ingest. This\ncould be due to a number of reasons, including:\n\u2022 Corrupted messages\n\u2022 Network failures\n\u2022 Hard disk failures\n\u2022 Database failures\n\u2022 Upstream data flow disruptions",
+      "classification": "Recommended"
+    },
+    "5.1.1.8": {
+      "title": "Transformation",
+      "text": "This component supports the transformation of an\ningest record. This may include:\n\u2022 Transforming data from one format to another.\n\u2022 Transforming codes into formats more suitable\nfor the destination climate database.\n\u2022 Correcting records that have been abbreviated\nin accordance with accepted local observation\npractice.",
+      "classification": "Required"
+    }
+  },
+  "5.1.2": {
+    "title": "Data extraction",
+    "text": "",
+    "5.1.2.1": {
+      "title": "Data extraction",
+      "text": "This component allows data to be extracted from\nthe climate database in accordance with NMHS\ndata policy and governance processes.\nData may be transformed into a wide range of\nformats as described in the subsection on data\ningest (5.1.1).\nNote: This component is only intended for\nadvanced users who have an intimate knowledge\nof the climate database, its data structures, the\nrelevant data policies and the appropriate use of\nquality flags and other aspects in order to perform\none-off data extraction activities.\nEnd-user data extraction is intended to be\nconstrained to defined data types via the climate\ndata delivery services components (Chapter 8),\nusing components under Chapter 7, such as:\nTables and charts, Integrated search of climate\ndata and Data download.",
+      "classification": "Recommended"
+    }
+  }
+}

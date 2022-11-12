@@ -11,12 +11,11 @@ template = {
     "version": "1.0",
 }
 
-chapters_filepath = Path("../data/input/chapters.csv").absolute()
-sections_filepath = Path("../data/input/sections.csv").absolute()
+input_file_path = Path("../cdms/v1.0/cdms_specfications.xlsx")
 
 
-chapters_df = pd.read_csv(chapters_filepath)
-sections_df = pd.read_csv(sections_filepath, encoding="ISO-8859-1")
+chapters_df = pd.read_excel(input_file_path, sheet_name="chapters").fillna("")
+sections_df = pd.read_excel(input_file_path, sheet_name="sections").fillna("")
 
 for idx, chapter in chapters_df.iterrows():
     output = {
@@ -32,7 +31,9 @@ for idx, chapter in chapters_df.iterrows():
         "version": "1.0",
     }
 
-    output_filepath = Path(f"../data/output/chapter_{chapter['Number']}.json")
+    output_dir = Path(f"../docs/cdms/v1.0/{chapter['Number']}").resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
     with open(output_filepath, "w") as stream:
         json.dump(output, stream, indent=2)

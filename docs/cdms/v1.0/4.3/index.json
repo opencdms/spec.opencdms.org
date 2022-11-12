@@ -1,0 +1,187 @@
+{
+  "title": "Climate metadata",
+  "subsections": [
+    "4.3.1",
+    "4.3.2",
+    "4.3.3"
+  ],
+  "components": {
+    "4.3.1": [
+      "4.3.1.1",
+      "4.3.1.2",
+      "4.3.1.3",
+      "4.3.1.4",
+      "4.3.1.5",
+      "4.3.1.6",
+      "4.3.1.7",
+      "4.3.1.8",
+      "4.3.1.9",
+      "4.3.1.10"
+    ],
+    "4.3.2": [
+      "4.3.2.1",
+      "4.3.2.2",
+      "4.3.2.3",
+      "4.3.2.4",
+      "4.3.2.5",
+      "4.3.2.6",
+      "4.3.2.7",
+      "4.3.2.8"
+    ],
+    "4.3.3": [
+      "4.3.3.1",
+      "4.3.3.2",
+      "4.3.3.3",
+      "4.3.3.4",
+      "4.3.3.5",
+      "4.3.3.6",
+      "4.3.3.7",
+      "4.3.3.8"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.3.1": {
+    "title": "Observations metadata",
+    "text": "This subsection covers access to and management of station metadata and platform metadata.\nStation and platform metadata are time-series data that describe how, when and where\nmeteorological observations were made and the conditions they were made under. They are\nused to support a range of activities that allow climate professionals to understand the fitness\nfor purpose of specific data and, in many cases, improve the quality of climate observations\ndata. This type of metadata is referred to as observations metadata in this publication.\nIt is anticipated that application schemas (also known as logical data models) will be developed\nto formally define the structure and content of the information required to describe climate\nobserving stations, sensors and platforms (see the Climate observations application schema\ncomponent (4.2.3.2))\nNote: As a general rule, it will be necessary to record and maintain the details of any change to\nobservations metadata in order to understand the context surrounding specific climate data and\nto support future data homogenization activities. In addition to details of the change, specific\nreference must be made to:\n\u2022 The date/time of the change.\nNote: It may not always be possible to define the exact date of the change, for example when\na change happens between two site visits. Therefore, it may be more appropriate to include a\nperiod of time during which the change occurred.\n\u2022 The reason the change was made.\n\u2022 The beginning and end dates of the prior value.\n\u2022 Any date/time reference will need to be constrained by the appropriate temporal datum to\nensure that date handling is consistently applied.\nFor more information, see:\n\u2022 Guide to Climatological Practices (WMO-No. 100)\n\u2022 Guide to Meteorological Instruments and Methods of Observation (WMO-No. 8)\n\u2022 Guide to the Global Observing System (WMO-No. 488), Appendix III.3 Automatic weather\nstation metadata\n\u2022 Manual on the Global Observing System (WMO-No. 544), Volume I, Attachment III.1 Standard\nset of metadata elements for automatic weather station installations\n\u2022 Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)\n\u2022 Draft paper on the climatological needs for minimum stations metadata in the frame of WMO\npublication No. 9, Volume A (Stuber, 2012)\n\u2022 Guidelines on Climate Metadata and Homogenization (WMO-No. 1186), WCDMP-53",
+    "4.3.1.1": {
+      "title": "Station identifier",
+      "text": "This component supports the management of\nidentifiers associated with the observation station\nor platform.\nIdentifiers include:\n\u2022 A globally unique WMO identifier. The use\nof this identifier must become a priority in\norder to support future global analysis. See\nrecommendation 11.6 of this publication.\n\u2022 Other identifiers or aliases used for the station.\n\u2022 A history of past used identifiers, including\nhistorical WMO identifiers.\n\u2022 The beginning and end dates of each historical\nidentifier used for the station.",
+      "classification": "Required"
+    },
+    "4.3.1.2": {
+      "title": "Station overview",
+      "text": "This component covers what to provide in an\noverview of the observation station or platform.\nThis should include:\n\u2022 Station owner\n\u2013 If required, the sensor owner\n\u2022 Station manager\n\u2013 If required, the sensor manager\n\u2022 Maintenance authority\n\u2013 If required, the sensor maintenance authority\n\u2022 Station licence agreement\n\u2013 If required, the sensor licence agreement\n\u2022 Station data usage constraints\n\u2013 If required, the sensor data usage constraints\n\u2022 Purpose of the station\n\u2022 Observation practices\n\u2022 Observation schedule \u2013 this is particularly\nrelevant for stations that use manual\nobservation methods and where observations\nare not taken on a continuous basis\n\u2022 Definition of which datasets provide the actual\nobservations data for a given station, sensor\nand phenomenon combination, together with\nthe URL of the relevant discovery metadata\nrecords\n\u2022 Observers and maintenance personnel,\nincluding their names, experience and training\nlevel\n\u2022 Station logistics, including consumables,\nelectricity suppliers, communications suppliers,\netc.",
+      "classification": "Required"
+    },
+    "4.3.1.3": {
+      "title": "Station status",
+      "text": "This component supports recording the period(s)\nof activity during which observations were being\nmade at the station or platform.\nAs it is possible for stations to close and then\nreopen at a later time, the time period of each\nstatus is also required.\nValid operational status codes are:\n\u2022 Operational\n\u2022 Not operational",
+      "classification": "Required"
+    },
+    "4.3.1.4": {
+      "title": "Station type",
+      "text": "This component supports recording the type of\nstation or observation platform.\nIdeally, the type will be recorded for each\ninstrument used at that station.\nAt a minimum, the station type is to be recorded in\naccordance with the following guidelines:\n\u2022 Manual on Codes (WMO-No. 306), Volume I.1,\ncode 1860, and Volume I.2, code 0 02 001\nIn addition, there may be multiple definitions\nof station types used by the NMHS and other\norganizations.",
+      "classification": "Required"
+    },
+    "4.3.1.5": {
+      "title": "Location",
+      "text": "This component covers the recording of\ndetails relating to the location of the station or\nobservation platform.\nAs discussed in the Sensor component below\n(4.3.1.7), recording the location of each sensor at\nthe station is also mandatory.\nThe following information is required:\n\u2022 Latitude\n\u2022 Longitude\n\u2022 Elevation\n\u2022 Spatial reference system (horizontal and\nvertical)\n\u2022 Date/time of the survey observation used to\nrecord the location of the station and/or sensor\n\u2022 Temporal reference system\n\u2022 Method used to determine the location of the\nstation\n\u2022 Positional accuracy of location\n\u2022 Date/time the station or sensor moved,\ntogether with previous locations\n\u2022 Administrative boundaries within which the\nstation is located (as required by the NMHS)\n\u2022 Time zone\nIn exceptional circumstances, it may be necessary\nto move a station and keep the same station\nidentifier. This should only be done in accordance\nwith future global climate data policies and data\ngovernance processes (see recommendation 11.1\nof this publication). Typically, this will involve\nparallel observations at the old and new station\nover a period of time (two years, for example).\nIf this is necessary, the time of the move should be\nrecorded, together with current and past location\ndetails.\nThe precision required for the latitude, longitude\nand elevation should be in accordance with\nguidance provided by the Commission for\nInstruments and Methods of Observation.\nWhile not authoritative, the final report of the\nfirst session of the Commission for Instruments\nand Methods of Observation Expert Team on\nStandardization suggests that the precision\nrequired for latitude and longitude measurements\nis one second (of arc), which equates to\napproximately 30 meters at the equator. This\ndegree of precision should be achievable using a\nsurvey observation process that uses handheld\nGPS techniques.\nAdministrative boundaries may refer to different\ntypes of boundaries that contain the station,\nincluding:\n\u2022 Political boundaries, such as state, regional or\ndistrict boundaries\n\u2022 Administrative boundaries, such as the forecast\ndistrict\n\u2022 Natural boundaries, such as hydrological,\ncatchment or topographic areas\nFor more information, see:\n\u2022 ISO 19111-2:2009 Geographic information \u2013\nSpatial referencing by coordinates, Part 2:\nExtension for parametric values\n\u2022 Guide to Meteorological Instruments and\nMethods of Observation (WMO-No. 8), section\n1.3.3.2 Coordinates of the station. Specifically\nnote the instructions on determining the\nelevation of a station relative to the raingauge.\n\u2022 OGC Abstract Specification: Spatial referencing\nby coordinates",
+      "classification": "Required"
+    },
+    "4.3.1.6": {
+      "title": "Local environment",
+      "text": "This component concerns the recording of\ninformation on the local environment surrounding\nthe station or observation platform.\nThe following information is required:\n\u2022 Site location diagram\n\u2022 Site plans\n\u2013 For an example, see Guide to Meteorological\nInstruments and Methods of Observation\n(WMO-No. 8), Figure 1.1\n\u2022 Site skyline diagram\n\u2022 Site photographs and video showing the\nsurroundings and instrument layout\n\u2022 Station exposure\n\u2022 Site roughness\n\u2022 Type of soil\n\u2022 Type of vegetation\n\u2022 Surrounding land use\n\u2022 Date/time of each visit\nFor more information, see:\n\u2022 Guide to Meteorological Instruments and\nMethods of Observation (WMO-No. 8), section\n1.3.3 Siting and exposure, Annex 1.B Siting\nclassifications for surface observing stations\non land, and Annex 1.C Station exposure\ndescription",
+      "classification": "Required"
+    },
+    "4.3.1.7": {
+      "title": "Sensor",
+      "text": "This component covers the recording of details\nrelating to the meteorological sensors and/or\ninstruments used at the station or observation\nplatform. In this publication, the term sensor will\nbe used to cover all instrument types.\nThe following information is required:\n\u2022 Sensor description, including:\n\u2013 Name\n\u2013 Type\n\u2013 Serial number\n\u2013 Brand and model details\n\u2013 Photograph of sensor in situ\n\u2013 Supplier\n\u2013 Manufacturer\n\u2013 Location of manuals\n\u2013 Sensor firmware, version and dates during\nwhich each version was used\n\u2013 Length of time the observation data are\nstored locally on the sensor, prior to deletion\n\u2022 Sensor installation details, including:\n\u2013 Technician and organization that installed the\nsensor\n\u2013 Date sensor was installed\n\u2022 Sensor status, including:\n\u2013 Operational status:\nOperational\nNot operational\nDefective\nTesting\n\u2013 Date/times applicable for each status\n\u2022 Sensor maintenance:\n\u2013 Scheduled maintenance\n\u2013 Actual maintenance\n\u2013 Result\n\u2013 Replacement of consumables\n\u2022 Sensor uncertainty:\n\u2013 System performance statistics claimed by\nmanufacturer\n\u2013 Sensor calibration results\n\u2013 Observed sensor performance characteristics\n\u2022 Sensor siting details:\n\u2013 Instrument height above ground\n\u2013 Station exposure description\n\u2013 As discussed in the Location component\n(4.3.1.5), recording the location of each sensor\nis required.\n\u2022 Recommended sensor settings for optimal\noperations on site\n\u2022 Details of what meteorological variable is being\nobserved by the sensor (i.e. the observed\nproperty), including:\n\u2013 Phenomena observed\n\u2013 Frequency of measurement\n\u2013 Frequency of acquisition\n\u2013 Units of measurement\n\u2013 Precision of measurement",
+      "classification": "Required"
+    },
+    "4.3.1.8": {
+      "title": "Data processing",
+      "text": "This component concerns the recording of details\nrelating to any data processing that has occurred\nto convert a sensor\u2019s signal into its recorded\nobservation value.\nThe following information is required:\n\u2022 Software, including:\n\u2013 Version\n\u2013 Software language\n\u2013 Software name\n\u2013 Location of software source code\n\u2013 Description of processing applied (for\nexample, whether values were calculated per\nminute, hour or other)\n\u2013 Formula/algorithm implemented\n\u2013 Processor details (the version, type of central\nprocessing unit and so forth)\n\u2013 Date/time covering the period of validity of\nthe method\n\u2022 Input source (instrument, element and so forth)\n\u2022 Data output, including:\n\u2013 Data format and version of format",
+      "classification": "Required"
+    },
+    "4.3.1.9": {
+      "title": "Data transmission",
+      "text": "This component refers to the recording of details\nrelating to the transmission of data from stations\nor observation platforms.\nThe following information is required:\n\u2022 Sensor communications, including:\n\u2013 Frequency of transmission\n\u2013 Time of transmission\n\u2013 Primary communication details\n\u2013 Redundant communication details\n\u2013 Network addresses\n\u2013 Method of transmission\nNote: Some NMHSs with more advanced\nIT infrastructures may choose to store this\ntype of information within their configuration\nmanagement system. In these instances, it is\nimportant to ensure that at least the frequency\nand time of the transmission are replicated in the\nobservations metadata.",
+      "classification": "Recommended"
+    },
+    "4.3.1.10": {
+      "title": "Network",
+      "text": "This component concerns the recording of details\nrelating to the observation network(s) that stations\nor observation platforms may belong to.\nThe following information is required:\n\u2022 Network name (such as Regional Basic\nClimatological Network, Regional Basic\nSynoptic Network, GCOS, GCOS Upper-Air\nNetwork or National Climate Network)\n\u2022 Network priority:\n\u2013 Critical\n\u2013 Essential\n\u2013 Not applicable\n\u2022 Time of observations\n\u2022 Reporting frequency\n\u2022 Date/time of network membership\n\u2022 There is a possibility that a station does not\nbelong to a network. This information is also\nuseful.",
+      "classification": "Required"
+    }
+  },
+  "4.3.2": {
+    "title": "Dataset discovery metadata",
+    "text": "This subsection refers to the processes, software and governance arrangements that ensure\nthat discovery metadata are captured, managed and maintained.\nDiscovery metadata are intended to facilitate the discovery and assessment of a spatial dataset\nto determine if it is fit for reuse for a purpose that may be at odds with the reason for which it\nwas originally created.\nDiscovery metadata may also be known as WIS metadata. They are not the same as the\nobservations metadata described above.\nNote that some of the components below may be in addition to the WMO Core Profile of the ISO\n19115 Geographic information \u2013 Metadata standard. This is not expected to be an issue as the\nWMO Core Profile does not restrict the use of additional ISO 19115 records.\nFor more information, see:\n\u2022 Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)\n\u2022 WMO Core Metadata Profile version 1.3, Part 1 Conformance requirements\n\u2022 WMO Core Metadata Profile version 1.3, Part 2 Abstract test suite, data dictionary and code lists\n\u2022 Tandy (2010) also provides a useful introduction to discovery metadata. However, note that\nthe specifications part of this text has been superseded.\n\u2022 ISO 19115 Geographic information \u2013 Metadata",
+    "4.3.2.1": {
+      "title": "Dataset identifier",
+      "text": "This component represents a unique identifier\nused to identify the dataset.",
+      "classification": "Required"
+    },
+    "4.3.2.2": {
+      "title": "Dataset overview",
+      "text": "This component gives an overview of a dataset.\nThis may include a description of the dataset (such\nas an abstract), the intended use of the dataset, its\nlineage and status.",
+      "classification": "Required"
+    },
+    "4.3.2.3": {
+      "title": "Dataset data quality",
+      "text": "This component represents a general assessment\nof the quality of a dataset.",
+      "classification": "Required"
+    },
+    "4.3.2.4": {
+      "title": "Distribution",
+      "text": "This component covers information about the\ndistributor of and options for obtaining a dataset.",
+      "classification": "Required"
+    },
+    "4.3.2.5": {
+      "title": "Access constraints",
+      "text": "This component provides information on the\nrestrictions in place for a dataset.",
+      "classification": "Required"
+    },
+    "4.3.2.6": {
+      "title": "Dataset maintenance",
+      "text": "This component provides information on the\nscope and frequency of updates and maintenance\nconducted on a dataset.",
+      "classification": "Required"
+    },
+    "4.3.2.7": {
+      "title": "Spatial representation",
+      "text": "This component covers information on the\nmechanisms used to represent spatial information\nwithin a dataset.",
+      "classification": "Required"
+    },
+    "4.3.2.8": {
+      "title": "Reference systems",
+      "text": "This component gives information on the\nreference systems used by a dataset. These\ninclude a horizontal spatial reference system,\nvertical spatial reference system and temporal\nreference system.",
+      "classification": "Required"
+    }
+  },
+  "4.3.3": {
+    "title": "Data provenance",
+    "text": "This subsection refers to the processes, data and governance arrangements that record and\nmanage information relevant to climate data and enable end-users, including data managers,\nscientists and the general public, to develop trust in the integrity of the climate data.\nData provenance allows an end-user to understand the history of each piece of data, and thus\nhelps the user to identify what version of the data was available at any given time.\nThe need for this new type of climate metadata has become more evident following a number\nof attacks on the credibility of climate data. One notable example is the so-called Climategate\nincident and subsequent inquiries.\nTherefore, it is important for NMHSs to establish the reliability of their climate data and\nprocesses and to ensure that these data are subsequently seen as the authoritative source that\ncan be used for global climate studies.\nWhile the concept of data provenance has been relatively nebulous within the information\nmanagement domain for many years, there has been a significant amount of work on the\nconcept within the World Wide Web Consortium (W3C) for over more than a decade, particularly\nwith regard to the development of the PROV standard.\nThe W3C defines provenance as:\n[A] record that describes the people, institutions, entities, and activities involved in producing,\ninfluencing, or delivering a piece of data or a thing. In particular, the provenance of information\nis crucial in deciding whether information is to be trusted, how it should be integrated with\nother diverse information sources, and how to give credit to its originators when reusing it. In\nan open and inclusive environment such as the Web, where users find information that is often\ncontradictory or questionable, provenance can help those users to make trust judgements.\n(W3C, 2013a)\nWhile this work is still relatively new, it is showing significant potential for use within the climate\ndomain.\nThe concepts presented here for climate data provenance are quite embryonic and need further\nwork to ensure that they can be implemented effectively. See the related recommendation in\nChapter 11.\nMaintaining a dataset with high levels of data provenance metadata is expected to be quite\nexpensive and, as a result, will be limited to data of high importance such as high-quality\nclimate monitoring datasets. It is anticipated that guidance will be required to suggest what\ndata should be maintained with what level of data provenance metadata. This guidance could\nperhaps be included as a policy within a future climate data framework.\nFor more information, see:\n\u2022 Overview of the PROV family of documents (W3C, 2013b)\n\u2022 PROV data model specification (W3C, 2013a)",
+    "4.3.3.1": {
+      "title": "What was changed?",
+      "text": "This component refers to the processes, software\nand governance arrangements that ensure that\nany change to climate data is recorded.",
+      "classification": "Optional"
+    },
+    "4.3.3.2": {
+      "title": "When was it changed?",
+      "text": "This component covers the processes, software\nand governance arrangements that ensure that the\ntime of the change is recorded.",
+      "classification": "Optional"
+    },
+    "4.3.3.3": {
+      "title": "What was it derived from?",
+      "text": "This component deals with the processes,\nsoftware and governance arrangements that\nensure that a dataset\u2019s lineage is understood. In\nother words, where did the data come from?\nThis component is also required in the section on\ndata discovery (8.2).",
+      "classification": "Optional"
+    },
+    "4.3.3.4": {
+      "title": "What was done to change it?",
+      "text": "This component refers to the processes, software\nand governance arrangements that ensure a clear\nexplanation of any ad hoc modifications to a\nclimate record.\nThis includes:\n\u2022 What was changed\n\u2022 When the change was made\n\u2022 Details describing what was done",
+      "classification": "Optional"
+    },
+    "4.3.3.5": {
+      "title": "How/why was it changed?",
+      "text": "This component refers to the processes, software\nand governance arrangements that ensure that the\nrationale behind a modification to a climate record\nis clearly understood.\nThis includes:\n\u2022 How the change was made\n\u2022 Why it was made",
+      "classification": "Optional"
+    },
+    "4.3.3.6": {
+      "title": "Who/what changed it?",
+      "text": "This component involves the processes, software\nand governance arrangements that ensure a\nclear understanding of the agent that affected the\nchange.",
+      "classification": "Optional"
+    },
+    "4.3.3.7": {
+      "title": "Who did they act on behalf of?",
+      "text": "This component refers to the processes, software\nand governance arrangements that ensure that\nthe person or role who requested the change is\nidentified.",
+      "classification": "Optional"
+    },
+    "4.3.3.8": {
+      "title": "Who was responsible?",
+      "text": "This component refers to the processes, software\nand governance arrangements that ensure that\nthe person or role who authorized the change is\nidentified.",
+      "classification": "Optional"
+    }
+  }
+}

@@ -12,9 +12,11 @@ contents = {
 }
 
 if __name__ == "__main__":
-    input_filepath = Path("../data/input/chapters.csv").absolute()
-    output_filepath = Path("../data/output/contents.json").absolute()
-    chapters_df = pd.read_csv(input_filepath)
+    input_filepath = Path("../cdms/v1.0/cdms_specfications.xlsx").resolve()
+    output_dir = Path(f"../docs/cdms/v1.0").resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_filepath = Path(output_dir.joinpath("index.json")).resolve()
+    chapters_df = pd.read_excel(input_filepath, sheet_name="chapters").fillna("")
     contents["chapters"] = chapters_df["Number"].values.tolist()
 
     with open(output_filepath, "w") as stream:
