@@ -7,7 +7,7 @@ import time
 from github import Github, Repository
 from pathlib import Path
 import pandas as pd
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel
 
 
@@ -25,10 +25,10 @@ class Label(BaseModel):
     color: str
 
 
-class Component(BaseModel):
+class IssueData(BaseModel):
     title: str
-    description: str
-    classification: Classifications
+    description: Optional[str]
+    classification: Optional[Classifications]
 
 
 LABEL_COLOR_MAP = {
@@ -42,21 +42,53 @@ LABEL_COLOR_MAP = {
 ALL_LABELS = [Label(name=k, color=v) for k, v in LABEL_COLOR_MAP.items()]
 
 
-def get_components() -> List[Component]:
+def get_components() -> List[IssueData]:
     component_sheet_names = [f"ch{n}_components" for n in range(3, 10)]
     components_df_list = [
         pd.read_excel(INPUT_FILEPATH, sheet_name=sheet_name).fillna("")
         for sheet_name in component_sheet_names
     ]
     return [
-        Component(
-            title=row["Title"],
+        IssueData(
+            title=f"{idx} {row['Title']}",
             description=row["Description"],
             classification=row["Classification"],
         )
         for idx, row in pd.concat(
             [df.set_index("Number") for df in components_df_list]
         ).iterrows()
+    ]
+
+
+def get_chapters() -> List[IssueData]:
+    chapter_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters").fillna("")
+    return [
+        IssueData(
+            title=f"{row['Number']} {row['Title']}"
+        )
+        for idx, row in chapter_df.iterrows()
+    ]
+
+
+def get_sections() -> List[IssueData]:
+    section_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections").fillna("")
+    return [
+        IssueData(
+            title=f"{row['Number']} {row['Title']}",
+            description=row["Description"]
+        )
+        for idx, row in section_df.iterrows()
+    ]
+
+
+def get_sub_sections() -> List[IssueData]:
+    sub_section_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections").fillna("")
+    return [
+        IssueData(
+            title=f"{row['Number']} {row['Title']}",
+            description=row["Description"]
+        )
+        for idx, row in sub_section_df.iterrows()
     ]
 
 
@@ -134,9 +166,13 @@ if __name__ == "__main__":
         Title: {issue.title}
         Labels: {', '.join([label.name for label in issue_labels])}
         """)
-        repo.create_issue(
-            title=issue.title,
-            body=issue.description,
-            labels=issue_labels,
-        )
+        try:
+            repo.create_issue(
+                title=issue.title,
+                body=issue.description,
+                labels=issue_labels,
+            )
+            logger.info("""Issue created successfully...""")
+        except Exception as e:
+            logger.exception(e)
         time.sleep(0.1)
