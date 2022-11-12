@@ -26,6 +26,7 @@ class Labels(enum.Enum):
     RECOMMENDED = "Recommended"
     REQUIRED = "Required"
     CDMS_V1 = "CDMS v1.0"
+    EPIC = "Epic"
 
 
 class Component(BaseModel):
@@ -39,6 +40,7 @@ LABEL_COLOR_MAP = {
     "Recommended": "297373",
     "Optional": "e6e6e6",
     "CDMS v1.0": "275dad",
+    "Epic": "2c666e"
 }
 
 
