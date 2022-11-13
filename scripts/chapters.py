@@ -37,4 +37,3 @@ for idx, chapter in chapters_df.iterrows():
 
     with open(output_filepath, "w") as stream:
         json.dump(output, stream, indent=2)
-

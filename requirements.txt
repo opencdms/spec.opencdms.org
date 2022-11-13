@@ -1,1 +1,6 @@
+openpyxl
 pandas
+requests
+PyGithub
+black
+pydantic
