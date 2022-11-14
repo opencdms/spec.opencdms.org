@@ -26,6 +26,8 @@ components = pd.concat(
 env = Environment(
     loader=PackageLoader(package_name="wmo", package_path="../wmo/templates"),
     autoescape=select_autoescape(),
+    trim_blocks=True,
+    lstrip_blocks=True
 )
 
 index = env.get_template("index.html")
@@ -41,6 +43,6 @@ if __name__ == "__main__":
                     "sub_sections": sub_sections.to_dict(orient="index"),
                     "components": components.to_dict(orient="index"),
                     "str": str
-                }
+                },
             )
         )
