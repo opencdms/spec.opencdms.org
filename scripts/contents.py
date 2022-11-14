@@ -12,7 +12,7 @@ contents = {
 }
 
 if __name__ == "__main__":
-    input_filepath = Path("../cdms/v1.0/cdms_specfications.xlsx").resolve()
+    input_filepath = Path("../cdms/v1.0/cdms_specfications_md.xlsx").resolve()
     output_dir = Path(f"../docs/cdms/v1.0").resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
     output_filepath = Path(output_dir.joinpath("index.json")).resolve()

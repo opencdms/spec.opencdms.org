@@ -2,7 +2,7 @@ import json
 import pandas as pd
 from pathlib import Path
 
-input_filepath = Path("../cdms/v1.0/cdms_specfications.xlsx").absolute()
+input_filepath = Path("../cdms/v1.0/cdms_specfications_md.xlsx").absolute()
 
 sections_df = pd.read_excel(input_filepath, sheet_name="sections").fillna("")
 sub_sections_df = pd.read_excel(input_filepath, sheet_name="sub-sections").fillna("")
