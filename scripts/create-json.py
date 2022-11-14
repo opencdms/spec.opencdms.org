@@ -116,3 +116,9 @@ def create_sub_sections_with_contents():
 
         with open(output_filepath, "w") as stream:
             json.dump(output, stream, indent=2)
+
+
+if __name__ == "__main__":
+    create_chapters()
+    create_sections()
+    create_sub_sections_with_contents()
