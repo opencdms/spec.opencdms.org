@@ -1,10 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
 </head>
 <body>
+{% for ch_idx, chapter in chapters.items() %}
+<h2>{{ ch_idx }} {{ chapter['Title'] }}</h2>
+<table>
+    <tbody>
+        {% for s_idx, section in sections.items() %}
+        {% if str(s_idx).startswith(str(ch_idx)) %}
+        <tr>
+            <td colspan="3">
+                <h3>{{ s_idx }} {{ section["Title"] }}</h3>
+                <p>{{ section["Description"] }}</p>
+            </td>
+        </tr>
+        {% for ss_idx, subsection in sub_sections.items() %}
+        {% if ss_idx.startswith(str(s_idx)) %}
+        <tr>
+            <td colspan="3">
+                <h4>{{ ss_idx }} {{ subsection["Title"] }}</h4>
+                <span>{{ subsection["Description"] }}</span>
+            </td>
+        </tr>
+        {% for ct_idx, cmpt in components.items() %}
+        {% if ct_idx.startswith(ss_idx) %}
+        <tr>
+        <td>{{ ct_idx }} {{ cmpt["Title"] }}</td>
+        <td>
+            <span markdown="1">
 
+                {{ cmpt["Description"] }}
+
+            </span>
+        </td>
+        <td>{{ cmpt["Classification"] }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+{% endfor %}
+
+<style>
+    table, th, td {
+      border: 1px solid;
+    }
+</style>
 </body>
 </html>
