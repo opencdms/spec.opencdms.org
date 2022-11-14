@@ -33,45 +33,45 @@
   "version": "1.0",
   "4.6.1": {
     "title": "Spatial",
-    "text": "This subsection represents a wide range of spatial information typically used to provide context\nto climate data or as an input for spatial analysis processes. These data may be presented in\nvector, image, gridded or multidimensional array data formats.\nTypically, spatial representations of data contain aspatial attributes that describe various\nproperties of spatial features. The spatial and aspatial attributes of the data can be used to\nsupport a variety of spatial analysis processes.\nThe components listed below are indicative of the types of spatial data that could be relevant to\nclimate. This list is not exhaustive.\nSee also:\n\u2022 Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,\n2012b)",
+    "text": "This subsection represents a wide range of spatial information typically used to provide context to climate data or as an input for spatial analysis processes. These data may be presented in vector, image, gridded or multidimensional array data formats.\n\nTypically, spatial representations of data contain aspatial attributes that describe various properties of spatial features. The spatial and aspatial attributes of the data can be used to support a variety of spatial analysis processes.\n\nThe components listed below are indicative of the types of spatial data that could be relevant to climate. This list is not exhaustive.\n\nSee also:\na) Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,\n2012*b*)",
     "4.6.1.1": {
       "title": "Topography",
-      "text": "Although this component is labelled topography, it\nactually refers to a wider set of data.\nSome examples are:\n\u2022 Typical topographic data such as drainage,\nrelief, cultural and nomenclatural features\n\u2022 Digital elevation models",
+      "text": "Although this component is labelled topography, it actually refers to a wider set of data.\n\nSome examples are:\n1. Typical topographic data such as drainage, relief, cultural and nomenclatural features\n2. Digital elevation models",
       "classification": "Recommended"
     },
     "4.6.1.2": {
       "title": "Emergency management",
-      "text": "This component concerns datasets that are useful\nfor supporting emergency management and\nrelated warning systems.",
+      "text": "This component concerns datasets that are useful for supporting emergency management and related warning systems.",
       "classification": "Optional"
     },
     "4.6.1.3": {
       "title": "Agricultural",
-      "text": "This component refers to agricultural information\ndatasets.\nSome examples are:\n\u2022 Data from the Food and Agriculture Organization\nof the United Nations that could relate to\nagriculture, animal production and health,\nfisheries, forestry, land and water or plant\nproduction and protection.\n\u2022 Regional, national or international data from\ndifferent organizations such as primary industry\ndepartments or research centres on agriculture.",
+      "text": "This component refers to agricultural information datasets.\n\nSome examples are:\n1. Data from the Food and Agriculture Organization of the United Nations that could relate to agriculture, animal production and health, fisheries, forestry, land and water or plant production and protection.\n2. Regional, national or international data from different organizations such as primary industry departments or research centres on agriculture.",
       "classification": "Optional"
     },
     "4.6.1.4": {
       "title": "Health",
-      "text": "The component refers to a wide variety of health\ndatasets.\nSome examples are:\n\u2022 Data from the World Health Organization\ncovering datasets on a very large spectrum.\n\u2022 National or international data from different\norganizations such as health departments or\nhealth research centres.\n\u2022 Epidemiological studies (see Wikipedia article)\nand so forth.",
+      "text": "The component refers to a wide variety of health datasets.\n\nSome examples are:\n1. Data from the World Health Organization covering datasets on a very large spectrum.\n2. National or international data from different organizations such as health departments or health research centres.\n3. Epidemiological studies (see Wikipedia article) and so forth.",
       "classification": "Optional"
     },
     "4.6.1.5": {
       "title": "Environmental",
-      "text": "This component refers to environmental datasets.\nSome examples are:\n\u2022 Data from the United Nations Environment\nProgramme or the United Nations Educational,\nScientific and Cultural Organization.\n\u2022 National or international data from different\norganizations such as environment departments\nor research centres.\n\u2022 Data relating to the distribution of particular\nflora and fauna, etc.",
+      "text": "This component refers to environmental datasets.\n\nSome examples are:\n1. Data from the United Nations Environment Programme or the United Nations Educational, Scientific and Cultural Organization.\n2. National or international data from different organizations such as environment departments or research centres.\n3. Data relating to the distribution of particular flora and fauna, etc.",
       "classification": "Optional"
     },
     "4.6.1.6": {
       "title": "Administrative",
-      "text": "This component covers administrative data.\nSome examples are:\n\u2022 Localities and gazetteers\n\u2022 Administrative boundaries\n\u2022 Transportation networks\n\u2022 Cadastres",
+      "text": "This component covers administrative data.\n\nSome examples are:\n1. Localities and gazetteers\n2. Administrative boundaries\n3. Transportation networks\n4. Cadastres",
       "classification": "Recommended"
     },
     "4.6.1.7": {
       "title": "Impacts data",
-      "text": "This component concerns a range of spatial data\nthat relate to things impacted by climate. This could\ninclude:\n\u2022 Deaths caused by heatwaves, prolonged\ndroughts, floods, cyclones, etc.\n\u2022 Infrastructure damage caused by a range of\nevents such as floods, bush fires or cyclones.\n\u2022 Changing land use, such as agricultural\nadaptations due to a changing climate.",
+      "text": "This component concerns a range of spatial data that relate to things impacted by climate. This could include:\n1. Deaths caused by heatwaves, prolonged droughts, floods, cyclones, etc.\n2. Infrastructure damage caused by a range of events such as floods, bush fires or cyclones.\n3. Changing land use, such as agricultural adaptations due to a changing climate.",
       "classification": "Recommended"
     },
     "4.6.1.8": {
       "title": "Other",
-      "text": "This component refers to a range of other spatial\ndata that may be relevant to climate.",
+      "text": "This component refers to a range of other spatial data that may be relevant to climate.",
       "classification": "Optional"
     }
   },
@@ -80,41 +80,41 @@
     "text": "",
     "4.6.2.1": {
       "title": "Published reports",
-      "text": "This component represents the processes and\ngovernance arrangements that result in the\npreparation and release of a wide variety of written\nreports.\nSome examples are:\n\u2022 Peer-reviewed papers\n\u2022 Climate change impact studies\n\u2022 Climate statements and studies\n\u2022 Assessments from the Intergovernmental Panel\non Climate Change\n\u2022 Monthly and annual summaries\nAs this is essentially a scientific and intellectual\nprocess, this component will not be expanded upon\nin this publication.",
+      "text": "This component represents the processes and governance arrangements that result in the preparation and release of a wide variety of written reports.\n\nSome examples are:\n1. Peer-reviewed papers\n2. Climate change impact studies\n3. Climate statements and studies\n4. Assessments from the Intergovernmental Panel on Climate Change\n5. Monthly and annual summaries\n\nAs this is essentially a scientific and intellectual process, this component will not be expanded upon in this publication.",
       "classification": "Optional"
     },
     "4.6.2.2": {
       "title": "Documentation",
-      "text": "This component refers to a range of textual data\nthat describe various climate-related phenomena or\nserve as documentation for CDMSs.\nSome examples may be:\n\u2022 CDMS technical and user documentation\n\u2022 Text on a web page\n\u2022 Diagrams representing climate processes, such\nas the Community Earth System Model from\nthe National Center for Atmospheric Research,\nUnited States, shown in section 2.1 of this\npublication\n\u2022 Various climate forecasts and events\n\u2022 Climate processes such as El Ni\u00f1o-Southern\nOscillation\n\u2022 NMHS policies and practices\n\u2022 Various documents and reports\n\u2022 Training documentation\n\u2022 Presentations",
+      "text": "This component refers to a range of textual data that describe various climate-related phenomena or serve as documentation for CDMSs.\nSome examples may be:\n\n1. CDMS technical and user documentation\n2. Text on a web page\n3. Diagrams representing climate processes, such as the Community Earth System Model from the National Center for Atmospheric Research, United States, shown in section 2.1 of this publication\n4. Various climate forecasts and events\n5. Climate processes such as El Ni\u00f1o-Southern Oscillation\n6. NMHS policies and practices\n7. Various documents and reports\n8. Training documentation\n9. Presentations",
       "classification": "Recommended"
     },
     "4.6.2.3": {
       "title": "Various media",
-      "text": "This component covers a range of media used to\nsupport various climate-related services on an\nNMHS website.\nSome examples may be:\n\u2022 Scanned hard copy climate records\n\u2022 Image portrayal of various climate data, such as\nan extract from a radar image stored in portable\nnetwork graphics (PNG) format\n\u2022 Podcasts and video clips used to communicate\nvarious climate-related messages\n\u2022 Photographs of various climate-related\nphenomena",
+      "text": "This component covers a range of media used to support various climate-related services on an NMHS website.\n\nSome examples may be:\n1. Scanned hard copy climate records\n2. Image portrayal of various climate data, such as an extract from a radar image stored in portable network graphics (PNG) format\n3. Podcasts and video clips used to communicate various climate-related messages\n4. Photographs of various climate-related\nphenomena",
       "classification": "Recommended"
     }
   },
   "4.6.3": {
     "title": "Climate software",
-    "text": "As discussed in the article by the UK Parliament Science and Technology Committee (2011), one\nof the recommendations of the UK parliamentary review of the Climategate issue was to ensure\nthat climate scientists make available the full methodological workings (including computer\ncodes) used to support their work. An extract is reproduced below.\nIt is not standard practice in climate science to publish the raw data and the computer code\nin academic papers. However, climate science is a matter of great importance and the quality\nof the science should be irreproachable. We therefore consider that climate scientists should\ntake steps to make available all the data that support their work (including raw data) and full\nmethodological workings (including the computer codes).\nThis has implications for the effective management of climate data and software in that software\nsource code will also require careful management.\nIn addition, it will be necessary to keep track of the time period during which each software\nversion is in operation, as this may also have implications for climate data and climate analysis.\nOn a conceptual level, this is similar in a way to the need to have effective observations metadata\nthat describe the maintenance of sensors and stations.",
+    "text": "As discussed in the article by the UK Parliament Science and Technology Committee (2011), one of the recommendations of the UK parliamentary review of the Climategate issue was to ensure that climate scientists make available the full methodological workings (including computer codes) used to support their work. An extract is reproduced below.\n\n> It is not standard practice in climate science to publish the raw data and the computer code in academic papers. However, climate science is a matter of great importance and the quality of the science should be irreproachable. We therefore consider that climate scientists should take steps to make available all the data that support their work (including raw data) and full methodological workings (including the computer codes).\n\nThis has implications for the effective management of climate data and software in that software source code will also require careful management.\n\nIn addition, it will be necessary to keep track of the time period during which each software version is in operation, as this may also have implications for climate data and climate analysis.\n\nOn a conceptual level, this is similar in a way to the need to have effective observations metadata that describe the maintenance of sensors and stations.",
     "4.6.3.1": {
       "title": "Source code management",
-      "text": "This component deals with managing the source\ncode of the software used to process climate data.\nThis component should have the following\ncapabilities at a minimum:\n\u2022 Maintain a library of a variety of software source\ncode.\n\u2022 Manage different versions (or branches) of\nthe software concurrently, with the ability to\nmaintain each version independently and to\neasily backport newer functionalities to an older\nversion.\n\u2022 Easily detect the differences between software\nversions.",
+      "text": "This component deals with managing the source code of the software used to process climate data. This component should have the following capabilities at a minimum:\n1. Maintain a library of a variety of software source code.\n2. Manage different versions (or branches) of the software concurrently, with the ability to maintain each version independently and to easily backport newer functionalities to an older version.\n3. Easily detect the differences between software versions.",
       "classification": "Recommended"
     },
     "4.6.3.2": {
       "title": "Package management",
-      "text": "This component refers to the functionality that\nfacilitates the packaging of software and its\nconfiguration for installation on a computer.\nIn addition, the component should facilitate\ndependency management to ensure that all\nrequired supporting software is also installed and\nconfigured appropriately at installation time.",
+      "text": "This component refers to the functionality that facilitates the packaging of software and its configuration for installation on a computer. In addition, the component should facilitate dependency management to ensure that all required supporting software is also installed and configured appropriately at installation time.",
       "classification": "Recommended"
     },
     "4.6.3.3": {
       "title": "Environment configuration",
-      "text": "This component concerns the functionality that\nfacilitates the recording and management of\ninformation relating to any changes to operational\nsoftware.\nThis includes:\n\u2022 What software was deployed on what server?\n\u2022 What version of the software was deployed?\n\u2022 Details of any configuration changes.\n\u2022 Details of any change made to the operational\nsoftware.\n\u2022 Details of the decommission of the software\nat the end of its period of operation, including\ndecommission date.",
+      "text": "This component concerns the functionality that facilitates the recording and management of information relating to any changes to operational software.\n\nThis includes:\n1. What software was deployed on what server?\n2. What version of the software was deployed?\n3. Details of any configuration changes.\n4. Details of any change made to the operational software.\n5. Details of the decommission of the software at the end of its period of operation, including decommission date.",
       "classification": "Recommended"
     },
     "4.6.3.4": {
       "title": "Software testing",
-      "text": "This component covers the testing of software that\nis to be deployed to manipulate climate data.\nThis includes:\n\u2022 Details of test plans and individual test cases,\nincluding user-acceptance testing.\n\u2022 Details of the test data, database, etc.\n\u2022 Details of test systems and environment.\n\u2022 Details of test results and artefacts, particularly\nproof that the test data were not affected by the\nsoftware or a change to the software.",
+      "text": "This component covers the testing of software that is to be deployed to manipulate climate data.\n\nThis includes:\n1. Details of test plans and individual test cases, including user-acceptance testing.\n2. Details of the test data, database, etc.\n3. Details of test systems and environment.\n4. Details of test results and artefacts, particularly proof that the test data were not affected by the software or a change to the software.",
       "classification": "Recommended"
     }
   }

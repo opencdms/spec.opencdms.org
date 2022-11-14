@@ -19,22 +19,22 @@
     "text": "",
     "9.2.1.1": {
       "title": "Scheduling",
-      "text": "This component represents technology and\nprocesses used to ensure that software processes\ncan be scheduled to run at specific times over a\n24-hour basis.\nThis functionality supports activities such as\nregular data ingest, quality assurance operations,\ndata analysis, derivation and backups.\nThere is also a requirement in more advanced\nenvironments to ensure that the dependencies\nbetween scheduled jobs are managed.",
+      "text": "This component represents technology and processes used to ensure that software processes can be scheduled to run at specific times over a 24-hour basis.\n\nThis functionality supports activities such as regular data ingest, quality assurance operations, data analysis, derivation and backups.\n\nThere is also a requirement in more advanced environments to ensure that the dependencies between scheduled jobs are managed.",
       "classification": "Required"
     },
     "9.2.1.2": {
       "title": "Service desk",
-      "text": "This component represents the functionalities,\nprocesses and software required to provide\nsupport for service operations4, including:\n\u2022 Incident and event management to ensure that\nif an unplanned interruption to an IT service\noccurs, normal service operation is returned as\nsoon as possible.\n\u2022 Problem management to ensure that the root\ncauses of problems are found and where\npossible, rectified.",
+      "text": "This component represents the functionalities, processes and software required to provide support for service operations4, including:\n1. Incident and event management to ensure that if an unplanned interruption to an IT service occurs, normal service operation is returned as soon as possible.\n2. Problem management to ensure that the root causes of problems are found and where possible, rectified.",
       "classification": "Recommended"
     },
     "9.2.1.3": {
       "title": "Applications management",
-      "text": "This component covers the functionalities,\nprocesses and software required to provide\napplication administration tasks and second- and\nthird-level support for CDMS services.\nAny new IT system implementation and any\nchange to existing IT systems must be undertaken\nin accordance with the section on governance\n(3.2).",
+      "text": "This component covers the functionalities, processes and software required to provide application administration tasks and second- and third-level support for CDMS services.\n\nAny new IT system implementation and any change to existing IT systems must be undertaken in accordance with the section on governance (3.2).",
       "classification": "Required"
     },
     "9.2.1.4": {
       "title": "Systems management",
-      "text": "This component refers to the functionalities,\nprocesses and software required to provide\nsystems administration tasks and second- and\nthird-level support for CDMS services.\nAny new IT system implementation and any\nchange to existing IT systems must be undertaken\nin accordance with the section on governance\n(3.2).",
+      "text": "This component refers to the functionalities, processes and software required to provide systems administration tasks and second- and third-level support for CDMS services.\n\nAny new IT system implementation and any change to existing IT systems must be undertaken in accordance with the section on governance (3.2).",
       "classification": "Required"
     }
   }

@@ -11,7 +11,7 @@ template = {
     "version": "1.0",
 }
 
-input_file_path = Path("../cdms/v1.0/cdms_specfications.xlsx")
+input_file_path = Path("../cdms/v1.0/cdms_specfications_md.xlsx")
 
 
 chapters_df = pd.read_excel(input_file_path, sheet_name="chapters").fillna("")
