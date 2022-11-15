@@ -5,3 +5,4 @@ requests
 PyGithub
 black
 pydantic
+Markdown
