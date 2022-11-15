@@ -112,7 +112,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--username", default="opencdms", required=False)
     parser.add_argument("--repo", default="temp-repo", required=False)
-    parser.add_argument("--issue-limit", default=1, required=False)
+    parser.add_argument("--issue-limit", default=None, type=int, required=False)
     parser.add_argument(
         "--common-labels", default=["Epic", "CDMS v1.0"], required=False
     )
