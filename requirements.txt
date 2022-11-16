@@ -1,6 +1,8 @@
+Jinja2
 openpyxl
 pandas
 requests
 PyGithub
 black
 pydantic
+Markdown
