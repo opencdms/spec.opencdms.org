@@ -184,4 +184,4 @@ if __name__ == "__main__":
             logger.info("""Issue created successfully...""")
         except Exception as e:
             logger.exception(e)
-        time.sleep(0.1)
+        time.sleep(5)
