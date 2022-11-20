@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+
+            <tr>
+                <td style="background-color: #dff2fd;">5.3.3.1 Data monitoring</td>
+                <td class="cdms-content">
+                    <p>This component monitors ingested and derived observation data to detect and resolve potential systemic issues.</p>
+<p>For example, NMHSs typically have quite long data quality control processes, where data may be modified over a period lasting several months.</p>
+<p>In the intervening period, normal business processes create considerable amounts of derived data, such as:
+1. Daily, weekly, monthly, seasonal and annual summaries for a range of observation variables.
+2. Statistical gridded datasets that represent the distribution of observation variables over large areas for similar time periods.</p>
+<p>As soon as observation data are modified through normal quality control processes, derived data may become invalid. This is why data monitoring processes are required to monitor data changes and, where necessary, reconstruct affected derived datasets.</p>
+<p>Another example is the generation of a number of metrics to assist with climate data management activities.</p>
+<p>This component maintains metrics relating to the capture of historical observations data, for example:</p>
+<ol>
+<li>Summary and per cent of data that have undergone quality control.</li>
+<li>Percentage of data at each level of quality
+control.</li>
+</ol>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

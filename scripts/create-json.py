@@ -19,7 +19,9 @@ def generate_index():
     output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
     # load data
-    chapters_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters", dtype=str).fillna("")
+    chapters_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="chapters", dtype=str
+    ).fillna("")
 
     # write to output files
     return output_filepath, {
@@ -38,8 +40,12 @@ def generate_index_with_children():
     output_dir.mkdir(parents=True, exist_ok=True)
     output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
-    chapters_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters", dtype=str).fillna("")
-    sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections", dtype=str).fillna("")
+    chapters_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="chapters", dtype=str
+    ).fillna("")
+    sections_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="sections", dtype=str
+    ).fillna("")
     sub_sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sub-sections").fillna(
         ""
     )
@@ -96,7 +102,7 @@ def generate_index_with_children():
         for sub_section in sub_sections:
             sub_section_row = sub_sections_df.loc[
                 sub_sections_df["Number"] == sub_section
-                ].iloc[0]
+            ].iloc[0]
             component_indexes = list(
                 filter(
                     lambda x: x.startswith(str(sub_section)),
@@ -134,8 +140,12 @@ def generate_index_with_children_alt():
     output_dir.mkdir(parents=True, exist_ok=True)
     output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
-    chapters_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters", dtype=str).fillna("")
-    sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections", dtype=str).fillna("")
+    chapters_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="chapters", dtype=str
+    ).fillna("")
+    sections_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="sections", dtype=str
+    ).fillna("")
     sub_sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sub-sections").fillna(
         ""
     )
@@ -191,7 +201,7 @@ def generate_index_with_children_alt():
         for sub_section in sub_sections:
             sub_section_row = sub_sections_df.loc[
                 sub_sections_df["Number"] == sub_section
-                ].iloc[0]
+            ].iloc[0]
             component_indexes = list(
                 filter(
                     lambda x: x.startswith(str(sub_section)),
@@ -223,8 +233,12 @@ def generate_index_with_children_alt():
 
 
 def generate_chapter():
-    chapters_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters", dtype=str).fillna("")
-    sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections", dtype=str).fillna("")
+    chapters_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="chapters", dtype=str
+    ).fillna("")
+    sections_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="sections", dtype=str
+    ).fillna("")
 
     for idx, chapter in chapters_df.iterrows():
         output = {
@@ -240,8 +254,11 @@ def generate_chapter():
             "version": "1.0",
         }
 
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{chapter['Number']}").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{chapter['Number']}")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
@@ -250,12 +267,16 @@ def generate_chapter():
 
 
 def generate_chapter_with_children():
-    chapters_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters", dtype=str).fillna("")
-    sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections", dtype=str).fillna("")
+    chapters_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="chapters", dtype=str
+    ).fillna("")
+    sections_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="sections", dtype=str
+    ).fillna("")
 
-    sub_sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sub-sections", dtype=str).fillna(
-        ""
-    )
+    sub_sections_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="sub-sections", dtype=str
+    ).fillna("")
     component_sheet_names = [f"ch{n}_components" for n in range(3, 10)]
     components_df_list = [
         pd.read_excel(INPUT_FILEPATH, sheet_name=sheet_name).fillna("")
@@ -296,7 +317,7 @@ def generate_chapter_with_children():
             for sub_section in sub_sections:
                 sub_section_row = sub_sections_df.loc[
                     sub_sections_df["Number"] == sub_section
-                    ].iloc[0]
+                ].iloc[0]
                 component_indexes = list(
                     filter(
                         lambda x: x.startswith(str(sub_section)),
@@ -324,8 +345,11 @@ def generate_chapter_with_children():
 
             output[str(section["Number"])] = section_output
 
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{chapter['Number']}/children").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{chapter['Number']}/children")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
@@ -333,12 +357,16 @@ def generate_chapter_with_children():
 
 
 def generate_chapter_with_children_alt():
-    chapters_df = pd.read_excel(INPUT_FILEPATH, sheet_name="chapters", dtype=str).fillna("")
-    sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sections", dtype=str).fillna("")
+    chapters_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="chapters", dtype=str
+    ).fillna("")
+    sections_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="sections", dtype=str
+    ).fillna("")
 
-    sub_sections_df = pd.read_excel(INPUT_FILEPATH, sheet_name="sub-sections", dtype=str).fillna(
-        ""
-    )
+    sub_sections_df = pd.read_excel(
+        INPUT_FILEPATH, sheet_name="sub-sections", dtype=str
+    ).fillna("")
     component_sheet_names = [f"ch{n}_components" for n in range(3, 10)]
     components_df_list = [
         pd.read_excel(INPUT_FILEPATH, sheet_name=sheet_name).fillna("")
@@ -378,7 +406,7 @@ def generate_chapter_with_children_alt():
             for sub_section in sub_sections:
                 sub_section_row = sub_sections_df.loc[
                     sub_sections_df["Number"] == sub_section
-                    ].iloc[0]
+                ].iloc[0]
                 component_indexes = list(
                     filter(
                         lambda x: x.startswith(str(sub_section)),
@@ -406,8 +434,11 @@ def generate_chapter_with_children_alt():
 
             output[str(section["Number"])] = section_output
 
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{chapter['Number']}/children").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{chapter['Number']}/children")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index-alt.json")).resolve()
 
@@ -451,8 +482,11 @@ def generate_section():
                 )
             )
             output["components"][sub_section] = component_indexes
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{section['Number']}").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{section['Number']}")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
@@ -482,8 +516,11 @@ def generate_section_alt():
             "version": "1.0",
         }
 
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{section['Number']}").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{section['Number']}")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index-alt.json")).resolve()
 
@@ -523,7 +560,7 @@ def generate_section_with_children():
         for sub_section in sub_sections:
             sub_section_row = sub_sections_df.loc[
                 sub_sections_df["Number"] == sub_section
-                ].iloc[0]
+            ].iloc[0]
             component_indexes = list(
                 filter(
                     lambda x: x.startswith(str(sub_section)),
@@ -548,8 +585,11 @@ def generate_section_with_children():
                     )
                     .iloc[0]
                 ).to_dict()
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{section['Number']}/children").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{section['Number']}/children")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
@@ -588,7 +628,7 @@ def generate_section_with_children_alt():
         for sub_section in sub_sections:
             sub_section_row = sub_sections_df.loc[
                 sub_sections_df["Number"] == sub_section
-                ].iloc[0]
+            ].iloc[0]
             component_indexes = list(
                 filter(
                     lambda x: x.startswith(str(sub_section)),
@@ -613,8 +653,11 @@ def generate_section_with_children_alt():
                     )
                     .iloc[0]
                 ).to_dict()
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{section['Number']}/children").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{section['Number']}/children")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index-alt.json")).resolve()
 
@@ -637,15 +680,22 @@ def generate_sub_section():
         output = {
             "title": sub_section["Title"],
             "text": sub_section["Description"],
-            "components": list(filter(lambda x: x.startswith(sub_section["Number"]),
-                                      components_df.index.values.tolist())),
+            "components": list(
+                filter(
+                    lambda x: x.startswith(sub_section["Number"]),
+                    components_df.index.values.tolist(),
+                )
+            ),
             "copyright": "World Meteorological Organization, 2014",
             "reference": "WMO-No. 1131",
             "version": "1.0",
         }
 
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{sub_section['Number']}").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{sub_section['Number']}")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
@@ -668,8 +718,12 @@ def generate_sub_section_with_children():
         output = {
             "title": sub_section["Title"],
             "text": sub_section["Description"],
-            "components": list(filter(lambda x: x.startswith(sub_section["Number"]),
-                                      components_df.index.values.tolist())),
+            "components": list(
+                filter(
+                    lambda x: x.startswith(sub_section["Number"]),
+                    components_df.index.values.tolist(),
+                )
+            ),
             "copyright": "World Meteorological Organization, 2014",
             "reference": "WMO-No. 1131",
             "version": "1.0",
@@ -680,10 +734,13 @@ def generate_sub_section_with_children():
                 output[cpt_idx] = {
                     "title": component["Title"],
                     "text": component["Description"],
-                    "classification": component["Classification"]
+                    "classification": component["Classification"],
                 }
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{sub_section['Number']}/children").resolve()
+        output_dir = (
+            Path(__file__)
+            .parent.parent.joinpath(f"docs/cdms/v1.0/{sub_section['Number']}/children")
+            .resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
@@ -709,8 +766,9 @@ def generate_component():
             "version": "1.0",
         }
 
-        output_dir = Path(__file__).parent.parent.joinpath(
-            f"docs/cdms/v1.0/{cpt_idx}").resolve()
+        output_dir = (
+            Path(__file__).parent.parent.joinpath(f"docs/cdms/v1.0/{cpt_idx}").resolve()
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         output_filepath = Path(output_dir.joinpath("index.json")).resolve()
 
