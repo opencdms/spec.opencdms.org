@@ -1,0 +1,8 @@
+{
+  "title": "Status log",
+  "text": "This component concerns the recording of each ingest activity status in order to:\n1. Monitor the ingest job status.\n2. Automatically recover failed ingests.\n3. Record warning and other error messages to enable manual intervention if required, for example if expected data are not received.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

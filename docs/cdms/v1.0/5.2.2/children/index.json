@@ -1,0 +1,15 @@
+{
+  "title": "Monitoring",
+  "text": "",
+  "components": [
+    "5.2.2.1"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.2.2.1": {
+    "title": "Data rescue metrics",
+    "text": "This component maintains metrics relating to the capture of historical observations data. These may contain:\n1. Name and brief description of data rescue project\n2. Countries where activity is taking place\n3. Contact person for project\n4. Types of data rescued\n5. Summary and per cent digitized\n6. Summary and per cent scanned\n7. Summary and per cent scanned but not digitized\n8. Summary and per cent undigitized",
+    "classification": "Recommended"
+  }
+}

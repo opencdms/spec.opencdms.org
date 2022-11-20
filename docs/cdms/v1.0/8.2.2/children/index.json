@@ -1,0 +1,15 @@
+{
+  "title": "Linked data",
+  "text": "",
+  "components": [
+    "8.2.2.1"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "8.2.2.1": {
+    "title": "Linked data",
+    "text": "This component supports semantic search requests such as those used with linked data.\n\nThis is an emerging requirement that is building considerable momentum within information\nmanagement communities.\n\nThe Australian Climate Observations Reference Network \u2013 Surface Air Temperature (ACORN-SAT) dataset, published by the Australian government at http://lab.environment.data.gov.au/ provides an example of how linked data may be used for publishing climate data.\n\nMore work is required to define this component, including its relationship to the approaches adopted by WIS.\n\nFor more information, see:\na) A presentation on linked data (Berners-Lee, 2009)\nb) Article on the ACORN-SAT linked climate dataset (Lefort et al., 2013)",
+    "classification": "Optional"
+  }
+}

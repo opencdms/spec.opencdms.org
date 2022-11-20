@@ -1,0 +1,8 @@
+{
+  "title": "Optical character recognition",
+  "text": "This component provides the functionality required to digitally capture data stored in scanned documents such as hand written and/or typed meteorological observation forms.",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

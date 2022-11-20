@@ -1,0 +1,15 @@
+{
+  "title": "Data extraction",
+  "text": "",
+  "components": [
+    "5.1.2.1"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.1.2.1": {
+    "title": "Data extraction",
+    "text": "This component allows data to be extracted from the climate database in accordance with NMHS data policy and governance processes.\n\nData may be transformed into a wide range of formats as described in the subsection on data ingest (5.1.1).\n\nNote: This component is only intended for advanced users who have an intimate knowledge of the climate database, its data structures, the relevant data policies and the appropriate use of quality flags and other aspects in order to perform one-off data extraction activities.\n\nEnd-user data extraction is intended to be constrained to defined data types via the climate data delivery services components (Chapter 8), using components under Chapter 7, such as: Tables and charts, Integrated search of climate data and Data download.",
+    "classification": "Recommended"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Documentation",
+  "text": "This component covers governance processes that ensure that the CDMS is adequately documented and that this documentation is kept up to date to facilitate efficient day-to-day use by staff and ease the learning curve of new staff, contractors, consultants, etc.\n\nThis documentation is very broad and includes:\n1. An overview of the CDMS\n2. An overview of the data being managed both within and outside the climate database\n3. The CDMS components, design, business requirements, architecture, test plans and deployment processes\n4. CDMS policies and governance processes\n5. CDMS backup and disaster recovery processes\n6. IT systems management and administration processes\n7. Various CDMS-related metrics",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

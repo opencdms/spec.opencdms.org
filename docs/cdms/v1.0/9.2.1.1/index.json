@@ -1,0 +1,8 @@
+{
+  "title": "Scheduling",
+  "text": "This component represents technology and processes used to ensure that software processes can be scheduled to run at specific times over a 24-hour basis.\n\nThis functionality supports activities such as regular data ingest, quality assurance operations, data analysis, derivation and backups.\n\nThere is also a requirement in more advanced environments to ensure that the dependencies between scheduled jobs are managed.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Core indices",
+  "text": "This component represents the ETCCDI core climate change indices.\n\nAs at June 2013, 27 core indices have been defined, see:\na) ETCCDI website",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Climatology policy",
+  "text": "",
+  "components": [
+    "3.1.6.1",
+    "3.1.6.2",
+    "3.1.6.3",
+    "3.1.6.4",
+    "3.1.6.5",
+    "3.1.6.6",
+    "3.1.6.7"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "3.1.6.1": {
+    "title": "Climate metadata",
+    "text": "This component refers to polices that ensure that appropriate climate metadata are maintained to facilitate a better understanding of climate data.\n\nAs defined in section 4.3, climate metadata include metadata on observations, discovery and data provenance.",
+    "classification": "Required"
+  },
+  "3.1.6.2": {
+    "title": "Data lineage traceability",
+    "text": "This component concerns policies that ensure that the CDMS is able to trace the lineage of climate data from published scientific texts and other papers back to raw observations.\n\nThis will include the ability to reproduce specific data that were held in the climate database at a particular point in time. Note that it may not be practical to implement this policy retrospectively, i.e. for papers published in the past.\n\nThis specific policy requirement has become increasingly relevant following the so-called Climategate issue. One of the conclusions of the UK parliamentary enquiry that investigated this issue was that:\n> It is not standard practice in climate science to publish the raw data and the computer code in academic papers. However, climate science is a matter of great importance and the quality of the science should be irreproachable. We therefore consider that climate scientists should take steps to make available all the data that support their work (including raw data) and full methodological workings (including the computer codes).\n>\n> Had both been available, many of the problems at UEA [University of East Anglia] could have been avoided. (UK Parliament Science and Technology Committee, 2011)",
+    "classification": "Required"
+  },
+  "3.1.6.3": {
+    "title": "Data generation",
+    "text": "This component covers a range of policies that govern the generation and interpretation of observation variables.\n\nAs these rules have changed and may change again in the future, the policies will need to cover past, current and future data generation policies.\n\nSome considerations are:\n1. These policies will need to cover the methods, algorithms, models and software source code used to generate data.\n2. They should include a definition of a climatological day.\n3. They should also cover the rules relating to the management of missing observations.\n\nSome inconsistencies have been found in a number of WMO guidelines. For example, conflicting approaches regarding the handling of missing observations when computing a daily or monthly average, and especially regarding the handling of a number of consecutive missing data, are presented in:\na) *Guide to Climatological Practices* (WMO-No. 100)\nb) *Calculation of Monthly and Annual 30-Year Standard Normals* (WMO/TD-No. 341), WCDP-10\nc) *Handbook on CLIMAT and CLIMAT TEMP Reporting* (WMO/TD-No. 1188)\n\nInconsistencies in WMO guides have also been noticed regarding the generation and storage of observations data recorded at minute frequency and the generation of hourly observation data. For example, the definition of climatological days may differ:\n\n4. Between NMHSs\n5. Between different stations within a single NMHS\n6. Over time within the same NMHS\n7. Between a given NMHS policy and the method applied by the software used in automatic weather stations (which often appear as a black box to NMHSs). For example, a climatological day could represent the following time periods:\n    1. From 0000 LST to 2300 LST\n    2. From 0100 LST to 0000 LST the next day\n    3. From 2346 LST the previous day to 2345 LST the current day\n    4. From 0900 LST the previous day to 0900 LST the current day\n\nThere are also inconsistencies due to the use of either local standard time or daylight saving time.\n\nThe same issues apply to the definition of a climatological hour.",
+    "classification": "Required"
+  },
+  "3.1.6.4": {
+    "title": "Climate networks",
+    "text": "This component concerns a range of policies that determine the design of climatological networks and establish the station and network operations, including observation times, on-site quality control, observer training, station inspections, etc.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100), section 2.5 The design of climatological networks, and section 2.6 Station and network operations\nb) *Technical Regulations* (WMO-No. 49), Volume I, Part II, 1.3.1.1.2:\n> The distribution of stations from which monthly surface climatological data are transmitted should be such that every 250 000 km2 is represented by at least one station and up to 10 stations where the density of the regional basic synoptic network permits; the distribution of stations from which monthly upper-air climatological data are transmitted should be such that every 1 000 000 km2 is represented by at least one station.",
+    "classification": "Required"
+  },
+  "3.1.6.5": {
+    "title": "Sensor or station change",
+    "text": "This component covers a range of policies that apply to changes affecting a station or sensor (such as a replacement or relocation). \n\nThese policies are of great importance for time-series analysis. They have implications for climate metadata and for the possible implementation of parallel observations for certain time periods.\n\nFor more information, see:\na) *Manual on the Global Observing System* (WMO-No. 544), Volume I, Part III, 3.2.4:\n> At reference climatological stations, any change in instrumentation should be such as not to decrease the degree of accuracy of any observations as compared with the earlier observations, and any such change should be preceded by an adequate overlap (at least two years) with the earlier instrumentation.\n\nb) *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8), Part II, 1.1.4 Climatological requirements:\n> The following general guidelines are suggested for a sufficient operational overlap between existing and new automated systems: (i) Wind speed and direction: 12 months (ii) Temperature, humidity, sunshine, evaporation: 24 months (iii) Precipitation: 60 months. (It will often be advantageous to have an ombrometer operated in parallel with the automatic raingauge.) A useful compromise would be an overlap period of 24 months (i.e. two seasonal cycles).\n\nc) *Guidelines on Climate Metadata and Homogenization* (WMO/TD-No. 1186), WCDMP-53",
+    "classification": "Required"
+  },
+  "3.1.6.6": {
+    "title": "Quality assurance",
+    "text": "This component refers to policies that ensure that quality assurance issues within an organization are clearly understood.\n\nSome issues to consider are:\n1. What level of quality assurance can the organization afford to maintain over the long term?\n2. Will the organization conduct quality assurance checks on all observation phenomena or only on a subset?\n3. What quality assurance levels (or tiers) are used by the organization for the long term?\n4. How is each quality assurance tier defined?\n5. What quality assurance tests must data successfully pass before they are promoted to the next tier?\n6. How could the ISO 9000 series of quality management standards help improve data management processes?\n\nSee:\na) *Technical Regulations* (WMO-No. 49), Volume IV",
+    "classification": "Recommended"
+  },
+  "3.1.6.7": {
+    "title": "Future Climate Data Framework",
+    "text": "This component refers to policies that may be established by the future Climate Data Framework, as discussed in section 11.1.\n\nThis may include, for example:\n1. Common and consistent definitions of key datasets to be maintained by the NMHS, including common dataset names and service names.\n2. A common definition of a climatological day, hour and so forth.\n3. A consistent way of determining data uncertainty.\n4. Common definitions of data quality.\n5. The establishment of a quality assessment classification for derived data.\n6. Authoritative taxonomies and code lists.\n7. Common policies for handling missing data when creating derived data.\n8. Common policies for deriving data when input data have differing levels of quality. For example, policies covering:\n    1. The calculation of monthly averages when daily data are at different levels of quality.\n    2. The generation of derived gridded datasets for a region where data for relevant stations are at different levels of quality.\n9. Common policies for all components discussed within this data policy section (3.1).\n10. The application of best practices for data homogenization techniques.",
+    "classification": "Recommended"
+  }
+}

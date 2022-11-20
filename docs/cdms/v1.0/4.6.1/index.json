@@ -1,0 +1,17 @@
+{
+  "title": "Spatial",
+  "text": "This subsection represents a wide range of spatial information typically used to provide context to climate data or as an input for spatial analysis processes. These data may be presented in vector, image, gridded or multidimensional array data formats.\n\nTypically, spatial representations of data contain aspatial attributes that describe various properties of spatial features. The spatial and aspatial attributes of the data can be used to support a variety of spatial analysis processes.\n\nThe components listed below are indicative of the types of spatial data that could be relevant to climate. This list is not exhaustive.\n\nSee also:\na) Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,\n2012*b*)",
+  "components": [
+    "4.6.1.1",
+    "4.6.1.2",
+    "4.6.1.3",
+    "4.6.1.4",
+    "4.6.1.5",
+    "4.6.1.6",
+    "4.6.1.7",
+    "4.6.1.8"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Data processing",
+  "text": "This component concerns the recording of details relating to any data processing that has occurred to convert a sensor\u2019s signal into its recorded observation value.\n\nThe following information is required:\n1. Software, including:\n    1. Version\n    2. Software language\n    3. Software name\n    4. Location of software source code\n    5. Description of processing applied (for example, whether values were calculated per minute, hour or other)\n    6.  Formula/algorithm implemented\n    7.  Processor details (the version, type of central processing unit and so forth)\n    8.  Date/time covering the period of validity of the method\n2. Input source (instrument, element and so forth)\n3. Data output, including:\n    1. Data format and version of format",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

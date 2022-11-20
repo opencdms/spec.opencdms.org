@@ -1,0 +1,8 @@
+{
+  "title": "Documentation",
+  "text": "This component refers to a range of textual data that describe various climate-related phenomena or serve as documentation for CDMSs.\nSome examples may be:\n\n1. CDMS technical and user documentation\n2. Text on a web page\n3. Diagrams representing climate processes, such as the Community Earth System Model from the National Center for Atmospheric Research, United States, shown in section 2.1 of this publication\n4. Various climate forecasts and events\n5. Climate processes such as El Ni\u00f1o-Southern Oscillation\n6. NMHS policies and practices\n7. Various documents and reports\n8. Training documentation\n9. Presentations",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

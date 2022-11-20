@@ -1,0 +1,8 @@
+{
+  "title": "Terrestrial",
+  "text": "**Terrestrial ECVs:**\n1. River discharge\n2. Water use\n3. Groundwater\n4. Lakes\n5. Snow cover\n6. Glaciers and ice caps\n7. Ice sheets\n8. Permafrost\n9. Albedo\n10. Land cover (including vegetation type)\n11. Fraction of absorbed photosynthetically active radiation\n12. Leaf area index\n13. Above-ground biomass\n14. Soil carbon\n15. Fire disturbance\n16. Soil moisture\n\nFor more information, see:\na) GCOS web page on ECVs\nb) Guide to Climatological Practices (WMO-No. 100), Table 2.1",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

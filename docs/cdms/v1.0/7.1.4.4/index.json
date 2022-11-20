@@ -1,0 +1,8 @@
+{
+  "title": "Search data provenance metadata",
+  "text": "This component provides the functionality that allows an end-user to search the CDMS data provenance metadata catalogue to:\n1. Broadly determine the lineage of a dataset, including the processes the dataset has been subjected to.\n2. Trace the provenance of individual records in detail, taking into account:\n    1. What was changed?\n    2. What was it derived from?\n    3. When was it changed?\n    4. What was done to change it?\n    5. How and why was it changed?\n    6. Who changed it?\n    7. Who did they act on behalf of (if applicable)?\n    8. Who authorized the change?\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on data provenance (4.3.3)\nc) Data provenance metadata catalogue component (8.2.1.3)\nd) Linked data component (8.2.2.1)",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "E-mail",
+  "text": "This component provides secure e-mail access and includes functionalities such as filtering for malware and spam.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,5 +1,6 @@
 {
   "title": "Analysis",
+  "text": "This section describes a series of processes used to analyse climate data.\n\nMore work will be required to expand on this section in future revisions of this Specification.",
   "subsections": [
     "6.1.1",
     "6.1.2"
@@ -19,48 +20,5 @@
   },
   "copyright": "World Meteorological Organization, 2014",
   "reference": "WMO-No. 1131",
-  "version": "1.0",
-  "6.1.1": {
-    "title": "Climate modelling",
-    "text": "",
-    "6.1.1.1": {
-      "title": "Numerical models",
-      "text": "This component represents the software, processes and governance mechanisms that provide numerical models such as general circulation models (GCMs), also known as global climate models.\n\nA Wikipedia article defines general circulation models as:\n> [A] mathematical model of the general circulation of a planetary atmosphere or ocean and based on the Navier\u2013Stokes equations on a rotating sphere with thermodynamic terms for various energy sources (radiation, latent heat). These equations are the basis for complex computer programs commonly used for simulating the atmosphere or ocean of the Earth. Atmospheric and oceanic GCMs (AGCM and OGCM) are key components of **global climate models** along with sea ice and land-surface components. GCMs and global climate models are widely applied for weather forecasting, understanding the climate, and projecting climate change.\n\nSuch climate numerical models could be global in scale (like GCMs) but they could also be regional, with generally a higher precision.\n\nDownscaling techniques are often used when creating regional models.\n\nModels can be based on:\n1. The rules of physics, biology and chemistry\n2. Statistical rules\n3. A mix of dynamic and statistic methods\n\nThe use of climate models includes:\n\n4. Simulation of the present climate\n5. Simulation of the future climate\n6. Palaeoclimate reconstruction\n7. Seasonal forecasts\n8. Decadal prediction\n\nNote: Most NMHSs would not have the resources needed to effectively manage the infrastructure and software required to support this component. However, the data output from such components may be useful and should be available for NMHSs via a number of sources, including Regional Climate Centres.\n\nFor more information, see:\na) Wikipedia article on general circulation models",
-      "classification": "Optional"
-    },
-    "6.1.1.2": {
-      "title": "Reanalysis",
-      "text": "This component concerns the software, processes and governance mechanisms that establish \u201ca meteorological data assimilation project which aims to assimilate historical observational data spanning an extended period, using a single consistent assimilation (or \u201canalysis\u201d) scheme throughout\u201d. (See Wikipedia article on meteorological reanalysis)",
-      "classification": "Optional"
-    },
-    "6.1.1.3": {
-      "title": "Model ensembles",
-      "text": "This component refers to the software, processes and governance mechanisms used to aggregate data from:\n1. A number of GCMs to produce products that portray a range of model forecasts.\n2. A series of runs of the same model.",
-      "classification": "Optional"
-    }
-  },
-  "6.1.2": {
-    "title": "Generate derived data from climate observations",
-    "text": "",
-    "6.1.2.1": {
-      "title": "Spatial analysis",
-      "text": "This component represents the software, processes and governance tools that handle a very wide variety of raster and vector spatial analysis techniques.\n\nSome examples are:\n1. Generating grids that show the spatial distribution of observations of a phenomenon such as precipitation.\n2. Generating grids that represent the distribution of the average maximum temperature for the month of May for climatological standard normals.\n3. Generating grids that represent the distribution of the maximum temperature anomalies for May 2010 when compared to the climatological standard normal.\n4. Selecting all meteorological stations located within a 10 km radius around a national administrative boundary.",
-      "classification": "Recommended"
-    },
-    "6.1.2.2": {
-      "title": "Image analysis",
-      "text": "This component covers the software, processes and governance tools that handle a very wide range of image analysis techniques.\n\nSome examples are:\n1. Processing remotely sensed satellite imagery to measure the relative solar reflectance of a satellite image, determine the cloud cover within a scene or generate a normalized difference vegetation index to measure vegetation greenness.\n2. Processing ground-based radar imagery to detect rain and storm activity.",
-      "classification": "Recommended"
-    },
-    "6.1.2.3": {
-      "title": "Time-series analysis",
-      "text": "This component concerns the software, processes and governance mechanisms that analyse timeseries data using a very broad range of analysis techniques.\n\nSome examples are the analysis required to produce:\n1. WMO standard products such as extremes, standard normals, World Weather Records and climate change indices.\n2. A variety of derived observations data.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100), Chapter 4 Characterizing climate from datasets, and Chapter 5 Statistical methods for analysing datasets",
-      "classification": "Recommended"
-    },
-    "6.1.2.4": {
-      "title": "Teleconnection indices",
-      "text": "This component represents the software, processes and governance processes used to analyse, record and manage data representing teleconnections and major climate indices such as the El Ni\u00f1o-Southern Oscillation and the Southern Oscillation Index.\n\nAccording to an article on Wikipedia, \u201c**[t]eleconnection** in atmospheric science refers to climate anomalies being related to each\nother at large distances (typically thousands of kilometers)\u201d.",
-      "classification": "Optional"
-    }
-  }
+  "version": "1.0"
 }

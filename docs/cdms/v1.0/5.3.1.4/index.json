@@ -1,0 +1,8 @@
+{
+  "title": "Statistical checks",
+  "text": "This component covers a number of tests that statistically analyse historical data to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.\n\nSome examples are:\n1. Climate tests that highlight extreme climatic values, such as a record maximum air temperature.\n2. Flatline tests where a constant value exceeds the specified limit in a time series, for example when the station air temperature remains constant for 12 hours.\n3. Spike tests conducted in a time series to identify data spikes exceeding a specified limit, for example when a three-hourly air temperature observation is at least 50 degrees colder than all others during the day.\n4. Rapid change tests conducted in a time series to identify rapid changes exceeding a specified limit, for example when a 100 cm soil temperature suddenly changes in consecutive 3-hourly observations from a relatively stable 22\u00b0C to 38\u00b0C for all following observations.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

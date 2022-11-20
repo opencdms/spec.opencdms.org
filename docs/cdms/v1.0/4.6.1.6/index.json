@@ -1,0 +1,8 @@
+{
+  "title": "Administrative",
+  "text": "This component covers administrative data.\n\nSome examples are:\n1. Localities and gazetteers\n2. Administrative boundaries\n3. Transportation networks\n4. Cadastres",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

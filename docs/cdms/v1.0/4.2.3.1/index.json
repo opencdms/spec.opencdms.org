@@ -1,0 +1,8 @@
+{
+  "title": "METCE",
+  "text": "The METCE component represents technology that provides rules and a standardized approach for modelling observations and simulations in the weather, water and climate domains.\n\nMETCE is an application schema conforming to ISO 19109:2005 *Geographic information \u2013 Rules for application schema*. Furthermore, METCE is a profile of the Observations and measurements standard that provides domain- and application specific semantics for use within the weather, water and climate domains.\n\nThe initial iteration of METCE and its companion model, the Observable Property Model, were developed by the Task Team on Aviation XML to support the ICAO Meteorological Information Exchange Model.\n\nHowever, METCE will provide a common semantic basis for a growing number of data products relating to observation and simulation within WMO. Not only will this simplify the requirements for software systems working with WMO products, it is also expected to simplify the mappings between WMO data products and counterparts from other communities such as CF-netCDF.\n\nAs at December 2013, plans have been made to provide mappings/rules to convert from the METCE application schema to BUFR sequences and/or GRIB templates at some point in the future.\n\nFor more information, please see:\na) AvXML-1.0 data model\nb) ISO 19109:2005, Geographic information \u2013 Rules for application schema",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

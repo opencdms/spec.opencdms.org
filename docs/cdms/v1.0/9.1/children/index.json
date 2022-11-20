@@ -1,0 +1,93 @@
+{
+  "title": "Application infrastructure",
+  "text": "",
+  "subsections": [
+    "9.1.1",
+    "9.1.2",
+    "9.1.3",
+    "9.1.4"
+  ],
+  "components": {
+    "9.1.1": [
+      "9.1.1.1",
+      "9.1.1.2"
+    ],
+    "9.1.2": [
+      "9.1.2.1",
+      "9.1.2.2",
+      "9.1.2.3"
+    ],
+    "9.1.3": [
+      "9.1.3.1",
+      "9.1.3.2"
+    ],
+    "9.1.4": [
+      "9.1.4.1",
+      "9.1.4.2"
+    ]
+  },
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.1.1": {
+    "title": "Identity management",
+    "text": "",
+    "9.1.1.1": {
+      "title": "Directory",
+      "text": "This component provides directory services such as the Lightweight Directory Access Protocol or Active Directory to manage user credentials and details.",
+      "classification": "Recommended"
+    },
+    "9.1.1.2": {
+      "title": "Identity and access management",
+      "text": "This component supports policies and functionalities that enable granular user access to the organization\u2019s IT resources and data.",
+      "classification": "Required"
+    }
+  },
+  "9.1.2": {
+    "title": "Collaboration",
+    "text": "",
+    "9.1.2.1": {
+      "title": "E-mail",
+      "text": "This component provides secure e-mail access and includes functionalities such as filtering for malware and spam.",
+      "classification": "Required"
+    },
+    "9.1.2.2": {
+      "title": "FTP",
+      "text": "This component provides secure services to allow exchange of climate data via the use of the File Transfer Protocol (FTP).",
+      "classification": "Required"
+    },
+    "9.1.2.3": {
+      "title": "Wiki",
+      "text": "This component supports a collaborative web environment allowing any member of a team to easily edit content.",
+      "classification": "Recommended"
+    }
+  },
+  "9.1.3": {
+    "title": "Web platform",
+    "text": "",
+    "9.1.3.1": {
+      "title": "Web server",
+      "text": "This component provides functionalities that deliver web content to web browsers. In addition to the web server platform, it also refers to services required to support web applications.",
+      "classification": "Recommended"
+    },
+    "9.1.3.2": {
+      "title": "Proxy server",
+      "text": "This component routes web traffic and acts as a load balancer and a reverse proxy server to contribute to secure connections to the web server.",
+      "classification": "Recommended"
+    }
+  },
+  "9.1.4": {
+    "title": "Database",
+    "text": "",
+    "9.1.4.1": {
+      "title": "Tabular",
+      "text": "This component represents database technology suitable for the storage of a wide range of timeseries climate data in tabular format, typically within a relational database.",
+      "classification": "Required"
+    },
+    "9.1.4.2": {
+      "title": "Spatial",
+      "text": "This component deals with technology used to\nspatially enable time-series climate data, typically\nwithin a relational database. The component may\nconsist of a functionality that spatially enables\nthe tabular database component, or it could be a\ndedicated spatial database that is closely aligned\nto the climate data stored within the tabular\ndatabase.",
+      "classification": "Recommended"
+    }
+  }
+}

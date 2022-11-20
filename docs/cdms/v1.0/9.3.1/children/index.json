@@ -1,0 +1,33 @@
+{
+  "title": "Networks",
+  "text": "",
+  "components": [
+    "9.3.1.1",
+    "9.3.1.2",
+    "9.3.1.3",
+    "9.3.1.4"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.3.1.1": {
+    "title": "Internet",
+    "text": "This component covers the infrastructure required to support access to the Internet. This includes routers, switches, firewalls, internet service providers, etc.",
+    "classification": "Required"
+  },
+  "9.3.1.2": {
+    "title": "WMO WIS/GTS",
+    "text": "This component concerns the infrastructure required to access the WMO Global Telecommunication System. This is essentially a private wide-area network.",
+    "classification": "Required"
+  },
+  "9.3.1.3": {
+    "title": "Internal networks",
+    "text": "This component refers to the infrastructure required to support local area networks. This includes switches, firewall(s), services such as domain name servers or the Dynamic Host Configuration Protocol.",
+    "classification": "Recommended"
+  },
+  "9.3.1.4": {
+    "title": "VPN",
+    "text": "This component concerns a virtual private network (VPN), which allows a private network to be set up across the publicly available Internet making use of tunnelling and security features. This can result in relatively secure communications.",
+    "classification": "Recommended"
+  }
+}

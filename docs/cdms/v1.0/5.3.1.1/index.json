@@ -1,0 +1,8 @@
+{
+  "title": "Consistency checks",
+  "text": "This component covers a range of tests to ensure that inconsistent, unlikely or impossible records are either rejected or flagged as suspect. A manual investigation may then assess the validity of the suspect values.\n\nThis component includes the concepts of internal, temporal and summarization consistency checks as discussed in the *Guide to Climatological Practices* (WMO-No. 100), section 3.4.6 Consistency tests.\n\nSome examples are:\n1. Is the minimum temperature lower than the maximum temperature?\n2. Is the maximum temperature within the historical range for maximum temperatures for a given station?",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Commercial",
+  "text": "This component refers to policies that address and clarify issues on the use of climate-related data captured and maintained by commercial organizations.\n\nIn addition to the considerations discussed under the Other agency component (3.1.5.2), other issues that commercial policies should consider include:\n1. What contractual arrangements apply to the use of the data?\n2. What costs apply explicitly to the use of the data?\n3. Are there constraints on the number of users who can access the data at the same time?\n4. Are there pricing qualifications based on the specific server environment that hosts the data, or more specifically on:\n    1. The number of central processing units, processor cores, threads and so forth?\n    2.  Whether there are any restrictions based on the virtualization of the server?\n5. Is there a time limit for the use of the data? If so, what must be done with the data at the end of this period?\n6. Are the data only available via a subscription service or web service? If so, what impact will this have on NMHS operations in the event of a disruption of the service or when an invoice is not paid on time?\n7. Are there any explicit commercial constraints on the use of the data?\n8. Are the data actively maintained?\n9. Do the costs, constraints and associated risks call for an arrangement to be made between the NMHS and the data provider?\n10. Are there alternative datasets of similar functionality and quality that could be obtained elsewhere, such as a community-maintained dataset like OpenStreetMap?",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

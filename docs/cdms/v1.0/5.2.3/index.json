@@ -1,0 +1,12 @@
+{
+  "title": "Data entry",
+  "text": "This subsection covers the functionality required to enable an appropriately trained and authorized person to manually enter data into the climate database.\n\nTypically, this functionality is tightly controlled according to NMHS data governance processes.\n\nSome issues to consider are:\n1. Data entry staff should only be able to add data to or edit data in the climate database under programme control, with appropriate safeguards in place to protect the integrity of the climate database.\n2. Any functionality that provides write access to the database should also include an audit function to allow an independent review of database changes - One example could be the use of database triggers that write the details of a transaction,\nincluding the previous values, into a separate set of audit tables.\n3. Another approach could be to ensure that the data entry process creates an interim data file that is then entered into the database via data ingest processes, bypassing the need for direct access to the database.\n4. NMHS data policy may enforce the need for double entry practices, where two or more operators key in data for the same form, independent of each other, to detect and minimize key-in errors.\n5. Careful consideration should be made to ensure that an organization has very effective IT security and monitoring in place prior to allowing key-in access via the Internet. Most organizations will not have suitable controls in place. Therefore, key-in via the Internet should be avoided as a general rule.\n6. NMHS data policy should provide guidelines as to appropriate data quality considerations applied to data that are manually entered.",
+  "components": [
+    "5.2.3.1",
+    "5.2.3.2",
+    "5.2.3.3"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

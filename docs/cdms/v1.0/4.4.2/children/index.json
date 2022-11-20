@@ -1,0 +1,21 @@
+{
+  "title": "Climate change indices",
+  "text": "This subsection represents the recommendations of the Commission for Climatology in the elaboration of climate change indices. \n\nThe Commission for Climatology/Climate Variability and Predictability (CCl/CLIVAR) Working Group on Climate Change Detection has been coordinating an international effort to develop, calculate and analyse a suite of indices so that individuals, countries and regions can calculate the indices in exactly the same way such that their analyses will fit seamlessly into the global picture.\n\nThose indices have been split in two categories: core indices and approved indices.\n\nFor more information, see the website of the Joint CCl/CLIVAR/JCOMM Expert Team on Climate Change Detection and Indices (ETCCDI).",
+  "components": [
+    "4.4.2.1",
+    "4.4.2.2"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.4.2.1": {
+    "title": "Core indices",
+    "text": "This component represents the ETCCDI core climate change indices.\n\nAs at June 2013, 27 core indices have been defined, see:\na) ETCCDI website",
+    "classification": "Required"
+  },
+  "4.4.2.2": {
+    "title": "Other indices",
+    "text": "This component covers other climate change indices.\n\nAs at June 2013, different research groups have defined different indices for their particular purposes. One example is the Statistical and Regional dynamical Downscaling of Extremes for European regions (STARDEX) project, mentioned in the ETCCDI website referred to above.",
+    "classification": "Optional"
+  }
+}

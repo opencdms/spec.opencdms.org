@@ -1,0 +1,33 @@
+{
+  "title": "Derived observation data",
+  "text": "This subsection describes a range of derived observational data products generated from climate observation variables.",
+  "components": [
+    "4.5.1.1",
+    "4.5.1.2",
+    "4.5.1.3",
+    "4.5.1.4"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.5.1.1": {
+    "title": "Homogenized data",
+    "text": "This component represents high-quality homogenized time-series datasets. Such datasets aim to ensure that the only variability remaining in the time series is that resulting from actual climate variability.\n\nSee also the subsection on data homogenization (6.1.3).",
+    "classification": "Recommended"
+  },
+  "4.5.1.2": {
+    "title": "Computed",
+    "text": "This component deals with derived data computed from observations for NMHS products. The computation shall be in accordance with the climatology policies in place.\n\nSome examples are:\n1. Data generation of accumulation, averages or extremes, such as generating ten-day data from daily data or daily data from hourly data.\n2. The generation of particular data derived from raw data, such as computing the potential evapotranspiration output for agricultural purposes.\n3. The generation of any statistical parameter required for products, such as extreme value analysis, homogenized data and others.\n4. Climate indices such as computed teleconnection indices.",
+    "classification": "Recommended"
+  },
+  "4.5.1.3": {
+    "title": "Normals and averages",
+    "text": "This component represents any normals and averages used by NMHSs that are in addition to climatological standard normals. For example, the component should be able to compute:\n1. Averages over specified time periods (daily, hourly, 5 days, 10 days, monthly and so forth)\n2. Period averages for any period (for example 5, 10, 30 or 100 years)\n\nFor more information, see:\na) *The Role of Climatological Normals in a Changing Climate* (WMO/TD-No. 1377), WCDMP-61",
+    "classification": "Recommended"
+  },
+  "4.5.1.4": {
+    "title": "Other",
+    "text": "This component concerns any other derived observation data product not mentioned above that is required for NMHS purposes.",
+    "classification": "Optional"
+  }
+}

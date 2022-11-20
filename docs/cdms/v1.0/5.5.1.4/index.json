@@ -1,0 +1,8 @@
+{
+  "title": "Metrics",
+  "text": "This component refers to the processes, software and governance processes required to effectively and efficiently maintain metrics relevant to climate metadata.\n\nSome examples are:\n1. Which stations or sensors do not have observations metadata records?\n2. Which datasets do not have discovery metadata records?\n\nMore work is required to provide effective guidance on this component.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Network",
+  "text": "This component concerns the recording of details relating to the observation network(s) that stations or observation platforms may belong to.\n\nThe following information is required:\n1. Network name (such as Regional Basic Climatological Network, Regional Basic Synoptic Network, GCOS, GCOS Upper-Air Network or National Climate Network)\n2. Network priority:\n    1. Critical\n    2.  Essential\n    3. Not applicable\n3. Time of observations\n4. Reporting frequency\n5. Date/time of network membership\n6. There is a possibility that a station does not belong to a network. This information is also useful.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

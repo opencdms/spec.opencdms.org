@@ -1,0 +1,8 @@
+{
+  "title": "Sensor or station change",
+  "text": "This component covers a range of policies that apply to changes affecting a station or sensor (such as a replacement or relocation). \n\nThese policies are of great importance for time-series analysis. They have implications for climate metadata and for the possible implementation of parallel observations for certain time periods.\n\nFor more information, see:\na) *Manual on the Global Observing System* (WMO-No. 544), Volume I, Part III, 3.2.4:\n> At reference climatological stations, any change in instrumentation should be such as not to decrease the degree of accuracy of any observations as compared with the earlier observations, and any such change should be preceded by an adequate overlap (at least two years) with the earlier instrumentation.\n\nb) *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8), Part II, 1.1.4 Climatological requirements:\n> The following general guidelines are suggested for a sufficient operational overlap between existing and new automated systems: (i) Wind speed and direction: 12 months (ii) Temperature, humidity, sunshine, evaporation: 24 months (iii) Precipitation: 60 months. (It will often be advantageous to have an ombrometer operated in parallel with the automatic raingauge.) A useful compromise would be an overlap period of 24 months (i.e. two seasonal cycles).\n\nc) *Guidelines on Climate Metadata and Homogenization* (WMO/TD-No. 1186), WCDMP-53",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

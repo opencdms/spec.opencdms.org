@@ -1,0 +1,19 @@
+{
+  "title": "Observations metadata",
+  "text": "This subsection covers access to and management of station metadata and platform metadata.\n\nStation and platform metadata are time-series data that describe how, when and where meteorological observations were made and the conditions they were made under. They are used to support a range of activities that allow climate professionals to understand the fitness for purpose of specific data and, in many cases, improve the quality of climate observations data. This type of metadata is referred to as observations metadata in this publication.\n\nIt is anticipated that application schemas (also known as logical data models) will be developed to formally define the structure and content of the information required to describe climate observing stations, sensors and platforms (see the Climate observations application schema component (4.2.3.2))\n\nNote: As a general rule, it will be necessary to record and maintain the details of any change to observations metadata in order to understand the context surrounding specific climate data and to support future data homogenization activities. In addition to details of the change, specific reference must be made to:\n1. The date/time of the change - Note: It may not always be possible to define the exact date of the change, for example when a change happens between two site visits. Therefore, it may be more appropriate to include a period of time during which the change occurred.\n2. The reason the change was made.\n3. The beginning and end dates of the prior value.\n4. Any date/time reference will need to be constrained by the appropriate temporal datum to ensure that date handling is consistently applied.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100)\nb) *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8)\nc) *Guide to the Global Observing System* (WMO-No. 488), Appendix III.3 Automatic weather station metadata\nd) *Manual on the Global Observing System* (WMO-No. 544), Volume I, Attachment III.1 Standard set of metadata elements for automatic weather station installations\ne) Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)\nf) Draft paper on the climatological needs for minimum stations metadata in the frame of WMO publication No. 9, Volume A (Stuber, 2012)\ng) Guidelines on Climate Metadata and Homogenization (WMO-No. 1186), WCDMP-53",
+  "components": [
+    "4.3.1.1",
+    "4.3.1.2",
+    "4.3.1.3",
+    "4.3.1.4",
+    "4.3.1.5",
+    "4.3.1.6",
+    "4.3.1.7",
+    "4.3.1.8",
+    "4.3.1.9",
+    "4.3.1.10"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

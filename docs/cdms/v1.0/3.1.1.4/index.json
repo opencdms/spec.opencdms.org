@@ -1,0 +1,8 @@
+{
+  "title": "International",
+  "text": "This component concerns commitments that organizations are required to adhere to because they qualify as international agreements.\n\nSome examples are:\n1. The Global Framework for Climate Services, which has an important role in climate data management, climate monitoring and assessment, climate products and services, and climate information for adaptation and risk management.\n2. International data policy agreements, such as the Infrastructure for Spatial Information in Europe, which has defined and legislated common principles for European Union countries that enable the sharing of environmental spatial information among public-sector organizations. This generally includes climatological data.\n3. The Group on Earth Observations (GEO), which concerns the exchange of observations data.\n4. The OGC and ISO, which focus on the exchange of data via open spatial standards. Note that not all standards are relevant.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

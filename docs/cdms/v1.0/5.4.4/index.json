@@ -1,0 +1,11 @@
+{
+  "title": "Uncertainty",
+  "text": "This subsection refers to the processes, software, governance processes and data analysis used to understand and record the uncertainty inherent in the data.\n\nAs noted in the OGC Abstract Specification: Geographic Information \u2013 Observations and measurements (p. 13), all observations have an element of uncertainty:\n\n> The observation error typically has a systematic component, which is similar for all estimates made using the same procedure, and a random component, associated with the particular application instance of the observation procedure. If potential errors in a property value are important in the context of a data analysis or processing application, then the details of the act of observation which provided the estimate of the value are required.\n\nThis functionality will support:\n1. Future statistical analysis that takes into account the uncertainty inherent in data.\n2. Communication of data uncertainty.\n\nFor more information, see Wikipedia articles on:\na) Uncertain data\nb) Uncertainty",
+  "components": [
+    "5.4.4.1",
+    "5.4.4.2"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

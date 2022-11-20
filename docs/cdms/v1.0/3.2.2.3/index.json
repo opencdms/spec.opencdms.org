@@ -1,0 +1,8 @@
+{
+  "title": "Project management",
+  "text": "This component concerns governance processes that ensure that any development activity, infrastructure change or other enhancement related to the CDMS is carefully managed.\n\nGood project managers and project governance processes can mean the difference between a project delivering desired results or the same project failing at great expense, frustrating users and possibly corrupting the climate record.\n\nUncontrolled enhancement can result in:\n1. An undesirable functionality added to the CDMS.\n2. Lower-priority work undertaken at the expense of higher-priority tasks.\n3. The development of activities that do not have a clearly defined scope, set of deliverables, timeline and budget.\n\nSome additional considerations include:\n\n4. How is the business benefit for a proposed project defined and assessed?\n5. How are the relative priorities of projects assessed?\n7. How are projects managed? What approach is adopted?\n8. What process is used to monitor the progress of a project?\n9. How are the project deliverables assessed to ensure that they meet requirements?\n10. What lessons can be learned from a finished project?",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

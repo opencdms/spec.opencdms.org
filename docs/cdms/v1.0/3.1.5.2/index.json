@@ -1,0 +1,8 @@
+{
+  "title": "Other agency",
+  "text": "This component refers to policies that provide clear explanations of issues regarding the use of climate-related data captured and maintained by government agencies external to the NMHS.\n\nExamples of issues to consider include:\n1. Is there a clear data licence allowing the NMHS to use the data for any relevant purpose, including for internal use, to create derived products, to publish the data on the NMHS website or for data redistribution, if required?\n2. Are there any costs associated with the use of the data?\n3. Is it a high-quality dataset? Do the discovery metadata clearly describe the intended use, lineage and quality assessment of the data?\n4. What constraints apply to the use of the data?\n5. If the data are observations data, are there high-quality metadata available to support CDMS activities?\n6. If the data are of similar quality to NMHS data, share similar functions and help enhance the NMHS data, is the provider willing to consider joint ownership and maintenance of the data?",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

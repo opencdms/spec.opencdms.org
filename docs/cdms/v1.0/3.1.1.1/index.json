@@ -1,0 +1,8 @@
+{
+  "title": "WMO resolutions",
+  "text": "This component refers to the policy framework within WMO, governed at the highest level through Congress and the Executive Council.\n\nThe list of current resolutions can be found in Resolutions of Congress and the Executive Council (WMO-No. 508).\n\nSome resolutions have major implications for data policy, such as Resolution 40 (Cg-XII), which provides guidelines for the policy and practice of exchanging meteorological data, and Resolution 25 (Cg-XIII), which provides guidelines on the exchange of hydrological data.\n\nThe major innovation in these resolutions is the definition of essential data. Through these resolutions, WMO Members commit to making essential data available on a free and unrestricted basis at no more than the reasonable cost of extraction and formatting for delivery to the user.\n\nMembers may not impose additional charges for essential data.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

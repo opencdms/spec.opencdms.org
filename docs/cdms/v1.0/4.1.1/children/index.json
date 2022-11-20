@@ -1,0 +1,27 @@
+{
+  "title": "Climate observations",
+  "text": "This subsection refers to the system\u2019s capacity to handle climate observation variables. The list below is not comprehensive and additional variables may be required or recommended.\n\nThe list is currently based on the ECVs published in 2010 by GCOS. However, it is worth noting that there are other types of variables that are very relevant to climate observation, such as visibility, evaporation and meteorological phenomena.\n\nObservations include measurements made by observers, traditional sensors and remote sensors.\n\nFor more information, see:\na) GCOS website\nb) GCOS web page on ECVS",
+  "components": [
+    "4.1.1.1",
+    "4.1.1.2",
+    "4.1.1.3"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.1.1.1": {
+    "title": "Atmospheric",
+    "text": "Observations relevant to the GCOS ECVs are needed to support the work of the United Nations Framework Convention on Climate Change and the Intergovernmental Panel on Climate Change.\n\nWithin this component, observations relating to the following atmospheric ECVs (over land, sea and ice) are either required or recommended, as shown below:\n\n**Required**\n1. Surface\n    1. Air temperature\n    2. Wind speed and direction\n    3. Water vapour\n    4. Pressure\n    5. Precipitation\n    6. Surface radiation budget\n2. Upper air\n    1. Air temperature\n    2. Wind speed and direction\n    3. Water vapour\n\n**Recommended**\n\n3. Upper air\n    1. Cloud properties\n    2. Earth radiation budget (including solar irradiance)\n4. Composition\n    1. Carbon dioxide\n    2. Methane\n    3. Ozone\n    4. Aerosol\n    5. Other\n\nFor more information, see:\na) GCOS web page on ECVs\nb) Guide to Climatological Practices (WMO-No. 100), Table 2.1",
+    "classification": "Required"
+  },
+  "4.1.1.2": {
+    "title": "Terrestrial",
+    "text": "**Terrestrial ECVs:**\n1. River discharge\n2. Water use\n3. Groundwater\n4. Lakes\n5. Snow cover\n6. Glaciers and ice caps\n7. Ice sheets\n8. Permafrost\n9. Albedo\n10. Land cover (including vegetation type)\n11. Fraction of absorbed photosynthetically active radiation\n12. Leaf area index\n13. Above-ground biomass\n14. Soil carbon\n15. Fire disturbance\n16. Soil moisture\n\nFor more information, see:\na) GCOS web page on ECVs\nb) Guide to Climatological Practices (WMO-No. 100), Table 2.1",
+    "classification": "Recommended"
+  },
+  "4.1.1.3": {
+    "title": "Oceanic",
+    "text": "**Oceanic ECVs:**\n1. Surface\n    1. Sea-surface temperature\n    2. Sea-surface salinity\n    3. Sea level\n    4. Sea state\n    5. Sea ice\n    6. Surface current\n    7. Ocean colour\n    8. Carbon dioxide partial pressure\n    9. Ocean acidity\n    10. Phytoplankton\n2. Subsurface\n    1. Temperature\n    2. Salinity\n    3. Current\n    4. Nutrients\n    5. Carbon dioxide partial pressure\n    6. Ocean acidity\n    7. Oxygen\n    8. Tracers\n\nFor more information, see:\na) GCOS web page on ECVs\nb) Guide to Climatological Practices (WMO-No. 100), Table 2.1",
+    "classification": "Recommended"
+  }
+}

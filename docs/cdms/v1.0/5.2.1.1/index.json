@@ -1,0 +1,8 @@
+{
+  "title": "Document imaging",
+  "text": "This component supports the functionality required to digitally capture a physical document and store the resultant file and associated discovery metadata, perhaps within the climate database.\n\nSome examples of the types of documents to be digitally captured are:\n1. Scanned paper observation forms\n2. Scanned microfiche/microfilm\n3. Relevant observations metadata documents such as instrument calibration reports\n4. Technical manuals\n5 Site location plans and sections\n\nFor more information, see:\na) *Guidelines on Climate Data Rescue* (WMO/TDNo. 1210), WCDMP-55",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

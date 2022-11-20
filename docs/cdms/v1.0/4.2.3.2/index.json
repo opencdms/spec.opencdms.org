@@ -1,0 +1,8 @@
+{
+  "title": "Climate observations application schema",
+  "text": "This component represents technology that provides rules and a standardized approach for modelling climate observations data.\n\nIt is anticipated that METCE will be used as the basis for developing an application schema that will provide more detailed semantics and constraints specific to a given domain or application. In this way, METCE will provide the basis for an application schema developed to support the wide array of climate observation applications.\n\nThe scope of such an application schema is expected to cover both the climate observations themselves and the associated observation metadata (see subsection on observations metadata (4.3.1)).",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

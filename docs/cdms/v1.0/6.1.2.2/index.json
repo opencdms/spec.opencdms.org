@@ -1,0 +1,8 @@
+{
+  "title": "Image analysis",
+  "text": "This component covers the software, processes and governance tools that handle a very wide range of image analysis techniques.\n\nSome examples are:\n1. Processing remotely sensed satellite imagery to measure the relative solar reflectance of a satellite image, determine the cloud cover within a scene or generate a normalized difference vegetation index to measure vegetation greenness.\n2. Processing ground-based radar imagery to detect rain and storm activity.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

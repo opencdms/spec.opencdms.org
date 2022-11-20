@@ -1,0 +1,45 @@
+{
+  "title": "Quality management",
+  "text": "For more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100)\nb) *Guide to the Global Observing System* (WMO-No. 488), Appendix VI.1 Data quality control, and Appendix VI.2 Guidelines for quality control procedures applying to data from automatic weather stations\nc) *Guidelines on the Quality Control of Surface Climatological Data* (WMO/TD-No. 111), WCP-85\nd) *Guidelines on Climate Data Management* (WMO/TD-No. 1376), WCDMP-60\ne) *Guide on the Global Data-processing System* (WMO-No. 305), Chapter 6 Quality control procedures",
+  "components": [
+    "5.3.1.1",
+    "5.3.1.2",
+    "5.3.1.3",
+    "5.3.1.4",
+    "5.3.1.5",
+    "5.3.1.6"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.3.1.1": {
+    "title": "Consistency checks",
+    "text": "This component covers a range of tests to ensure that inconsistent, unlikely or impossible records are either rejected or flagged as suspect. A manual investigation may then assess the validity of the suspect values.\n\nThis component includes the concepts of internal, temporal and summarization consistency checks as discussed in the *Guide to Climatological Practices* (WMO-No. 100), section 3.4.6 Consistency tests.\n\nSome examples are:\n1. Is the minimum temperature lower than the maximum temperature?\n2. Is the maximum temperature within the historical range for maximum temperatures for a given station?",
+    "classification": "Required"
+  },
+  "5.3.1.2": {
+    "title": "Data comparison",
+    "text": "This component covers a series of tests that use and cross-reference data from a number of sources to validate suspect observations.\n\nSome examples of datasets that may be cross-referenced are:\n1. Observations data showing daily precipitation at a station\n2. Radar data covering the station\n3. Synoptic forecast charts\n4. Satellite imagery",
+    "classification": "Recommended"
+  },
+  "5.3.1.3": {
+    "title": "Heuristic checks",
+    "text": "This component refers to a set of tests that rely on experience and knowledge of observation processes, techniques and instrumentation to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.\n\nSome examples are problems typically caused by:\n1. Inexperienced operators.\n2. Instruments that are not or are incorrectly calibrated.\n3. Operator behaviour or organizational policy, for example not recording rainfall data over a weekend period and aggregating the results on the following Monday.\n4. Known deficiencies in observers handling data such as evaporation-related observations.\n5. Changes over time caused by changes at an observation site. For example, a shift in the magnitude of wind recorded from a specific direction may be an indicator of a problem at the site location, such as a new building structure or trees obstructing the flow of the wind in that direction.",
+    "classification": "Required"
+  },
+  "5.3.1.4": {
+    "title": "Statistical checks",
+    "text": "This component covers a number of tests that statistically analyse historical data to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.\n\nSome examples are:\n1. Climate tests that highlight extreme climatic values, such as a record maximum air temperature.\n2. Flatline tests where a constant value exceeds the specified limit in a time series, for example when the station air temperature remains constant for 12 hours.\n3. Spike tests conducted in a time series to identify data spikes exceeding a specified limit, for example when a three-hourly air temperature observation is at least 50 degrees colder than all others during the day.\n4. Rapid change tests conducted in a time series to identify rapid changes exceeding a specified limit, for example when a 100 cm soil temperature suddenly changes in consecutive 3-hourly observations from a relatively stable 22\u00b0C to 38\u00b0C for all following observations.",
+    "classification": "Required"
+  },
+  "5.3.1.5": {
+    "title": "Spatial checks",
+    "text": "This component covers a range of spatial tests to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.\n\nSome examples are:\n1. Comparing the results of a time series of observations at a given station with those at nearby stations.\n2. Using a Barnes or similar analysis to derive spatial patterns against which anomalous and possibly erroneous station values stand out.",
+    "classification": "Recommended"
+  },
+  "5.3.1.6": {
+    "title": "Data recovery",
+    "text": "This component refers to the processes, policies, governance arrangements, audit processes, etc., that enable the recovery and insertion of data in the climate database, possibly overwriting existing data.\n\nThis component involves a number of manual processes undertaken by experienced and well-trained personnel, supported by effective technology, governance and data management processes, to investigate anomalous observations and either accept or reject suspect records.\n\nPersonnel will typically review and consider a wide range of data in their investigations, such as raw records, synoptic charts, satellite imagery, radar and other types.",
+    "classification": "Required"
+  }
+}

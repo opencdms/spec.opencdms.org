@@ -1,0 +1,57 @@
+{
+  "title": "Spatial",
+  "text": "This subsection represents a wide range of spatial information typically used to provide context to climate data or as an input for spatial analysis processes. These data may be presented in vector, image, gridded or multidimensional array data formats.\n\nTypically, spatial representations of data contain aspatial attributes that describe various properties of spatial features. The spatial and aspatial attributes of the data can be used to support a variety of spatial analysis processes.\n\nThe components listed below are indicative of the types of spatial data that could be relevant to climate. This list is not exhaustive.\n\nSee also:\na) Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,\n2012*b*)",
+  "components": [
+    "4.6.1.1",
+    "4.6.1.2",
+    "4.6.1.3",
+    "4.6.1.4",
+    "4.6.1.5",
+    "4.6.1.6",
+    "4.6.1.7",
+    "4.6.1.8"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.6.1.1": {
+    "title": "Topography",
+    "text": "Although this component is labelled topography, it actually refers to a wider set of data.\n\nSome examples are:\n1. Typical topographic data such as drainage, relief, cultural and nomenclatural features\n2. Digital elevation models",
+    "classification": "Recommended"
+  },
+  "4.6.1.2": {
+    "title": "Emergency management",
+    "text": "This component concerns datasets that are useful for supporting emergency management and related warning systems.",
+    "classification": "Optional"
+  },
+  "4.6.1.3": {
+    "title": "Agricultural",
+    "text": "This component refers to agricultural information datasets.\n\nSome examples are:\n1. Data from the Food and Agriculture Organization of the United Nations that could relate to agriculture, animal production and health, fisheries, forestry, land and water or plant production and protection.\n2. Regional, national or international data from different organizations such as primary industry departments or research centres on agriculture.",
+    "classification": "Optional"
+  },
+  "4.6.1.4": {
+    "title": "Health",
+    "text": "The component refers to a wide variety of health datasets.\n\nSome examples are:\n1. Data from the World Health Organization covering datasets on a very large spectrum.\n2. National or international data from different organizations such as health departments or health research centres.\n3. Epidemiological studies (see Wikipedia article) and so forth.",
+    "classification": "Optional"
+  },
+  "4.6.1.5": {
+    "title": "Environmental",
+    "text": "This component refers to environmental datasets.\n\nSome examples are:\n1. Data from the United Nations Environment Programme or the United Nations Educational, Scientific and Cultural Organization.\n2. National or international data from different organizations such as environment departments or research centres.\n3. Data relating to the distribution of particular flora and fauna, etc.",
+    "classification": "Optional"
+  },
+  "4.6.1.6": {
+    "title": "Administrative",
+    "text": "This component covers administrative data.\n\nSome examples are:\n1. Localities and gazetteers\n2. Administrative boundaries\n3. Transportation networks\n4. Cadastres",
+    "classification": "Recommended"
+  },
+  "4.6.1.7": {
+    "title": "Impacts data",
+    "text": "This component concerns a range of spatial data that relate to things impacted by climate. This could include:\n1. Deaths caused by heatwaves, prolonged droughts, floods, cyclones, etc.\n2. Infrastructure damage caused by a range of events such as floods, bush fires or cyclones.\n3. Changing land use, such as agricultural adaptations due to a changing climate.",
+    "classification": "Recommended"
+  },
+  "4.6.1.8": {
+    "title": "Other",
+    "text": "This component refers to a range of other spatial data that may be relevant to climate.",
+    "classification": "Optional"
+  }
+}

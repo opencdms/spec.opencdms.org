@@ -1,0 +1,8 @@
+{
+  "title": "WMO messages",
+  "text": "This component allows for the import of data from a range of WMO message formats, including TAC and TDCF.\n\nAs both historical and current data will need to be imported, this component should be able to work with data in a wide variety of past, present (and future) data formats.\n\nSome examples are:\n1. Binary:\n    1. BUFR\n    2. GRIB\n2. Alphanumeric:\n    1. CREX\n    2.  SYNOP\n    3.  TEMP\n    4.  SHIP\n    5.  METAR\n    6.  World Weather Records\n\nNote: While TAC formats are being phased out, support for them will still be required by this component to support the ingest of historical data.\n\nFor more information, see:\na) WMO international codes",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

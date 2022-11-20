@@ -1,0 +1,8 @@
+{
+  "title": "Data lineage traceability",
+  "text": "This component concerns policies that ensure that the CDMS is able to trace the lineage of climate data from published scientific texts and other papers back to raw observations.\n\nThis will include the ability to reproduce specific data that were held in the climate database at a particular point in time. Note that it may not be practical to implement this policy retrospectively, i.e. for papers published in the past.\n\nThis specific policy requirement has become increasingly relevant following the so-called Climategate issue. One of the conclusions of the UK parliamentary enquiry that investigated this issue was that:\n> It is not standard practice in climate science to publish the raw data and the computer code in academic papers. However, climate science is a matter of great importance and the quality of the science should be irreproachable. We therefore consider that climate scientists should take steps to make available all the data that support their work (including raw data) and full methodological workings (including the computer codes).\n>\n> Had both been available, many of the problems at UEA [University of East Anglia] could have been avoided. (UK Parliament Science and Technology Committee, 2011)",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Data monitoring",
+  "text": "This component monitors ingested and derived observation data to detect and resolve potential systemic issues.\n\nFor example, NMHSs typically have quite long data quality control processes, where data may be modified over a period lasting several months.\n\nIn the intervening period, normal business processes create considerable amounts of derived data, such as:\n1. Daily, weekly, monthly, seasonal and annual summaries for a range of observation variables.\n2. Statistical gridded datasets that represent the distribution of observation variables over large areas for similar time periods.\n \nAs soon as observation data are modified through normal quality control processes, derived data may become invalid. This is why data monitoring processes are required to monitor data changes and, where necessary, reconstruct affected derived datasets.\n\nAnother example is the generation of a number of metrics to assist with climate data management activities.\n\nThis component maintains metrics relating to the capture of historical observations data, for example:\n\n3. Summary and per cent of data that have undergone quality control.\n4. Percentage of data at each level of quality\ncontrol.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

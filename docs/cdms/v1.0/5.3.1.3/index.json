@@ -1,0 +1,8 @@
+{
+  "title": "Heuristic checks",
+  "text": "This component refers to a set of tests that rely on experience and knowledge of observation processes, techniques and instrumentation to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.\n\nSome examples are problems typically caused by:\n1. Inexperienced operators.\n2. Instruments that are not or are incorrectly calibrated.\n3. Operator behaviour or organizational policy, for example not recording rainfall data over a weekend period and aggregating the results on the following Monday.\n4. Known deficiencies in observers handling data such as evaporation-related observations.\n5. Changes over time caused by changes at an observation site. For example, a shift in the magnitude of wind recorded from a specific direction may be an indicator of a problem at the site location, such as a new building structure or trees obstructing the flow of the wind in that direction.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

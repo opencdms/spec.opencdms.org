@@ -1,0 +1,8 @@
+{
+  "title": "Key entry",
+  "text": "This component provides the functionality to support manual key-in of meteorological data.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

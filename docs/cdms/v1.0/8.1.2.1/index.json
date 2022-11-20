@@ -1,0 +1,8 @@
+{
+  "title": "Combined climate observations and metadata",
+  "text": "This component represents the technology, software, processes and governance needed to support the transmission, consumption and processing of combined climate observations and associated metadata via a future climate observations application schema (or similar name) derived from:\n1. The schema outlined in the Climate observations application schema component (4.2.3.2)\n2. The schema outlined in the METCE component (4.2.3.1)\n\nAs discussed in the section above (8.1.2), this work is currently embryonic. However, it is anticipated that it will become a key technological mechanism for exchanging climate observations and metadata in future years in support of data interoperability and platform independence.\n\nFor more information, see:\na) Above section (8.1.2)\nb) METCE component (4.2.3.1)\nc) Climate observations application schema component (4.2.3.2)",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

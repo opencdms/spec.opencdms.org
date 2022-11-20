@@ -1,0 +1,8 @@
+{
+  "title": "Spatial analysis",
+  "text": "This component represents the software, processes and governance tools that handle a very wide variety of raster and vector spatial analysis techniques.\n\nSome examples are:\n1. Generating grids that show the spatial distribution of observations of a phenomenon such as precipitation.\n2. Generating grids that represent the distribution of the average maximum temperature for the month of May for climatological standard normals.\n3. Generating grids that represent the distribution of the maximum temperature anomalies for May 2010 when compared to the climatological standard normal.\n4. Selecting all meteorological stations located within a 10 km radius around a national administrative boundary.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

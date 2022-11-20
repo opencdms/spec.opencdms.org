@@ -1,0 +1,8 @@
+{
+  "title": "Taxonomies and registers of authoritative terms",
+  "text": "This component is related to the previous component. It represents the technology, software, processes and governance needed to develop an authoritative definition of the concepts and terms referenced in a logical data model such as a future climate observations application schema (or similar name), and to enable the publication of such terms.\n\nFollowing the work of the Task Team on Aviation XML, WMO has established the WMO Codes Registry, which provides a web-based publication of terms from the Manual on Codes (WMO-No. 306).\n\nThe current coverage of terms is sparse - only covering the aviation-related terms required by the sponsoring activity - but there is commitment from WMO to populate the remaining code tables.\n\nThe WMO Codes Registry provides a well-defined programmatic application programming interface (API) alongside the web application. Where the need arises for publication of locally managed terms, it is recommended that the registry API be supported.\n\nAn open-source reference implementation of the registry software is available.\n\nFor more information, see:\na) Above section entitled GML application schema (8.1.2)\nb) METCE component (4.2.3.1)\nc) Climate observations application schema component (4.2.3.2)\nd) Overviews of the WMO Codes Registry (Tandy, 2013b, 2013c)",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

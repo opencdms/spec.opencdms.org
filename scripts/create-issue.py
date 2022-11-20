@@ -11,7 +11,9 @@ from typing import List, Optional
 from pydantic import BaseModel
 
 
-INPUT_FILEPATH = Path("../cdms/v1.0/cdms_specfications_md.xlsx").resolve()
+INPUT_FILEPATH = Path(__file__).parent.parent.joinpath(
+    "cdms/v1.0/cdms_specifications_md.xlsx"
+)
 
 
 class Classifications(enum.Enum):

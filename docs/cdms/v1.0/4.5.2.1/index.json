@@ -1,0 +1,8 @@
+{
+  "title": "Analysed data",
+  "text": "This component refers to spatially distributed gridded data that have been derived from observational data as the result of an analytical process.\n\nSome examples are:\n1. Singular variables such as:\n    1. Normals\n    2. Observations for a given day or time\n    3. Averages\n    4. Percentiles\n    5. Cumulative data\n    6. Extremes\n    7. Homogenized data\n2. Multivariables such as:\n    1. The generation of anomalies (difference between the normals data and a specific monthly variable)\n    2. More complex data such as potential evapotranspiration",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

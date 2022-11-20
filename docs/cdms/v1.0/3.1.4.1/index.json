@@ -1,0 +1,8 @@
+{
+  "title": "Interoperability standards",
+  "text": "This component involves policies that ensure that climate data are delivered using appropriate open interoperability standards, such as open spatial standards.\n\nThis will ensure that data are available in a form that facilitates data interoperability and are accessible to a wide range of end-users from disparate industries using a wide variety of proprietary and open-source software applications.\n\nNote: It is possible to enforce the use of data formats such as BUFR or GRIB within an NMHS in an attempt to facilitate interoperability. In reality though, only NMHSs and closely related organizations will be able to understand the formats and have the software to use the data.\n\nFor more information, see section 8.1 of this publication.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

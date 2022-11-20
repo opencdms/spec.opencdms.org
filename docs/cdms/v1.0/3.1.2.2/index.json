@@ -1,0 +1,8 @@
+{
+  "title": "Funding",
+  "text": "This component concerns a policy that regulates how an organization funds its CDMS to ensure that it is sustainable. This includes sufficient funding for:\n1. Climate data management specialists, including staff with knowledge of observations data, data rescue, quality assurance, etc.\n2. IT specialists who support the everyday maintenance of CDMS applications and related databases and IT equipment.\n3. IT specialists who conduct enhancements to the CDMS and related IT environments.\n4. The provision and scheduled upgrade of IT systems to ensure that the appropriate IT environment has been implemented to support the CDMS.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

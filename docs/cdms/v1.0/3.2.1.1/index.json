@@ -1,0 +1,8 @@
+{
+  "title": "Controlled access to data and systems",
+  "text": "This component refers to governance processes that ensure a clear understanding of user access to data and IT systems within an organization.\n\nSome data-related issues to consider are:\n1. Which staff roles have read or read-and-write access to each type of data?\n2. Which roles have read or read-and-write access to each quality tier of data?\n3. What process is in place for designating staff to each role?\n4. What process applies to ensure that access to data is subject to approval by a delegate of the data custodian?\n5. Should users who have write access to data stored within a database only be able to change data under software control?\n6. Should each successful change to observations data be audited to ensure that the change, the details of the operator who made the change and the time of the change have all been recorded?\n\nSome system-related issues to consider are:\n\n7. What roles should be given to run-time users to access data?\n8. Which roles have the ability to change operational software or systems?\n9. What process applies to ensure that access to systems and software applications is subject to approval by a delegate of the data custodian?",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

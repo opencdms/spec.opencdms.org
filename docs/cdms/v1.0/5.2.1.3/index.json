@@ -1,0 +1,8 @@
+{
+  "title": "Chart digitization",
+  "text": "This component refers to the capacity to digitize data from recording cards such as those used with a Campbell-Stokes sunshine recorder, thermograph, barograph or other meteorological instrument.\n\nThe typical functionality required for this component would be to:\n1. Scan a physical recording chart (or card) using the Document imaging component (5.2.1.1).\n2. Analyse the image of the chart.\n3. Extract numeric points from the chart.\n4. Calculate a value for those points.\n5. Store the resultant data in the climate database.",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

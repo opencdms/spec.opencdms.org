@@ -1,0 +1,8 @@
+{
+  "title": "Quality of delivered data",
+  "text": "This component refers to policies that clearly define the issues relating to the quality of the climate data delivered by NMHSs.\n\nFor example:\n1. What quality of climate data does the organization undertake to deliver and in what circumstances?\n2. Will the organization only provide high-quality homogenized data?\n3. Will the organization provide raw observations?\n4. When is it appropriate to deliver data at each quality level?",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

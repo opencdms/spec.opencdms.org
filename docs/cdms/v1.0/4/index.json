@@ -1,12 +1,12 @@
 {
   "title": "Time-series climate data",
   "sections": [
-    4.1,
-    4.2,
-    4.3,
-    4.4,
-    4.5,
-    4.6
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6"
   ],
   "copyright": "World Meteorological Organization, 2014",
   "reference": "WMO-No. 1131",

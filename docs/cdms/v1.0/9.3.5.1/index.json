@@ -1,0 +1,8 @@
+{
+  "title": "Disaster recovery",
+  "text": "This component refers to the disaster recovery and business continuance policies, processes, plans and systems required to ensure that CDMS systems and climate data can be recovered in the event of an unforeseen incident. This could be as simple as a server malfunction or as complex as an organization\u2019s city being destroyed due to some unexpected event such as an earthquake, tsunami or military action.\n\nThis is why off-site storage of backups is required.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

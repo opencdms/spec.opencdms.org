@@ -4,7 +4,9 @@ from pathlib import Path
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 
-INPUT_FILEPATH = Path("../cdms/v1.0/cdms_specfications_md.xlsx")
+INPUT_FILEPATH = Path(__file__).parent.parent.joinpath(
+    "cdms/v1.0/cdms_specifications_md.xlsx"
+)
 
 chapters: pd.DataFrame = pd.read_excel(
     INPUT_FILEPATH, sheet_name="chapters", index_col="Number", dtype=str
@@ -18,7 +20,10 @@ sub_sections: pd.DataFrame = pd.read_excel(
 components: pd.DataFrame = pd.concat(
     [
         pd.read_excel(
-            INPUT_FILEPATH, sheet_name=f"ch{i}_components", index_col="Number", dtype=str
+            INPUT_FILEPATH,
+            sheet_name=f"ch{i}_components",
+            index_col="Number",
+            dtype=str,
         ).fillna("")
         for i in range(3, 10)
     ]
@@ -28,7 +33,7 @@ env = Environment(
     loader=PackageLoader(package_name="wmo", package_path="../wmo/templates"),
     autoescape=select_autoescape(),
     trim_blocks=True,
-    lstrip_blocks=True
+    lstrip_blocks=True,
 )
 
 index = env.get_template("index.html")
@@ -44,7 +49,7 @@ if __name__ == "__main__":
                     "sub_sections": sub_sections.to_dict(orient="index"),
                     "components": components.to_dict(orient="index"),
                     "str": str,
-                    "markdown": markdown.markdown
+                    "markdown": markdown.markdown,
                 },
             )
         )

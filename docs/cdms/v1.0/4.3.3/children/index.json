@@ -1,0 +1,57 @@
+{
+  "title": "Data provenance",
+  "text": "This subsection refers to the processes, data and governance arrangements that record and manage information relevant to climate data and enable end-users, including data managers, scientists and the general public, to develop trust in the integrity of the climate data.\n\nData provenance allows an end-user to understand the history of each piece of data, and thus helps the user to identify what version of the data was available at any given time. The need for this new type of climate metadata has become more evident following a number of attacks on the credibility of climate data. One notable example is the so-called Climategate\nincident and subsequent inquiries.\n\nTherefore, it is important for NMHSs to establish the reliability of their climate data and processes and to ensure that these data are subsequently seen as the authoritative source that can be used for global climate studies.\n\nWhile the concept of data provenance has been relatively nebulous within the information management domain for many years, there has been a significant amount of work on the concept within the World Wide Web Consortium (W3C) for over more than a decade, particularly with regard to the development of the PROV standard.\n\nThe W3C defines provenance as:\n> [A] record that describes the people, institutions, entities, and activities involved in producing,\n> influencing, or delivering a piece of data or a thing. In particular, the provenance of information\n> is crucial in deciding whether information is to be trusted, how it should be integrated with\n> other diverse information sources, and how to give credit to its originators when reusing it. In\n> an open and inclusive environment such as the Web, where users find information that is often\n> contradictory or questionable, provenance can help those users to make trust judgements.\n> (W3C, 2013a)\n\nWhile this work is still relatively new, it is showing significant potential for use within the climate domain.\n\nThe concepts presented here for climate data provenance are quite embryonic and need further work to ensure that they can be implemented effectively. See the related recommendation in Chapter 11.\n\nMaintaining a dataset with high levels of data provenance metadata is expected to be quite expensive and, as a result, will be limited to data of high importance such as high-quality climate monitoring datasets. It is anticipated that guidance will be required to suggest what data should be maintained with what level of data provenance metadata. This guidance could perhaps be included as a policy within a future climate data framework.\n\nFor more information, see:\na) Overview of the PROV family of documents (W3C, 2013b)\nb) PROV data model specification (W3C, 2013a)",
+  "components": [
+    "4.3.3.1",
+    "4.3.3.2",
+    "4.3.3.3",
+    "4.3.3.4",
+    "4.3.3.5",
+    "4.3.3.6",
+    "4.3.3.7",
+    "4.3.3.8"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.3.3.1": {
+    "title": "What was changed?",
+    "text": "This component refers to the processes, software and governance arrangements that ensure that any change to climate data is recorded.",
+    "classification": "Optional"
+  },
+  "4.3.3.2": {
+    "title": "When was it changed?",
+    "text": "This component covers the processes, software and governance arrangements that ensure that the time of the change is recorded.",
+    "classification": "Optional"
+  },
+  "4.3.3.3": {
+    "title": "What was it derived from?",
+    "text": "This component deals with the processes, software and governance arrangements that ensure that a dataset\u2019s lineage is understood. In other words, where did the data come from?\n\nThis component is also required in the section on data discovery (8.2).",
+    "classification": "Optional"
+  },
+  "4.3.3.4": {
+    "title": "What was done to change it?",
+    "text": "This component refers to the processes, software and governance arrangements that ensure a clear explanation of any ad hoc modifications to a climate record.\n\nThis includes:\n1. What was changed\n2. When the change was made\n3. Details describing what was done",
+    "classification": "Optional"
+  },
+  "4.3.3.5": {
+    "title": "How/why was it changed?",
+    "text": "This component refers to the processes, software and governance arrangements that ensure that the rationale behind a modification to a climate record is clearly understood.\n\nThis includes:\n1. How the change was made\n2. Why it was made",
+    "classification": "Optional"
+  },
+  "4.3.3.6": {
+    "title": "Who/what changed it?",
+    "text": "This component involves the processes, software and governance arrangements that ensure a clear understanding of the agent that affected the change.",
+    "classification": "Optional"
+  },
+  "4.3.3.7": {
+    "title": "Who did they act on behalf of?",
+    "text": "This component refers to the processes, software and governance arrangements that ensure that the person or role who requested the change is identified.",
+    "classification": "Optional"
+  },
+  "4.3.3.8": {
+    "title": "Who was responsible?",
+    "text": "This component refers to the processes, software and governance arrangements that ensure that the person or role who authorized the change is identified.",
+    "classification": "Optional"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Data download",
+  "text": "This component represents the functionality enabling end-users to download climate data.\n\nThis component is related to the climate data delivery components (Chapter 8) and data discovery registers.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

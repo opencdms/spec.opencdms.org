@@ -1,0 +1,8 @@
+{
+  "title": "Teleconnection indices",
+  "text": "This component represents the software, processes and governance processes used to analyse, record and manage data representing teleconnections and major climate indices such as the El Ni\u00f1o-Southern Oscillation and the Southern Oscillation Index.\n\nAccording to an article on Wikipedia, \u201c**[t]eleconnection** in atmospheric science refers to climate anomalies being related to each\nother at large distances (typically thousands of kilometers)\u201d.",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

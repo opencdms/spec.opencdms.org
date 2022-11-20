@@ -1,0 +1,8 @@
+{
+  "title": "Observations metadata catalogue",
+  "text": "This component refers to the technology and processes that create the observations metadata catalogue used to publish an organization\u2019s observations metadata records.\n\nIt is anticipated that the climate database will be used to store and manage observations metadata.\n\nThis component will serve as an IT catalogue service for observations metadata.\n\nMore work is required to define this component.",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

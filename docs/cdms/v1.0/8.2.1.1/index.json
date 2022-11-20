@@ -1,0 +1,8 @@
+{
+  "title": "Discovery metadata catalogue",
+  "text": "This component refers to the technology and processes that create a discovery metadata catalogue. This catalogue is used to publish an organization\u2019s data holdings as discovery metadata records, with corresponding records describing which online services may be used to access each dataset.\n\nA discovery metadata catalogue allows an organization to participate within the WIS environment.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}
