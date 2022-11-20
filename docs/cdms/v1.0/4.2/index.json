@@ -6,18 +6,6 @@
     "4.2.2",
     "4.2.3"
   ],
-  "components": {
-    "4.2.1": [
-      "4.2.1.1"
-    ],
-    "4.2.2": [
-      "4.2.2.1"
-    ],
-    "4.2.3": [
-      "4.2.3.1",
-      "4.2.3.2"
-    ]
-  },
   "copyright": "World Meteorological Organization, 2014",
   "reference": "WMO-No. 1131",
   "version": "1.0"

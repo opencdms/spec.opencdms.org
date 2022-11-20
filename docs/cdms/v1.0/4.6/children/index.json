@@ -6,8 +6,13 @@
     "4.6.2",
     "4.6.3"
   ],
-  "components": {
-    "4.6.1": [
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.6.1": {
+    "title": "Spatial",
+    "text": "This subsection represents a wide range of spatial information typically used to provide context to climate data or as an input for spatial analysis processes. These data may be presented in vector, image, gridded or multidimensional array data formats.\n\nTypically, spatial representations of data contain aspatial attributes that describe various properties of spatial features. The spatial and aspatial attributes of the data can be used to support a variety of spatial analysis processes.\n\nThe components listed below are indicative of the types of spatial data that could be relevant to climate. This list is not exhaustive.\n\nSee also:\na) Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,\n2012*b*)",
+    "components": [
       "4.6.1.1",
       "4.6.1.2",
       "4.6.1.3",
@@ -17,24 +22,6 @@
       "4.6.1.7",
       "4.6.1.8"
     ],
-    "4.6.2": [
-      "4.6.2.1",
-      "4.6.2.2",
-      "4.6.2.3"
-    ],
-    "4.6.3": [
-      "4.6.3.1",
-      "4.6.3.2",
-      "4.6.3.3",
-      "4.6.3.4"
-    ]
-  },
-  "copyright": "World Meteorological Organization, 2014",
-  "reference": "WMO-No. 1131",
-  "version": "1.0",
-  "4.6.1": {
-    "title": "Spatial",
-    "text": "This subsection represents a wide range of spatial information typically used to provide context to climate data or as an input for spatial analysis processes. These data may be presented in vector, image, gridded or multidimensional array data formats.\n\nTypically, spatial representations of data contain aspatial attributes that describe various properties of spatial features. The spatial and aspatial attributes of the data can be used to support a variety of spatial analysis processes.\n\nThe components listed below are indicative of the types of spatial data that could be relevant to climate. This list is not exhaustive.\n\nSee also:\na) Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,\n2012*b*)",
     "4.6.1.1": {
       "title": "Topography",
       "text": "Although this component is labelled topography, it actually refers to a wider set of data.\n\nSome examples are:\n1. Typical topographic data such as drainage, relief, cultural and nomenclatural features\n2. Digital elevation models",
@@ -79,6 +66,11 @@
   "4.6.2": {
     "title": "Climate documentation",
     "text": "",
+    "components": [
+      "4.6.2.1",
+      "4.6.2.2",
+      "4.6.2.3"
+    ],
     "4.6.2.1": {
       "title": "Published reports",
       "text": "This component represents the processes and governance arrangements that result in the preparation and release of a wide variety of written reports.\n\nSome examples are:\n1. Peer-reviewed papers\n2. Climate change impact studies\n3. Climate statements and studies\n4. Assessments from the Intergovernmental Panel on Climate Change\n5. Monthly and annual summaries\n\nAs this is essentially a scientific and intellectual process, this component will not be expanded upon in this publication.",
@@ -98,6 +90,12 @@
   "4.6.3": {
     "title": "Climate software",
     "text": "As discussed in the article by the UK Parliament Science and Technology Committee (2011), one of the recommendations of the UK parliamentary review of the Climategate issue was to ensure that climate scientists make available the full methodological workings (including computer codes) used to support their work. An extract is reproduced below.\n\n> It is not standard practice in climate science to publish the raw data and the computer code in academic papers. However, climate science is a matter of great importance and the quality of the science should be irreproachable. We therefore consider that climate scientists should take steps to make available all the data that support their work (including raw data) and full methodological workings (including the computer codes).\n\nThis has implications for the effective management of climate data and software in that software source code will also require careful management.\n\nIn addition, it will be necessary to keep track of the time period during which each software version is in operation, as this may also have implications for climate data and climate analysis.\n\nOn a conceptual level, this is similar in a way to the need to have effective observations metadata that describe the maintenance of sensors and stations.",
+    "components": [
+      "4.6.3.1",
+      "4.6.3.2",
+      "4.6.3.3",
+      "4.6.3.4"
+    ],
     "4.6.3.1": {
       "title": "Source code management",
       "text": "This component deals with managing the source code of the software used to process climate data. This component should have the following capabilities at a minimum:\n1. Maintain a library of a variety of software source code.\n2. Manage different versions (or branches) of the software concurrently, with the ability to maintain each version independently and to easily backport newer functionalities to an older version.\n3. Easily detect the differences between software versions.",

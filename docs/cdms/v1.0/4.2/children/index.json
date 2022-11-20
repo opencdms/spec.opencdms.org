@@ -6,24 +6,15 @@
     "4.2.2",
     "4.2.3"
   ],
-  "components": {
-    "4.2.1": [
-      "4.2.1.1"
-    ],
-    "4.2.2": [
-      "4.2.2.1"
-    ],
-    "4.2.3": [
-      "4.2.3.1",
-      "4.2.3.2"
-    ]
-  },
   "copyright": "World Meteorological Organization, 2014",
   "reference": "WMO-No. 1131",
   "version": "1.0",
   "4.2.1": {
     "title": "Climate database",
     "text": "This subsection refers to the database(s) used to store and manage a range of time-series data, including: climate observations, climate metadata (observations, discovery and data provenance), spatial information, derived data and related data required for effective data management.\n\nMore advanced CDMSs may manage the data in a series of related databases rather than in a single database.\n\nIt is recommended that the climate database provide support for the following functionalities, classified by priority:\n\n**Required**\n1. Managing core observations described in the Guide to Climatological Practices (WMO-No. 100).\n2. Managing observation metadata (such as station metadata) and integrating them with observations data.\n3. Handling observations from multiple sensors per station, per phenomenon, and recording the source of each observation.\n4. Managing multiple tiers of data quality, from raw records to homogenized data.\n5. Managing spatial and time-series data.\n\n**Recommended**\n\n6. Covering at least the GCOS ECVs.\n7. Using a robust data model that takes into account the requirements of open spatial standards, particularly the ISO 19156:2011 Geographic information \u2013 Observations and measurements standard, METCE and the WMO climate observations application schema (see component 4.2.3.2).\n8. Managing metadata related to data provenance. This entails ensuring that each change to an observation is recorded for future recovery, and recording the details of why a particular change was made, which includes:\n    1. Tracing the product lineage to the data source. For example, what observations and gridded data were used to underpin the analysis released in peer-reviewed paper X?\n    2. Ensuring that the reason for each observation change is recorded.\n9. Managing third-party and crowdsourced data.\n10. Managing intellectual property rights related to data.\n11. Enabling point-in-time recovery. For example, what data were present in the database for station X at time T?\n12. Storing a range of document formats, such as:\n    1. Photographs of observation stations and instruments, meteorological phenomena, etc.\n    2. Scanned paper observation forms\n    3. Scanned microfiche/microfilm\n    4. Relevant observations metadata documents, such as instrument calibration reports\n    5. Technical manuals\n    6. Site location plans and sections\n    7. Videos and other multimedia formats\n\nOptional\n\n13. Handling data uncertainty (for more information, see Wikipedia articles on uncertain data and uncertainty).\n14. Managing multidimensional time-series gridded data and possibly numerical models.\n15. Providing support for the information management concepts of semantics and linked data.",
+    "components": [
+      "4.2.1.1"
+    ],
     "4.2.1.1": {
       "title": "Data dictionary",
       "text": "This component represents the data dictionary, which describes the database structure, data model and other elements used by the climate database.",
@@ -33,6 +24,9 @@
   "4.2.2": {
     "title": "Foundation standards",
     "text": "",
+    "components": [
+      "4.2.2.1"
+    ],
     "4.2.2.1": {
       "title": "Observations and measurements",
       "text": "This component represents technology that provides rules and a standardized approach for modelling observations data, regardless of the domain.\n\nIn essence, the ISO 19156:2011 *Geographic information \u2013 Observations and measurements* standard treats an observation as an event at a given point in time whose result is an estimate of the value of some property of a feature of interest, obtained using a known observation procedure.\n\nThis standard is being widely adopted as the framework for a number of logical data models related to observations data, such as WaterML and the Meteorological Information Exchange Model of the International Civil Aviation Organization (ICAO).\n\nIt also underpins current work on the WMO logical data model called METCE (see below).\n\nFor more information, see:\na) ISO 19156:2011, *Geographic information \u2013 Observations and measurements*\nb) OGC Abstract Specification: Geographic information \u2013 Observations and measurements",
@@ -42,6 +36,10 @@
   "4.2.3": {
     "title": "WMO logical data models",
     "text": "",
+    "components": [
+      "4.2.3.1",
+      "4.2.3.2"
+    ],
     "4.2.3.1": {
       "title": "METCE",
       "text": "The METCE component represents technology that provides rules and a standardized approach for modelling observations and simulations in the weather, water and climate domains.\n\nMETCE is an application schema conforming to ISO 19109:2005 *Geographic information \u2013 Rules for application schema*. Furthermore, METCE is a profile of the Observations and measurements standard that provides domain- and application specific semantics for use within the weather, water and climate domains.\n\nThe initial iteration of METCE and its companion model, the Observable Property Model, were developed by the Task Team on Aviation XML to support the ICAO Meteorological Information Exchange Model.\n\nHowever, METCE will provide a common semantic basis for a growing number of data products relating to observation and simulation within WMO. Not only will this simplify the requirements for software systems working with WMO products, it is also expected to simplify the mappings between WMO data products and counterparts from other communities such as CF-netCDF.\n\nAs at December 2013, plans have been made to provide mappings/rules to convert from the METCE application schema to BUFR sequences and/or GRIB templates at some point in the future.\n\nFor more information, please see:\na) AvXML-1.0 data model\nb) ISO 19109:2005, Geographic information \u2013 Rules for application schema",

@@ -6,8 +6,13 @@
     "4.3.2",
     "4.3.3"
   ],
-  "components": {
-    "4.3.1": [
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.3.1": {
+    "title": "Observations metadata",
+    "text": "This subsection covers access to and management of station metadata and platform metadata.\n\nStation and platform metadata are time-series data that describe how, when and where meteorological observations were made and the conditions they were made under. They are used to support a range of activities that allow climate professionals to understand the fitness for purpose of specific data and, in many cases, improve the quality of climate observations data. This type of metadata is referred to as observations metadata in this publication.\n\nIt is anticipated that application schemas (also known as logical data models) will be developed to formally define the structure and content of the information required to describe climate observing stations, sensors and platforms (see the Climate observations application schema component (4.2.3.2))\n\nNote: As a general rule, it will be necessary to record and maintain the details of any change to observations metadata in order to understand the context surrounding specific climate data and to support future data homogenization activities. In addition to details of the change, specific reference must be made to:\n1. The date/time of the change - Note: It may not always be possible to define the exact date of the change, for example when a change happens between two site visits. Therefore, it may be more appropriate to include a period of time during which the change occurred.\n2. The reason the change was made.\n3. The beginning and end dates of the prior value.\n4. Any date/time reference will need to be constrained by the appropriate temporal datum to ensure that date handling is consistently applied.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100)\nb) *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8)\nc) *Guide to the Global Observing System* (WMO-No. 488), Appendix III.3 Automatic weather station metadata\nd) *Manual on the Global Observing System* (WMO-No. 544), Volume I, Attachment III.1 Standard set of metadata elements for automatic weather station installations\ne) Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)\nf) Draft paper on the climatological needs for minimum stations metadata in the frame of WMO publication No. 9, Volume A (Stuber, 2012)\ng) Guidelines on Climate Metadata and Homogenization (WMO-No. 1186), WCDMP-53",
+    "components": [
       "4.3.1.1",
       "4.3.1.2",
       "4.3.1.3",
@@ -19,33 +24,6 @@
       "4.3.1.9",
       "4.3.1.10"
     ],
-    "4.3.2": [
-      "4.3.2.1",
-      "4.3.2.2",
-      "4.3.2.3",
-      "4.3.2.4",
-      "4.3.2.5",
-      "4.3.2.6",
-      "4.3.2.7",
-      "4.3.2.8"
-    ],
-    "4.3.3": [
-      "4.3.3.1",
-      "4.3.3.2",
-      "4.3.3.3",
-      "4.3.3.4",
-      "4.3.3.5",
-      "4.3.3.6",
-      "4.3.3.7",
-      "4.3.3.8"
-    ]
-  },
-  "copyright": "World Meteorological Organization, 2014",
-  "reference": "WMO-No. 1131",
-  "version": "1.0",
-  "4.3.1": {
-    "title": "Observations metadata",
-    "text": "This subsection covers access to and management of station metadata and platform metadata.\n\nStation and platform metadata are time-series data that describe how, when and where meteorological observations were made and the conditions they were made under. They are used to support a range of activities that allow climate professionals to understand the fitness for purpose of specific data and, in many cases, improve the quality of climate observations data. This type of metadata is referred to as observations metadata in this publication.\n\nIt is anticipated that application schemas (also known as logical data models) will be developed to formally define the structure and content of the information required to describe climate observing stations, sensors and platforms (see the Climate observations application schema component (4.2.3.2))\n\nNote: As a general rule, it will be necessary to record and maintain the details of any change to observations metadata in order to understand the context surrounding specific climate data and to support future data homogenization activities. In addition to details of the change, specific reference must be made to:\n1. The date/time of the change - Note: It may not always be possible to define the exact date of the change, for example when a change happens between two site visits. Therefore, it may be more appropriate to include a period of time during which the change occurred.\n2. The reason the change was made.\n3. The beginning and end dates of the prior value.\n4. Any date/time reference will need to be constrained by the appropriate temporal datum to ensure that date handling is consistently applied.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100)\nb) *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8)\nc) *Guide to the Global Observing System* (WMO-No. 488), Appendix III.3 Automatic weather station metadata\nd) *Manual on the Global Observing System* (WMO-No. 544), Volume I, Attachment III.1 Standard set of metadata elements for automatic weather station installations\ne) Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)\nf) Draft paper on the climatological needs for minimum stations metadata in the frame of WMO publication No. 9, Volume A (Stuber, 2012)\ng) Guidelines on Climate Metadata and Homogenization (WMO-No. 1186), WCDMP-53",
     "4.3.1.1": {
       "title": "Station identifier",
       "text": "This component supports the management of identifiers associated with the observation station or platform.\n\nIdentifiers include:\n1. A globally unique WMO identifier. The use of this identifier must become a priority in order to support future global analysis. See recommendation 11.6 of this publication.\n2. Other identifiers or aliases used for the station.\n3. A history of past used identifiers, including historical WMO identifiers.\n4. The beginning and end dates of each historical identifier used for the station.",
@@ -100,6 +78,16 @@
   "4.3.2": {
     "title": "Dataset discovery metadata",
     "text": "This subsection refers to the processes, software and governance arrangements that ensure that discovery metadata are captured, managed and maintained.\n\nDiscovery metadata are intended to facilitate the discovery and assessment of a spatial dataset to determine if it is fit for reuse for a purpose that may be at odds with the reason for which it was originally created.\n\nDiscovery metadata may also be known as WIS metadata. They are not the same as the observations metadata described above.\n\nNote that some of the components below may be in addition to the WMO Core Profile of the ISO 19115 *Geographic information \u2013 Metadata* standard. This is not expected to be an issue as the WMO Core Profile does not restrict the use of additional ISO 19115 records.\n\nFor more information, see:\na) Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)\nb) WMO Core Metadata Profile version 1.3, Part 1 Conformance requirements\nc) WMO Core Metadata Profile version 1.3, Part 2 Abstract test suite, data dictionary and code lists\nd) Tandy (2010) also provides a useful introduction to discovery metadata. However, note that the specifications part of this text has been superseded.\ne) ISO 19115 Geographic information \u2013 Metadata",
+    "components": [
+      "4.3.2.1",
+      "4.3.2.2",
+      "4.3.2.3",
+      "4.3.2.4",
+      "4.3.2.5",
+      "4.3.2.6",
+      "4.3.2.7",
+      "4.3.2.8"
+    ],
     "4.3.2.1": {
       "title": "Dataset identifier",
       "text": "This component represents a unique identifier used to identify the dataset.",
@@ -144,6 +132,16 @@
   "4.3.3": {
     "title": "Data provenance",
     "text": "This subsection refers to the processes, data and governance arrangements that record and manage information relevant to climate data and enable end-users, including data managers, scientists and the general public, to develop trust in the integrity of the climate data.\n\nData provenance allows an end-user to understand the history of each piece of data, and thus helps the user to identify what version of the data was available at any given time. The need for this new type of climate metadata has become more evident following a number of attacks on the credibility of climate data. One notable example is the so-called Climategate\nincident and subsequent inquiries.\n\nTherefore, it is important for NMHSs to establish the reliability of their climate data and processes and to ensure that these data are subsequently seen as the authoritative source that can be used for global climate studies.\n\nWhile the concept of data provenance has been relatively nebulous within the information management domain for many years, there has been a significant amount of work on the concept within the World Wide Web Consortium (W3C) for over more than a decade, particularly with regard to the development of the PROV standard.\n\nThe W3C defines provenance as:\n> [A] record that describes the people, institutions, entities, and activities involved in producing,\n> influencing, or delivering a piece of data or a thing. In particular, the provenance of information\n> is crucial in deciding whether information is to be trusted, how it should be integrated with\n> other diverse information sources, and how to give credit to its originators when reusing it. In\n> an open and inclusive environment such as the Web, where users find information that is often\n> contradictory or questionable, provenance can help those users to make trust judgements.\n> (W3C, 2013a)\n\nWhile this work is still relatively new, it is showing significant potential for use within the climate domain.\n\nThe concepts presented here for climate data provenance are quite embryonic and need further work to ensure that they can be implemented effectively. See the related recommendation in Chapter 11.\n\nMaintaining a dataset with high levels of data provenance metadata is expected to be quite expensive and, as a result, will be limited to data of high importance such as high-quality climate monitoring datasets. It is anticipated that guidance will be required to suggest what data should be maintained with what level of data provenance metadata. This guidance could perhaps be included as a policy within a future climate data framework.\n\nFor more information, see:\na) Overview of the PROV family of documents (W3C, 2013b)\nb) PROV data model specification (W3C, 2013a)",
+    "components": [
+      "4.3.3.1",
+      "4.3.3.2",
+      "4.3.3.3",
+      "4.3.3.4",
+      "4.3.3.5",
+      "4.3.3.6",
+      "4.3.3.7",
+      "4.3.3.8"
+    ],
     "4.3.3.1": {
       "title": "What was changed?",
       "text": "This component refers to the processes, software and governance arrangements that ensure that any change to climate data is recorded.",

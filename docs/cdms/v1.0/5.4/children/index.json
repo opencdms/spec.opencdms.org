@@ -7,30 +7,18 @@
     "5.4.3",
     "5.4.4"
   ],
-  "components": {
-    "5.4.1": [
-      "5.4.1.1",
-      "5.4.1.2",
-      "5.4.1.3",
-      "5.4.1.4"
-    ],
-    "5.4.2": [
-      "5.4.2.1"
-    ],
-    "5.4.3": [
-      "5.4.3.1"
-    ],
-    "5.4.4": [
-      "5.4.4.1",
-      "5.4.4.2"
-    ]
-  },
   "copyright": "World Meteorological Organization, 2014",
   "reference": "WMO-No. 1131",
   "version": "1.0",
   "5.4.1": {
     "title": "Observations quality assessment",
     "text": "This subsection refers to the processes implemented to help NMHSs assess the quality of observations used by their organization. It covers all stages, from the observation site and expertise level of personnel to the final product distributed to users.\n\nThe aim of this subsection is to move towards a more objective way of defining the quality of observations data.",
+    "components": [
+      "5.4.1.1",
+      "5.4.1.2",
+      "5.4.1.3",
+      "5.4.1.4"
+    ],
     "5.4.1.1": {
       "title": "Siting classification",
       "text": "This component refers to the processes, software, governance mechanisms and analysis that classify sensors according to the rating scale described in the *Guide to Meteorological Instruments and\nMethods of Observation* (WMO-No. 8), Annex 1.B Siting classifications for surface observing stations on land.",
@@ -55,6 +43,9 @@
   "5.4.2": {
     "title": "Derived-data quality assessment",
     "text": "",
+    "components": [
+      "5.4.2.1"
+    ],
     "5.4.2.1": {
       "title": "Derived-data quality assessment",
       "text": "This component refers to the processes, software, governance and data analysis processes used to understand and enumerate the quality of derived data relative to an objective index.\n\nThere are many factors that can influence the quality of derived data. Some issues to consider are:\n1. What is the quality of the source data?\n2. What algorithms have been applied to the source data to arrive at the derived data?\n3. What is the impact of these algorithms on the quality of the derived data?\n4. If the derived dataset is spatial, how has the positional location of the data been derived?\n    1. What is the quality of the source spatial data?\n    2. What is the impact of the algorithms used to spatially distribute the data on the positional accuracy of the derived data?\n\nFor more information, see also the Derived data component (5.4.4.2).\n\nNote: This index has yet to be created. For the purposes of this publication, it is called the derived-data quality assessment. However, this name may change.",
@@ -64,6 +55,9 @@
   "5.4.3": {
     "title": "Quality assurance metrics",
     "text": "",
+    "components": [
+      "5.4.3.1"
+    ],
     "5.4.3.1": {
       "title": "Quality assurance metrics",
       "text": "This component refers to the processes, software, governance mechanisms and analysis used to monitor the performance of quality assurance processes.\n\nSuch monitoring will allow network managers and climate data specialists to validate the performance of quality assurance software and processes.\n\nThis can be done, for example, by reviewing automatically generated reports that:\n1. Summarize observational errors detected by each quality assurance test.\n2. Summarize false positives and valid errors detected.\n3. Compare the performance of current quality assurance metrics with historical averages.\n\nThese types of metrics can also help data and network managers improve quality assurance processes and software.",
@@ -73,6 +67,10 @@
   "5.4.4": {
     "title": "Uncertainty",
     "text": "This subsection refers to the processes, software, governance processes and data analysis used to understand and record the uncertainty inherent in the data.\n\nAs noted in the OGC Abstract Specification: Geographic Information \u2013 Observations and measurements (p. 13), all observations have an element of uncertainty:\n\n> The observation error typically has a systematic component, which is similar for all estimates made using the same procedure, and a random component, associated with the particular application instance of the observation procedure. If potential errors in a property value are important in the context of a data analysis or processing application, then the details of the act of observation which provided the estimate of the value are required.\n\nThis functionality will support:\n1. Future statistical analysis that takes into account the uncertainty inherent in data.\n2. Communication of data uncertainty.\n\nFor more information, see Wikipedia articles on:\na) Uncertain data\nb) Uncertainty",
+    "components": [
+      "5.4.4.1",
+      "5.4.4.2"
+    ],
     "5.4.4.1": {
       "title": "Measurements",
       "text": "This component refers to the processes, software, governance mechanisms and data analysis used to understand and record the uncertainty inherent in observation measurements and processes.\n\nThe *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8) provides a number of examples per meteorological variable.\n\nFor more information, see:\na) *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8), Annex 1.D Operational measurement uncertainty requirements and instrument performance\nb) Annex III of the final report of the first session of the Commission for Instruments and Methods of Observation Expert Team on Standardization",

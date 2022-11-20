@@ -5,8 +5,13 @@
     "8.1.1",
     "8.1.2"
   ],
-  "components": {
-    "8.1.1": [
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "8.1.1": {
+    "title": "Open Geospatial Consortium services",
+    "text": "",
+    "components": [
       "8.1.1.1",
       "8.1.1.2",
       "8.1.1.3",
@@ -17,17 +22,6 @@
       "8.1.1.8",
       "8.1.1.9"
     ],
-    "8.1.2": [
-      "8.1.2.1",
-      "8.1.2.2"
-    ]
-  },
-  "copyright": "World Meteorological Organization, 2014",
-  "reference": "WMO-No. 1131",
-  "version": "1.0",
-  "8.1.1": {
-    "title": "Open Geospatial Consortium services",
-    "text": "",
     "8.1.1.1": {
       "title": "Web Map Services",
       "text": "This component represents technology suitable for the distribution of a wide range of climate data via a Web Map Service (WMS).\n\nIn essence, a WMS provides a map view of data distributed via a georeferenced image.\n\nFor more information, see:\na) OGC WMS documentation\nb) The OGC Meteorology and Oceanography Domain Working Group paper on the use of WMS with time-dependent and elevation dependent data",
@@ -77,6 +71,10 @@
   "8.1.2": {
     "title": "Geography Markup Language application schema",
     "text": "Application schemas (as defined in ISO 19109:2005 Geographic information \u2013 Rules for application schema) provide an abstract representation of the content and structure of information resources. The Climate observations application schema component (4.2.3.2) outlines the use of application schemas specifically developed for the climate domain.\n\nThese abstract representations of information provide the basis for deriving concrete encodings or data formats that allow the information to be serialized for exchange between systems and organizations.\n\nWork is proceeding within WMO to harmonize existing TDCFs (FM 92 GRIB Edition 2 and FM 94 BUFR Edition 4) with WMO METCE (described in the METCE component (4.2.3.1)), with the intent to bind those existing data formats to explicit, well-understood semantics.\n\nIn addition, the application schema can be used to develop XML-based data encodings using widely supported open standards for geographic information. The ISO 19136:2007 Geographic information \u2013 Geography Markup Language (GML) standard provides rules for serializing the abstract data model expressed as an application schema via XML encoding to create a GML\napplication schema.\n\nIn summary:\n1. An application schema can be thought of as a logical data model. For more information, see the subsection on WMO logical data models (4.2.3).\n2. A GML application schema is a physical model that is derived from a logical data model published using a particular technology - which in this case is GML. For an example, see the Combined climate observations and metadata component (8.1.2.1) below.\n\nDeriving a GML application schema from an application schema developed specifically for the climate domain (see Climate observations application schema component (4.2.3.2)) is anticipated to make climate data far more readily consumable for a broader community of users such as those interested in determining the impacts of climate change.\n\nWhile work has been conducted for several years, this task is still in its early stages as at December 2013. It is expected to take a number of years to complete. For an overview of how a logical data model (and associated application schema) could be used\nwith climate data, see Bannerman (2012), pp. 20\u201326.\n\nFor a more detailed description of what has been done to date, see Tandy (2013a), which provides an overview of the direction that WMO logical data model work is taking with regard to METCE.",
+    "components": [
+      "8.1.2.1",
+      "8.1.2.2"
+    ],
     "8.1.2.1": {
       "title": "Combined climate observations and metadata",
       "text": "This component represents the technology, software, processes and governance needed to support the transmission, consumption and processing of combined climate observations and associated metadata via a future climate observations application schema (or similar name) derived from:\n1. The schema outlined in the Climate observations application schema component (4.2.3.2)\n2. The schema outlined in the METCE component (4.2.3.1)\n\nAs discussed in the section above (8.1.2), this work is currently embryonic. However, it is anticipated that it will become a key technological mechanism for exchanging climate observations and metadata in future years in support of data interoperability and platform independence.\n\nFor more information, see:\na) Above section (8.1.2)\nb) METCE component (4.2.3.1)\nc) Climate observations application schema component (4.2.3.2)",

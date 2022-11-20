@@ -5,8 +5,13 @@
     "5.1.1",
     "5.1.2"
   ],
-  "components": {
-    "5.1.1": [
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.1.1": {
+    "title": "Data ingest",
+    "text": "",
+    "components": [
       "5.1.1.1",
       "5.1.1.2",
       "5.1.1.3",
@@ -16,16 +21,6 @@
       "5.1.1.7",
       "5.1.1.8"
     ],
-    "5.1.2": [
-      "5.1.2.1"
-    ]
-  },
-  "copyright": "World Meteorological Organization, 2014",
-  "reference": "WMO-No. 1131",
-  "version": "1.0",
-  "5.1.1": {
-    "title": "Data ingest",
-    "text": "",
     "5.1.1.1": {
       "title": "Business rules",
       "text": "This component supports a wide range of user defined business rules that govern how data are ingested into the climate database. Some examples (for observations data) are:\n1. Action required when new phenomena are to be ingested but a record already exists in the\ndatabase for that time period.\n    1. Should the new record replace the current record in the database or should the new record be rejected?\n\n        There is potential for data that have not been quality controlled to overwrite perfectly good quality-controlled data. An example is a message that is reingested and the ingest process does not take into account the possibility that the data already exist in the database and that they have been modified.\n\n2. Action required when a message arrives for ingest but the message type is not appropriate according to the observations metadata on record for that station.\n3. Action required should a message arrive containing an observed value that is outside the accepted bounds for a given phenomenon. For example, a message contains a value of 90\u00b0C for temperature, where the maximum accepted temperature is 60\u00b0C.\n4. Action required should a message arrive that is of a lower order of precedence to one that has already been ingested for the same time period and station. For example:\n    1. The priority level given to records being ingested may relate to the method of data acquisition. A record that has been keyed in via a quality assurance process may be given a higher priority than a record acquired via a real-time message ingest.",
@@ -70,6 +65,9 @@
   "5.1.2": {
     "title": "Data extraction",
     "text": "",
+    "components": [
+      "5.1.2.1"
+    ],
     "5.1.2.1": {
       "title": "Data extraction",
       "text": "This component allows data to be extracted from the climate database in accordance with NMHS data policy and governance processes.\n\nData may be transformed into a wide range of formats as described in the subsection on data ingest (5.1.1).\n\nNote: This component is only intended for advanced users who have an intimate knowledge of the climate database, its data structures, the relevant data policies and the appropriate use of quality flags and other aspects in order to perform one-off data extraction activities.\n\nEnd-user data extraction is intended to be constrained to defined data types via the climate data delivery services components (Chapter 8), using components under Chapter 7, such as: Tables and charts, Integrated search of climate data and Data download.",

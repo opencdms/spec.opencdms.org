@@ -8,35 +8,16 @@
     "7.1.4",
     "7.1.5"
   ],
-  "components": {
-    "7.1.1": [
-      "7.1.1.1",
-      "7.1.1.2"
-    ],
-    "7.1.2": [
-      "7.1.2.1"
-    ],
-    "7.1.3": [
-      "7.1.3.1",
-      "7.1.3.2",
-      "7.1.3.3"
-    ],
-    "7.1.4": [
-      "7.1.4.1",
-      "7.1.4.2",
-      "7.1.4.3",
-      "7.1.4.4"
-    ],
-    "7.1.5": [
-      "7.1.5.1"
-    ]
-  },
   "copyright": "World Meteorological Organization, 2014",
   "reference": "WMO-No. 1131",
   "version": "1.0",
   "7.1.1": {
     "title": "Tables and charts",
     "text": "This subsection represents the technology, software, processes and governance mechanisms suitable for generating a broad array of tabular and graphical reports to effectively communicate issues relating to climate data.",
+    "components": [
+      "7.1.1.1",
+      "7.1.1.2"
+    ],
     "7.1.1.1": {
       "title": "Tables",
       "text": "This component refers to the technology, software, processes and governance processes suitable for generating a wide variety of tabular reports to effectively communicate issues relating to climate data.",
@@ -51,6 +32,9 @@
   "7.1.2": {
     "title": "Manage content",
     "text": "",
+    "components": [
+      "7.1.2.1"
+    ],
     "7.1.2.1": {
       "title": "Manage content",
       "text": "This component covers the technology, software, processes and governance processes suitable for generating a wide variety of content to effectively communicate issues relating to climate data.\n\nThis includes:\n1. Preparing texts, documents and data for effective web presentation.\n2. Using technology such as content management systems to simplify web content presentation.\n3. Implementing effective governance processes that review, validate and authorize content prior to being published.",
@@ -60,6 +44,11 @@
   "7.1.3": {
     "title": "Visualization",
     "text": "",
+    "components": [
+      "7.1.3.1",
+      "7.1.3.2",
+      "7.1.3.3"
+    ],
     "7.1.3.1": {
       "title": "Cartography",
       "text": "This component represents the technology, software, processes and governance processes suitable for generating a wide variety of cartographic output to effectively convey climate data issues.\n\nIt includes:\n1. Spatial data preparation\n2. Cartography\n3. Simple point-and-click web maps",
@@ -79,6 +68,12 @@
   "7.1.4": {
     "title": "Integrated search of climate data",
     "text": "",
+    "components": [
+      "7.1.4.1",
+      "7.1.4.2",
+      "7.1.4.3",
+      "7.1.4.4"
+    ],
     "7.1.4.1": {
       "title": "Spatial intelligence",
       "text": "This component represents the technology, software, processes and governance processes that support an effective and dynamic analysis of climate data within a web environment to facilitate understanding of climate matters and communicate issues relating to climate data. This dynamic analysis includes:\n1. Geographical Information System (GIS) functionality, including the ability to perform spatial overlay analysis such as selecting points in a polygon.\n2. The ability to search features by attribute, for example:\n    1. Conducting a search of all stations within the catchment of a specific river.\n    2. Filtering the resultant stations to view only those that observe precipitation.\n    3. Viewing summary observations data for each of those stations.\n\nThis component integrates into a map-based interface a wide range of time-series data including climate observations, climate grids, satellite imagery and topography, together with appropriate textual and other attribute data, such as climate metadata.\n\nIt also facilitates dynamic data exploration and analysis using a broad array of integrated media, including maps, charts, graphs, tables and written reports.",
@@ -103,6 +98,9 @@
   "7.1.5": {
     "title": "Data download",
     "text": "",
+    "components": [
+      "7.1.5.1"
+    ],
     "7.1.5.1": {
       "title": "Data download",
       "text": "This component represents the functionality enabling end-users to download climate data.\n\nThis component is related to the climate data delivery components (Chapter 8) and data discovery registers.",
