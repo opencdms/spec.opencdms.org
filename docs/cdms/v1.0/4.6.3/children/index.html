@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+
+
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.6.3</span> Climate software
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">As discussed in the article by the UK Parliament Science and Technology Committee (2011), one of the recommendations of the UK parliamentary review of the Climategate issue was to ensure that climate scientists make available the full methodological workings (including computer codes) used to support their work. An extract is reproduced below.
+
+&gt; It is not standard practice in climate science to publish the raw data and the computer code in academic papers. However, climate science is a matter of great importance and the quality of the science should be irreproachable. We therefore consider that climate scientists should take steps to make available all the data that support their work (including raw data) and full methodological workings (including the computer codes).
+
+This has implications for the effective management of climate data and software in that software source code will also require careful management.
+
+In addition, it will be necessary to keep track of the time period during which each software version is in operation, as this may also have implications for climate data and climate analysis.
+
+On a conceptual level, this is similar in a way to the need to have effective observations metadata that describe the maintenance of sensors and stations.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.1 Source code management</td>
+                <td class="cdms-content">
+                    <p>This component deals with managing the source code of the software used to process climate data. This component should have the following capabilities at a minimum:
+1. Maintain a library of a variety of software source code.
+2. Manage different versions (or branches) of the software concurrently, with the ability to maintain each version independently and to easily backport newer functionalities to an older version.
+3. Easily detect the differences between software versions.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.2 Package management</td>
+                <td class="cdms-content">
+                    <p>This component refers to the functionality that facilitates the packaging of software and its configuration for installation on a computer. In addition, the component should facilitate dependency management to ensure that all required supporting software is also installed and configured appropriately at installation time.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.3 Environment configuration</td>
+                <td class="cdms-content">
+                    <p>This component concerns the functionality that facilitates the recording and management of information relating to any changes to operational software.</p>
+<p>This includes:
+1. What software was deployed on what server?
+2. What version of the software was deployed?
+3. Details of any configuration changes.
+4. Details of any change made to the operational software.
+5. Details of the decommission of the software at the end of its period of operation, including decommission date.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.4 Software testing</td>
+                <td class="cdms-content">
+                    <p>This component covers the testing of software that is to be deployed to manipulate climate data.</p>
+<p>This includes:
+1. Details of test plans and individual test cases, including user-acceptance testing.
+2. Details of the test data, database, etc.
+3. Details of test systems and environment.
+4. Details of test results and artefacts, particularly proof that the test data were not affected by the software or a change to the software.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

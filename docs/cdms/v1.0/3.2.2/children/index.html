@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+
+
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">3.2.2</span> IT governance
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This collection of components refers to the overall governance of information technology to ensure that effective CDMSs are developed, enhanced and maintained.
+
+While these components are specifically aimed at larger organizations with a substantial investment in information and communication technology, smaller organizations can also benefit from investment in the types of issues discussed.
+
+These components are also relevant to broader initiatives, such as when an aid or development agency sponsors CDMS development and implementation.
+
+These issues will only be discussed very briefly, as each component refers to a substantial body of knowledge that will require ongoing investment from specialists to ensure effective management of resources and funds for information and communication technology.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">3.2.2.1 IT service management</td>
+                <td class="cdms-content">
+                    <p>This component refers to an overarching framework for IT service management used to ensure effective, efficient and cost-effective
+management of the delivery of business value from IT services.</p>
+<p>This framework is typically based on global best practices.</p>
+<p>It comprises a consistent framework within which the remaining IT governance components can operate in a tightly integrated manner.</p>
+<p>For more information, see:
+a) Wikipedia overview of IT service management
+b) Information Technology Infrastructure Library (ITIL) website
+c) ITIL publications</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">3.2.2.2 Managed change</td>
+                <td class="cdms-content">
+                    <p>This component covers governance processes that ensure that any change to the CDMS is carefully managed.</p>
+<p>Uncontrolled change can result in chaos for users of the CDMS, for example:
+1. Systems may break down for no known reason.
+2. Data corruptions or even data loss may occur and may not be detected at all.
+3. Provenance of data is severely impacted, as data managers do not know what algorithms or processes have been applied to the data.
+4. Considerable disruption may be experienced by staff that rely on the CDMS for day-to-day activities and may inconvenience users who rely on the data and derived products.
+5. Data corruption, data loss and lack of availability of key systems may have a significant impact on the reputation of the NMHS.</p>
+<p>Some issues to consider:</p>
+<ol>
+<li>How is the change process managed?</li>
+<li>Who needs to be consulted when considering a potential change?</li>
+<li>How is the proposed change analysed to assess its potential impact on data integrity and on other CDMS components?</li>
+<li>Who can authorize a change?</li>
+<li>What testing is required to mitigate the potential impacts of the change and give confidence that the change is desirable?</li>
+<li>How can the change be made with minimal impact?</li>
+<li>Are there any dependencies between a series of proposed changes that may dictate that the changes occur in a particular order?</li>
+<li>How is the change to be made and tested?</li>
+<li>If the change fails, how can the system be rolled back to its previous state?</li>
+<li>How can CDMS components be implemented such that they are self-testing to support concepts such as continuous integration?</li>
+<li>Will processes based on an IT service management framework such as ITIL help improve the management of IT-related changes? (See Wikipedia article on IT service management)</li>
+</ol>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">3.2.2.3 Project management</td>
+                <td class="cdms-content">
+                    <p>This component concerns governance processes that ensure that any development activity, infrastructure change or other enhancement related to the CDMS is carefully managed.</p>
+<p>Good project managers and project governance processes can mean the difference between a project delivering desired results or the same project failing at great expense, frustrating users and possibly corrupting the climate record.</p>
+<p>Uncontrolled enhancement can result in:
+1. An undesirable functionality added to the CDMS.
+2. Lower-priority work undertaken at the expense of higher-priority tasks.
+3. The development of activities that do not have a clearly defined scope, set of deliverables, timeline and budget.</p>
+<p>Some additional considerations include:</p>
+<ol>
+<li>How is the business benefit for a proposed project defined and assessed?</li>
+<li>How are the relative priorities of projects assessed?</li>
+<li>How are projects managed? What approach is adopted?</li>
+<li>What process is used to monitor the progress of a project?</li>
+<li>How are the project deliverables assessed to ensure that they meet requirements?</li>
+<li>What lessons can be learned from a finished project?</li>
+</ol>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">3.2.2.4 IT architecture</td>
+                <td class="cdms-content">
+                    <p>This component refers to strategic IT governance processes that ensure that CDMSs and related IT systems are carefully designed so that the science and NMHS requirements for CDMSs may be effectively and efficiently implemented.</p>
+<p>Uncontrolled development of components can have adverse impacts on the CDMS, including on the ability of the NMHS to maintain the CDMS over the long term. For example:
+1. Reliance on proprietary solutions provided by a single vendor could result in a situation known as vendor lock-in. As time passes, more and more components are developed based on the single solution. It can be very difficult and costly for a NMHS to move to a new CDMS-related solution if the current vendor’s product becomes unaffordable or if the vendor goes out of business, decides that it is no longer in its interest to offer CDMS components, ceases to maintain its systems or no longer offers a competitive CDMS solution.
+2. Similarly, uncontrolled bespoke development of CDMS components by NMHS staff or contractors can also be a problem. This may result in a wide variety of disparate CDMS components that cannot be easily integrated. Many different types of technology could be used, resulting in high maintenance costs. Key-person dependencies could also develop, leaving the NMHS with a significant and costly issue to resolve, particularly if the key person leaves the organization and the CDMS ceases to operate.
+3. CDMS component solutions could be developed that do not effectively use NMHS climate data, for example:
+    1. Data may be replicated from the climate database and made into stand-alone files to support a particular technology or due to the developer’s lack of experience. Whereas the data in the climate database are subject to a lengthy quality assurance lifecycle and may change, the replicated data are fixed at a point in time and may not be updated to reflect later changes to the climate record. This may become a significant issue for the NMHS, particularly if this practice is systematically applied by many developers, across many applications and over many years.
+    2. The data extraction process may not take into account quality assurance flags and just present raw observations with no indication of data quality or reliability.
+    3. Developers may not understand the complexities of the climate database data model and extract incorrect data.
+    4. Components may have any number of data inconsistency or misuse issues. What is the impact on the reputation of the NMHS if the same data are presented with differing values by different CDMS components?</p>
+<p>There may also be architectural considerations that are better off understood early in the CDMS development so that governance processes can ensure that the considerations are implemented within developed and/or implemented software.</p>
+<p>One issue to consider is whether the CDMS should be able to work in multiple languages. The answer to this will have implications for the design of software for the user interface of CDMS components, as well as for the generation and presentation of data products.</p>
+<p>IT architecture is a specialized field of information technology that is typically undertaken by highly experienced professionals with very broad IT experience. Ideally, this task will be conducted by experienced NMHS staff to ensure that consistent CDMS components are implemented in accordance with a strategic vision.</p>
+<p>See also Wikipedia articles on:
+a) Enterprise architecture
+b) Solution architecture</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">3.2.2.5 Documentation</td>
+                <td class="cdms-content">
+                    <p>This component covers governance processes that ensure that the CDMS is adequately documented and that this documentation is kept up to date to facilitate efficient day-to-day use by staff and ease the learning curve of new staff, contractors, consultants, etc.</p>
+<p>This documentation is very broad and includes:
+1. An overview of the CDMS
+2. An overview of the data being managed both within and outside the climate database
+3. The CDMS components, design, business requirements, architecture, test plans and deployment processes
+4. CDMS policies and governance processes
+5. CDMS backup and disaster recovery processes
+6. IT systems management and administration processes
+7. Various CDMS-related metrics</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

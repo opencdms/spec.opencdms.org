@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <h2 class="chapter-title"><span
+                style="padding-right: 30px; padding-left: 15px;">{{ ch_idx }}</span> {{ chapter['Title'] }}</h2>
+
+        {% for s_idx, section in sections.items() %}
+        {% if str(s_idx).startswith(str(ch_idx)) %}
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">{{ s_idx }}</span> {{ section["Title"] }}</h3>
+                    {% if section["Description"] %}
+                    <div class="cdms-content" style="padding-bottom: 10px;">{{ section["Description"] }}</div>
+                    {% endif %}
+                </td>
+            </tr>
+            {% for ss_idx, subsection in sub_sections.items() %}
+            {% if ss_idx.startswith(str(s_idx)) %}
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">{{ ss_idx }}</span> {{ subsection["Title"] }}
+                    </h4>
+                    {% if subsection["Description"] %}
+                    <div class="cdms-content" style="padding-bottom: 10px;">{{ subsection["Description"] }}</div>
+                    {% endif %}
+                </td>
+            </tr>
+            {% for ct_idx, cmpt in components.items() %}
+            {% if ct_idx.startswith(ss_idx) %}
+            <tr>
+                <td style="background-color: #dff2fd;">{{ ct_idx }} {{ cmpt["Title"] }}</td>
+                <td class="cdms-content">
+                    {{ markdown(cmpt["Description"])|safe }}
+                </td>
+                {% if cmpt["Classification"] == "Required" %}
+                <td style="background-color: #f3eb72;">{{ cmpt["Classification"] }}</td>
+                {% endif %}
+                {% if cmpt["Classification"] == "Recommended" %}
+                <td style="background-color: #b3d386;">{{ cmpt["Classification"] }}</td>
+                {% endif %}
+                {% if cmpt["Classification"] == "Optional" %}
+                <td style="background-color: #e3e3e3;">{{ cmpt["Classification"] }}</td>
+                {% endif %}
+            </tr>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+        {% endfor %}
+
+    </div>
+</div>
+</body>
+</html>

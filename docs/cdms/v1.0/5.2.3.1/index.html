@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.3.1 Forms</td>
+                <td class="cdms-content">
+                    <p>This component covers:
+1. The visual design of a form.
+2. The software logic that controls the data key-in process.
+3. The mapping of fields in the form with appropriate records and tables within the climate database.
+4. Ensuring that the integrity of the climate database is protected by validating data before they are added to the database.</p>
+<p>The component should also support:</p>
+<ol>
+<li>A custom definition of user input forms that mimic traditional meteorological forms (including the language where appropriate).</li>
+<li>Efficient and effective data entry that minimizes operator fatigue and automatically calculates appropriate values.</li>
+<li>The component should provide adequate support for monitoring the validity of data that are entered.</li>
+</ol>
+<p>Some examples are:
+8. Performing data quality consistency checks of the data to be entered. These checks and the appropriate values are to be customizable according to NMHS data policy and governance processes.
+9. Ensuring that appropriate data types and context are entered for each field.
+10. The component should alert the operator to any doubtful entries detected, providing appropriate advice as per NMHS data policy guidelines.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

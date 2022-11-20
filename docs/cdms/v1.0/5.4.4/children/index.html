@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+
+
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.4.4</span> Uncertainty
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the processes, software, governance processes and data analysis used to understand and record the uncertainty inherent in the data.
+
+As noted in the OGC Abstract Specification: Geographic Information – Observations and measurements (p. 13), all observations have an element of uncertainty:
+
+&gt; The observation error typically has a systematic component, which is similar for all estimates made using the same procedure, and a random component, associated with the particular application instance of the observation procedure. If potential errors in a property value are important in the context of a data analysis or processing application, then the details of the act of observation which provided the estimate of the value are required.
+
+This functionality will support:
+1. Future statistical analysis that takes into account the uncertainty inherent in data.
+2. Communication of data uncertainty.
+
+For more information, see Wikipedia articles on:
+a) Uncertain data
+b) Uncertainty</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.4.1 Measurements</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and data analysis used to understand and record the uncertainty inherent in observation measurements and processes.</p>
+<p>The <em>Guide to Meteorological Instruments and Methods of Observation</em> (WMO-No. 8) provides a number of examples per meteorological variable.</p>
+<p>For more information, see:
+a) <em>Guide to Meteorological Instruments and Methods of Observation</em> (WMO-No. 8), Annex 1.D Operational measurement uncertainty requirements and instrument performance
+b) Annex III of the final report of the first session of the Commission for Instruments and Methods of Observation Expert Team on Standardization</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.4.2 Derived data</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and data analysis used to understand and record the uncertainty inherent in gridded data that have been derived from observation data.</p>
+<p>Many factors can contribute to the uncertainty inherent in gridded derived data. Some examples are:
+1. Uncertainty inherent in the source observations data.
+2. Uncertainty inherent in the location of sensors/stations used to generate the grids.
+3. The relative accuracy of the algorithms used to generate the derived data.
+4. The precision of variable data types used in the software that generates derived data.</p>
+<p>It is also worth noting that a number of these factors may propagate through the data derivation process.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

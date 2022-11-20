@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">6.1</span> Analysis</h3>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This section describes a series of processes used to analyse climate data.
+
+More work will be required to expand on this section in future revisions of this Specification.</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">6.1.1</span> Climate modelling
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">6.1.1.1 Numerical models</td>
+                <td class="cdms-content">
+                    <p>This component represents the software, processes and governance mechanisms that provide numerical models such as general circulation models (GCMs), also known as global climate models.</p>
+<p>A Wikipedia article defines general circulation models as:</p>
+<blockquote>
+<p>[A] mathematical model of the general circulation of a planetary atmosphere or ocean and based on the Navier–Stokes equations on a rotating sphere with thermodynamic terms for various energy sources (radiation, latent heat). These equations are the basis for complex computer programs commonly used for simulating the atmosphere or ocean of the Earth. Atmospheric and oceanic GCMs (AGCM and OGCM) are key components of <strong>global climate models</strong> along with sea ice and land-surface components. GCMs and global climate models are widely applied for weather forecasting, understanding the climate, and projecting climate change.</p>
+</blockquote>
+<p>Such climate numerical models could be global in scale (like GCMs) but they could also be regional, with generally a higher precision.</p>
+<p>Downscaling techniques are often used when creating regional models.</p>
+<p>Models can be based on:
+1. The rules of physics, biology and chemistry
+2. Statistical rules
+3. A mix of dynamic and statistic methods</p>
+<p>The use of climate models includes:</p>
+<ol>
+<li>Simulation of the present climate</li>
+<li>Simulation of the future climate</li>
+<li>Palaeoclimate reconstruction</li>
+<li>Seasonal forecasts</li>
+<li>Decadal prediction</li>
+</ol>
+<p>Note: Most NMHSs would not have the resources needed to effectively manage the infrastructure and software required to support this component. However, the data output from such components may be useful and should be available for NMHSs via a number of sources, including Regional Climate Centres.</p>
+<p>For more information, see:
+a) Wikipedia article on general circulation models</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">6.1.1.2 Reanalysis</td>
+                <td class="cdms-content">
+                    <p>This component concerns the software, processes and governance mechanisms that establish “a meteorological data assimilation project which aims to assimilate historical observational data spanning an extended period, using a single consistent assimilation (or “analysis”) scheme throughout”. (See Wikipedia article on meteorological reanalysis)</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">6.1.1.3 Model ensembles</td>
+                <td class="cdms-content">
+                    <p>This component refers to the software, processes and governance mechanisms used to aggregate data from:
+1. A number of GCMs to produce products that portray a range of model forecasts.
+2. A series of runs of the same model.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">6.1.2</span> Generate derived data from climate observations
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">6.1.2.1 Spatial analysis</td>
+                <td class="cdms-content">
+                    <p>This component represents the software, processes and governance tools that handle a very wide variety of raster and vector spatial analysis techniques.</p>
+<p>Some examples are:
+1. Generating grids that show the spatial distribution of observations of a phenomenon such as precipitation.
+2. Generating grids that represent the distribution of the average maximum temperature for the month of May for climatological standard normals.
+3. Generating grids that represent the distribution of the maximum temperature anomalies for May 2010 when compared to the climatological standard normal.
+4. Selecting all meteorological stations located within a 10 km radius around a national administrative boundary.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">6.1.2.2 Image analysis</td>
+                <td class="cdms-content">
+                    <p>This component covers the software, processes and governance tools that handle a very wide range of image analysis techniques.</p>
+<p>Some examples are:
+1. Processing remotely sensed satellite imagery to measure the relative solar reflectance of a satellite image, determine the cloud cover within a scene or generate a normalized difference vegetation index to measure vegetation greenness.
+2. Processing ground-based radar imagery to detect rain and storm activity.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">6.1.2.3 Time-series analysis</td>
+                <td class="cdms-content">
+                    <p>This component concerns the software, processes and governance mechanisms that analyse timeseries data using a very broad range of analysis techniques.</p>
+<p>Some examples are the analysis required to produce:
+1. WMO standard products such as extremes, standard normals, World Weather Records and climate change indices.
+2. A variety of derived observations data.</p>
+<p>For more information, see:
+a) <em>Guide to Climatological Practices</em> (WMO-No. 100), Chapter 4 Characterizing climate from datasets, and Chapter 5 Statistical methods for analysing datasets</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">6.1.2.4 Teleconnection indices</td>
+                <td class="cdms-content">
+                    <p>This component represents the software, processes and governance processes used to analyse, record and manage data representing teleconnections and major climate indices such as the El Niño-Southern Oscillation and the Southern Oscillation Index.</p>
+<p>According to an article on Wikipedia, “<strong>[t]eleconnection</strong> in atmospheric science refers to climate anomalies being related to each
+other at large distances (typically thousands of kilometers)”.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

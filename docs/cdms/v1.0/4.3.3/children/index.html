@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+
+
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.3.3</span> Data provenance
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the processes, data and governance arrangements that record and manage information relevant to climate data and enable end-users, including data managers, scientists and the general public, to develop trust in the integrity of the climate data.
+
+Data provenance allows an end-user to understand the history of each piece of data, and thus helps the user to identify what version of the data was available at any given time. The need for this new type of climate metadata has become more evident following a number of attacks on the credibility of climate data. One notable example is the so-called Climategate
+incident and subsequent inquiries.
+
+Therefore, it is important for NMHSs to establish the reliability of their climate data and processes and to ensure that these data are subsequently seen as the authoritative source that can be used for global climate studies.
+
+While the concept of data provenance has been relatively nebulous within the information management domain for many years, there has been a significant amount of work on the concept within the World Wide Web Consortium (W3C) for over more than a decade, particularly with regard to the development of the PROV standard.
+
+The W3C defines provenance as:
+&gt; [A] record that describes the people, institutions, entities, and activities involved in producing,
+&gt; influencing, or delivering a piece of data or a thing. In particular, the provenance of information
+&gt; is crucial in deciding whether information is to be trusted, how it should be integrated with
+&gt; other diverse information sources, and how to give credit to its originators when reusing it. In
+&gt; an open and inclusive environment such as the Web, where users find information that is often
+&gt; contradictory or questionable, provenance can help those users to make trust judgements.
+&gt; (W3C, 2013a)
+
+While this work is still relatively new, it is showing significant potential for use within the climate domain.
+
+The concepts presented here for climate data provenance are quite embryonic and need further work to ensure that they can be implemented effectively. See the related recommendation in Chapter 11.
+
+Maintaining a dataset with high levels of data provenance metadata is expected to be quite expensive and, as a result, will be limited to data of high importance such as high-quality climate monitoring datasets. It is anticipated that guidance will be required to suggest what data should be maintained with what level of data provenance metadata. This guidance could perhaps be included as a policy within a future climate data framework.
+
+For more information, see:
+a) Overview of the PROV family of documents (W3C, 2013b)
+b) PROV data model specification (W3C, 2013a)</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.1 What was changed?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that any change to climate data is recorded.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.2 When was it changed?</td>
+                <td class="cdms-content">
+                    <p>This component covers the processes, software and governance arrangements that ensure that the time of the change is recorded.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.3 What was it derived from?</td>
+                <td class="cdms-content">
+                    <p>This component deals with the processes, software and governance arrangements that ensure that a dataset’s lineage is understood. In other words, where did the data come from?</p>
+<p>This component is also required in the section on data discovery (8.2).</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.4 What was done to change it?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure a clear explanation of any ad hoc modifications to a climate record.</p>
+<p>This includes:
+1. What was changed
+2. When the change was made
+3. Details describing what was done</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.5 How/why was it changed?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that the rationale behind a modification to a climate record is clearly understood.</p>
+<p>This includes:
+1. How the change was made
+2. Why it was made</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.6 Who/what changed it?</td>
+                <td class="cdms-content">
+                    <p>This component involves the processes, software and governance arrangements that ensure a clear understanding of the agent that affected the change.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.7 Who did they act on behalf of?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that the person or role who requested the change is identified.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.8 Who was responsible?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that the person or role who authorized the change is identified.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>
