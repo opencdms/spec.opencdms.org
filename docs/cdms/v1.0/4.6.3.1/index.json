@@ -1,0 +1,8 @@
+{
+  "title": "Source code management",
+  "text": "This component deals with managing the source code of the software used to process climate data. This component should have the following capabilities at a minimum:\n1. Maintain a library of a variety of software source code.\n2. Manage different versions (or branches) of the software concurrently, with the ability to maintain each version independently and to easily backport newer functionalities to an older version.\n3. Easily detect the differences between software versions.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -3,8 +3,9 @@ import pandas as pd
 from pathlib import Path
 from jinja2 import Environment, PackageLoader, select_autoescape
 
-
-INPUT_FILEPATH = Path("../cdms/v1.0/cdms_specfications_md.xlsx")
+INPUT_FILEPATH = Path(__file__).parent.parent.joinpath(
+    "cdms/v1.0/cdms_specifications_md.xlsx"
+)
 
 chapters: pd.DataFrame = pd.read_excel(
     INPUT_FILEPATH, sheet_name="chapters", index_col="Number", dtype=str
@@ -18,7 +19,10 @@ sub_sections: pd.DataFrame = pd.read_excel(
 components: pd.DataFrame = pd.concat(
     [
         pd.read_excel(
-            INPUT_FILEPATH, sheet_name=f"ch{i}_components", index_col="Number", dtype=str
+            INPUT_FILEPATH,
+            sheet_name=f"ch{i}_components",
+            index_col="Number",
+            dtype=str,
         ).fillna("")
         for i in range(3, 10)
     ]
@@ -28,23 +32,142 @@ env = Environment(
     loader=PackageLoader(package_name="wmo", package_path="../wmo/templates"),
     autoescape=select_autoescape(),
     trim_blocks=True,
-    lstrip_blocks=True
+    lstrip_blocks=True,
 )
 
-index = env.get_template("index.html")
-
-
 if __name__ == "__main__":
-    with open("../docs/index.html", "w") as stream:
+    index_template = env.get_template("index.html")
+    chapter_template = env.get_template("chapter.html")
+    chapter_with_children_template = env.get_template("chapter_with_children.html")
+    section_template = env.get_template("section.html")
+    section_with_children_template = env.get_template("section_with_children.html")
+    sub_section_template = env.get_template("sub_section.html")
+    sub_section_with_children_template = env.get_template("sub_section_with_children.html")
+    component_template = env.get_template("component.html")
+    index_output_filepath = Path(__file__).parent.parent.joinpath(
+        "docs/cdms/v1.0/index.html"
+    )
+    with open(index_output_filepath, "w") as stream:
         stream.write(
-            index.render(
+            index_template.render(
                 {
                     "chapters": chapters.to_dict(orient="index"),
                     "sections": sections.to_dict(orient="index"),
                     "sub_sections": sub_sections.to_dict(orient="index"),
                     "components": components.to_dict(orient="index"),
                     "str": str,
-                    "markdown": markdown.markdown
+                    "markdown": markdown.markdown,
                 },
             )
         )
+
+    for idx, chapter in chapters.iterrows():
+        output_file_path = Path(__file__).parent.parent.joinpath(
+            f"docs/cdms/v1.0/{idx}/index.html"
+        )
+        with open(output_file_path, "w") as stream:
+            stream.write(
+                chapter_template.render(
+                    {
+                        "chapter": {"Name": idx, **chapter.to_dict()},
+                        "str": str,
+                        "markdown": markdown.markdown,
+                    }
+                )
+            )
+        output_file_path_with_children = output_file_path = Path(__file__).parent.parent.joinpath(
+            f"docs/cdms/v1.0/{idx}/children/index.html"
+        )
+        with open(output_file_path_with_children, "w") as stream:
+            stream.write(
+                chapter_with_children_template.render({
+                    "chapter": chapter.to_dict(),
+                    "ch_idx": idx,
+                    "sections": sections.to_dict(orient="index"),
+                    "sub_sections": sub_sections.to_dict(orient="index"),
+                    "components": components.to_dict(orient="index"),
+                    "str": str,
+                    "markdown": markdown.markdown,
+                })
+            )
+
+    for idx, section in sections.iterrows():
+        output_file_path = Path(__file__).parent.parent.joinpath(
+            f"docs/cdms/v1.0/{idx}/index.html"
+        )
+        with open(output_file_path, "w") as stream:
+            stream.write(
+                section_template.render(
+                    {
+                        "section": {"s_idx": idx, **section.to_dict()},
+                        "str": str,
+                        "markdown": markdown.markdown,
+                    }
+                )
+            )
+
+        output_file_path_with_children = output_file_path = Path(__file__).parent.parent.joinpath(
+            f"docs/cdms/v1.0/{idx}/children/index.html"
+        )
+        with open(output_file_path_with_children, "w") as stream:
+            stream.write(
+                section_with_children_template.render({
+                    "section": section.to_dict(),
+                    "s_idx": idx,
+                    "sub_sections": sub_sections.to_dict(orient="index"),
+                    "components": components.to_dict(orient="index"),
+                    "str": str,
+                    "markdown": markdown.markdown,
+                })
+            )
+
+    for idx, sub_section in sub_sections.iterrows():
+        output_file_path = Path(__file__).parent.parent.joinpath(
+            f"docs/cdms/v1.0/{idx}/index.html"
+        )
+        output_file_path_with_children = Path(__file__).parent.parent.joinpath(
+            f"docs/cdms/v1.0/{idx}/children/index.html"
+        )
+        with open(output_file_path, "w") as stream:
+            stream.write(
+                sub_section_template.render(
+                    {
+                        "subsection": {"Number": idx, **sub_section.to_dict()},
+                        "str": str,
+                        "markdown": markdown.markdown,
+                    }
+                )
+            )
+
+        with open(output_file_path_with_children, "w") as stream:
+            stream.write(
+                sub_section_with_children_template.render(
+                    {
+                        "ss_idx": idx,
+                        "subsection": sub_section.to_dict(),
+                        "components": components.to_dict(orient="index"),
+                        "str": str,
+                        "markdown": markdown.markdown,
+                    }
+                )
+            )
+
+    for idx, cmpt in components.iterrows():
+        output_file_path = Path(__file__).parent.parent.joinpath(
+            f"docs/cdms/v1.0/{idx}/index.html"
+        )
+        with open(output_file_path, "w") as stream:
+            stream.write(
+                component_template.render(
+                    {
+                        "cmpt": {
+                            "Number": idx,
+                            "Title": cmpt["Title"],
+                            "Description": cmpt["Description"],
+                            "Classification": cmpt["Classification"],
+                        },
+                        "str": str,
+                        "markdown": markdown.markdown,
+                    }
+                )
+            )

@@ -1,0 +1,8 @@
+{
+  "title": "Time-series analysis",
+  "text": "This component concerns the software, processes and governance mechanisms that analyse timeseries data using a very broad range of analysis techniques.\n\nSome examples are the analysis required to produce:\n1. WMO standard products such as extremes, standard normals, World Weather Records and climate change indices.\n2. A variety of derived observations data.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100), Chapter 4 Characterizing climate from datasets, and Chapter 5 Statistical methods for analysing datasets",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

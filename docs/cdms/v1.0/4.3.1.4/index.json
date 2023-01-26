@@ -1,0 +1,8 @@
+{
+  "title": "Station type",
+  "text": "This component supports recording the type of station or observation platform.\n\nIdeally, the type will be recorded for each instrument used at that station.\n\nAt a minimum, the station type is to be recorded in accordance with the following guidelines:\n1. *Manual on Codes* (WMO-No. 306), Volume I.1, code 1860, and Volume I.2, code 0 02 001\n\nIn addition, there may be multiple definitions of station types used by the NMHS and other organizations.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

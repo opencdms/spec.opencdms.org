@@ -1,0 +1,8 @@
+{
+  "title": "Oceanic",
+  "text": "**Oceanic ECVs:**\n1. Surface\n    1. Sea-surface temperature\n    2. Sea-surface salinity\n    3. Sea level\n    4. Sea state\n    5. Sea ice\n    6. Surface current\n    7. Ocean colour\n    8. Carbon dioxide partial pressure\n    9. Ocean acidity\n    10. Phytoplankton\n2. Subsurface\n    1. Temperature\n    2. Salinity\n    3. Current\n    4. Nutrients\n    5. Carbon dioxide partial pressure\n    6. Ocean acidity\n    7. Oxygen\n    8. Tracers\n\nFor more information, see:\na) GCOS web page on ECVs\nb) Guide to Climatological Practices (WMO-No. 100), Table 2.1",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

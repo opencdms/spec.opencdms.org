@@ -1,0 +1,8 @@
+{
+  "title": "Climate networks",
+  "text": "This component concerns a range of policies that determine the design of climatological networks and establish the station and network operations, including observation times, on-site quality control, observer training, station inspections, etc.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100), section 2.5 The design of climatological networks, and section 2.6 Station and network operations\nb) *Technical Regulations* (WMO-No. 49), Volume I, Part II, 1.3.1.1.2:\n> The distribution of stations from which monthly surface climatological data are transmitted should be such that every 250 000 km2 is represented by at least one station and up to 10 stations where the density of the regional basic synoptic network permits; the distribution of stations from which monthly upper-air climatological data are transmitted should be such that every 1 000 000 km2 is represented by at least one station.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

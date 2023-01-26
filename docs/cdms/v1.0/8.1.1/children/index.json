@@ -1,0 +1,63 @@
+{
+  "title": "Open Geospatial Consortium services",
+  "text": "",
+  "components": [
+    "8.1.1.1",
+    "8.1.1.2",
+    "8.1.1.3",
+    "8.1.1.4",
+    "8.1.1.5",
+    "8.1.1.6",
+    "8.1.1.7",
+    "8.1.1.8",
+    "8.1.1.9"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "8.1.1.1": {
+    "title": "Web Map Services",
+    "text": "This component represents technology suitable for the distribution of a wide range of climate data via a Web Map Service (WMS).\n\nIn essence, a WMS provides a map view of data distributed via a georeferenced image.\n\nFor more information, see:\na) OGC WMS documentation\nb) The OGC Meteorology and Oceanography Domain Working Group paper on the use of WMS with time-dependent and elevation dependent data",
+    "classification": "Recommended"
+  },
+  "8.1.1.2": {
+    "title": "Web Feature Services",
+    "text": "This component represents technology suitable for the distribution of a broad range of vector climate data via a Web Feature Service (WFS).\n\nIn essence, a WFS could provide vector and tabular climate data, which could be presented in a number of formats such as GML (see OGC GML web page) or Environmental Systems Research Institute (ESRI) shapefile.\n\nSome WFS implementations can serve data constrained by a logical data model (also known as an application schema). It may also be possible to enable WFS server software to provide meteorological observation data via WMO formats such as BUFR.\n\nThere may be issues with serving time series via WFS. There is discussion that a Sensor Web Service may be better for time-series\nobservations.\n\nFor more information, see:\na) OGC WFS documentation",
+    "classification": "Recommended"
+  },
+  "8.1.1.3": {
+    "title": "Web Coverage Services",
+    "text": "This component represents technology suitable for the distribution of a wide range of gridded and array climate data via a Web Coverage Service (WCS).\n\nIn essence, a WCS provides the actual gridded or array data.\n\nFuture versions of WCSs are intended to support logical data models defined as application schemas.\n\nFor more information, see:\na) OGC WCS documentation",
+    "classification": "Recommended"
+  },
+  "8.1.1.4": {
+    "title": "Sensor Web Enablement Services",
+    "text": "This component represents a range of technological tools suitable for the distribution of a wide variety of observational data and related metadata.\n\nThere are a number of services that will become available when work stabilizes on these standards. Sensor Web Services are typically used with data that conform to the observations and measurements data model. This model is well suited to time-series data. Therefore, Sensor Web Services may be an appropriate mechanism for serving time-series climate data in the future.\n\nFor more information, see the OGC documentation for:\na) Observations and measurements\nb) Sensor Observation Services",
+    "classification": "Optional"
+  },
+  "8.1.1.5": {
+    "title": "CF-netCDF",
+    "text": "This component involves technology suitable for the provision of a wide variety of gridded or array scientific data written as netCDF files that support the conventions for climate and forecast metadata<sup>3</sup>.\n\nFor more information, see:\na) Wikipedia article on netCDF\nb) OGC netCDF standards suite\nc) The OGC CF-netCDF core and extensions primer\n\n<sup>3</sup> In this context, the term metadata refers to a set of fields in the header of a netCDF file that describe the context and format of the array data contained in the CF-netCDF file.",
+    "classification": "Recommended"
+  },
+  "8.1.1.6": {
+    "title": "Geosynchronization",
+    "text": "This component concerns a series of technological tools that enable a data publisher to distribute a data product in an environment that supports managed change to the source data.\n\nIn theory, end-users could subscribe to a data source and have changes to the data replicated in their copy of the data.\n\nIn summary, geosynchronization services are expected to support several processes, including:\n1. Allowing interested parties to subscribe to an authoritative data source.\n2. Data entry with validation.\n3. Notifying interested parties of changes.\n4. Allowing replication of the data provider\u2019s features.\n\nIt is anticipated that geosynchronization services will support crowdsourced data and processes in addition to authoritative data sources.\n\nAt present, geosynchronization services are being developed with the current version of a standard that only serves data via a WFS. \n\nIt is expected that geosynchronization will support additional services in the future, including WCS and WMS.\n\nFor more information, see:\na) OGC overview of geosynchronization services\nb) The OWS 7 engineering report on the test of geosynchronization services",
+    "classification": "Optional"
+  },
+  "8.1.1.7": {
+    "title": "Web Processing Services",
+    "text": "This component covers a range of technological instruments that provide a standards-based framework for developing spatial processing services that operate via an internal network or the Internet.\n\nThis standard is being used by a number of open-source projects and vendors to develop the building blocks that will support a wide range of spatial analytic processes.\n\nThe latest version of the standard is being developed to support both synchronous and asynchronous Web Processing Services (WPS).\n\nThis standard has considerable potential for future CDMS use, for example:\n1. To enable an NMHS to establish a suite of services to process and analyse climate data within a services-oriented architecture.\n2. To enable a future service-provider to offer CDMS-related services via \u201cthe cloud\u201d.\n\nFor more information, see:\na) WPS Wikipedia entry\nb) OGC WPS documentation",
+    "classification": "Optional"
+  },
+  "8.1.1.8": {
+    "title": "Symbology Encoding",
+    "text": "This component represents a range of technological tools that provide rules and a standardized approach for defining alternative visual portrayals of spatial data via an internal network or the Internet.\n\nSymbology Encoding, together with Styled Layer Descriptors (SLDs), can be used with WMSs, WFSs and WCSs to enable user-defined symbolization of spatial data from within a collection of published styles.\n\nAs an example, it is possible to publish several colour classification schemes for a gridded dataset, allowing end-users to select one that is appropriate for their use.\n\nFor more information, see:\na) OGC Symbology Encoding documentation",
+    "classification": "Optional"
+  },
+  "8.1.1.9": {
+    "title": "Styled Layer Descriptors",
+    "text": "This component represents a range of technological tools that provide rules and a standardized approach for defining alternative visual portrayals of the spatial data via an internal network or the Internet.\n\nStyled Layer Descriptors, together with Symbology Encoding, can be used with WMSs, WFSs and WCSs to enable user-defined symbolization of spatial data from within a collection of published styles.\n\nFor more information, see:\na) OGC SLD documentation",
+    "classification": "Optional"
+  }
+}

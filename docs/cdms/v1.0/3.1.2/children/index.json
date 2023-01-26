@@ -1,0 +1,39 @@
+{
+  "title": "Sustainability",
+  "text": "",
+  "components": [
+    "3.1.2.1",
+    "3.1.2.2",
+    "3.1.2.3",
+    "3.1.2.4",
+    "3.1.2.5"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "3.1.2.1": {
+    "title": "Disaster recovery",
+    "text": "This component refers to a policy that governs how an organization implements disaster recovery and business continuity solutions and covers issues such as how to handle data backups. Some initial issues to consider are:\n1. How important is the climate record?\n2. How often should climate data be backed up?\n\n    While the Wikipedia article on backups can provide some background information, this question must be answered by each NMHS.\n\n    Their answer will need to take the following into account:\n    1. How important are their data?\n    2.  How much data can they afford to lose?\n    3.  How much work can they afford to redo?\n    4.  In the interim, while NMHSs are assessing their requirements, it is suggested that daily backups be made with weekly off-site storage.\n\n3. How many redundant copies of the data should be kept?\n4. What secure off-site facility should be used to store disaster recovery versions of the data?\n5. What is the acceptable downtime for each of the key CDMS applications?\n6. How high is the risk of catastrophic damage to the organization\u2019s infrastructure due to a range of factors, including:\n    1. Natural disasters, such as flooding, bush fires, tidal waves, cyclones or earthquakes?\n    2. Man-made disturbances, such as military conflict, terrorism and fires?\n\nWhere should the secure off-site storage be located? For NMHSs situated in areas where their infrastructure is likely to be damaged, it may be appropriate to place the secure off-site storage in another city or country.\n\nIs it appropriate to use cloud-based services to store and manage climate data and offer CDMS services to end-users?",
+    "classification": "Required"
+  },
+  "3.1.2.2": {
+    "title": "Funding",
+    "text": "This component concerns a policy that regulates how an organization funds its CDMS to ensure that it is sustainable. This includes sufficient funding for:\n1. Climate data management specialists, including staff with knowledge of observations data, data rescue, quality assurance, etc.\n2. IT specialists who support the everyday maintenance of CDMS applications and related databases and IT equipment.\n3. IT specialists who conduct enhancements to the CDMS and related IT environments.\n4. The provision and scheduled upgrade of IT systems to ensure that the appropriate IT environment has been implemented to support the CDMS.",
+    "classification": "Required"
+  },
+  "3.1.2.3": {
+    "title": "Data custodian",
+    "text": "This component represents a policy that governs how an organization manages and maintains its\nclimate data.\n\nA data custodian is typically a senior-level manager who is accountable for the integrity of the climate record of the NMHS.\n\nSome examples of a data custodian\u2019s duties are:\n1. Preserving the integrity of the climate record, including quality control and ensuring that observational networks provide data that are suitable for climate purposes.\n2. Championing the cause of data management to ensure that sufficient funding is allocated and managed effectively so that the climate record remains viable.\n3. Facilitating the development and maintenance of suitable policies governing climate data.\n4. Ensuring that climate data are effectively managed and maintained.\n5. Ensuring that observations metadata, discovery metadata and data provenance are effectively maintained.\n6. Formally delegating authority to appropriate staff members, together with related performance accountabilities.\n7. Taking primary responsibility for CDMS applications, CDMS enhancement and IT maintenance projects.\n8. Ensuring that IT changes do not corrupt the climate record.\n9. Implementing and monitoring relevant key performance indicators to help monitor ongoing performance of the CDMS and related processes.",
+    "classification": "Required"
+  },
+  "3.1.2.4": {
+    "title": "Access to data",
+    "text": "This component involves a policy that governs how an organization allows access to data.\n\nSome issues to consider are:\n1. How is read-and-write access to climate data controlled?\n2. What training is needed before staff are granted write access?\n3. What types of controls are needed to monitor and approve changes to the climate record to facilitate data maintenance and error rectification?\n4. How are any specific access constraints, such as security, contractual or commercial constraints, to be managed?\n\nNote: The issue of open data is increasing in relevance for many national governments that have made open-data commitments. \n\nTherefore, organizations should have a clear understanding of, and a clear policy for, the provision of NMHS climate data in accordance with open data principles (see Wikipedia article on open data).\n\nIn summary, open data is about ensuring that data are freely available for reuse with no constraints apart from perhaps the requirement to acknowledge the data source and ensure that the data are made available under a share-alike agreement.",
+    "classification": "Required"
+  },
+  "3.1.2.5": {
+    "title": "Archival policy",
+    "text": "This component represents a policy that dictates how organizations archive their climate data, including both digital and hard-copy historical records.\n\nThis archive should be considered as permanent to ensure that the climate record is available for use by future generations.\n\nTherefore, care should be taken to ensure that the data are preserved in a format that users will be able to access and use in years to come.",
+    "classification": "Required"
+  }
+}

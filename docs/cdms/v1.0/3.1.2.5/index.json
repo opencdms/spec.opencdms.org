@@ -1,0 +1,8 @@
+{
+  "title": "Archival policy",
+  "text": "This component represents a policy that dictates how organizations archive their climate data, including both digital and hard-copy historical records.\n\nThis archive should be considered as permanent to ensure that the climate record is available for use by future generations.\n\nTherefore, care should be taken to ensure that the data are preserved in a format that users will be able to access and use in years to come.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

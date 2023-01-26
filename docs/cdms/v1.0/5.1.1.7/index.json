@@ -1,0 +1,8 @@
+{
+  "title": "Automated with self-recovery",
+  "text": "This component supports the automated ingest of a range of ingest types (particularly WMO messages and data from automatic weather stations).\n\nThe component also allows for the automatic recovery of ingest tasks in the event that a task fails either entirely or part way through an ingest. This could be due to a number of reasons, including:\n1. Corrupted messages\n2. Network failures\n3. Hard disk failures\n4. Database failures\n5. Upstream data flow disruptions",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

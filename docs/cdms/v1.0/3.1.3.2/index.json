@@ -1,0 +1,8 @@
+{
+  "title": "Access constraints",
+  "text": "This component concerns policies that clearly define any access constraints relating to the use of climate data.\n\nFor example:\n1. What may the NMHS do with the data?\n2. Can the data be used for the organization\u2019s website, web services, publications and so forth?\n3. Do any commercial or contractual constraints apply to the use of the data?\n4. Are the data subject to any national security constraints?",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

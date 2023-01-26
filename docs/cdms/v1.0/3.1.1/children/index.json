@@ -1,0 +1,39 @@
+{
+  "title": "Commitments",
+  "text": "What commitments has the implementing organization agreed to either explicitly through a contractual arrangement or implicitly through national policy agreements, regional and international agreements, WMO membership or other means?",
+  "components": [
+    "3.1.1.1",
+    "3.1.1.2",
+    "3.1.1.3",
+    "3.1.1.4",
+    "3.1.1.5"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "3.1.1.1": {
+    "title": "WMO resolutions",
+    "text": "This component refers to the policy framework within WMO, governed at the highest level through Congress and the Executive Council.\n\nThe list of current resolutions can be found in Resolutions of Congress and the Executive Council (WMO-No. 508).\n\nSome resolutions have major implications for data policy, such as Resolution 40 (Cg-XII), which provides guidelines for the policy and practice of exchanging meteorological data, and Resolution 25 (Cg-XIII), which provides guidelines on the exchange of hydrological data.\n\nThe major innovation in these resolutions is the definition of essential data. Through these resolutions, WMO Members commit to making essential data available on a free and unrestricted basis at no more than the reasonable cost of extraction and formatting for delivery to the user.\n\nMembers may not impose additional charges for essential data.",
+    "classification": "Required"
+  },
+  "3.1.1.2": {
+    "title": "WMO Technical Regulations",
+    "text": "This component covers standard practices and procedures, as well as recommended practices and procedures, for WMO Members to follow and implement.\n\nThe main references are the four volumes of the WMO Technical Regulations (WMO-No. 49):\n1. Volume I \u2013 General Meteorological Standards and Recommended Practices\n2. Volume II \u2013 Meteorological Service for International Air Navigation\n3. Volume III \u2013 Hydrology\n4. Volume IV \u2013 Quality Management\n\nAlso see the publications of the annexes that are part of the Technical Regulations:\n\n5. Annex I \u2013 International Cloud Atlas (WMO-No. 407), Volume I\n6. Annex II \u2013 Manual on Codes (WMO-No. 306), Volumes I.1 and I.2\n7. Annex III \u2013 Manual on the Global Telecommunication System (WMO-No. 386), Volume I\n8. Annex IV \u2013 Manual on the Global Dataprocessing and Forecasting System (WMO-No. 485), Volume I\n9. Annex V \u2013 Manual on the Global Observing System (WMO-No. 544), Volume I\n10. Annex VI \u2013 Manual on Marine Meteorological Services (WMO-No. 558), Volume I\n11. Annex VII \u2013 Manual on the WMO Information System (WMO-No. 1060)\n12. Annex VIII \u2013 Manual on the Implementation of Education and Training Standards in Meteorology and Hydrology (WMO-No. 1083), Volume I",
+    "classification": "Required"
+  },
+  "3.1.1.3": {
+    "title": "WMO technical commission guides",
+    "text": "This component includes the recommendations or best practices that are generally drawn up as guides published by the different technical commissions:\n1. Commission for Basic Systems\n2. Commission for Instruments and Methods of Observation\n3. Commission for Hydrology\n4. Commission for Atmospheric Sciences\n5. Commission for Aeronautical Meteorology\n6. Commission for Agricultural Meteorology\n7. Commission for Climatology\n8. Joint WMO/IOC Technical Commission for Oceanography and Marine Meteorology (JCOMM)\n\nWhile most of the guides are relevant to CDMSs, it is recommended that particular attention be paid to:\n\n9. *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8), from the Commission for Instruments and Methods of Observation\n10. *Guide to Climatological Practices* (WMO-No. 100), from the Commission for Climatology",
+    "classification": "Required"
+  },
+  "3.1.1.4": {
+    "title": "International",
+    "text": "This component concerns commitments that organizations are required to adhere to because they qualify as international agreements.\n\nSome examples are:\n1. The Global Framework for Climate Services, which has an important role in climate data management, climate monitoring and assessment, climate products and services, and climate information for adaptation and risk management.\n2. International data policy agreements, such as the Infrastructure for Spatial Information in Europe, which has defined and legislated common principles for European Union countries that enable the sharing of environmental spatial information among public-sector organizations. This generally includes climatological data.\n3. The Group on Earth Observations (GEO), which concerns the exchange of observations data.\n4. The OGC and ISO, which focus on the exchange of data via open spatial standards. Note that not all standards are relevant.",
+    "classification": "Required"
+  },
+  "3.1.1.5": {
+    "title": "National",
+    "text": "This component represents national policies that organizations are required to comply with. Some examples are:\n1. National government policies on open data and open-source software.\n2. National spatial data infrastructure frameworks that govern the exchange of national spatial data.",
+    "classification": "Required"
+  }
+}

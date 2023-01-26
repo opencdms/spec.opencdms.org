@@ -1,0 +1,27 @@
+{
+  "title": "Data delivery",
+  "text": "",
+  "components": [
+    "3.1.4.1",
+    "3.1.4.2",
+    "3.1.4.3"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "3.1.4.1": {
+    "title": "Interoperability standards",
+    "text": "This component involves policies that ensure that climate data are delivered using appropriate open interoperability standards, such as open spatial standards.\n\nThis will ensure that data are available in a form that facilitates data interoperability and are accessible to a wide range of end-users from disparate industries using a wide variety of proprietary and open-source software applications.\n\nNote: It is possible to enforce the use of data formats such as BUFR or GRIB within an NMHS in an attempt to facilitate interoperability. In reality though, only NMHSs and closely related organizations will be able to understand the formats and have the software to use the data.\n\nFor more information, see section 8.1 of this publication.",
+    "classification": "Recommended"
+  },
+  "3.1.4.2": {
+    "title": "Quality of delivered data",
+    "text": "This component refers to policies that clearly define the issues relating to the quality of the climate data delivered by NMHSs.\n\nFor example:\n1. What quality of climate data does the organization undertake to deliver and in what circumstances?\n2. Will the organization only provide high-quality homogenized data?\n3. Will the organization provide raw observations?\n4. When is it appropriate to deliver data at each quality level?",
+    "classification": "Required"
+  },
+  "3.1.4.3": {
+    "title": "Cost recovery",
+    "text": "This component refers to policies that ensure that issues relating to the recovery of costs for the provision of NMHS climate data services are clearly understood and communicated.\n\nThese policies should also take into account:\n1. NMHS commitments to WMO relating to Resolutions 25 (Cg-XIII) and 40 (Cg-XII), as discussed above.\n2. National commitments to open data policies.",
+    "classification": "Recommended"
+  }
+}

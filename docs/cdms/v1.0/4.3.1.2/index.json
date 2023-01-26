@@ -1,0 +1,8 @@
+{
+  "title": "Station overview",
+  "text": "This component covers what to provide in an overview of the observation station or platform.\n\nThis should include:\n1. Station owner - If required, the sensor owner\n2. Station manager - If required, the sensor manager\n3. Maintenance authority - If required, the sensor maintenance authority\n4. Station licence agreement - If required, the sensor licence agreement\n5. Station data usage constraints - If required, the sensor data usage constraints\n6. Purpose of the station\n7. Observation practices\n8. Observation schedule - this is particularly relevant for stations that use manual observation methods and where observations are not taken on a continuous basis\n9. Definition of which datasets provide the actual observations data for a given station, sensor and phenomenon combination, together with the URL of the relevant discovery metadata records\n10. Observers and maintenance personnel, including their names, experience and training level\n11. Station logistics, including consumables, electricity suppliers, communications suppliers, etc.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

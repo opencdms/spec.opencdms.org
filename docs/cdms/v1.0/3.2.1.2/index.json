@@ -1,0 +1,8 @@
+{
+  "title": "Approval process for new data types",
+  "text": "This component refers to governance processes that ensure that issues relating to the approval of new data types within an organization are clearly understood.\n\nSome issues to consider are:\n1. What needs to be considered prior to accepting a new data type for long-term archival (such as user requirements, scientific requirements or a new statutory requirement)?\n2. What are the projected storage requirements for the data?\n3. What is the appropriate format for storing the data over the long term?\n4. Is there likely to be an application that can read that format in 10 or 20 years?\n5. What skills are available to process and analyse the data over the long term?\n7. Is suitable funding available to maintain the data over the long term?",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

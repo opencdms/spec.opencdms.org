@@ -1,0 +1,27 @@
+{
+  "title": "Computing platform",
+  "text": "",
+  "components": [
+    "9.3.2.1",
+    "9.3.2.2",
+    "9.3.2.3"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.3.2.1": {
+    "title": "Hardware",
+    "text": "This component covers all computing hardware, including servers and desktop computers.\n\nOrganizations are increasingly using virtualization to allow several virtual servers to be deployed on a single physical server, as a way of minimizing hardware and operational costs while increasing operational efficiency.",
+    "classification": "Required"
+  },
+  "9.3.2.2": {
+    "title": "Operating system",
+    "text": "This component concerns the operating system required to support computing operations.",
+    "classification": "Required"
+  },
+  "9.3.2.3": {
+    "title": "High-performance computing",
+    "text": "This component covers the advanced computing functionalities needed to support highperformance computing, including clusters and grids.",
+    "classification": "Optional"
+  }
+}

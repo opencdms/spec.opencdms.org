@@ -1,0 +1,8 @@
+{
+  "title": "Agricultural",
+  "text": "This component refers to agricultural information datasets.\n\nSome examples are:\n1. Data from the Food and Agriculture Organization of the United Nations that could relate to agriculture, animal production and health, fisheries, forestry, land and water or plant production and protection.\n2. Regional, national or international data from different organizations such as primary industry departments or research centres on agriculture.",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

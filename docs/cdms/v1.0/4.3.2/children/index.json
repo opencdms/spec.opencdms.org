@@ -1,0 +1,57 @@
+{
+  "title": "Dataset discovery metadata",
+  "text": "This subsection refers to the processes, software and governance arrangements that ensure that discovery metadata are captured, managed and maintained.\n\nDiscovery metadata are intended to facilitate the discovery and assessment of a spatial dataset to determine if it is fit for reuse for a purpose that may be at odds with the reason for which it was originally created.\n\nDiscovery metadata may also be known as WIS metadata. They are not the same as the observations metadata described above.\n\nNote that some of the components below may be in addition to the WMO Core Profile of the ISO 19115 *Geographic information \u2013 Metadata* standard. This is not expected to be an issue as the WMO Core Profile does not restrict the use of additional ISO 19115 records.\n\nFor more information, see:\na) Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)\nb) WMO Core Metadata Profile version 1.3, Part 1 Conformance requirements\nc) WMO Core Metadata Profile version 1.3, Part 2 Abstract test suite, data dictionary and code lists\nd) Tandy (2010) also provides a useful introduction to discovery metadata. However, note that the specifications part of this text has been superseded.\ne) ISO 19115 Geographic information \u2013 Metadata",
+  "components": [
+    "4.3.2.1",
+    "4.3.2.2",
+    "4.3.2.3",
+    "4.3.2.4",
+    "4.3.2.5",
+    "4.3.2.6",
+    "4.3.2.7",
+    "4.3.2.8"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "4.3.2.1": {
+    "title": "Dataset identifier",
+    "text": "This component represents a unique identifier used to identify the dataset.",
+    "classification": "Required"
+  },
+  "4.3.2.2": {
+    "title": "Dataset overview",
+    "text": "This component gives an overview of a dataset.\n\nThis may include a description of the dataset (such as an abstract), the intended use of the dataset, its lineage and status.",
+    "classification": "Required"
+  },
+  "4.3.2.3": {
+    "title": "Dataset data quality",
+    "text": "This component represents a general assessment of the quality of a dataset.",
+    "classification": "Required"
+  },
+  "4.3.2.4": {
+    "title": "Distribution",
+    "text": "This component covers information about the distributor of and options for obtaining a dataset.",
+    "classification": "Required"
+  },
+  "4.3.2.5": {
+    "title": "Access constraints",
+    "text": "This component provides information on the restrictions in place for a dataset.",
+    "classification": "Required"
+  },
+  "4.3.2.6": {
+    "title": "Dataset maintenance",
+    "text": "This component provides information on the scope and frequency of updates and maintenance conducted on a dataset.",
+    "classification": "Required"
+  },
+  "4.3.2.7": {
+    "title": "Spatial representation",
+    "text": "This component covers information on the mechanisms used to represent spatial information within a dataset.",
+    "classification": "Required"
+  },
+  "4.3.2.8": {
+    "title": "Reference systems",
+    "text": "This component gives information on the reference systems used by a dataset. These include a horizontal spatial reference system, vertical spatial reference system and temporal reference system.",
+    "classification": "Required"
+  }
+}

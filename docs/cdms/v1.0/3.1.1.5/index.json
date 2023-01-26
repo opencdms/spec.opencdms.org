@@ -1,0 +1,8 @@
+{
+  "title": "National",
+  "text": "This component represents national policies that organizations are required to comply with. Some examples are:\n1. National government policies on open data and open-source software.\n2. National spatial data infrastructure frameworks that govern the exchange of national spatial data.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

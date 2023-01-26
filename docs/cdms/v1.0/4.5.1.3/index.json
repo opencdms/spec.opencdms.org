@@ -1,0 +1,8 @@
+{
+  "title": "Normals and averages",
+  "text": "This component represents any normals and averages used by NMHSs that are in addition to climatological standard normals. For example, the component should be able to compute:\n1. Averages over specified time periods (daily, hourly, 5 days, 10 days, monthly and so forth)\n2. Period averages for any period (for example 5, 10, 30 or 100 years)\n\nFor more information, see:\na) *The Role of Climatological Normals in a Changing Climate* (WMO/TD-No. 1377), WCDMP-61",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

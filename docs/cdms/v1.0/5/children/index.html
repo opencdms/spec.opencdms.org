@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <h2 class="chapter-title"><span
+                style="padding-right: 30px; padding-left: 15px;">5</span> Climate data management</h2>
+
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">5.1</span> Ingest and extract</h3>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This section covers a very broad set of functionalities relating to the capture and initial processing of observation and related data.
+
+In essence, this section involves:
+1. Loading data into or extracting data from the climate database.
+2. Transforming data as required from one format into another more suitable for data management, analysis and storage.</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.1.1</span> Data ingest
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.1 Business rules</td>
+                <td class="cdms-content">
+                    <p>This component supports a wide range of user defined business rules that govern how data are ingested into the climate database. Some examples (for observations data) are:
+1. Action required when new phenomena are to be ingested but a record already exists in the
+database for that time period.
+    1. Should the new record replace the current record in the database or should the new record be rejected?</p>
+<pre><code>    There is potential for data that have not been quality controlled to overwrite perfectly good quality-controlled data. An example is a message that is reingested and the ingest process does not take into account the possibility that the data already exist in the database and that they have been modified.
+</code></pre>
+<ol>
+<li>Action required when a message arrives for ingest but the message type is not appropriate according to the observations metadata on record for that station.</li>
+<li>Action required should a message arrive containing an observed value that is outside the accepted bounds for a given phenomenon. For example, a message contains a value of 90°C for temperature, where the maximum accepted temperature is 60°C.</li>
+<li>Action required should a message arrive that is of a lower order of precedence to one that has already been ingested for the same time period and station. For example:<ol>
+<li>The priority level given to records being ingested may relate to the method of data acquisition. A record that has been keyed in via a quality assurance process may be given a higher priority than a record acquired via a real-time message ingest.</li>
+</ol>
+</li>
+</ol>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.2 WMO messages</td>
+                <td class="cdms-content">
+                    <p>This component allows for the import of data from a range of WMO message formats, including TAC and TDCF.</p>
+<p>As both historical and current data will need to be imported, this component should be able to work with data in a wide variety of past, present (and future) data formats.</p>
+<p>Some examples are:
+1. Binary:
+    1. BUFR
+    2. GRIB
+2. Alphanumeric:
+    1. CREX
+    2.  SYNOP
+    3.  TEMP
+    4.  SHIP
+    5.  METAR
+    6.  World Weather Records</p>
+<p>Note: While TAC formats are being phased out, support for them will still be required by this component to support the ingest of historical data.</p>
+<p>For more information, see:
+a) WMO international codes</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.3 Vector</td>
+                <td class="cdms-content">
+                    <p>This component supports the import of a series of vector spatial formats.</p>
+<p>For example:
+1. Shapefile
+2. Geography Markup Language (GML) (see OGC GML web page)</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.4 Raster array</td>
+                <td class="cdms-content">
+                    <p>This component supports the import of a series of raster array spatial formats.</p>
+<p>For example:
+1. CF-netCDF
+2. Hierarchical data format
+3. ArcInfo ASCII
+4. GeoTIFF</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.5 Other formats</td>
+                <td class="cdms-content">
+                    <p>This component covers the import of a range of other formats.</p>
+<p>For example:
+1. Photographs (PNG, JPEG, TIFF, etc.)
+2. Scanned documents
+3. PDF files
+4. ASCII generic formats such as CSV
+5. Data managed in spreadsheets
+6. Tabular formats, such as the import of data from a relational database management system</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.6 Status log</td>
+                <td class="cdms-content">
+                    <p>This component concerns the recording of each ingest activity status in order to:
+1. Monitor the ingest job status.
+2. Automatically recover failed ingests.
+3. Record warning and other error messages to enable manual intervention if required, for example if expected data are not received.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.7 Automated with self-recovery</td>
+                <td class="cdms-content">
+                    <p>This component supports the automated ingest of a range of ingest types (particularly WMO messages and data from automatic weather stations).</p>
+<p>The component also allows for the automatic recovery of ingest tasks in the event that a task fails either entirely or part way through an ingest. This could be due to a number of reasons, including:
+1. Corrupted messages
+2. Network failures
+3. Hard disk failures
+4. Database failures
+5. Upstream data flow disruptions</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.1.8 Transformation</td>
+                <td class="cdms-content">
+                    <p>This component supports the transformation of an ingest record. This may include:
+1. Transforming data from one format to another.
+2. Transforming codes into formats more suitable for the destination climate database.
+3. Correcting records that have been abbreviated in accordance with accepted local observation practice.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.1.2</span> Data extraction
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.1.2.1 Data extraction</td>
+                <td class="cdms-content">
+                    <p>This component allows data to be extracted from the climate database in accordance with NMHS data policy and governance processes.</p>
+<p>Data may be transformed into a wide range of formats as described in the subsection on data ingest (5.1.1).</p>
+<p>Note: This component is only intended for advanced users who have an intimate knowledge of the climate database, its data structures, the relevant data policies and the appropriate use of quality flags and other aspects in order to perform one-off data extraction activities.</p>
+<p>End-user data extraction is intended to be constrained to defined data types via the climate data delivery services components (Chapter 8), using components under Chapter 7, such as: Tables and charts, Integrated search of climate data and Data download.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">5.2</span> Data rescue</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.2.1</span> Imaging
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.1.1 Document imaging</td>
+                <td class="cdms-content">
+                    <p>This component supports the functionality required to digitally capture a physical document and store the resultant file and associated discovery metadata, perhaps within the climate database.</p>
+<p>Some examples of the types of documents to be digitally captured are:
+1. Scanned paper observation forms
+2. Scanned microfiche/microfilm
+3. Relevant observations metadata documents such as instrument calibration reports
+4. Technical manuals
+5 Site location plans and sections</p>
+<p>For more information, see:
+a) <em>Guidelines on Climate Data Rescue</em> (WMO/TDNo. 1210), WCDMP-55</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.1.2 Optical character recognition</td>
+                <td class="cdms-content">
+                    <p>This component provides the functionality required to digitally capture data stored in scanned documents such as hand written and/or typed meteorological observation forms.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.1.3 Chart digitization</td>
+                <td class="cdms-content">
+                    <p>This component refers to the capacity to digitize data from recording cards such as those used with a Campbell-Stokes sunshine recorder, thermograph, barograph or other meteorological instrument.</p>
+<p>The typical functionality required for this component would be to:
+1. Scan a physical recording chart (or card) using the Document imaging component (5.2.1.1).
+2. Analyse the image of the chart.
+3. Extract numeric points from the chart.
+4. Calculate a value for those points.
+5. Store the resultant data in the climate database.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.2.2</span> Monitoring
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.2.1 Data rescue metrics</td>
+                <td class="cdms-content">
+                    <p>This component maintains metrics relating to the capture of historical observations data. These may contain:
+1. Name and brief description of data rescue project
+2. Countries where activity is taking place
+3. Contact person for project
+4. Types of data rescued
+5. Summary and per cent digitized
+6. Summary and per cent scanned
+7. Summary and per cent scanned but not digitized
+8. Summary and per cent undigitized</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.2.3</span> Data entry
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection covers the functionality required to enable an appropriately trained and authorized person to manually enter data into the climate database.
+
+Typically, this functionality is tightly controlled according to NMHS data governance processes.
+
+Some issues to consider are:
+1. Data entry staff should only be able to add data to or edit data in the climate database under programme control, with appropriate safeguards in place to protect the integrity of the climate database.
+2. Any functionality that provides write access to the database should also include an audit function to allow an independent review of database changes - One example could be the use of database triggers that write the details of a transaction,
+including the previous values, into a separate set of audit tables.
+3. Another approach could be to ensure that the data entry process creates an interim data file that is then entered into the database via data ingest processes, bypassing the need for direct access to the database.
+4. NMHS data policy may enforce the need for double entry practices, where two or more operators key in data for the same form, independent of each other, to detect and minimize key-in errors.
+5. Careful consideration should be made to ensure that an organization has very effective IT security and monitoring in place prior to allowing key-in access via the Internet. Most organizations will not have suitable controls in place. Therefore, key-in via the Internet should be avoided as a general rule.
+6. NMHS data policy should provide guidelines as to appropriate data quality considerations applied to data that are manually entered.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.3.1 Forms</td>
+                <td class="cdms-content">
+                    <p>This component covers:
+1. The visual design of a form.
+2. The software logic that controls the data key-in process.
+3. The mapping of fields in the form with appropriate records and tables within the climate database.
+4. Ensuring that the integrity of the climate database is protected by validating data before they are added to the database.</p>
+<p>The component should also support:</p>
+<ol>
+<li>A custom definition of user input forms that mimic traditional meteorological forms (including the language where appropriate).</li>
+<li>Efficient and effective data entry that minimizes operator fatigue and automatically calculates appropriate values.</li>
+<li>The component should provide adequate support for monitoring the validity of data that are entered.</li>
+</ol>
+<p>Some examples are:
+8. Performing data quality consistency checks of the data to be entered. These checks and the appropriate values are to be customizable according to NMHS data policy and governance processes.
+9. Ensuring that appropriate data types and context are entered for each field.
+10. The component should alert the operator to any doubtful entries detected, providing appropriate advice as per NMHS data policy guidelines.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.3.2 Key entry</td>
+                <td class="cdms-content">
+                    <p>This component provides the functionality to support manual key-in of meteorological data.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.2.3.3 Computation</td>
+                <td class="cdms-content">
+                    <p>This component allows for the automatic derivation of parameters at key-in.</p>
+<p>Such computation should be customizable according to NMHS data policy and governance processes.</p>
+<p>Some possible scenarios where this functionality may be used are:
+1. The computation of a value for relative humidity after the values for dry-bulb temperature and dewpoint have been entered.
+2. Decoding shorthand codes and replacing them with appropriate values.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">5.3</span> Observations quality control</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.3.1</span> Quality management
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">For more information, see:
+a) *Guide to Climatological Practices* (WMO-No. 100)
+b) *Guide to the Global Observing System* (WMO-No. 488), Appendix VI.1 Data quality control, and Appendix VI.2 Guidelines for quality control procedures applying to data from automatic weather stations
+c) *Guidelines on the Quality Control of Surface Climatological Data* (WMO/TD-No. 111), WCP-85
+d) *Guidelines on Climate Data Management* (WMO/TD-No. 1376), WCDMP-60
+e) *Guide on the Global Data-processing System* (WMO-No. 305), Chapter 6 Quality control procedures</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.3.1.1 Consistency checks</td>
+                <td class="cdms-content">
+                    <p>This component covers a range of tests to ensure that inconsistent, unlikely or impossible records are either rejected or flagged as suspect. A manual investigation may then assess the validity of the suspect values.</p>
+<p>This component includes the concepts of internal, temporal and summarization consistency checks as discussed in the <em>Guide to Climatological Practices</em> (WMO-No. 100), section 3.4.6 Consistency tests.</p>
+<p>Some examples are:
+1. Is the minimum temperature lower than the maximum temperature?
+2. Is the maximum temperature within the historical range for maximum temperatures for a given station?</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.3.1.2 Data comparison</td>
+                <td class="cdms-content">
+                    <p>This component covers a series of tests that use and cross-reference data from a number of sources to validate suspect observations.</p>
+<p>Some examples of datasets that may be cross-referenced are:
+1. Observations data showing daily precipitation at a station
+2. Radar data covering the station
+3. Synoptic forecast charts
+4. Satellite imagery</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.3.1.3 Heuristic checks</td>
+                <td class="cdms-content">
+                    <p>This component refers to a set of tests that rely on experience and knowledge of observation processes, techniques and instrumentation to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.</p>
+<p>Some examples are problems typically caused by:
+1. Inexperienced operators.
+2. Instruments that are not or are incorrectly calibrated.
+3. Operator behaviour or organizational policy, for example not recording rainfall data over a weekend period and aggregating the results on the following Monday.
+4. Known deficiencies in observers handling data such as evaporation-related observations.
+5. Changes over time caused by changes at an observation site. For example, a shift in the magnitude of wind recorded from a specific direction may be an indicator of a problem at the site location, such as a new building structure or trees obstructing the flow of the wind in that direction.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.3.1.4 Statistical checks</td>
+                <td class="cdms-content">
+                    <p>This component covers a number of tests that statistically analyse historical data to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.</p>
+<p>Some examples are:
+1. Climate tests that highlight extreme climatic values, such as a record maximum air temperature.
+2. Flatline tests where a constant value exceeds the specified limit in a time series, for example when the station air temperature remains constant for 12 hours.
+3. Spike tests conducted in a time series to identify data spikes exceeding a specified limit, for example when a three-hourly air temperature observation is at least 50 degrees colder than all others during the day.
+4. Rapid change tests conducted in a time series to identify rapid changes exceeding a specified limit, for example when a 100 cm soil temperature suddenly changes in consecutive 3-hourly observations from a relatively stable 22°C to 38°C for all following observations.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.3.1.5 Spatial checks</td>
+                <td class="cdms-content">
+                    <p>This component covers a range of spatial tests to detect inconsistent, unlikely or impossible records and flag them as suspect. A manual investigation may then assess the validity of the suspect values.</p>
+<p>Some examples are:
+1. Comparing the results of a time series of observations at a given station with those at nearby stations.
+2. Using a Barnes or similar analysis to derive spatial patterns against which anomalous and possibly erroneous station values stand out.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.3.1.6 Data recovery</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, policies, governance arrangements, audit processes, etc., that enable the recovery and insertion of data in the climate database, possibly overwriting existing data.</p>
+<p>This component involves a number of manual processes undertaken by experienced and well-trained personnel, supported by effective technology, governance and data management processes, to investigate anomalous observations and either accept or reject suspect records.</p>
+<p>Personnel will typically review and consider a wide range of data in their investigations, such as raw records, synoptic charts, satellite imagery, radar and other types.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">5.4</span> Quality assessment</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.4.1</span> Observations quality assessment
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the processes implemented to help NMHSs assess the quality of observations used by their organization. It covers all stages, from the observation site and expertise level of personnel to the final product distributed to users.
+
+The aim of this subsection is to move towards a more objective way of defining the quality of observations data.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.1.1 Siting classification</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and analysis that classify sensors according to the rating scale described in the <em>Guide to Meteorological Instruments and
+Methods of Observation</em> (WMO-No. 8), Annex 1.B Siting classifications for surface observing stations on land.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.1.2 Sustained performance classification</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and analysis that classify sensors according to their sustained performance over time.</p>
+<p>The best description found to date on how to determine this classification may be found in Annex III of the final report of the first session of the Commission for Instruments and Methods of Observation Expert Team on Standardization.</p>
+<p>Note: A more objective approach to developing this classification for the global WMO community is required.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.1.3 Multilayer quality flags</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and data analysis used to understand and enumerate the quality flags of a specific record of data.</p>
+<p>This will facilitate:
+1. Future analysis that requires data of a specific quality flag value.
+2. Communication on the assessed quality of records.</p>
+<p>The best description to date on how to define this classification may be found in the <em>Guide to Climatological Practices</em> (WMO-No. 100), pp. 3–8 to 3–9. This reference describes a way of flagging quality based on a combination of:</p>
+<ol>
+<li>Data type (original, corrected, reconstructed or calculated)</li>
+<li>Validation stage</li>
+<li>Acquisition method</li>
+</ol>
+<p>This approach is still quite limited. It does not provide a clear way of determining just what level of quality control a record has been subjected to.</p>
+<p>While the classifications are relevant and relate to the perceived quality of a record, they do not allow for an explicit comparison of data of similar perceived quality.</p>
+<p>For example, the subsection on quality management (5.3.1) describes a series of classifications of tests (without providing actual details). If a record has passed all such tests, can it be considered to be better quality than one that has not passed any test?</p>
+<p>Objective quality classifications are required to support a consistent approach within the global WMO community so that data can be:</p>
+<ol>
+<li>Objectively compared to ensure that data of similar quality can be compared and analysed as required.</li>
+<li>Stored and easily retrieved from a climate database. It is becoming increasingly apparent that organizations will need to retain observations at multiple levels of quality from the raw observation through various edit and analysis processes in order to demonstrate the true lineage of a record and explain and justify the changes made to the raw observations.</li>
+</ol>
+<p>Note: A more objective approach to determining this classification for the global WMO community is required.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.1.4 Climate observation quality classification</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and data analysis used to understand and enumerate the quality of a specific record of data relative to an objective index. This index will need to combine a number of criteria relevant to data reliability and quality.</p>
+<p>Note: This index has yet to be created. For the purposes of this publication, it is called the climate observation quality classification. However, this name may change. It is envisioned that this index will need to take into account a number of factors, including:
+1. Siting classification
+2. Sustained performance classification
+3. Regular maintenance and calibration of sensor
+4. Sensor reliability
+5. Uncertainty inherent in observations
+6. Observation quality control processes
+7. Multilayer quality flags
+8. Lineage
+9. Homogeneity
+10. Other appropriate factors</p>
+<p>See also the summary of findings of the seventh Data Management Workshop of the European Climate Support Network (ECSN) held at the Danish Meteorological Institute, in particular:</p>
+<blockquote>
+<p>Noting that “everybody” talks about different levels of Quality Control [QC] and (almost) nobody uses the same wording or nomenclature – it is recommended that an overview of QC nomenclature in ECSN is worked out. It might be considered if such an overview could form the basis for a recommended set of QC wordings. (Kern- Hansen, 2009)</p>
+</blockquote>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.4.2</span> Derived-data quality assessment
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.2.1 Derived-data quality assessment</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance and data analysis processes used to understand and enumerate the quality of derived data relative to an objective index.</p>
+<p>There are many factors that can influence the quality of derived data. Some issues to consider are:
+1. What is the quality of the source data?
+2. What algorithms have been applied to the source data to arrive at the derived data?
+3. What is the impact of these algorithms on the quality of the derived data?
+4. If the derived dataset is spatial, how has the positional location of the data been derived?
+    1. What is the quality of the source spatial data?
+    2. What is the impact of the algorithms used to spatially distribute the data on the positional accuracy of the derived data?</p>
+<p>For more information, see also the Derived data component (5.4.4.2).</p>
+<p>Note: This index has yet to be created. For the purposes of this publication, it is called the derived-data quality assessment. However, this name may change.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.4.3</span> Quality assurance metrics
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.3.1 Quality assurance metrics</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and analysis used to monitor the performance of quality assurance processes.</p>
+<p>Such monitoring will allow network managers and climate data specialists to validate the performance of quality assurance software and processes.</p>
+<p>This can be done, for example, by reviewing automatically generated reports that:
+1. Summarize observational errors detected by each quality assurance test.
+2. Summarize false positives and valid errors detected.
+3. Compare the performance of current quality assurance metrics with historical averages.</p>
+<p>These types of metrics can also help data and network managers improve quality assurance processes and software.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.4.4</span> Uncertainty
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the processes, software, governance processes and data analysis used to understand and record the uncertainty inherent in the data.
+
+As noted in the OGC Abstract Specification: Geographic Information – Observations and measurements (p. 13), all observations have an element of uncertainty:
+
+&gt; The observation error typically has a systematic component, which is similar for all estimates made using the same procedure, and a random component, associated with the particular application instance of the observation procedure. If potential errors in a property value are important in the context of a data analysis or processing application, then the details of the act of observation which provided the estimate of the value are required.
+
+This functionality will support:
+1. Future statistical analysis that takes into account the uncertainty inherent in data.
+2. Communication of data uncertainty.
+
+For more information, see Wikipedia articles on:
+a) Uncertain data
+b) Uncertainty</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.4.1 Measurements</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and data analysis used to understand and record the uncertainty inherent in observation measurements and processes.</p>
+<p>The <em>Guide to Meteorological Instruments and Methods of Observation</em> (WMO-No. 8) provides a number of examples per meteorological variable.</p>
+<p>For more information, see:
+a) <em>Guide to Meteorological Instruments and Methods of Observation</em> (WMO-No. 8), Annex 1.D Operational measurement uncertainty requirements and instrument performance
+b) Annex III of the final report of the first session of the Commission for Instruments and Methods of Observation Expert Team on Standardization</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.4.4.2 Derived data</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software, governance mechanisms and data analysis used to understand and record the uncertainty inherent in gridded data that have been derived from observation data.</p>
+<p>Many factors can contribute to the uncertainty inherent in gridded derived data. Some examples are:
+1. Uncertainty inherent in the source observations data.
+2. Uncertainty inherent in the location of sensors/stations used to generate the grids.
+3. The relative accuracy of the algorithms used to generate the derived data.
+4. The precision of variable data types used in the software that generates derived data.</p>
+<p>It is also worth noting that a number of these factors may propagate through the data derivation process.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">5.5</span> Climate metadata</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">5.5.1</span> Manage climate metadata
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the processes, software, governance mechanisms and data analysis required to effectively manage climate metadata, which include metadata on observations, discovery and data provenance.
+
+Note: This subsection is deliberately kept generic in this version of the CDMS Specifications, with all types of climate metadata bundled together. While the Create and Maintain components (5.5.1.1 and 5.5.1.2, respectively) are classified as recommended, in reality data provenance metadata has not yet been adequately defined. Therefore, a pragmatic approach would rightly not address the creation and maintenance of data provenance metadata until this has been rectified. The creation and maintenance of discovery and observations metadata, however, is required.
+
+For more information on climate metadata, see section 4.3 of this publication.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.5.1.1 Create</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance processes needed to effectively and efficiently create climate metadata.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.5.1.2 Maintain</td>
+                <td class="cdms-content">
+                    <p>This component covers the processes, software and governance mechanisms required to effectively and efficiently maintain climate metadata.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.5.1.3 Quality control</td>
+                <td class="cdms-content">
+                    <p>This component deals with the processes, software and governance processes needed to effectively and efficiently assess and control the quality of climate metadata.</p>
+<p>More work is required to provide effective guidance on this component.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">5.5.1.4 Metrics</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance processes required to effectively and efficiently maintain metrics relevant to climate metadata.</p>
+<p>Some examples are:
+1. Which stations or sensors do not have observations metadata records?
+2. Which datasets do not have discovery metadata records?</p>
+<p>More work is required to provide effective guidance on this component.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

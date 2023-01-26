@@ -1,0 +1,8 @@
+{
+  "title": "Integrated search of observations (metadata and data)",
+  "text": "This component concerns the functionality that allows an end-user to conduct an integrated search of the climate database and the observations metadata catalogue.\n\nThe search results will contain observations data and observations metadata.\n\nSome examples are:\n1. Determining what observations data are available based on a set of parameters and viewing the results in a table. These parameters may include:\n    1. Station\n    2. Sensor or procedure\n    3.  Phenomena\n    4.  Data quality (based on quality flags, the climate observation quality classification or other method)\n    5.  Time period\n    6.  A variety of other observation metadata parameters\n2. Reviewing observations metadata for selected stations.\n3. Determining what datasets provide the actual observations data for a given station, sensor and phenomenon combination, together with the URL of the relevant discovery metadata records. The discovery metadata records will in turn provide the URLs of any services providing dynamic access to the data. An example could involve searching for stations that use both a tipping bucket raingauge and manual methods to observe rainfall.\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on observations metadata (4.3.1)\nc) Observations metadata catalogue component (8.2.1.2)\nd) Linked data component (8.2.2.1)",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

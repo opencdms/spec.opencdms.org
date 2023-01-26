@@ -1,0 +1,8 @@
+{
+  "title": "Computation",
+  "text": "This component allows for the automatic derivation of parameters at key-in.\n\nSuch computation should be customizable according to NMHS data policy and governance processes.\n\nSome possible scenarios where this functionality may be used are:\n1. The computation of a value for relative humidity after the values for dry-bulb temperature and dewpoint have been entered.\n2. Decoding shorthand codes and replacing them with appropriate values.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

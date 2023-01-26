@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+
+            <tr>
+                <td style="background-color: #dff2fd;">3.1.2.1 Disaster recovery</td>
+                <td class="cdms-content">
+                    <p>This component refers to a policy that governs how an organization implements disaster recovery and business continuity solutions and covers issues such as how to handle data backups. Some initial issues to consider are:
+1. How important is the climate record?
+2. How often should climate data be backed up?</p>
+<pre><code>While the Wikipedia article on backups can provide some background information, this question must be answered by each NMHS.
+
+Their answer will need to take the following into account:
+1. How important are their data?
+2.  How much data can they afford to lose?
+3.  How much work can they afford to redo?
+4.  In the interim, while NMHSs are assessing their requirements, it is suggested that daily backups be made with weekly off-site storage.
+</code></pre>
+<ol>
+<li>How many redundant copies of the data should be kept?</li>
+<li>What secure off-site facility should be used to store disaster recovery versions of the data?</li>
+<li>What is the acceptable downtime for each of the key CDMS applications?</li>
+<li>How high is the risk of catastrophic damage to the organization’s infrastructure due to a range of factors, including:<ol>
+<li>Natural disasters, such as flooding, bush fires, tidal waves, cyclones or earthquakes?</li>
+<li>Man-made disturbances, such as military conflict, terrorism and fires?</li>
+</ol>
+</li>
+</ol>
+<p>Where should the secure off-site storage be located? For NMHSs situated in areas where their infrastructure is likely to be damaged, it may be appropriate to place the secure off-site storage in another city or country.</p>
+<p>Is it appropriate to use cloud-based services to store and manage climate data and offer CDMS services to end-users?</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "title": "Data custodian",
+  "text": "This component represents a policy that governs how an organization manages and maintains its\nclimate data.\n\nA data custodian is typically a senior-level manager who is accountable for the integrity of the climate record of the NMHS.\n\nSome examples of a data custodian\u2019s duties are:\n1. Preserving the integrity of the climate record, including quality control and ensuring that observational networks provide data that are suitable for climate purposes.\n2. Championing the cause of data management to ensure that sufficient funding is allocated and managed effectively so that the climate record remains viable.\n3. Facilitating the development and maintenance of suitable policies governing climate data.\n4. Ensuring that climate data are effectively managed and maintained.\n5. Ensuring that observations metadata, discovery metadata and data provenance are effectively maintained.\n6. Formally delegating authority to appropriate staff members, together with related performance accountabilities.\n7. Taking primary responsibility for CDMS applications, CDMS enhancement and IT maintenance projects.\n8. Ensuring that IT changes do not corrupt the climate record.\n9. Implementing and monitoring relevant key performance indicators to help monitor ongoing performance of the CDMS and related processes.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

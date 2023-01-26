@@ -1,5 +1,6 @@
 {
   "title": "Graphical user interface \u2013 time-series data exploration",
+  "text": "",
   "subsections": [
     "7.1.1",
     "7.1.2",
@@ -7,105 +8,7 @@
     "7.1.4",
     "7.1.5"
   ],
-  "components": {
-    "7.1.1": [
-      "7.1.1.1",
-      "7.1.1.2"
-    ],
-    "7.1.2": [
-      "7.1.2.1"
-    ],
-    "7.1.3": [
-      "7.1.3.1",
-      "7.1.3.2",
-      "7.1.3.3"
-    ],
-    "7.1.4": [
-      "7.1.4.1",
-      "7.1.4.2",
-      "7.1.4.3",
-      "7.1.4.4"
-    ],
-    "7.1.5": [
-      "7.1.5.1"
-    ]
-  },
   "copyright": "World Meteorological Organization, 2014",
   "reference": "WMO-No. 1131",
-  "version": "1.0",
-  "7.1.1": {
-    "title": "Tables and charts",
-    "text": "This subsection represents the technology, software, processes and governance mechanisms suitable for generating a broad array of tabular and graphical reports to effectively communicate issues relating to climate data.",
-    "7.1.1.1": {
-      "title": "Tables",
-      "text": "This component refers to the technology, software, processes and governance processes suitable for generating a wide variety of tabular reports to effectively communicate issues relating to climate data.",
-      "classification": "Recommended"
-    },
-    "7.1.1.2": {
-      "title": "Graphs",
-      "text": "This component concerns the technology, software, processes and governance processes suitable for generating a large variety of graphs to effectively convey climate data issues.\n\nGraphs could be presented in a wide array of formats, including:\n1. Scatter plots\n2. Histograms\n3. Windroses\n4. Time-series graphs using one or more variables\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100), Chapter 6 Services and products",
-      "classification": "Recommended"
-    }
-  },
-  "7.1.2": {
-    "title": "Manage content",
-    "text": "",
-    "7.1.2.1": {
-      "title": "Manage content",
-      "text": "This component covers the technology, software, processes and governance processes suitable for generating a wide variety of content to effectively communicate issues relating to climate data.\n\nThis includes:\n1. Preparing texts, documents and data for effective web presentation.\n2. Using technology such as content management systems to simplify web content presentation.\n3. Implementing effective governance processes that review, validate and authorize content prior to being published.",
-      "classification": "Recommended"
-    }
-  },
-  "7.1.3": {
-    "title": "Visualization",
-    "text": "",
-    "7.1.3.1": {
-      "title": "Cartography",
-      "text": "This component represents the technology, software, processes and governance processes suitable for generating a wide variety of cartographic output to effectively convey climate data issues.\n\nIt includes:\n1. Spatial data preparation\n2. Cartography\n3. Simple point-and-click web maps",
-      "classification": "Recommended"
-    },
-    "7.1.3.2": {
-      "title": "3D",
-      "text": "This component provides the technology, software, processes and governance mechanisms suitable for visualizing and exploring climate data and issues within a 3D environment.",
-      "classification": "Optional"
-    },
-    "7.1.3.3": {
-      "title": "Media viewer",
-      "text": "This component refers to the technology, software, processes and governance processes that enable various media to be displayed within the graphical user interface. Some examples are:\n1. Photographs\n2. Diagrams\n3. Scanned documents such as scanned station records\n4. Videos\n5. Recorded audio media",
-      "classification": "Recommended"
-    }
-  },
-  "7.1.4": {
-    "title": "Integrated search of climate data",
-    "text": "",
-    "7.1.4.1": {
-      "title": "Spatial intelligence",
-      "text": "This component represents the technology, software, processes and governance processes that support an effective and dynamic analysis of climate data within a web environment to facilitate understanding of climate matters and communicate issues relating to climate data. This dynamic analysis includes:\n1. Geographical Information System (GIS) functionality, including the ability to perform spatial overlay analysis such as selecting points in a polygon.\n2. The ability to search features by attribute, for example:\n    1. Conducting a search of all stations within the catchment of a specific river.\n    2. Filtering the resultant stations to view only those that observe precipitation.\n    3. Viewing summary observations data for each of those stations.\n\nThis component integrates into a map-based interface a wide range of time-series data including climate observations, climate grids, satellite imagery and topography, together with appropriate textual and other attribute data, such as climate metadata.\n\nIt also facilitates dynamic data exploration and analysis using a broad array of integrated media, including maps, charts, graphs, tables and written reports.",
-      "classification": "Recommended"
-    },
-    "7.1.4.2": {
-      "title": "Integrated search of observations (metadata and data)",
-      "text": "This component concerns the functionality that allows an end-user to conduct an integrated search of the climate database and the observations metadata catalogue.\n\nThe search results will contain observations data and observations metadata.\n\nSome examples are:\n1. Determining what observations data are available based on a set of parameters and viewing the results in a table. These parameters may include:\n    1. Station\n    2. Sensor or procedure\n    3.  Phenomena\n    4.  Data quality (based on quality flags, the climate observation quality classification or other method)\n    5.  Time period\n    6.  A variety of other observation metadata parameters\n2. Reviewing observations metadata for selected stations.\n3. Determining what datasets provide the actual observations data for a given station, sensor and phenomenon combination, together with the URL of the relevant discovery metadata records. The discovery metadata records will in turn provide the URLs of any services providing dynamic access to the data. An example could involve searching for stations that use both a tipping bucket raingauge and manual methods to observe rainfall.\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on observations metadata (4.3.1)\nc) Observations metadata catalogue component (8.2.1.2)\nd) Linked data component (8.2.2.1)",
-      "classification": "Required"
-    },
-    "7.1.4.3": {
-      "title": "Search discovery metadata",
-      "text": "This component refers to the functionality that] allows an end-user to search the CDMS discovery metadata catalogue to:\n1. Determine what datasets are managed by the NMHS. This search may be limited to datasets that are available publicly or those that are only available for internal use.\n2. Search for datasets in accordance with WIS parameters, categories and keywords.\n3. Review discovery metadata records that adequately describe a dataset to enable searchers to determine whether it is suitable for their particular use.\n4. Determine the URL that can be used to access online services that host the dataset for dynamic access and data download.\n\nThis same component could be used to search WIS metadata catalogues.\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on dataset discovery metadata (4.3.2)\nc) Discovery metadata catalogue component (8.2.1.1)\nd) Linked data component (8.2.2.1)",
-      "classification": "Recommended"
-    },
-    "7.1.4.4": {
-      "title": "Search data provenance metadata",
-      "text": "This component provides the functionality that allows an end-user to search the CDMS data provenance metadata catalogue to:\n1. Broadly determine the lineage of a dataset, including the processes the dataset has been subjected to.\n2. Trace the provenance of individual records in detail, taking into account:\n    1. What was changed?\n    2. What was it derived from?\n    3. When was it changed?\n    4. What was done to change it?\n    5. How and why was it changed?\n    6. Who changed it?\n    7. Who did they act on behalf of (if applicable)?\n    8. Who authorized the change?\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on data provenance (4.3.3)\nc) Data provenance metadata catalogue component (8.2.1.3)\nd) Linked data component (8.2.2.1)",
-      "classification": "Optional"
-    }
-  },
-  "7.1.5": {
-    "title": "Data download",
-    "text": "",
-    "7.1.5.1": {
-      "title": "Data download",
-      "text": "This component represents the functionality enabling end-users to download climate data.\n\nThis component is related to the climate data delivery components (Chapter 8) and data discovery registers.",
-      "classification": "Required"
-    }
-  }
+  "version": "1.0"
 }

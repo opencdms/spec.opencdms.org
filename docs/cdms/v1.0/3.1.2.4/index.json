@@ -1,0 +1,8 @@
+{
+  "title": "Access to data",
+  "text": "This component involves a policy that governs how an organization allows access to data.\n\nSome issues to consider are:\n1. How is read-and-write access to climate data controlled?\n2. What training is needed before staff are granted write access?\n3. What types of controls are needed to monitor and approve changes to the climate record to facilitate data maintenance and error rectification?\n4. How are any specific access constraints, such as security, contractual or commercial constraints, to be managed?\n\nNote: The issue of open data is increasing in relevance for many national governments that have made open-data commitments. \n\nTherefore, organizations should have a clear understanding of, and a clear policy for, the provision of NMHS climate data in accordance with open data principles (see Wikipedia article on open data).\n\nIn summary, open data is about ensuring that data are freely available for reuse with no constraints apart from perhaps the requirement to acknowledge the data source and ensure that the data are made available under a share-alike agreement.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

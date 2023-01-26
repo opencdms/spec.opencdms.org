@@ -1,0 +1,8 @@
+{
+  "title": "Data homogenization",
+  "text": "This component refers to the processes, software, governance and analysis of highquality observations data and metadata used to develop high-quality homogenized time-series datasets. Such datasets aim to ensure that the only variability remaining in the time series is that resulting from actual climate variability.\n\nFor more information, see:\na) *Guidelines on Climate Metadata and Homogenization* (WMO/TD-No. 1186), WCDMP-53\nb) Trewin (2012) provides a good case study\nc) ETCCDI website\nd) The different homogenization packages available on the data-rescue website of the WMO Regional Association VI (RA VI) and CCl Task Team on Data Rescue (TT-DARE)\ne) The European project \u2013 Advances in homogenisation methods of climate series: an integrated approach HOME (ACTION COSTES0601, 2014)",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

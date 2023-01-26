@@ -1,0 +1,8 @@
+{
+  "title": "Applications management",
+  "text": "This component covers the functionalities, processes and software required to provide application administration tasks and second- and third-level support for CDMS services.\n\nAny new IT system implementation and any change to existing IT systems must be undertaken in accordance with the section on governance (3.2).",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

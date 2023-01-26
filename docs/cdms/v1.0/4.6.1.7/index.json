@@ -1,0 +1,8 @@
+{
+  "title": "Impacts data",
+  "text": "This component concerns a range of spatial data that relate to things impacted by climate. This could include:\n1. Deaths caused by heatwaves, prolonged droughts, floods, cyclones, etc.\n2. Infrastructure damage caused by a range of events such as floods, bush fires or cyclones.\n3. Changing land use, such as agricultural adaptations due to a changing climate.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Station status",
+  "text": "This component supports recording the period(s) of activity during which observations were being made at the station or platform.\n\nAs it is possible for stations to close and then reopen at a later time, the time period of each status is also required.\n\nValid operational status codes are:\n1. Operational\n2. Not operational",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

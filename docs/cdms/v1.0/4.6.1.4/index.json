@@ -1,0 +1,8 @@
+{
+  "title": "Health",
+  "text": "The component refers to a wide variety of health datasets.\n\nSome examples are:\n1. Data from the World Health Organization covering datasets on a very large spectrum.\n2. National or international data from different organizations such as health departments or health research centres.\n3. Epidemiological studies (see Wikipedia article) and so forth.",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

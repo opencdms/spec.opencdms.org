@@ -1,0 +1,8 @@
+{
+  "title": "Search discovery metadata",
+  "text": "This component refers to the functionality that] allows an end-user to search the CDMS discovery metadata catalogue to:\n1. Determine what datasets are managed by the NMHS. This search may be limited to datasets that are available publicly or those that are only available for internal use.\n2. Search for datasets in accordance with WIS parameters, categories and keywords.\n3. Review discovery metadata records that adequately describe a dataset to enable searchers to determine whether it is suitable for their particular use.\n4. Determine the URL that can be used to access online services that host the dataset for dynamic access and data download.\n\nThis same component could be used to search WIS metadata catalogues.\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on dataset discovery metadata (4.3.2)\nc) Discovery metadata catalogue component (8.2.1.1)\nd) Linked data component (8.2.2.1)",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

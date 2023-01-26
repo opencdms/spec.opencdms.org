@@ -1,0 +1,8 @@
+{
+  "title": "Observations and measurements",
+  "text": "This component represents technology that provides rules and a standardized approach for modelling observations data, regardless of the domain.\n\nIn essence, the ISO 19156:2011 *Geographic information \u2013 Observations and measurements* standard treats an observation as an event at a given point in time whose result is an estimate of the value of some property of a feature of interest, obtained using a known observation procedure.\n\nThis standard is being widely adopted as the framework for a number of logical data models related to observations data, such as WaterML and the Meteorological Information Exchange Model of the International Civil Aviation Organization (ICAO).\n\nIt also underpins current work on the WMO logical data model called METCE (see below).\n\nFor more information, see:\na) ISO 19156:2011, *Geographic information \u2013 Observations and measurements*\nb) OGC Abstract Specification: Geographic information \u2013 Observations and measurements",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

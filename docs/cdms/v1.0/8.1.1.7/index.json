@@ -1,0 +1,8 @@
+{
+  "title": "Web Processing Services",
+  "text": "This component covers a range of technological instruments that provide a standards-based framework for developing spatial processing services that operate via an internal network or the Internet.\n\nThis standard is being used by a number of open-source projects and vendors to develop the building blocks that will support a wide range of spatial analytic processes.\n\nThe latest version of the standard is being developed to support both synchronous and asynchronous Web Processing Services (WPS).\n\nThis standard has considerable potential for future CDMS use, for example:\n1. To enable an NMHS to establish a suite of services to process and analyse climate data within a services-oriented architecture.\n2. To enable a future service-provider to offer CDMS-related services via \u201cthe cloud\u201d.\n\nFor more information, see:\na) WPS Wikipedia entry\nb) OGC WPS documentation",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

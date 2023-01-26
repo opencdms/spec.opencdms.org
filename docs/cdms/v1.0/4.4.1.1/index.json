@@ -1,0 +1,8 @@
+{
+  "title": "Routine messages",
+  "text": "This component represents data computed from observation data for use in WMO products.\n\nAn example is the daily minimum and maximum temperature, evaporation and evapotranspiration that are typically transmitted via the Global Telecommunication System (GTS) as a SYNOP message or in the corresponding table-driven code form (TDCF) for SYNOP.\n\nFor more information, see:\n\u2022 *Manual on Codes* (WMO-No. 306)",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

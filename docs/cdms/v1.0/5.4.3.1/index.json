@@ -1,0 +1,8 @@
+{
+  "title": "Quality assurance metrics",
+  "text": "This component refers to the processes, software, governance mechanisms and analysis used to monitor the performance of quality assurance processes.\n\nSuch monitoring will allow network managers and climate data specialists to validate the performance of quality assurance software and processes.\n\nThis can be done, for example, by reviewing automatically generated reports that:\n1. Summarize observational errors detected by each quality assurance test.\n2. Summarize false positives and valid errors detected.\n3. Compare the performance of current quality assurance metrics with historical averages.\n\nThese types of metrics can also help data and network managers improve quality assurance processes and software.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

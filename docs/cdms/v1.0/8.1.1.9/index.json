@@ -1,0 +1,8 @@
+{
+  "title": "Styled Layer Descriptors",
+  "text": "This component represents a range of technological tools that provide rules and a standardized approach for defining alternative visual portrayals of the spatial data via an internal network or the Internet.\n\nStyled Layer Descriptors, together with Symbology Encoding, can be used with WMSs, WFSs and WCSs to enable user-defined symbolization of spatial data from within a collection of published styles.\n\nFor more information, see:\na) OGC SLD documentation",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

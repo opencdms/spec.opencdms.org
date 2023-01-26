@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <h2 class="chapter-title"><span
+                style="padding-right: 30px; padding-left: 15px;">4</span> Time-series climate data</h2>
+
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">4.1</span> Observations data</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.1.1</span> Climate observations
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the system’s capacity to handle climate observation variables. The list below is not comprehensive and additional variables may be required or recommended.
+
+The list is currently based on the ECVs published in 2010 by GCOS. However, it is worth noting that there are other types of variables that are very relevant to climate observation, such as visibility, evaporation and meteorological phenomena.
+
+Observations include measurements made by observers, traditional sensors and remote sensors.
+
+For more information, see:
+a) GCOS website
+b) GCOS web page on ECVS</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.1.1.1 Atmospheric</td>
+                <td class="cdms-content">
+                    <p>Observations relevant to the GCOS ECVs are needed to support the work of the United Nations Framework Convention on Climate Change and the Intergovernmental Panel on Climate Change.</p>
+<p>Within this component, observations relating to the following atmospheric ECVs (over land, sea and ice) are either required or recommended, as shown below:</p>
+<p><strong>Required</strong>
+1. Surface
+    1. Air temperature
+    2. Wind speed and direction
+    3. Water vapour
+    4. Pressure
+    5. Precipitation
+    6. Surface radiation budget
+2. Upper air
+    1. Air temperature
+    2. Wind speed and direction
+    3. Water vapour</p>
+<p><strong>Recommended</strong></p>
+<ol>
+<li>Upper air<ol>
+<li>Cloud properties</li>
+<li>Earth radiation budget (including solar irradiance)</li>
+</ol>
+</li>
+<li>Composition<ol>
+<li>Carbon dioxide</li>
+<li>Methane</li>
+<li>Ozone</li>
+<li>Aerosol</li>
+<li>Other</li>
+</ol>
+</li>
+</ol>
+<p>For more information, see:
+a) GCOS web page on ECVs
+b) Guide to Climatological Practices (WMO-No. 100), Table 2.1</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.1.1.2 Terrestrial</td>
+                <td class="cdms-content">
+                    <p><strong>Terrestrial ECVs:</strong>
+1. River discharge
+2. Water use
+3. Groundwater
+4. Lakes
+5. Snow cover
+6. Glaciers and ice caps
+7. Ice sheets
+8. Permafrost
+9. Albedo
+10. Land cover (including vegetation type)
+11. Fraction of absorbed photosynthetically active radiation
+12. Leaf area index
+13. Above-ground biomass
+14. Soil carbon
+15. Fire disturbance
+16. Soil moisture</p>
+<p>For more information, see:
+a) GCOS web page on ECVs
+b) Guide to Climatological Practices (WMO-No. 100), Table 2.1</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.1.1.3 Oceanic</td>
+                <td class="cdms-content">
+                    <p><strong>Oceanic ECVs:</strong>
+1. Surface
+    1. Sea-surface temperature
+    2. Sea-surface salinity
+    3. Sea level
+    4. Sea state
+    5. Sea ice
+    6. Surface current
+    7. Ocean colour
+    8. Carbon dioxide partial pressure
+    9. Ocean acidity
+    10. Phytoplankton
+2. Subsurface
+    1. Temperature
+    2. Salinity
+    3. Current
+    4. Nutrients
+    5. Carbon dioxide partial pressure
+    6. Ocean acidity
+    7. Oxygen
+    8. Tracers</p>
+<p>For more information, see:
+a) GCOS web page on ECVs
+b) Guide to Climatological Practices (WMO-No. 100), Table 2.1</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">4.2</span> Logical data models</h3>
+                    <div class="cdms-content" style="padding-bottom: 10px;">In order to share climate data between organizations or make meaningful comparisons between information from datasets provided by different publishers, it is highly recommended that climate data conform to a logical data model.
+
+A logical data model describes the content and structure of information resources at an abstract level. When implemented in a CDMS, the logical data model underpins the design of the information objects managed by the system and helps to determine the questions that one may ask of the system when querying those information objects and their interrelationships.
+
+Furthermore, the logical data model may be used as the basis for developing data formats within which the information objects can be serialized for exchange between systems – thus ensuring interoperability between those systems.
+
+WMO is currently developing a logical data model termed the Modèle pour l’ Échange des informations sur le Temps, le Climat et l’Eau2 (METCE), which is intended to provide a basis for application-specific data models, including those used for climate observing and climate data management.
+
+Ideally, the underlying database structure will be based on the logical data model.</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.2.1</span> Climate database
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the database(s) used to store and manage a range of time-series data, including: climate observations, climate metadata (observations, discovery and data provenance), spatial information, derived data and related data required for effective data management.
+
+More advanced CDMSs may manage the data in a series of related databases rather than in a single database.
+
+It is recommended that the climate database provide support for the following functionalities, classified by priority:
+
+**Required**
+1. Managing core observations described in the Guide to Climatological Practices (WMO-No. 100).
+2. Managing observation metadata (such as station metadata) and integrating them with observations data.
+3. Handling observations from multiple sensors per station, per phenomenon, and recording the source of each observation.
+4. Managing multiple tiers of data quality, from raw records to homogenized data.
+5. Managing spatial and time-series data.
+
+**Recommended**
+
+6. Covering at least the GCOS ECVs.
+7. Using a robust data model that takes into account the requirements of open spatial standards, particularly the ISO 19156:2011 Geographic information – Observations and measurements standard, METCE and the WMO climate observations application schema (see component 4.2.3.2).
+8. Managing metadata related to data provenance. This entails ensuring that each change to an observation is recorded for future recovery, and recording the details of why a particular change was made, which includes:
+    1. Tracing the product lineage to the data source. For example, what observations and gridded data were used to underpin the analysis released in peer-reviewed paper X?
+    2. Ensuring that the reason for each observation change is recorded.
+9. Managing third-party and crowdsourced data.
+10. Managing intellectual property rights related to data.
+11. Enabling point-in-time recovery. For example, what data were present in the database for station X at time T?
+12. Storing a range of document formats, such as:
+    1. Photographs of observation stations and instruments, meteorological phenomena, etc.
+    2. Scanned paper observation forms
+    3. Scanned microfiche/microfilm
+    4. Relevant observations metadata documents, such as instrument calibration reports
+    5. Technical manuals
+    6. Site location plans and sections
+    7. Videos and other multimedia formats
+
+Optional
+
+13. Handling data uncertainty (for more information, see Wikipedia articles on uncertain data and uncertainty).
+14. Managing multidimensional time-series gridded data and possibly numerical models.
+15. Providing support for the information management concepts of semantics and linked data.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.1.1 Data dictionary</td>
+                <td class="cdms-content">
+                    <p>This component represents the data dictionary, which describes the database structure, data model and other elements used by the climate database.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.2.2</span> Foundation standards
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.2.1 Observations and measurements</td>
+                <td class="cdms-content">
+                    <p>This component represents technology that provides rules and a standardized approach for modelling observations data, regardless of the domain.</p>
+<p>In essence, the ISO 19156:2011 <em>Geographic information – Observations and measurements</em> standard treats an observation as an event at a given point in time whose result is an estimate of the value of some property of a feature of interest, obtained using a known observation procedure.</p>
+<p>This standard is being widely adopted as the framework for a number of logical data models related to observations data, such as WaterML and the Meteorological Information Exchange Model of the International Civil Aviation Organization (ICAO).</p>
+<p>It also underpins current work on the WMO logical data model called METCE (see below).</p>
+<p>For more information, see:
+a) ISO 19156:2011, <em>Geographic information – Observations and measurements</em>
+b) OGC Abstract Specification: Geographic information – Observations and measurements</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.2.3</span> WMO logical data models
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.3.1 METCE</td>
+                <td class="cdms-content">
+                    <p>The METCE component represents technology that provides rules and a standardized approach for modelling observations and simulations in the weather, water and climate domains.</p>
+<p>METCE is an application schema conforming to ISO 19109:2005 <em>Geographic information – Rules for application schema</em>. Furthermore, METCE is a profile of the Observations and measurements standard that provides domain- and application specific semantics for use within the weather, water and climate domains.</p>
+<p>The initial iteration of METCE and its companion model, the Observable Property Model, were developed by the Task Team on Aviation XML to support the ICAO Meteorological Information Exchange Model.</p>
+<p>However, METCE will provide a common semantic basis for a growing number of data products relating to observation and simulation within WMO. Not only will this simplify the requirements for software systems working with WMO products, it is also expected to simplify the mappings between WMO data products and counterparts from other communities such as CF-netCDF.</p>
+<p>As at December 2013, plans have been made to provide mappings/rules to convert from the METCE application schema to BUFR sequences and/or GRIB templates at some point in the future.</p>
+<p>For more information, please see:
+a) AvXML-1.0 data model
+b) ISO 19109:2005, Geographic information – Rules for application schema</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.3.2 Climate observations application schema</td>
+                <td class="cdms-content">
+                    <p>This component represents technology that provides rules and a standardized approach for modelling climate observations data.</p>
+<p>It is anticipated that METCE will be used as the basis for developing an application schema that will provide more detailed semantics and constraints specific to a given domain or application. In this way, METCE will provide the basis for an application schema developed to support the wide array of climate observation applications.</p>
+<p>The scope of such an application schema is expected to cover both the climate observations themselves and the associated observation metadata (see subsection on observations metadata (4.3.1)).</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">4.3</span> Climate metadata</h3>
+                    <div class="cdms-content" style="padding-bottom: 10px;">The term climate metadata is defined in this publication as the suite of supporting data required
+to effectively manage climate data and assess the data’s fitness for purpose.
+Climate metadata are made up of the following components:
+Observations metadata Time-series data that describe how, when and where
+meteorological observations were made and the conditions they
+were made under.
+Discovery metadata Information intended to facilitate the discovery and assessment
+of a dataset to determine if it is fit for reuse for a purpose that
+may be at odds with the reason for which it was originally
+created.
+Data provenance metadata Information relevant to climate data that allows end-users,
+including data managers, scientists and the general public, to
+develop trust in the integrity of the climate data.
+The following section expands on each component of climate metadata.</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.3.1</span> Observations metadata
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection covers access to and management of station metadata and platform metadata.
+
+Station and platform metadata are time-series data that describe how, when and where meteorological observations were made and the conditions they were made under. They are used to support a range of activities that allow climate professionals to understand the fitness for purpose of specific data and, in many cases, improve the quality of climate observations data. This type of metadata is referred to as observations metadata in this publication.
+
+It is anticipated that application schemas (also known as logical data models) will be developed to formally define the structure and content of the information required to describe climate observing stations, sensors and platforms (see the Climate observations application schema component (4.2.3.2))
+
+Note: As a general rule, it will be necessary to record and maintain the details of any change to observations metadata in order to understand the context surrounding specific climate data and to support future data homogenization activities. In addition to details of the change, specific reference must be made to:
+1. The date/time of the change - Note: It may not always be possible to define the exact date of the change, for example when a change happens between two site visits. Therefore, it may be more appropriate to include a period of time during which the change occurred.
+2. The reason the change was made.
+3. The beginning and end dates of the prior value.
+4. Any date/time reference will need to be constrained by the appropriate temporal datum to ensure that date handling is consistently applied.
+
+For more information, see:
+a) *Guide to Climatological Practices* (WMO-No. 100)
+b) *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8)
+c) *Guide to the Global Observing System* (WMO-No. 488), Appendix III.3 Automatic weather station metadata
+d) *Manual on the Global Observing System* (WMO-No. 544), Volume I, Attachment III.1 Standard set of metadata elements for automatic weather station installations
+e) Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)
+f) Draft paper on the climatological needs for minimum stations metadata in the frame of WMO publication No. 9, Volume A (Stuber, 2012)
+g) Guidelines on Climate Metadata and Homogenization (WMO-No. 1186), WCDMP-53</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.1 Station identifier</td>
+                <td class="cdms-content">
+                    <p>This component supports the management of identifiers associated with the observation station or platform.</p>
+<p>Identifiers include:
+1. A globally unique WMO identifier. The use of this identifier must become a priority in order to support future global analysis. See recommendation 11.6 of this publication.
+2. Other identifiers or aliases used for the station.
+3. A history of past used identifiers, including historical WMO identifiers.
+4. The beginning and end dates of each historical identifier used for the station.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.2 Station overview</td>
+                <td class="cdms-content">
+                    <p>This component covers what to provide in an overview of the observation station or platform.</p>
+<p>This should include:
+1. Station owner - If required, the sensor owner
+2. Station manager - If required, the sensor manager
+3. Maintenance authority - If required, the sensor maintenance authority
+4. Station licence agreement - If required, the sensor licence agreement
+5. Station data usage constraints - If required, the sensor data usage constraints
+6. Purpose of the station
+7. Observation practices
+8. Observation schedule - this is particularly relevant for stations that use manual observation methods and where observations are not taken on a continuous basis
+9. Definition of which datasets provide the actual observations data for a given station, sensor and phenomenon combination, together with the URL of the relevant discovery metadata records
+10. Observers and maintenance personnel, including their names, experience and training level
+11. Station logistics, including consumables, electricity suppliers, communications suppliers, etc.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.3 Station status</td>
+                <td class="cdms-content">
+                    <p>This component supports recording the period(s) of activity during which observations were being made at the station or platform.</p>
+<p>As it is possible for stations to close and then reopen at a later time, the time period of each status is also required.</p>
+<p>Valid operational status codes are:
+1. Operational
+2. Not operational</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.4 Station type</td>
+                <td class="cdms-content">
+                    <p>This component supports recording the type of station or observation platform.</p>
+<p>Ideally, the type will be recorded for each instrument used at that station.</p>
+<p>At a minimum, the station type is to be recorded in accordance with the following guidelines:
+1. <em>Manual on Codes</em> (WMO-No. 306), Volume I.1, code 1860, and Volume I.2, code 0 02 001</p>
+<p>In addition, there may be multiple definitions of station types used by the NMHS and other organizations.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.5 Location</td>
+                <td class="cdms-content">
+                    <p>This component covers the recording of details relating to the location of the station or observation platform.</p>
+<p>As discussed in the Sensor component below (4.3.1.7), recording the location of each sensor at the station is also mandatory.</p>
+<p>The following information is required:
+1. Latitude
+2. Longitude
+3. Elevation
+4. Spatial reference system (horizontal and vertical)
+5. Date/time of the survey observation used to record the location of the station and/or sensor
+6. Temporal reference system
+7. Method used to determine the location of the station
+8. Positional accuracy of location
+9. Date/time the station or sensor moved, together with previous locations
+10. Administrative boundaries within which the station is located (as required by the NMHS)
+11. Time zone</p>
+<p>In exceptional circumstances, it may be necessary to move a station and keep the same station identifier. This should only be done in accordance with future global climate data policies and data governance processes (see recommendation 11.1 of this publication). Typically, this will involve parallel observations at the old and new station over a period of time (two years, for example).</p>
+<p>If this is necessary, the time of the move should be recorded, together with current and past location details.</p>
+<p>The precision required for the latitude, longitude and elevation should be in accordance with guidance provided by the Commission for Instruments and Methods of Observation.</p>
+<p>While not authoritative, the final report of the first session of the Commission for Instruments and Methods of Observation Expert Team on Standardization suggests that the precision required for latitude and longitude measurements is one second (of arc), which equates to approximately 30 meters at the equator. This degree of precision should be achievable using a survey observation process that uses handheld GPS techniques.</p>
+<p>Administrative boundaries may refer to different types of boundaries that contain the station, including:
+i. Political boundaries, such as state, regional or district boundaries
+ii. Administrative boundaries, such as the forecast district
+iii. Natural boundaries, such as hydrological, catchment or topographic areas</p>
+<p>For more information, see:
+a) ISO 19111-2:2009 <em>Geographic information – Spatial referencing by coordinates, Part 2: Extension for parametric values</em>
+b) <em>Guide to Meteorological Instruments and Methods of Observation</em> (WMO-No. 8), section 1.3.3.2 Coordinates of the station. Specifically note the instructions on determining the elevation of a station relative to the raingauge.
+c) OGC Abstract Specification: Spatial referencing by coordinates</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.6 Local environment</td>
+                <td class="cdms-content">
+                    <p>This component concerns the recording of information on the local environment surrounding the station or observation platform.</p>
+<p>The following information is required:
+1. Site location diagram
+2. Site plans - For an example, see <em>Guide to Meteorological Instruments and Methods of Observation</em> (WMO-No. 8), Figure 1.1
+3. Site skyline diagram
+4. Site photographs and video showing the surroundings and instrument layout
+5. Station exposure
+6. Site roughness
+7. Type of soil
+8. Type of vegetation
+9. Surrounding land use
+10. Date/time of each visit</p>
+<p>For more information, see:
+a) <em>Guide to Meteorological Instruments and Methods of Observation</em> (WMO-No. 8), section 1.3.3 Siting and exposure, Annex 1.B Siting classifications for surface observing stations on land, and Annex 1.C Station exposure description</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.7 Sensor</td>
+                <td class="cdms-content">
+                    <p>This component covers the recording of details relating to the meteorological sensors and/or instruments used at the station or observation platform. In this publication, the term sensor will be used to cover all instrument types.</p>
+<p>The following information is required:
+1. Sensor description, including:
+     1. Name
+     2. Type
+    3. Serial number
+    4. Brand and model details
+    5. Photograph of sensor in situ
+    6. Supplier
+    7. Manufacturer
+    8.  Location of manuals
+    9.  Sensor firmware, version and dates during which each version was used
+    10.  Length of time the observation data are stored locally on the sensor, prior to deletion
+2. Sensor installation details, including:
+    1. Technician and organization that installed the sensor
+    2.  Date sensor was installed
+3. Sensor status, including:
+    1. Operational status:
+        - Operational
+        - Not operational
+        - Defective
+        - Testing
+    2.  Date/times applicable for each status
+4. Sensor maintenance:
+    1.  Scheduled maintenance
+    2. Actual maintenance
+    3. Result
+    4. Replacement of consumables
+5. Sensor uncertainty:
+    1. System performance statistics claimed by manufacturer
+    2.  Sensor calibration results
+    3.  Observed sensor performance characteristics
+6. Sensor siting details:
+    1. Instrument height above ground
+    2. Station exposure description
+    3.  As discussed in the Location component (4.3.1.5), recording the location of each sensor is required.
+7. Recommended sensor settings for optimal operations on site
+8. Details of what meteorological variable is being observed by the sensor (i.e. the observed property), including:
+    1. Phenomena observed
+    2. Frequency of measurement
+    3. Frequency of acquisition
+    4.  Units of measurement
+    5.  Precision of measurement</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.8 Data processing</td>
+                <td class="cdms-content">
+                    <p>This component concerns the recording of details relating to any data processing that has occurred to convert a sensor’s signal into its recorded observation value.</p>
+<p>The following information is required:
+1. Software, including:
+    1. Version
+    2. Software language
+    3. Software name
+    4. Location of software source code
+    5. Description of processing applied (for example, whether values were calculated per minute, hour or other)
+    6.  Formula/algorithm implemented
+    7.  Processor details (the version, type of central processing unit and so forth)
+    8.  Date/time covering the period of validity of the method
+2. Input source (instrument, element and so forth)
+3. Data output, including:
+    1. Data format and version of format</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.9 Data transmission</td>
+                <td class="cdms-content">
+                    <p>This component refers to the recording of details relating to the transmission of data from stations or observation platforms.</p>
+<p>The following information is required:
+1. Sensor communications, including:
+    1. Frequency of transmission
+    2.  Time of transmission
+    3.  Primary communication details
+    4.  Redundant communication details
+    5.  Network addresses
+    6.  Method of transmission</p>
+<p>Note: Some NMHSs with more advanced IT infrastructures may choose to store this type of information within their configuration management system. In these instances, it is important to ensure that at least the frequency and time of the transmission are replicated in the observations metadata.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.1.10 Network</td>
+                <td class="cdms-content">
+                    <p>This component concerns the recording of details relating to the observation network(s) that stations or observation platforms may belong to.</p>
+<p>The following information is required:
+1. Network name (such as Regional Basic Climatological Network, Regional Basic Synoptic Network, GCOS, GCOS Upper-Air Network or National Climate Network)
+2. Network priority:
+    1. Critical
+    2.  Essential
+    3. Not applicable
+3. Time of observations
+4. Reporting frequency
+5. Date/time of network membership
+6. There is a possibility that a station does not belong to a network. This information is also useful.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.3.2</span> Dataset discovery metadata
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the processes, software and governance arrangements that ensure that discovery metadata are captured, managed and maintained.
+
+Discovery metadata are intended to facilitate the discovery and assessment of a spatial dataset to determine if it is fit for reuse for a purpose that may be at odds with the reason for which it was originally created.
+
+Discovery metadata may also be known as WIS metadata. They are not the same as the observations metadata described above.
+
+Note that some of the components below may be in addition to the WMO Core Profile of the ISO 19115 *Geographic information – Metadata* standard. This is not expected to be an issue as the WMO Core Profile does not restrict the use of additional ISO 19115 records.
+
+For more information, see:
+a) Discussion paper on stations metadata and the WMO Core Profile (Bannerman, 2012)
+b) WMO Core Metadata Profile version 1.3, Part 1 Conformance requirements
+c) WMO Core Metadata Profile version 1.3, Part 2 Abstract test suite, data dictionary and code lists
+d) Tandy (2010) also provides a useful introduction to discovery metadata. However, note that the specifications part of this text has been superseded.
+e) ISO 19115 Geographic information – Metadata</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.1 Dataset identifier</td>
+                <td class="cdms-content">
+                    <p>This component represents a unique identifier used to identify the dataset.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.2 Dataset overview</td>
+                <td class="cdms-content">
+                    <p>This component gives an overview of a dataset.</p>
+<p>This may include a description of the dataset (such as an abstract), the intended use of the dataset, its lineage and status.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.3 Dataset data quality</td>
+                <td class="cdms-content">
+                    <p>This component represents a general assessment of the quality of a dataset.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.4 Distribution</td>
+                <td class="cdms-content">
+                    <p>This component covers information about the distributor of and options for obtaining a dataset.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.5 Access constraints</td>
+                <td class="cdms-content">
+                    <p>This component provides information on the restrictions in place for a dataset.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.6 Dataset maintenance</td>
+                <td class="cdms-content">
+                    <p>This component provides information on the scope and frequency of updates and maintenance conducted on a dataset.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.7 Spatial representation</td>
+                <td class="cdms-content">
+                    <p>This component covers information on the mechanisms used to represent spatial information within a dataset.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.2.8 Reference systems</td>
+                <td class="cdms-content">
+                    <p>This component gives information on the reference systems used by a dataset. These include a horizontal spatial reference system, vertical spatial reference system and temporal reference system.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.3.3</span> Data provenance
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the processes, data and governance arrangements that record and manage information relevant to climate data and enable end-users, including data managers, scientists and the general public, to develop trust in the integrity of the climate data.
+
+Data provenance allows an end-user to understand the history of each piece of data, and thus helps the user to identify what version of the data was available at any given time. The need for this new type of climate metadata has become more evident following a number of attacks on the credibility of climate data. One notable example is the so-called Climategate
+incident and subsequent inquiries.
+
+Therefore, it is important for NMHSs to establish the reliability of their climate data and processes and to ensure that these data are subsequently seen as the authoritative source that can be used for global climate studies.
+
+While the concept of data provenance has been relatively nebulous within the information management domain for many years, there has been a significant amount of work on the concept within the World Wide Web Consortium (W3C) for over more than a decade, particularly with regard to the development of the PROV standard.
+
+The W3C defines provenance as:
+&gt; [A] record that describes the people, institutions, entities, and activities involved in producing,
+&gt; influencing, or delivering a piece of data or a thing. In particular, the provenance of information
+&gt; is crucial in deciding whether information is to be trusted, how it should be integrated with
+&gt; other diverse information sources, and how to give credit to its originators when reusing it. In
+&gt; an open and inclusive environment such as the Web, where users find information that is often
+&gt; contradictory or questionable, provenance can help those users to make trust judgements.
+&gt; (W3C, 2013a)
+
+While this work is still relatively new, it is showing significant potential for use within the climate domain.
+
+The concepts presented here for climate data provenance are quite embryonic and need further work to ensure that they can be implemented effectively. See the related recommendation in Chapter 11.
+
+Maintaining a dataset with high levels of data provenance metadata is expected to be quite expensive and, as a result, will be limited to data of high importance such as high-quality climate monitoring datasets. It is anticipated that guidance will be required to suggest what data should be maintained with what level of data provenance metadata. This guidance could perhaps be included as a policy within a future climate data framework.
+
+For more information, see:
+a) Overview of the PROV family of documents (W3C, 2013b)
+b) PROV data model specification (W3C, 2013a)</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.1 What was changed?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that any change to climate data is recorded.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.2 When was it changed?</td>
+                <td class="cdms-content">
+                    <p>This component covers the processes, software and governance arrangements that ensure that the time of the change is recorded.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.3 What was it derived from?</td>
+                <td class="cdms-content">
+                    <p>This component deals with the processes, software and governance arrangements that ensure that a dataset’s lineage is understood. In other words, where did the data come from?</p>
+<p>This component is also required in the section on data discovery (8.2).</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.4 What was done to change it?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure a clear explanation of any ad hoc modifications to a climate record.</p>
+<p>This includes:
+1. What was changed
+2. When the change was made
+3. Details describing what was done</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.5 How/why was it changed?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that the rationale behind a modification to a climate record is clearly understood.</p>
+<p>This includes:
+1. How the change was made
+2. Why it was made</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.6 Who/what changed it?</td>
+                <td class="cdms-content">
+                    <p>This component involves the processes, software and governance arrangements that ensure a clear understanding of the agent that affected the change.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.7 Who did they act on behalf of?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that the person or role who requested the change is identified.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.3.3.8 Who was responsible?</td>
+                <td class="cdms-content">
+                    <p>This component refers to the processes, software and governance arrangements that ensure that the person or role who authorized the change is identified.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">4.4</span> WMO standard products</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.4.1</span> Observation data products
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection outlines the types of data products that NMHSs have committed to generate and provide to WMO.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.1.1 Routine messages</td>
+                <td class="cdms-content">
+                    <p>This component represents data computed from observation data for use in WMO products.</p>
+<p>An example is the daily minimum and maximum temperature, evaporation and evapotranspiration that are typically transmitted via the Global Telecommunication System (GTS) as a SYNOP message or in the corresponding table-driven code form (TDCF) for SYNOP.</p>
+<p>For more information, see:
+• <em>Manual on Codes</em> (WMO-No. 306)</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.1.2 Climatological standard normals</td>
+                <td class="cdms-content">
+                    <p>This component covers monthly and annual standard normals.</p>
+<p>See Wright (2012a) for a description of a recommended change in the method of calculating
+climatological standard normals.</p>
+<p>The approach is understood to comprise the following. (However, as at December 2013 this has
+yet to be officially endorsed.)
+1. A fixed reference period (1961–1990) for longterm climate variability and change assessment. This is to be adopted as a stable WMO reference period, until such time as there is a compelling scientific case for changing it.
+2. A varying 30-year period updated every 10 years (suitable for most climate services). The current period is 1981–2010.</p>
+<p>For more information, see:
+a) <em>Calculation of Monthly and Annual 30-Year Standard Normals</em> (WMO/TD-No. 341), WCDP-10
+b) <em>Technical Regulations</em> (WMO-No. 49), Volume II
+c) <em>Guide to Climatological Practices</em> (WMO-No. 100), section 4.8 Normals
+d) <em>Manual on Codes</em> (WMO-No. 306)
+e) <em>1961–1990 Global Climate Normals (CLINO)</em> (WMO-No. 847)
+f) <em>A Note on Climatological Normals: Report of a Working Group of the Commission for Climatology</em>, Technical Note No. 84
+g) <em>The Role of Climatological Normals in a Changing Climate</em> (WMO/TD-No. 1377), WCDMP-61
+h) Discussion paper on the calculation of the standard climate normals (Wright, 2012a)</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.1.3 CLIMAT</td>
+                <td class="cdms-content">
+                    <p>This component concerns CLIMAT messages in either traditional alphanumeric codes (TAC) or TDCF formats. These messages are transmitted to WMO via the GTS.</p>
+<p>Note: The use of TAC is being phased out.</p>
+<p>For more explanation, see:
+a) <em>Handbook on CLIMAT and CLIMAT TEMP Reporting</em> (WMO/TD-No. 1188)
+b) <em>Practical Help for Compiling CLIMAT Reports</em> (WMO/TD-No. 1477), GCOS-127
+c) <em>Manual on Codes</em> (WMO-No. 306), Volume I.2, Part C, section d. Regulations for reporting traditional observation data in table-driven code forms (TDCF): BUFR or CREX</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.1.4 World Weather Records</td>
+                <td class="cdms-content">
+                    <p>This component covers the annual World Weather Records.</p>
+<p>For more details, see:
+a) <em>Guidelines on Submission of the World Weather Records Tenth Series</em> (2001–2010), WCDMP-77
+b) World Weather Records website</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.1.5 Aeronautical climatology</td>
+                <td class="cdms-content">
+                    <p>This component refers to the monthly aerodrome climatology summary -tabular forms (models A to E).</p>
+<p>For more explanation, see:
+a) <em>Technical Regulations</em> (WMO-No. 49), Volume II, C.3.2 Aeronautical climatology</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.1.6 Other</td>
+                <td class="cdms-content">
+                    <p>This component covers other WMO standard products, as may be required.</p>
+<p>Other standard products are to be confirmed, particularly for the hydrological, agricultural and marine domains.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.4.2</span> Climate change indices
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection represents the recommendations of the Commission for Climatology in the elaboration of climate change indices. 
+
+The Commission for Climatology/Climate Variability and Predictability (CCl/CLIVAR) Working Group on Climate Change Detection has been coordinating an international effort to develop, calculate and analyse a suite of indices so that individuals, countries and regions can calculate the indices in exactly the same way such that their analyses will fit seamlessly into the global picture.
+
+Those indices have been split in two categories: core indices and approved indices.
+
+For more information, see the website of the Joint CCl/CLIVAR/JCOMM Expert Team on Climate Change Detection and Indices (ETCCDI).</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.2.1 Core indices</td>
+                <td class="cdms-content">
+                    <p>This component represents the ETCCDI core climate change indices.</p>
+<p>As at June 2013, 27 core indices have been defined, see:
+a) ETCCDI website</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.4.2.2 Other indices</td>
+                <td class="cdms-content">
+                    <p>This component covers other climate change indices.</p>
+<p>As at June 2013, different research groups have defined different indices for their particular purposes. One example is the Statistical and Regional dynamical Downscaling of Extremes for European regions (STARDEX) project, mentioned in the ETCCDI website referred to above.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">4.5</span> Derived climate data</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.5.1</span> Derived observation data
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection describes a range of derived observational data products generated from climate observation variables.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.5.1.1 Homogenized data</td>
+                <td class="cdms-content">
+                    <p>This component represents high-quality homogenized time-series datasets. Such datasets aim to ensure that the only variability remaining in the time series is that resulting from actual climate variability.</p>
+<p>See also the subsection on data homogenization (6.1.3).</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.5.1.2 Computed</td>
+                <td class="cdms-content">
+                    <p>This component deals with derived data computed from observations for NMHS products. The computation shall be in accordance with the climatology policies in place.</p>
+<p>Some examples are:
+1. Data generation of accumulation, averages or extremes, such as generating ten-day data from daily data or daily data from hourly data.
+2. The generation of particular data derived from raw data, such as computing the potential evapotranspiration output for agricultural purposes.
+3. The generation of any statistical parameter required for products, such as extreme value analysis, homogenized data and others.
+4. Climate indices such as computed teleconnection indices.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.5.1.3 Normals and averages</td>
+                <td class="cdms-content">
+                    <p>This component represents any normals and averages used by NMHSs that are in addition to climatological standard normals. For example, the component should be able to compute:
+1. Averages over specified time periods (daily, hourly, 5 days, 10 days, monthly and so forth)
+2. Period averages for any period (for example 5, 10, 30 or 100 years)</p>
+<p>For more information, see:
+a) <em>The Role of Climatological Normals in a Changing Climate</em> (WMO/TD-No. 1377), WCDMP-61</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.5.1.4 Other</td>
+                <td class="cdms-content">
+                    <p>This component concerns any other derived observation data product not mentioned above that is required for NMHS purposes.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.5.2</span> Gridded spatial distribution of observations
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection concerns the capacity to generate or manipulate gridded data according to different techniques such as interpolation and extrapolation.
+
+Some of these techniques are described in the Guide to Climatological Practices (WMO-No. 100), section 5.9 Estimating data.
+
+These gridded data are spatial data. They are included in this section to show their lineage as a type of derived climate data.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.5.2.1 Analysed data</td>
+                <td class="cdms-content">
+                    <p>This component refers to spatially distributed gridded data that have been derived from observational data as the result of an analytical process.</p>
+<p>Some examples are:
+1. Singular variables such as:
+    1. Normals
+    2. Observations for a given day or time
+    3. Averages
+    4. Percentiles
+    5. Cumulative data
+    6. Extremes
+    7. Homogenized data
+2. Multivariables such as:
+    1. The generation of anomalies (difference between the normals data and a specific monthly variable)
+    2. More complex data such as potential evapotranspiration</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.5.2.2 Other</td>
+                <td class="cdms-content">
+                    <p>This component covers any spatially distributed gridded data product not mentioned above that are required for NMHS purposes.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.5.3</span> Numerical models
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">Note: The infrastructure, software and skills required to operate numerical models are undoubtedly beyond the reach of many NMHSs.
+
+As the output from numerical models is of interest to most NMHSs, it is expected that such output will be available via a number of sources, including Regional Climate Centres.
+
+Therefore, the CDMS should ideally have the ability to work with such data.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.5.3.1 Numerical models</td>
+                <td class="cdms-content">
+                    <p>This component refers to the data output from a variety of climate modelling processes. Such data are generally represented by multidimensional array grids.</p>
+<p>Some examples are:
+1. Climate models (such as global climate models) - numerical representations of the climate system based on physical, biological and chemical rules. They vary on timescales ranging from seasonal to centennial. Climate models are often used to produce climate change projections.
+2. Downscaled models – derived from climate models but at a much higher resolution to support regional and local analysis.
+3. Reanalysis - designed for climate studies, reanalyses provide gridded data over a long time period. Reanalyses are created via an unchanging (frozen) data assimilation scheme and model(s) which ingest all available observations. This unchanging framework provides a dynamically consistent estimate of the climate state at each time step. Some available reanalysis products include ERA-40 (40 years) and ERA-Interim (1979 to the present) from the European Centre for Medium-Range Weather Forecasts, and the Twentieth Century Reanalysis project (1871–2011) from the National Oceanic and Atmospheric Administration, United States.
+4. Numerical weather prediction</p>
+<p>See also:
+a) <em>Guide to Climatological Practices</em> (WMO-No. 100), section 6.7 Climate models and climate outlooks</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">4.6</span> Ancillary data</h3>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This section covers data required to support CDMSs.</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.6.1</span> Spatial
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection represents a wide range of spatial information typically used to provide context to climate data or as an input for spatial analysis processes. These data may be presented in vector, image, gridded or multidimensional array data formats.
+
+Typically, spatial representations of data contain aspatial attributes that describe various properties of spatial features. The spatial and aspatial attributes of the data can be used to support a variety of spatial analysis processes.
+
+The components listed below are indicative of the types of spatial data that could be relevant to climate. This list is not exhaustive.
+
+See also:
+a) Statement of guidance for climate, Attachment 1 Requirements for climate data (Wright,
+2012*b*)</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.1 Topography</td>
+                <td class="cdms-content">
+                    <p>Although this component is labelled topography, it actually refers to a wider set of data.</p>
+<p>Some examples are:
+1. Typical topographic data such as drainage, relief, cultural and nomenclatural features
+2. Digital elevation models</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.2 Emergency management</td>
+                <td class="cdms-content">
+                    <p>This component concerns datasets that are useful for supporting emergency management and related warning systems.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.3 Agricultural</td>
+                <td class="cdms-content">
+                    <p>This component refers to agricultural information datasets.</p>
+<p>Some examples are:
+1. Data from the Food and Agriculture Organization of the United Nations that could relate to agriculture, animal production and health, fisheries, forestry, land and water or plant production and protection.
+2. Regional, national or international data from different organizations such as primary industry departments or research centres on agriculture.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.4 Health</td>
+                <td class="cdms-content">
+                    <p>The component refers to a wide variety of health datasets.</p>
+<p>Some examples are:
+1. Data from the World Health Organization covering datasets on a very large spectrum.
+2. National or international data from different organizations such as health departments or health research centres.
+3. Epidemiological studies (see Wikipedia article) and so forth.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.5 Environmental</td>
+                <td class="cdms-content">
+                    <p>This component refers to environmental datasets.</p>
+<p>Some examples are:
+1. Data from the United Nations Environment Programme or the United Nations Educational, Scientific and Cultural Organization.
+2. National or international data from different organizations such as environment departments or research centres.
+3. Data relating to the distribution of particular flora and fauna, etc.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.6 Administrative</td>
+                <td class="cdms-content">
+                    <p>This component covers administrative data.</p>
+<p>Some examples are:
+1. Localities and gazetteers
+2. Administrative boundaries
+3. Transportation networks
+4. Cadastres</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.7 Impacts data</td>
+                <td class="cdms-content">
+                    <p>This component concerns a range of spatial data that relate to things impacted by climate. This could include:
+1. Deaths caused by heatwaves, prolonged droughts, floods, cyclones, etc.
+2. Infrastructure damage caused by a range of events such as floods, bush fires or cyclones.
+3. Changing land use, such as agricultural adaptations due to a changing climate.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.1.8 Other</td>
+                <td class="cdms-content">
+                    <p>This component refers to a range of other spatial data that may be relevant to climate.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.6.2</span> Climate documentation
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.2.1 Published reports</td>
+                <td class="cdms-content">
+                    <p>This component represents the processes and governance arrangements that result in the preparation and release of a wide variety of written reports.</p>
+<p>Some examples are:
+1. Peer-reviewed papers
+2. Climate change impact studies
+3. Climate statements and studies
+4. Assessments from the Intergovernmental Panel on Climate Change
+5. Monthly and annual summaries</p>
+<p>As this is essentially a scientific and intellectual process, this component will not be expanded upon in this publication.</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.2.2 Documentation</td>
+                <td class="cdms-content">
+                    <p>This component refers to a range of textual data that describe various climate-related phenomena or serve as documentation for CDMSs.
+Some examples may be:</p>
+<ol>
+<li>CDMS technical and user documentation</li>
+<li>Text on a web page</li>
+<li>Diagrams representing climate processes, such as the Community Earth System Model from the National Center for Atmospheric Research, United States, shown in section 2.1 of this publication</li>
+<li>Various climate forecasts and events</li>
+<li>Climate processes such as El Niño-Southern Oscillation</li>
+<li>NMHS policies and practices</li>
+<li>Various documents and reports</li>
+<li>Training documentation</li>
+<li>Presentations</li>
+</ol>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.2.3 Various media</td>
+                <td class="cdms-content">
+                    <p>This component covers a range of media used to support various climate-related services on an NMHS website.</p>
+<p>Some examples may be:
+1. Scanned hard copy climate records
+2. Image portrayal of various climate data, such as an extract from a radar image stored in portable network graphics (PNG) format
+3. Podcasts and video clips used to communicate various climate-related messages
+4. Photographs of various climate-related
+phenomena</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.6.3</span> Climate software
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">As discussed in the article by the UK Parliament Science and Technology Committee (2011), one of the recommendations of the UK parliamentary review of the Climategate issue was to ensure that climate scientists make available the full methodological workings (including computer codes) used to support their work. An extract is reproduced below.
+
+&gt; It is not standard practice in climate science to publish the raw data and the computer code in academic papers. However, climate science is a matter of great importance and the quality of the science should be irreproachable. We therefore consider that climate scientists should take steps to make available all the data that support their work (including raw data) and full methodological workings (including the computer codes).
+
+This has implications for the effective management of climate data and software in that software source code will also require careful management.
+
+In addition, it will be necessary to keep track of the time period during which each software version is in operation, as this may also have implications for climate data and climate analysis.
+
+On a conceptual level, this is similar in a way to the need to have effective observations metadata that describe the maintenance of sensors and stations.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.1 Source code management</td>
+                <td class="cdms-content">
+                    <p>This component deals with managing the source code of the software used to process climate data. This component should have the following capabilities at a minimum:
+1. Maintain a library of a variety of software source code.
+2. Manage different versions (or branches) of the software concurrently, with the ability to maintain each version independently and to easily backport newer functionalities to an older version.
+3. Easily detect the differences between software versions.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.2 Package management</td>
+                <td class="cdms-content">
+                    <p>This component refers to the functionality that facilitates the packaging of software and its configuration for installation on a computer. In addition, the component should facilitate dependency management to ensure that all required supporting software is also installed and configured appropriately at installation time.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.3 Environment configuration</td>
+                <td class="cdms-content">
+                    <p>This component concerns the functionality that facilitates the recording and management of information relating to any changes to operational software.</p>
+<p>This includes:
+1. What software was deployed on what server?
+2. What version of the software was deployed?
+3. Details of any configuration changes.
+4. Details of any change made to the operational software.
+5. Details of the decommission of the software at the end of its period of operation, including decommission date.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.6.3.4 Software testing</td>
+                <td class="cdms-content">
+                    <p>This component covers the testing of software that is to be deployed to manipulate climate data.</p>
+<p>This includes:
+1. Details of test plans and individual test cases, including user-acceptance testing.
+2. Details of the test data, database, etc.
+3. Details of test systems and environment.
+4. Details of test results and artefacts, particularly proof that the test data were not affected by the software or a change to the software.</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "title": "Governance",
+  "text": "",
+  "subsections": [
+    "3.2.1",
+    "3.2.2"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "3.2.1": {
+    "title": "Data governance",
+    "text": "",
+    "components": [
+      "3.2.1.1",
+      "3.2.1.2",
+      "3.2.1.3",
+      "3.2.1.4"
+    ],
+    "3.2.1.1": {
+      "title": "Controlled access to data and systems",
+      "text": "This component refers to governance processes that ensure a clear understanding of user access to data and IT systems within an organization.\n\nSome data-related issues to consider are:\n1. Which staff roles have read or read-and-write access to each type of data?\n2. Which roles have read or read-and-write access to each quality tier of data?\n3. What process is in place for designating staff to each role?\n4. What process applies to ensure that access to data is subject to approval by a delegate of the data custodian?\n5. Should users who have write access to data stored within a database only be able to change data under software control?\n6. Should each successful change to observations data be audited to ensure that the change, the details of the operator who made the change and the time of the change have all been recorded?\n\nSome system-related issues to consider are:\n\n7. What roles should be given to run-time users to access data?\n8. Which roles have the ability to change operational software or systems?\n9. What process applies to ensure that access to systems and software applications is subject to approval by a delegate of the data custodian?",
+      "classification": "Required"
+    },
+    "3.2.1.2": {
+      "title": "Approval process for new data types",
+      "text": "This component refers to governance processes that ensure that issues relating to the approval of new data types within an organization are clearly understood.\n\nSome issues to consider are:\n1. What needs to be considered prior to accepting a new data type for long-term archival (such as user requirements, scientific requirements or a new statutory requirement)?\n2. What are the projected storage requirements for the data?\n3. What is the appropriate format for storing the data over the long term?\n4. Is there likely to be an application that can read that format in 10 or 20 years?\n5. What skills are available to process and analyse the data over the long term?\n7. Is suitable funding available to maintain the data over the long term?",
+      "classification": "Required"
+    },
+    "3.2.1.3": {
+      "title": "Approval process to change data",
+      "text": "This component refers to governance processes that clearly define the approval process required to modify the data held within an organization\u2019s climate record.",
+      "classification": "Required"
+    },
+    "3.2.1.4": {
+      "title": "IT change approvals - no data corruption",
+      "text": "This component refers to governance processes that ensure that any IT change does not result in an unexpected change to, loss of or corruption of the climate record.",
+      "classification": "Required"
+    }
+  },
+  "3.2.2": {
+    "title": "IT governance",
+    "text": "This collection of components refers to the overall governance of information technology to ensure that effective CDMSs are developed, enhanced and maintained.\n\nWhile these components are specifically aimed at larger organizations with a substantial investment in information and communication technology, smaller organizations can also benefit from investment in the types of issues discussed.\n\nThese components are also relevant to broader initiatives, such as when an aid or development agency sponsors CDMS development and implementation.\n\nThese issues will only be discussed very briefly, as each component refers to a substantial body of knowledge that will require ongoing investment from specialists to ensure effective management of resources and funds for information and communication technology.",
+    "components": [
+      "3.2.2.1",
+      "3.2.2.2",
+      "3.2.2.3",
+      "3.2.2.4",
+      "3.2.2.5"
+    ],
+    "3.2.2.1": {
+      "title": "IT service management",
+      "text": "This component refers to an overarching framework for IT service management used to ensure effective, efficient and cost-effective\nmanagement of the delivery of business value from IT services.\n\nThis framework is typically based on global best practices.\n\nIt comprises a consistent framework within which the remaining IT governance components can operate in a tightly integrated manner.\n\nFor more information, see:\na) Wikipedia overview of IT service management\nb) Information Technology Infrastructure Library (ITIL) website\nc) ITIL publications",
+      "classification": "Recommended"
+    },
+    "3.2.2.2": {
+      "title": "Managed change",
+      "text": "This component covers governance processes that ensure that any change to the CDMS is carefully managed.\n\nUncontrolled change can result in chaos for users of the CDMS, for example:\n1. Systems may break down for no known reason.\n2. Data corruptions or even data loss may occur and may not be detected at all.\n3. Provenance of data is severely impacted, as data managers do not know what algorithms or processes have been applied to the data.\n4. Considerable disruption may be experienced by staff that rely on the CDMS for day-to-day activities and may inconvenience users who rely on the data and derived products.\n5. Data corruption, data loss and lack of availability of key systems may have a significant impact on the reputation of the NMHS.\n\nSome issues to consider:\n\n6. How is the change process managed?\n7. Who needs to be consulted when considering a potential change?\n8. How is the proposed change analysed to assess its potential impact on data integrity and on other CDMS components?\n9. Who can authorize a change?\n10. What testing is required to mitigate the potential impacts of the change and give confidence that the change is desirable?\n11. How can the change be made with minimal impact?\n12. Are there any dependencies between a series of proposed changes that may dictate that the changes occur in a particular order?\n13. How is the change to be made and tested?\n14. If the change fails, how can the system be rolled back to its previous state?\n15. How can CDMS components be implemented such that they are self-testing to support concepts such as continuous integration?\n16. Will processes based on an IT service management framework such as ITIL help improve the management of IT-related changes? (See Wikipedia article on IT service management)",
+      "classification": "Required"
+    },
+    "3.2.2.3": {
+      "title": "Project management",
+      "text": "This component concerns governance processes that ensure that any development activity, infrastructure change or other enhancement related to the CDMS is carefully managed.\n\nGood project managers and project governance processes can mean the difference between a project delivering desired results or the same project failing at great expense, frustrating users and possibly corrupting the climate record.\n\nUncontrolled enhancement can result in:\n1. An undesirable functionality added to the CDMS.\n2. Lower-priority work undertaken at the expense of higher-priority tasks.\n3. The development of activities that do not have a clearly defined scope, set of deliverables, timeline and budget.\n\nSome additional considerations include:\n\n4. How is the business benefit for a proposed project defined and assessed?\n5. How are the relative priorities of projects assessed?\n7. How are projects managed? What approach is adopted?\n8. What process is used to monitor the progress of a project?\n9. How are the project deliverables assessed to ensure that they meet requirements?\n10. What lessons can be learned from a finished project?",
+      "classification": "Recommended"
+    },
+    "3.2.2.4": {
+      "title": "IT architecture",
+      "text": "This component refers to strategic IT governance processes that ensure that CDMSs and related IT systems are carefully designed so that the science and NMHS requirements for CDMSs may be effectively and efficiently implemented.\n\nUncontrolled development of components can have adverse impacts on the CDMS, including on the ability of the NMHS to maintain the CDMS over the long term. For example:\n1. Reliance on proprietary solutions provided by a single vendor could result in a situation known as vendor lock-in. As time passes, more and more components are developed based on the single solution. It can be very difficult and costly for a NMHS to move to a new CDMS-related solution if the current vendor\u2019s product becomes unaffordable or if the vendor goes out of business, decides that it is no longer in its interest to offer CDMS components, ceases to maintain its systems or no longer offers a competitive CDMS solution.\n2. Similarly, uncontrolled bespoke development of CDMS components by NMHS staff or contractors can also be a problem. This may result in a wide variety of disparate CDMS components that cannot be easily integrated. Many different types of technology could be used, resulting in high maintenance costs. Key-person dependencies could also develop, leaving the NMHS with a significant and costly issue to resolve, particularly if the key person leaves the organization and the CDMS ceases to operate.\n3. CDMS component solutions could be developed that do not effectively use NMHS climate data, for example:\n    1. Data may be replicated from the climate database and made into stand-alone files to support a particular technology or due to the developer\u2019s lack of experience. Whereas the data in the climate database are subject to a lengthy quality assurance lifecycle and may change, the replicated data are fixed at a point in time and may not be updated to reflect later changes to the climate record. This may become a significant issue for the NMHS, particularly if this practice is systematically applied by many developers, across many applications and over many years.\n    2. The data extraction process may not take into account quality assurance flags and just present raw observations with no indication of data quality or reliability.\n    3. Developers may not understand the complexities of the climate database data model and extract incorrect data.\n    4. Components may have any number of data inconsistency or misuse issues. What is the impact on the reputation of the NMHS if the same data are presented with differing values by different CDMS components?\n\nThere may also be architectural considerations that are better off understood early in the CDMS development so that governance processes can ensure that the considerations are implemented within developed and/or implemented software.\n\nOne issue to consider is whether the CDMS should be able to work in multiple languages. The answer to this will have implications for the design of software for the user interface of CDMS components, as well as for the generation and presentation of data products.\n\nIT architecture is a specialized field of information technology that is typically undertaken by highly experienced professionals with very broad IT experience. Ideally, this task will be conducted by experienced NMHS staff to ensure that consistent CDMS components are implemented in accordance with a strategic vision.\n\nSee also Wikipedia articles on:\na) Enterprise architecture\nb) Solution architecture",
+      "classification": "Recommended"
+    },
+    "3.2.2.5": {
+      "title": "Documentation",
+      "text": "This component covers governance processes that ensure that the CDMS is adequately documented and that this documentation is kept up to date to facilitate efficient day-to-day use by staff and ease the learning curve of new staff, contractors, consultants, etc.\n\nThis documentation is very broad and includes:\n1. An overview of the CDMS\n2. An overview of the data being managed both within and outside the climate database\n3. The CDMS components, design, business requirements, architecture, test plans and deployment processes\n4. CDMS policies and governance processes\n5. CDMS backup and disaster recovery processes\n6. IT systems management and administration processes\n7. Various CDMS-related metrics",
+      "classification": "Required"
+    }
+  }
+}

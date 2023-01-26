@@ -1,0 +1,8 @@
+{
+  "title": "FTP",
+  "text": "This component provides secure services to allow exchange of climate data via the use of the File Transfer Protocol (FTP).",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

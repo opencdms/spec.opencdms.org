@@ -1,0 +1,33 @@
+{
+  "title": "Integrated search of climate data",
+  "text": "",
+  "components": [
+    "7.1.4.1",
+    "7.1.4.2",
+    "7.1.4.3",
+    "7.1.4.4"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "7.1.4.1": {
+    "title": "Spatial intelligence",
+    "text": "This component represents the technology, software, processes and governance processes that support an effective and dynamic analysis of climate data within a web environment to facilitate understanding of climate matters and communicate issues relating to climate data. This dynamic analysis includes:\n1. Geographical Information System (GIS) functionality, including the ability to perform spatial overlay analysis such as selecting points in a polygon.\n2. The ability to search features by attribute, for example:\n    1. Conducting a search of all stations within the catchment of a specific river.\n    2. Filtering the resultant stations to view only those that observe precipitation.\n    3. Viewing summary observations data for each of those stations.\n\nThis component integrates into a map-based interface a wide range of time-series data including climate observations, climate grids, satellite imagery and topography, together with appropriate textual and other attribute data, such as climate metadata.\n\nIt also facilitates dynamic data exploration and analysis using a broad array of integrated media, including maps, charts, graphs, tables and written reports.",
+    "classification": "Recommended"
+  },
+  "7.1.4.2": {
+    "title": "Integrated search of observations (metadata and data)",
+    "text": "This component concerns the functionality that allows an end-user to conduct an integrated search of the climate database and the observations metadata catalogue.\n\nThe search results will contain observations data and observations metadata.\n\nSome examples are:\n1. Determining what observations data are available based on a set of parameters and viewing the results in a table. These parameters may include:\n    1. Station\n    2. Sensor or procedure\n    3.  Phenomena\n    4.  Data quality (based on quality flags, the climate observation quality classification or other method)\n    5.  Time period\n    6.  A variety of other observation metadata parameters\n2. Reviewing observations metadata for selected stations.\n3. Determining what datasets provide the actual observations data for a given station, sensor and phenomenon combination, together with the URL of the relevant discovery metadata records. The discovery metadata records will in turn provide the URLs of any services providing dynamic access to the data. An example could involve searching for stations that use both a tipping bucket raingauge and manual methods to observe rainfall.\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on observations metadata (4.3.1)\nc) Observations metadata catalogue component (8.2.1.2)\nd) Linked data component (8.2.2.1)",
+    "classification": "Required"
+  },
+  "7.1.4.3": {
+    "title": "Search discovery metadata",
+    "text": "This component refers to the functionality that] allows an end-user to search the CDMS discovery metadata catalogue to:\n1. Determine what datasets are managed by the NMHS. This search may be limited to datasets that are available publicly or those that are only available for internal use.\n2. Search for datasets in accordance with WIS parameters, categories and keywords.\n3. Review discovery metadata records that adequately describe a dataset to enable searchers to determine whether it is suitable for their particular use.\n4. Determine the URL that can be used to access online services that host the dataset for dynamic access and data download.\n\nThis same component could be used to search WIS metadata catalogues.\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on dataset discovery metadata (4.3.2)\nc) Discovery metadata catalogue component (8.2.1.1)\nd) Linked data component (8.2.2.1)",
+    "classification": "Recommended"
+  },
+  "7.1.4.4": {
+    "title": "Search data provenance metadata",
+    "text": "This component provides the functionality that allows an end-user to search the CDMS data provenance metadata catalogue to:\n1. Broadly determine the lineage of a dataset, including the processes the dataset has been subjected to.\n2. Trace the provenance of individual records in detail, taking into account:\n    1. What was changed?\n    2. What was it derived from?\n    3. When was it changed?\n    4. What was done to change it?\n    5. How and why was it changed?\n    6. Who changed it?\n    7. Who did they act on behalf of (if applicable)?\n    8. Who authorized the change?\n\nFor more information, see:\na) Section on climate metadata (4.3)\nb) Subsection on data provenance (4.3.3)\nc) Data provenance metadata catalogue component (8.2.1.3)\nd) Linked data component (8.2.2.1)",
+    "classification": "Optional"
+  }
+}

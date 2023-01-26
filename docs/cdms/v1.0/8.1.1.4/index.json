@@ -1,0 +1,8 @@
+{
+  "title": "Sensor Web Enablement Services",
+  "text": "This component represents a range of technological tools suitable for the distribution of a wide variety of observational data and related metadata.\n\nThere are a number of services that will become available when work stabilizes on these standards. Sensor Web Services are typically used with data that conform to the observations and measurements data model. This model is well suited to time-series data. Therefore, Sensor Web Services may be an appropriate mechanism for serving time-series climate data in the future.\n\nFor more information, see the OGC documentation for:\na) Observations and measurements\nb) Sensor Observation Services",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

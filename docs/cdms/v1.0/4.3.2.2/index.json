@@ -1,0 +1,8 @@
+{
+  "title": "Dataset overview",
+  "text": "This component gives an overview of a dataset.\n\nThis may include a description of the dataset (such as an abstract), the intended use of the dataset, its lineage and status.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

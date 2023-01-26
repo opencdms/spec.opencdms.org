@@ -1,0 +1,21 @@
+{
+  "title": "Identity management",
+  "text": "",
+  "components": [
+    "9.1.1.1",
+    "9.1.1.2"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.1.1.1": {
+    "title": "Directory",
+    "text": "This component provides directory services such as the Lightweight Directory Access Protocol or Active Directory to manage user credentials and details.",
+    "classification": "Recommended"
+  },
+  "9.1.1.2": {
+    "title": "Identity and access management",
+    "text": "This component supports policies and functionalities that enable granular user access to the organization\u2019s IT resources and data.",
+    "classification": "Required"
+  }
+}

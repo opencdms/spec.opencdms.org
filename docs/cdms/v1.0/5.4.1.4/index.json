@@ -1,0 +1,8 @@
+{
+  "title": "Climate observation quality classification",
+  "text": "This component refers to the processes, software, governance mechanisms and data analysis used to understand and enumerate the quality of a specific record of data relative to an objective index. This index will need to combine a number of criteria relevant to data reliability and quality.\n\nNote: This index has yet to be created. For the purposes of this publication, it is called the climate observation quality classification. However, this name may change. It is envisioned that this index will need to take into account a number of factors, including:\n1. Siting classification\n2. Sustained performance classification\n3. Regular maintenance and calibration of sensor\n4. Sensor reliability\n5. Uncertainty inherent in observations\n6. Observation quality control processes\n7. Multilayer quality flags\n8. Lineage\n9. Homogeneity\n10. Other appropriate factors\n\nSee also the summary of findings of the seventh Data Management Workshop of the European Climate Support Network (ECSN) held at the Danish Meteorological Institute, in particular:\n> Noting that \u201ceverybody\u201d talks about different levels of Quality Control [QC] and (almost) nobody uses the same wording or nomenclature \u2013 it is recommended that an overview of QC nomenclature in ECSN is worked out. It might be considered if such an overview could form the basis for a recommended set of QC wordings. (Kern- Hansen, 2009)",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

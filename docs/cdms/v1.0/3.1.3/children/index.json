@@ -1,0 +1,39 @@
+{
+  "title": "Intellectual property",
+  "text": "",
+  "components": [
+    "3.1.3.1",
+    "3.1.3.2",
+    "3.1.3.3",
+    "3.1.3.4",
+    "3.1.3.5"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "3.1.3.1": {
+    "title": "Data licensing",
+    "text": "This component refers to policies that ensure that any data licensing agreements that relate to the use of a dataset are clearly understood.\n\nFor example:\n1. What data licences apply to NMHS data?\n2. What data licences will the NMHS release its data under? For example:\n    1. Is a Creative Commons licence appropriate? (See Creative Commons website)\n3. What data licences used by external dataproviders are permitted for use within the NMHS?\n4. Can the data be distributed to third parties?\n5. Will the NMHS use and/or archive data that are not covered by an appropriate data licence?\n6. Will the NMHS comply with the licensing of data passed to it, or will it choose not to use or archive the data?",
+    "classification": "Required"
+  },
+  "3.1.3.2": {
+    "title": "Access constraints",
+    "text": "This component concerns policies that clearly define any access constraints relating to the use of climate data.\n\nFor example:\n1. What may the NMHS do with the data?\n2. Can the data be used for the organization\u2019s website, web services, publications and so forth?\n3. Do any commercial or contractual constraints apply to the use of the data?\n4. Are the data subject to any national security constraints?",
+    "classification": "Recommended"
+  },
+  "3.1.3.3": {
+    "title": "Usage constraints",
+    "text": "This component covers policies that ensure that any constraints imposed on the end user regarding the use of a dataset are clearly understood. These constraints may apply to the NMHS or to third parties.\n\nFor example:\n1. Can the data be freely reused?\n2. Is there a cost that applies to the use of the data? See the Commercial component (3.1.5.3) for a number of related considerations.\n3. Can derived products be made using the data?\n4. Can the data be used for commercial purposes?\n5. Can the data be used for private, study or research purposes?\n6. Can the data be shared with others?\n\nThe Creative Commons website provides examples of data usage constraints and related licences.",
+    "classification": "Recommended"
+  },
+  "3.1.3.4": {
+    "title": "Copyright",
+    "text": "This component refers to policies that clearly explain any copyright issues relating to the use of climate data.",
+    "classification": "Recommended"
+  },
+  "3.1.3.5": {
+    "title": "Attribution",
+    "text": "This component deals with policies that ensure that any data attribution issues relating to the use of climate data are clearly understood.\n\nFor example:\n1. Should the source of the data be acknowledged?\n2. How does the NMHS ensure that any attribution text required by the data provider is applied when the data are used?",
+    "classification": "Recommended"
+  }
+}

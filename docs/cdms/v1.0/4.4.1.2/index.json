@@ -1,0 +1,8 @@
+{
+  "title": "Climatological standard normals",
+  "text": "This component covers monthly and annual standard normals.\n\nSee Wright (2012a) for a description of a recommended change in the method of calculating\nclimatological standard normals.\n\nThe approach is understood to comprise the following. (However, as at December 2013 this has\nyet to be officially endorsed.)\n1. A fixed reference period (1961\u20131990) for longterm climate variability and change assessment. This is to be adopted as a stable WMO reference period, until such time as there is a compelling scientific case for changing it.\n2. A varying 30-year period updated every 10 years (suitable for most climate services). The current period is 1981\u20132010.\n\nFor more information, see:\na) *Calculation of Monthly and Annual 30-Year Standard Normals* (WMO/TD-No. 341), WCDP-10\nb) *Technical Regulations* (WMO-No. 49), Volume II\nc) *Guide to Climatological Practices* (WMO-No. 100), section 4.8 Normals\nd) *Manual on Codes* (WMO-No. 306)\ne) *1961\u20131990 Global Climate Normals (CLINO)* (WMO-No. 847)\nf) *A Note on Climatological Normals: Report of a Working Group of the Commission for Climatology*, Technical Note No. 84\ng) *The Role of Climatological Normals in a Changing Climate* (WMO/TD-No. 1377), WCDMP-61\nh) Discussion paper on the calculation of the standard climate normals (Wright, 2012a)",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

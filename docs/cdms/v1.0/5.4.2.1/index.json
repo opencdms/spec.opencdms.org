@@ -1,0 +1,8 @@
+{
+  "title": "Derived-data quality assessment",
+  "text": "This component refers to the processes, software, governance and data analysis processes used to understand and enumerate the quality of derived data relative to an objective index.\n\nThere are many factors that can influence the quality of derived data. Some issues to consider are:\n1. What is the quality of the source data?\n2. What algorithms have been applied to the source data to arrive at the derived data?\n3. What is the impact of these algorithms on the quality of the derived data?\n4. If the derived dataset is spatial, how has the positional location of the data been derived?\n    1. What is the quality of the source spatial data?\n    2. What is the impact of the algorithms used to spatially distribute the data on the positional accuracy of the derived data?\n\nFor more information, see also the Derived data component (5.4.4.2).\n\nNote: This index has yet to be created. For the purposes of this publication, it is called the derived-data quality assessment. However, this name may change.",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

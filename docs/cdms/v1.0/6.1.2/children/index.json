@@ -1,0 +1,33 @@
+{
+  "title": "Generate derived data from climate observations",
+  "text": "",
+  "components": [
+    "6.1.2.1",
+    "6.1.2.2",
+    "6.1.2.3",
+    "6.1.2.4"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "6.1.2.1": {
+    "title": "Spatial analysis",
+    "text": "This component represents the software, processes and governance tools that handle a very wide variety of raster and vector spatial analysis techniques.\n\nSome examples are:\n1. Generating grids that show the spatial distribution of observations of a phenomenon such as precipitation.\n2. Generating grids that represent the distribution of the average maximum temperature for the month of May for climatological standard normals.\n3. Generating grids that represent the distribution of the maximum temperature anomalies for May 2010 when compared to the climatological standard normal.\n4. Selecting all meteorological stations located within a 10 km radius around a national administrative boundary.",
+    "classification": "Recommended"
+  },
+  "6.1.2.2": {
+    "title": "Image analysis",
+    "text": "This component covers the software, processes and governance tools that handle a very wide range of image analysis techniques.\n\nSome examples are:\n1. Processing remotely sensed satellite imagery to measure the relative solar reflectance of a satellite image, determine the cloud cover within a scene or generate a normalized difference vegetation index to measure vegetation greenness.\n2. Processing ground-based radar imagery to detect rain and storm activity.",
+    "classification": "Recommended"
+  },
+  "6.1.2.3": {
+    "title": "Time-series analysis",
+    "text": "This component concerns the software, processes and governance mechanisms that analyse timeseries data using a very broad range of analysis techniques.\n\nSome examples are the analysis required to produce:\n1. WMO standard products such as extremes, standard normals, World Weather Records and climate change indices.\n2. A variety of derived observations data.\n\nFor more information, see:\na) *Guide to Climatological Practices* (WMO-No. 100), Chapter 4 Characterizing climate from datasets, and Chapter 5 Statistical methods for analysing datasets",
+    "classification": "Recommended"
+  },
+  "6.1.2.4": {
+    "title": "Teleconnection indices",
+    "text": "This component represents the software, processes and governance processes used to analyse, record and manage data representing teleconnections and major climate indices such as the El Ni\u00f1o-Southern Oscillation and the Southern Oscillation Index.\n\nAccording to an article on Wikipedia, \u201c**[t]eleconnection** in atmospheric science refers to climate anomalies being related to each\nother at large distances (typically thousands of kilometers)\u201d.",
+    "classification": "Optional"
+  }
+}

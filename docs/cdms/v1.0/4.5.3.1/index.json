@@ -1,0 +1,8 @@
+{
+  "title": "Numerical models",
+  "text": "This component refers to the data output from a variety of climate modelling processes. Such data are generally represented by multidimensional array grids.\n\nSome examples are:\n1. Climate models (such as global climate models) - numerical representations of the climate system based on physical, biological and chemical rules. They vary on timescales ranging from seasonal to centennial. Climate models are often used to produce climate change projections.\n2. Downscaled models \u2013 derived from climate models but at a much higher resolution to support regional and local analysis.\n3. Reanalysis - designed for climate studies, reanalyses provide gridded data over a long time period. Reanalyses are created via an unchanging (frozen) data assimilation scheme and model(s) which ingest all available observations. This unchanging framework provides a dynamically consistent estimate of the climate state at each time step. Some available reanalysis products include ERA-40 (40 years) and ERA-Interim (1979 to the present) from the European Centre for Medium-Range Weather Forecasts, and the Twentieth Century Reanalysis project (1871\u20132011) from the National Oceanic and Atmospheric Administration, United States.\n4. Numerical weather prediction\n\nSee also:\na) *Guide to Climatological Practices* (WMO-No. 100), section 6.7 Climate models and climate outlooks",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

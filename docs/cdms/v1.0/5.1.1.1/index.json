@@ -1,0 +1,8 @@
+{
+  "title": "Business rules",
+  "text": "This component supports a wide range of user defined business rules that govern how data are ingested into the climate database. Some examples (for observations data) are:\n1. Action required when new phenomena are to be ingested but a record already exists in the\ndatabase for that time period.\n    1. Should the new record replace the current record in the database or should the new record be rejected?\n\n        There is potential for data that have not been quality controlled to overwrite perfectly good quality-controlled data. An example is a message that is reingested and the ingest process does not take into account the possibility that the data already exist in the database and that they have been modified.\n\n2. Action required when a message arrives for ingest but the message type is not appropriate according to the observations metadata on record for that station.\n3. Action required should a message arrive containing an observed value that is outside the accepted bounds for a given phenomenon. For example, a message contains a value of 90\u00b0C for temperature, where the maximum accepted temperature is 60\u00b0C.\n4. Action required should a message arrive that is of a lower order of precedence to one that has already been ingested for the same time period and station. For example:\n    1. The priority level given to records being ingested may relate to the method of data acquisition. A record that has been keyed in via a quality assurance process may be given a higher priority than a record acquired via a real-time message ingest.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

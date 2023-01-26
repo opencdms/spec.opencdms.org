@@ -1,0 +1,10 @@
+{
+  "title": "Numerical models",
+  "text": "Note: The infrastructure, software and skills required to operate numerical models are undoubtedly beyond the reach of many NMHSs.\n\nAs the output from numerical models is of interest to most NMHSs, it is expected that such output will be available via a number of sources, including Regional Climate Centres.\n\nTherefore, the CDMS should ideally have the ability to work with such data.",
+  "components": [
+    "4.5.3.1"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

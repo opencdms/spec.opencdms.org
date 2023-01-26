@@ -1,0 +1,27 @@
+{
+  "title": "Data storage",
+  "text": "",
+  "components": [
+    "9.3.4.1",
+    "9.3.4.2",
+    "9.3.4.3"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.3.4.1": {
+    "title": "Storage media",
+    "text": "This component involves the provision of sufficient storage media to cover operational activities, including the storage of climate data, systems, archives, backups and disaster recovery materials.",
+    "classification": "Required"
+  },
+  "9.3.4.2": {
+    "title": "Data archival",
+    "text": "This component handles the secure archival of historical data to ensure that it is available for future generations.",
+    "classification": "Required"
+  },
+  "9.3.4.3": {
+    "title": "Backups",
+    "text": "This component covers the regular operational backup and restoration of data and systems.",
+    "classification": "Required"
+  }
+}

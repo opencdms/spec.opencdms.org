@@ -1,0 +1,8 @@
+{
+  "title": "Data transmission",
+  "text": "This component refers to the recording of details relating to the transmission of data from stations or observation platforms.\n\nThe following information is required:\n1. Sensor communications, including:\n    1. Frequency of transmission\n    2.  Time of transmission\n    3.  Primary communication details\n    4.  Redundant communication details\n    5.  Network addresses\n    6.  Method of transmission\n\nNote: Some NMHSs with more advanced IT infrastructures may choose to store this type of information within their configuration management system. In these instances, it is important to ensure that at least the frequency and time of the transmission are replicated in the observations metadata.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

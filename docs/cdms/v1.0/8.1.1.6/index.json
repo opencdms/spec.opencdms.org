@@ -1,0 +1,8 @@
+{
+  "title": "Geosynchronization",
+  "text": "This component concerns a series of technological tools that enable a data publisher to distribute a data product in an environment that supports managed change to the source data.\n\nIn theory, end-users could subscribe to a data source and have changes to the data replicated in their copy of the data.\n\nIn summary, geosynchronization services are expected to support several processes, including:\n1. Allowing interested parties to subscribe to an authoritative data source.\n2. Data entry with validation.\n3. Notifying interested parties of changes.\n4. Allowing replication of the data provider\u2019s features.\n\nIt is anticipated that geosynchronization services will support crowdsourced data and processes in addition to authoritative data sources.\n\nAt present, geosynchronization services are being developed with the current version of a standard that only serves data via a WFS. \n\nIt is expected that geosynchronization will support additional services in the future, including WCS and WMS.\n\nFor more information, see:\na) OGC overview of geosynchronization services\nb) The OWS 7 engineering report on the test of geosynchronization services",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "What was it derived from?",
+  "text": "This component deals with the processes, software and governance arrangements that ensure that a dataset\u2019s lineage is understood. In other words, where did the data come from?\n\nThis component is also required in the section on data discovery (8.2).",
+  "classification": "Optional",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

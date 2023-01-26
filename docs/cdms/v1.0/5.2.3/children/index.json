@@ -1,0 +1,27 @@
+{
+  "title": "Data entry",
+  "text": "This subsection covers the functionality required to enable an appropriately trained and authorized person to manually enter data into the climate database.\n\nTypically, this functionality is tightly controlled according to NMHS data governance processes.\n\nSome issues to consider are:\n1. Data entry staff should only be able to add data to or edit data in the climate database under programme control, with appropriate safeguards in place to protect the integrity of the climate database.\n2. Any functionality that provides write access to the database should also include an audit function to allow an independent review of database changes - One example could be the use of database triggers that write the details of a transaction,\nincluding the previous values, into a separate set of audit tables.\n3. Another approach could be to ensure that the data entry process creates an interim data file that is then entered into the database via data ingest processes, bypassing the need for direct access to the database.\n4. NMHS data policy may enforce the need for double entry practices, where two or more operators key in data for the same form, independent of each other, to detect and minimize key-in errors.\n5. Careful consideration should be made to ensure that an organization has very effective IT security and monitoring in place prior to allowing key-in access via the Internet. Most organizations will not have suitable controls in place. Therefore, key-in via the Internet should be avoided as a general rule.\n6. NMHS data policy should provide guidelines as to appropriate data quality considerations applied to data that are manually entered.",
+  "components": [
+    "5.2.3.1",
+    "5.2.3.2",
+    "5.2.3.3"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "5.2.3.1": {
+    "title": "Forms",
+    "text": "This component covers:\n1. The visual design of a form.\n2. The software logic that controls the data key-in process.\n3. The mapping of fields in the form with appropriate records and tables within the climate database.\n4. Ensuring that the integrity of the climate database is protected by validating data before they are added to the database.\n\nThe component should also support:\n\n5. A custom definition of user input forms that mimic traditional meteorological forms (including the language where appropriate).\n6. Efficient and effective data entry that minimizes operator fatigue and automatically calculates appropriate values.\n7. The component should provide adequate support for monitoring the validity of data that are entered.\n\nSome examples are:\n8. Performing data quality consistency checks of the data to be entered. These checks and the appropriate values are to be customizable according to NMHS data policy and governance processes.\n9. Ensuring that appropriate data types and context are entered for each field.\n10. The component should alert the operator to any doubtful entries detected, providing appropriate advice as per NMHS data policy guidelines.",
+    "classification": "Required"
+  },
+  "5.2.3.2": {
+    "title": "Key entry",
+    "text": "This component provides the functionality to support manual key-in of meteorological data.",
+    "classification": "Required"
+  },
+  "5.2.3.3": {
+    "title": "Computation",
+    "text": "This component allows for the automatic derivation of parameters at key-in.\n\nSuch computation should be customizable according to NMHS data policy and governance processes.\n\nSome possible scenarios where this functionality may be used are:\n1. The computation of a value for relative humidity after the values for dry-bulb temperature and dewpoint have been entered.\n2. Decoding shorthand codes and replacing them with appropriate values.",
+    "classification": "Recommended"
+  }
+}

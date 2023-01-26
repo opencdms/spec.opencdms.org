@@ -1,0 +1,8 @@
+{
+  "title": "Transformation",
+  "text": "This component supports the transformation of an ingest record. This may include:\n1. Transforming data from one format to another.\n2. Transforming codes into formats more suitable for the destination climate database.\n3. Correcting records that have been abbreviated in accordance with accepted local observation practice.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

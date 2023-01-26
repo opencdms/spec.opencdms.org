@@ -1,0 +1,21 @@
+{
+  "title": "Database",
+  "text": "",
+  "components": [
+    "9.1.4.1",
+    "9.1.4.2"
+  ],
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0",
+  "9.1.4.1": {
+    "title": "Tabular",
+    "text": "This component represents database technology suitable for the storage of a wide range of timeseries climate data in tabular format, typically within a relational database.",
+    "classification": "Required"
+  },
+  "9.1.4.2": {
+    "title": "Spatial",
+    "text": "This component deals with technology used to\nspatially enable time-series climate data, typically\nwithin a relational database. The component may\nconsist of a functionality that spatially enables\nthe tabular database component, or it could be a\ndedicated spatial database that is closely aligned\nto the climate data stored within the tabular\ndatabase.",
+    "classification": "Recommended"
+  }
+}

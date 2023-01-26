@@ -1,0 +1,8 @@
+{
+  "title": "Station identifier",
+  "text": "This component supports the management of identifiers associated with the observation station or platform.\n\nIdentifiers include:\n1. A globally unique WMO identifier. The use of this identifier must become a priority in order to support future global analysis. See recommendation 11.6 of this publication.\n2. Other identifiers or aliases used for the station.\n3. A history of past used identifiers, including historical WMO identifiers.\n4. The beginning and end dates of each historical identifier used for the station.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

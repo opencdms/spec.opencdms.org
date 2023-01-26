@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDMS Governance</title>
+</head>
+
+<style>
+    #wrapper {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 0 15px;
+    }
+
+    .chapter-title {
+        color: #003869;
+        border-bottom: 5px solid #a9b4cf;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        color: #003869;
+    }
+
+    .sub-section-title {
+        color: #7489af;
+    }
+
+    pre, .cdms-content {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
+<body>
+<div id="wrapper">
+    <div class="content">
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 70%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3 class="section-title"><span
+                            style="padding-right: 20px">4.2</span> Logical data models</h3>
+                    <div class="cdms-content" style="padding-bottom: 10px;">In order to share climate data between organizations or make meaningful comparisons between information from datasets provided by different publishers, it is highly recommended that climate data conform to a logical data model.
+
+A logical data model describes the content and structure of information resources at an abstract level. When implemented in a CDMS, the logical data model underpins the design of the information objects managed by the system and helps to determine the questions that one may ask of the system when querying those information objects and their interrelationships.
+
+Furthermore, the logical data model may be used as the basis for developing data formats within which the information objects can be serialized for exchange between systems – thus ensuring interoperability between those systems.
+
+WMO is currently developing a logical data model termed the Modèle pour l’ Échange des informations sur le Temps, le Climat et l’Eau2 (METCE), which is intended to provide a basis for application-specific data models, including those used for climate observing and climate data management.
+
+Ideally, the underlying database structure will be based on the logical data model.</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.2.1</span> Climate database
+                    </h4>
+                    <div class="cdms-content" style="padding-bottom: 10px;">This subsection refers to the database(s) used to store and manage a range of time-series data, including: climate observations, climate metadata (observations, discovery and data provenance), spatial information, derived data and related data required for effective data management.
+
+More advanced CDMSs may manage the data in a series of related databases rather than in a single database.
+
+It is recommended that the climate database provide support for the following functionalities, classified by priority:
+
+**Required**
+1. Managing core observations described in the Guide to Climatological Practices (WMO-No. 100).
+2. Managing observation metadata (such as station metadata) and integrating them with observations data.
+3. Handling observations from multiple sensors per station, per phenomenon, and recording the source of each observation.
+4. Managing multiple tiers of data quality, from raw records to homogenized data.
+5. Managing spatial and time-series data.
+
+**Recommended**
+
+6. Covering at least the GCOS ECVs.
+7. Using a robust data model that takes into account the requirements of open spatial standards, particularly the ISO 19156:2011 Geographic information – Observations and measurements standard, METCE and the WMO climate observations application schema (see component 4.2.3.2).
+8. Managing metadata related to data provenance. This entails ensuring that each change to an observation is recorded for future recovery, and recording the details of why a particular change was made, which includes:
+    1. Tracing the product lineage to the data source. For example, what observations and gridded data were used to underpin the analysis released in peer-reviewed paper X?
+    2. Ensuring that the reason for each observation change is recorded.
+9. Managing third-party and crowdsourced data.
+10. Managing intellectual property rights related to data.
+11. Enabling point-in-time recovery. For example, what data were present in the database for station X at time T?
+12. Storing a range of document formats, such as:
+    1. Photographs of observation stations and instruments, meteorological phenomena, etc.
+    2. Scanned paper observation forms
+    3. Scanned microfiche/microfilm
+    4. Relevant observations metadata documents, such as instrument calibration reports
+    5. Technical manuals
+    6. Site location plans and sections
+    7. Videos and other multimedia formats
+
+Optional
+
+13. Handling data uncertainty (for more information, see Wikipedia articles on uncertain data and uncertainty).
+14. Managing multidimensional time-series gridded data and possibly numerical models.
+15. Providing support for the information management concepts of semantics and linked data.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.1.1 Data dictionary</td>
+                <td class="cdms-content">
+                    <p>This component represents the data dictionary, which describes the database structure, data model and other elements used by the climate database.</p>
+                </td>
+                <td style="background-color: #f3eb72;">Required</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.2.2</span> Foundation standards
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.2.1 Observations and measurements</td>
+                <td class="cdms-content">
+                    <p>This component represents technology that provides rules and a standardized approach for modelling observations data, regardless of the domain.</p>
+<p>In essence, the ISO 19156:2011 <em>Geographic information – Observations and measurements</em> standard treats an observation as an event at a given point in time whose result is an estimate of the value of some property of a feature of interest, obtained using a known observation procedure.</p>
+<p>This standard is being widely adopted as the framework for a number of logical data models related to observations data, such as WaterML and the Meteorological Information Exchange Model of the International Civil Aviation Organization (ICAO).</p>
+<p>It also underpins current work on the WMO logical data model called METCE (see below).</p>
+<p>For more information, see:
+a) ISO 19156:2011, <em>Geographic information – Observations and measurements</em>
+b) OGC Abstract Specification: Geographic information – Observations and measurements</p>
+                </td>
+                <td style="background-color: #b3d386;">Recommended</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4 class="sub-section-title"><span
+                            style="padding-right: 10px">4.2.3</span> WMO logical data models
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.3.1 METCE</td>
+                <td class="cdms-content">
+                    <p>The METCE component represents technology that provides rules and a standardized approach for modelling observations and simulations in the weather, water and climate domains.</p>
+<p>METCE is an application schema conforming to ISO 19109:2005 <em>Geographic information – Rules for application schema</em>. Furthermore, METCE is a profile of the Observations and measurements standard that provides domain- and application specific semantics for use within the weather, water and climate domains.</p>
+<p>The initial iteration of METCE and its companion model, the Observable Property Model, were developed by the Task Team on Aviation XML to support the ICAO Meteorological Information Exchange Model.</p>
+<p>However, METCE will provide a common semantic basis for a growing number of data products relating to observation and simulation within WMO. Not only will this simplify the requirements for software systems working with WMO products, it is also expected to simplify the mappings between WMO data products and counterparts from other communities such as CF-netCDF.</p>
+<p>As at December 2013, plans have been made to provide mappings/rules to convert from the METCE application schema to BUFR sequences and/or GRIB templates at some point in the future.</p>
+<p>For more information, please see:
+a) AvXML-1.0 data model
+b) ISO 19109:2005, Geographic information – Rules for application schema</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dff2fd;">4.2.3.2 Climate observations application schema</td>
+                <td class="cdms-content">
+                    <p>This component represents technology that provides rules and a standardized approach for modelling climate observations data.</p>
+<p>It is anticipated that METCE will be used as the basis for developing an application schema that will provide more detailed semantics and constraints specific to a given domain or application. In this way, METCE will provide the basis for an application schema developed to support the wide array of climate observation applications.</p>
+<p>The scope of such an application schema is expected to cover both the climate observations themselves and the associated observation metadata (see subsection on observations metadata (4.3.1)).</p>
+                </td>
+                <td style="background-color: #e3e3e3;">Optional</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

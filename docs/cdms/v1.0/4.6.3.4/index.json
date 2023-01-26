@@ -1,0 +1,8 @@
+{
+  "title": "Software testing",
+  "text": "This component covers the testing of software that is to be deployed to manipulate climate data.\n\nThis includes:\n1. Details of test plans and individual test cases, including user-acceptance testing.\n2. Details of the test data, database, etc.\n3. Details of test systems and environment.\n4. Details of test results and artefacts, particularly proof that the test data were not affected by the software or a change to the software.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

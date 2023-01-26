@@ -1,0 +1,8 @@
+{
+  "title": "Spatial intelligence",
+  "text": "This component represents the technology, software, processes and governance processes that support an effective and dynamic analysis of climate data within a web environment to facilitate understanding of climate matters and communicate issues relating to climate data. This dynamic analysis includes:\n1. Geographical Information System (GIS) functionality, including the ability to perform spatial overlay analysis such as selecting points in a polygon.\n2. The ability to search features by attribute, for example:\n    1. Conducting a search of all stations within the catchment of a specific river.\n    2. Filtering the resultant stations to view only those that observe precipitation.\n    3. Viewing summary observations data for each of those stations.\n\nThis component integrates into a map-based interface a wide range of time-series data including climate observations, climate grids, satellite imagery and topography, together with appropriate textual and other attribute data, such as climate metadata.\n\nIt also facilitates dynamic data exploration and analysis using a broad array of integrated media, including maps, charts, graphs, tables and written reports.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

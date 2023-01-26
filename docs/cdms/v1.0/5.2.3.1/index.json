@@ -1,0 +1,8 @@
+{
+  "title": "Forms",
+  "text": "This component covers:\n1. The visual design of a form.\n2. The software logic that controls the data key-in process.\n3. The mapping of fields in the form with appropriate records and tables within the climate database.\n4. Ensuring that the integrity of the climate database is protected by validating data before they are added to the database.\n\nThe component should also support:\n\n5. A custom definition of user input forms that mimic traditional meteorological forms (including the language where appropriate).\n6. Efficient and effective data entry that minimizes operator fatigue and automatically calculates appropriate values.\n7. The component should provide adequate support for monitoring the validity of data that are entered.\n\nSome examples are:\n8. Performing data quality consistency checks of the data to be entered. These checks and the appropriate values are to be customizable according to NMHS data policy and governance processes.\n9. Ensuring that appropriate data types and context are entered for each field.\n10. The component should alert the operator to any doubtful entries detected, providing appropriate advice as per NMHS data policy guidelines.",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

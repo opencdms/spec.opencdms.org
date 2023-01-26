@@ -1,0 +1,8 @@
+{
+  "title": "WMO technical commission guides",
+  "text": "This component includes the recommendations or best practices that are generally drawn up as guides published by the different technical commissions:\n1. Commission for Basic Systems\n2. Commission for Instruments and Methods of Observation\n3. Commission for Hydrology\n4. Commission for Atmospheric Sciences\n5. Commission for Aeronautical Meteorology\n6. Commission for Agricultural Meteorology\n7. Commission for Climatology\n8. Joint WMO/IOC Technical Commission for Oceanography and Marine Meteorology (JCOMM)\n\nWhile most of the guides are relevant to CDMSs, it is recommended that particular attention be paid to:\n\n9. *Guide to Meteorological Instruments and Methods of Observation* (WMO-No. 8), from the Commission for Instruments and Methods of Observation\n10. *Guide to Climatological Practices* (WMO-No. 100), from the Commission for Climatology",
+  "classification": "Required",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}

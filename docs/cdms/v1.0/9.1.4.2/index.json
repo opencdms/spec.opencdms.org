@@ -1,0 +1,8 @@
+{
+  "title": "Spatial",
+  "text": "This component deals with technology used to\nspatially enable time-series climate data, typically\nwithin a relational database. The component may\nconsist of a functionality that spatially enables\nthe tabular database component, or it could be a\ndedicated spatial database that is closely aligned\nto the climate data stored within the tabular\ndatabase.",
+  "classification": "Recommended",
+  "copyright": "World Meteorological Organization, 2014",
+  "reference": "WMO-No. 1131",
+  "version": "1.0"
+}
